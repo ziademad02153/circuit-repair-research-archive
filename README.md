@@ -4,12 +4,12 @@ An unpublished research archive comparing a small learned edit ranker with
 simple heuristics, exhaustive search, and SAT/CEGIS for single-edit Boolean
 circuit repair. Experiments ran on CPU.
 
-**Status: closed research direction, retained for audit and reuse.** The current
-evidence does not justify continuing this project toward a journal submission.
-This repository is a technical archive, not a published paper or an accepted
-method. [Arabic overview](README.ar.md).
+**Status: completed experimental study; unpublished.** The learned method did
+not outperform the stronger direct-CNF baseline in the final comparison.
+The archive preserves the code, protocols and negative findings for inspection
+and reuse. This work has not been submitted to a journal.
 
-Private GitHub repository: https://github.com/ziademad02153/circuit-repair-research-archive
+GitHub repository: https://github.com/ziademad02153/circuit-repair-research-archive
 
 ## Main result
 
