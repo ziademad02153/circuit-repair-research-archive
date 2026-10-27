@@ -9,6 +9,8 @@ evidence does not justify continuing this project toward a journal submission.
 This repository is a technical archive, not a published paper or an accepted
 method. [Arabic overview](README.ar.md).
 
+Private GitHub repository: https://github.com/ziademad02153/circuit-repair-research-archive
+
 ## Main result
 
 The stronger direct-CNF baseline outperformed or matched the frozen learner in
@@ -109,8 +111,8 @@ The negative outcome is specific to the implementations and settings tested.
 
 ## Attribution and licensing status
 
-No author identity, institutional affiliation, publication DOI or repository
-URL has been invented. No project-wide open-source license has been selected
+No author identity, institutional affiliation or publication DOI has been
+invented. No project-wide open-source license has been selected
 for this archive. No third-party package binaries are redistributed. External
 software and papers retain their own terms; public access alone is not a
 license grant. Publication and author metadata can be added by the project owner.
