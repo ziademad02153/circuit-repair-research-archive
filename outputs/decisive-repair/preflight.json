@@ -1,0 +1,293 @@
+{
+  "bit_patterns_checked_n": [
+    3,
+    4,
+    6,
+    10,
+    12,
+    16
+  ],
+  "exhaustive_vs_cegis_cases": [
+    {
+      "seed": 3100000,
+      "setting": "full",
+      "valid_candidates": 4,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100000,
+      "setting": "sample",
+      "valid_candidates": 4,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100001,
+      "setting": "full",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100001,
+      "setting": "sample",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100002,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100002,
+      "setting": "sample",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100003,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100003,
+      "setting": "sample",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100004,
+      "setting": "full",
+      "valid_candidates": 7,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100004,
+      "setting": "sample",
+      "valid_candidates": 7,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100005,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 2
+    },
+    {
+      "seed": 3100005,
+      "setting": "sample",
+      "valid_candidates": 3,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100006,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 2
+    },
+    {
+      "seed": 3100006,
+      "setting": "sample",
+      "valid_candidates": 2,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100007,
+      "setting": "full",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100007,
+      "setting": "sample",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100008,
+      "setting": "full",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100008,
+      "setting": "sample",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100009,
+      "setting": "full",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100009,
+      "setting": "sample",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100010,
+      "setting": "full",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100010,
+      "setting": "sample",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100011,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100011,
+      "setting": "sample",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100012,
+      "setting": "full",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100012,
+      "setting": "sample",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100013,
+      "setting": "full",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100013,
+      "setting": "sample",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100014,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100014,
+      "setting": "sample",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100015,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100015,
+      "setting": "sample",
+      "valid_candidates": 54,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100016,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 3
+    },
+    {
+      "seed": 3100016,
+      "setting": "sample",
+      "valid_candidates": 4,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100017,
+      "setting": "full",
+      "valid_candidates": 5,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100017,
+      "setting": "sample",
+      "valid_candidates": 5,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100018,
+      "setting": "full",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100018,
+      "setting": "sample",
+      "valid_candidates": 1,
+      "z3_status": "accepted",
+      "z3_checks": 1
+    },
+    {
+      "seed": 3100019,
+      "setting": "full",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    },
+    {
+      "seed": 3100019,
+      "setting": "sample",
+      "valid_candidates": 0,
+      "z3_status": "unsat",
+      "z3_checks": 0
+    }
+  ],
+  "z3_version": "5.3.1"
+}

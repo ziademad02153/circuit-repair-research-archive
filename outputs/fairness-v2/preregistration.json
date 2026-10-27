@@ -1,0 +1,135 @@
+{
+  "registered_utc": "2026-10-25T12:21:08Z",
+  "question": "Does the frozen learner improve on an optimized simple rule selected before opening new test outcomes?",
+  "groups": [
+    {
+      "group": "n6_g18",
+      "n": 6,
+      "gates": 18,
+      "development_count": 10,
+      "test_count": 50,
+      "development_start_seed": 7000000,
+      "test_start_seed": 8000000
+    },
+    {
+      "group": "n10_g50",
+      "n": 10,
+      "gates": 50,
+      "development_count": 10,
+      "test_count": 50,
+      "development_start_seed": 7010000,
+      "test_start_seed": 8010000
+    },
+    {
+      "group": "n10_g100",
+      "n": 10,
+      "gates": 100,
+      "development_count": 10,
+      "test_count": 50,
+      "development_start_seed": 7020000,
+      "test_start_seed": 8020000
+    },
+    {
+      "group": "n12_g100",
+      "n": 12,
+      "gates": 100,
+      "development_count": 10,
+      "test_count": 50,
+      "development_start_seed": 7030000,
+      "test_start_seed": 8030000
+    },
+    {
+      "group": "n16_g100",
+      "n": 16,
+      "gates": 100,
+      "development_count": 10,
+      "test_count": 50,
+      "development_start_seed": 7040000,
+      "test_start_seed": 8040000
+    },
+    {
+      "group": "n16_g200",
+      "n": 16,
+      "gates": 200,
+      "development_count": 10,
+      "test_count": 50,
+      "development_start_seed": 7050000,
+      "test_start_seed": 8050000
+    }
+  ],
+  "methods": [
+    "learned",
+    "local_improvement",
+    "local_after_error",
+    "sample_error",
+    "random",
+    "exhaustive",
+    "cegis"
+  ],
+  "development_methods": [
+    "local_improvement",
+    "local_after_error",
+    "sample_error"
+  ],
+  "test_repeats": 2,
+  "development_repeats": 1,
+  "budget_seconds": 1.0,
+  "settings": [
+    "full"
+  ],
+  "sample_feature_rows": 8,
+  "edit_budget": 1,
+  "edit_space": "Same legal_edits: exactly one non-noop LUT or earlier-source wire edit; no edits to permanently stuck gate.",
+  "faults": "Unchanged harmful-fault mixture: .4 LUT flip, .4 wire, .2 known permanent stuck-at; conditioned on changed outputs.",
+  "model": "Original selected 24-tree model, feature function and inference; no fitting, recalibration, pruning or parameter tuning.",
+  "rules": {
+    "local_improvement": "Descending local need-error improvement, then ascending LUT edit distance, then seeded tie; optimized exact same keys as original local features.",
+    "local_after_error": "Ascending local need-error after edit, then ascending LUT distance, then seeded tie.",
+    "sample_error": "Ascending exact output error on 8 rows, then LUT distance, then seeded tie. Optimized downstream-only resimulation, no unnecessary global feature matrix.",
+    "random": "Uniform seeded random priorities over the same candidate list.",
+    "exhaustive": "Original lazy legal_edits order, common full checker.",
+    "cegis": "Original frozen Z3 CEGIS including its sound cone localization. No claim this is best available SAT implementation."
+  },
+  "selection": "After development only: maximize pooled success rate on n>=10, then minimize mean failure-penalized runtime there, then lexical rule name. Write selection.json before any test trial; cannot switch comparator after test.",
+  "timing": "Serial steady-state worker; GC, imports, model loading/compile, shared input packing, problem generation and payload transfer excluded for every method. Candidate generation, all ranking/feature/inference work and full checking included. No progress IPC inside timer; buffered events sent after timing. Absolute 1 s method deadline; >1 s is failure. Parent watchdog at 1.20 s after acknowledgement, hardkill always failure.",
+  "order": "Seeded random method order in repeat 0; reverse order in repeat 1 for each case. All circuits and methods retained.",
+  "audit": "Every accepted edit independently checked with NumPy full truth-vector oracle outside timer, cached per case/edit. Gold references independently validated before trials. Raw logs retain all errors/timeouts and wrong acceptances.",
+  "primary_population": "250 new larger circuits (n>=10), each equally weighted after averaging its two timed repeats.",
+  "primary_endpoints": [
+    "success-rate difference learned minus development-selected simple rule",
+    "failure-penalized mean seconds advantage selected rule minus learned; failure charged full common budget"
+  ],
+  "statistics": {
+    "bootstrap_replicates": 10000,
+    "seed": 20261108,
+    "resampling": "Paired by unique circuit, retaining repeats together; no independent resampling of repeats.",
+    "primary_interval": "97.5% two-sided percentile paired bootstrap per endpoint; Bonferroni family of two (>=95% simultaneous nominal coverage).",
+    "descriptive_intervals": "95% for all methods/groups, exploratory; do not replace primary comparator with a test winner.",
+    "decision": "Report evidence of benefit in a primary endpoint only if its 97.5% interval is strictly above zero. A general learned advantage requires success endpoint benefit without a significant penalized-runtime disadvantage, or penalized-runtime benefit without a significant success disadvantage. Conflicting endpoints are tradeoff, neither significant is not demonstrated. Do not claim global optimality or publication readiness."
+  },
+  "scope_limits": [
+    "Synthetic test circuits, same generator family, limited sample size; no public/industrial benchmark result.",
+    "No model-without-need-feature retraining in this stage; does not fully identify contribution of the need representation.",
+    "Only one wall budget here; budget sensitivity and stronger CNF SAT remain future stages.",
+    "No sample-only inference claims; all accepted repairs must pass full specification."
+  ],
+  "model_sha256": "e6cfd655b4912377d9a13f9881a3bd461da6a5b59881eca744bc678aa29229dd",
+  "source_sha256": {
+    "work/circuit_pilot.py": "d40d9b15d8178ee28076bf34734ff9e7edc165fb68161136da46534fee2adfed",
+    "work/local_repair_pilot.py": "d666bbdd7f9197326352cd9585dbf31f648f48b759bf41cd6c038518963bc9a1",
+    "work/decisive_engine.py": "56ed53ba690a04ac50808054cd0be9aad3f50dbde641498a76927ed169f49fb5",
+    "work/decisive_run.py": "c9f7e830aa97dea7efa9d0fdfc6c639b2fed18a40d096651429b2cf261a27e2d",
+    "work/fairness_v2_methods.py": "880fb7cde916bc7f16c77be36192d7950e71928aae7cdf0954c1fd557fb9ef05",
+    "work/fairness_v2_run.py": "434d0a9dd724a2377218554f6a393e5b3d1519e31326686fe9929c2e802db75c",
+    "work/fairness_v2_validate.py": "cce359ba0976a20741a7e9da21583d2f54ae981e85449f599c2d88a8119a9e47"
+  },
+  "preflight_sha256": "5d0b5f06e42fd747c7bb0fd1cd292f4e5208d5a6f0cacc7bdf8b01128fc75521",
+  "v1_protected_sha256": {
+    "outputs/decisive-repair/raw_trials.jsonl": "18f9a4c271791440606e9175cac63046bee117cb6f26078f4c7db9ab7f4a94b0",
+    "outputs/decisive-repair/cases.jsonl": "0f171782783d59a45c5900b2b0f57017e0a49057675225ec71bffded0388e878",
+    "outputs/decisive-repair/preregistration.json": "df5fbfaa1f7b5288dddab62f4ae87fb13e3fb35b8677f371391d8c07d8d09a10",
+    "outputs/decisive-repair/summary.json": "d12ab6919360b7a033276bf9d7669e2c766b597543921ab787f4d3d6a05dbc71"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22631-SP0"
+}

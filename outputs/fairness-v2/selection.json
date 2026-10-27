@@ -1,0 +1,26 @@
+{
+  "selected_rule": "sample_error",
+  "scores": [
+    {
+      "method": "local_improvement",
+      "cases": 50,
+      "successes": 31,
+      "mean_penalized_seconds": 0.45800192400020023
+    },
+    {
+      "method": "local_after_error",
+      "cases": 50,
+      "successes": 23,
+      "mean_penalized_seconds": 0.6799917639997876
+    },
+    {
+      "method": "sample_error",
+      "cases": 50,
+      "successes": 32,
+      "mean_penalized_seconds": 0.4579324080002698
+    }
+  ],
+  "selected_utc": "2026-10-25T12:22:36Z",
+  "development_log_sha256_at_selection": "971aabff48e991c85cffc15494d9b28d73b736c961aba7ac15b5315fe43dcb57",
+  "test_trials_seen": 0
+}

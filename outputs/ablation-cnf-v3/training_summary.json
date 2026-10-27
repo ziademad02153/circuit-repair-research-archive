@@ -1,0 +1,4439 @@
+{
+  "all_models": [
+    {
+      "variant": "full21",
+      "training_seed": 20261026,
+      "fit_seconds": 5.22954149999714,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 77,
+      "validation_mean_clipped_rank": 23.341666666666665,
+      "model_file": "outputs\\ablation-cnf-v3\\model_full21_20261026.json",
+      "model_sha256": "57975a9687c8f0853b1068dc8623e434e74ff98415eeabf78e4ef381bf68cd2f",
+      "validation_records": [
+        {
+          "case_seed": 60000,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60001,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60002,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60003,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60004,
+          "first_valid_rank": 11,
+          "success_top16": true,
+          "rank_clipped65": 11
+        },
+        {
+          "case_seed": 60005,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60006,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60007,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60008,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60009,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60010,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60011,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60012,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60013,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60014,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60015,
+          "first_valid_rank": 7,
+          "success_top16": true,
+          "rank_clipped65": 7
+        },
+        {
+          "case_seed": 60016,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60017,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60018,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60019,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60020,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60021,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60022,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60023,
+          "first_valid_rank": 74,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60024,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60025,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60026,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60027,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60028,
+          "first_valid_rank": 80,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60029,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60030,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60031,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60032,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60033,
+          "first_valid_rank": 11,
+          "success_top16": true,
+          "rank_clipped65": 11
+        },
+        {
+          "case_seed": 60034,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60035,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60036,
+          "first_valid_rank": 13,
+          "success_top16": true,
+          "rank_clipped65": 13
+        },
+        {
+          "case_seed": 60037,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60038,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60039,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60040,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60041,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60042,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60043,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60044,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60045,
+          "first_valid_rank": 73,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60046,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60047,
+          "first_valid_rank": 20,
+          "success_top16": false,
+          "rank_clipped65": 20
+        },
+        {
+          "case_seed": 60048,
+          "first_valid_rank": 12,
+          "success_top16": true,
+          "rank_clipped65": 12
+        },
+        {
+          "case_seed": 60049,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60050,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60051,
+          "first_valid_rank": 45,
+          "success_top16": false,
+          "rank_clipped65": 45
+        },
+        {
+          "case_seed": 60052,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60053,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60054,
+          "first_valid_rank": 43,
+          "success_top16": false,
+          "rank_clipped65": 43
+        },
+        {
+          "case_seed": 60055,
+          "first_valid_rank": 16,
+          "success_top16": true,
+          "rank_clipped65": 16
+        },
+        {
+          "case_seed": 60056,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60057,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60058,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60059,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60060,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60061,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60062,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60063,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60064,
+          "first_valid_rank": 16,
+          "success_top16": true,
+          "rank_clipped65": 16
+        },
+        {
+          "case_seed": 60065,
+          "first_valid_rank": 41,
+          "success_top16": false,
+          "rank_clipped65": 41
+        },
+        {
+          "case_seed": 60066,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60067,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60068,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60069,
+          "first_valid_rank": 10,
+          "success_top16": true,
+          "rank_clipped65": 10
+        },
+        {
+          "case_seed": 60070,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60071,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60072,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60073,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60074,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60075,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60076,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60077,
+          "first_valid_rank": 69,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60078,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60079,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60080,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60081,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60082,
+          "first_valid_rank": 33,
+          "success_top16": false,
+          "rank_clipped65": 33
+        },
+        {
+          "case_seed": 60083,
+          "first_valid_rank": 35,
+          "success_top16": false,
+          "rank_clipped65": 35
+        },
+        {
+          "case_seed": 60084,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60085,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60086,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60087,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60088,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60089,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60090,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60091,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60092,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60093,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60094,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60095,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60096,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60097,
+          "first_valid_rank": 35,
+          "success_top16": false,
+          "rank_clipped65": 35
+        },
+        {
+          "case_seed": 60098,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60099,
+          "first_valid_rank": 81,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60100,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60101,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60102,
+          "first_valid_rank": 41,
+          "success_top16": false,
+          "rank_clipped65": 41
+        },
+        {
+          "case_seed": 60103,
+          "first_valid_rank": 7,
+          "success_top16": true,
+          "rank_clipped65": 7
+        },
+        {
+          "case_seed": 60104,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60105,
+          "first_valid_rank": 77,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60106,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60107,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60108,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60109,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60110,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60111,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60112,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60113,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60114,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60115,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60116,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60117,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60118,
+          "first_valid_rank": 66,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60119,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        }
+      ]
+    },
+    {
+      "variant": "full21",
+      "training_seed": 20261027,
+      "fit_seconds": 5.691683799999737,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 77,
+      "validation_mean_clipped_rank": 22.6,
+      "model_file": "outputs\\ablation-cnf-v3\\model_full21_20261027.json",
+      "model_sha256": "9c7a084a6deb9745645cf5ad731db1d79228a97c7a32751385f4d460acf972b4",
+      "validation_records": [
+        {
+          "case_seed": 60000,
+          "first_valid_rank": 9,
+          "success_top16": true,
+          "rank_clipped65": 9
+        },
+        {
+          "case_seed": 60001,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60002,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60003,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60004,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60005,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60006,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60007,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60008,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60009,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60010,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60011,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60012,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60013,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60014,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60015,
+          "first_valid_rank": 28,
+          "success_top16": false,
+          "rank_clipped65": 28
+        },
+        {
+          "case_seed": 60016,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60017,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60018,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60019,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60020,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60021,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60022,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60023,
+          "first_valid_rank": 73,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60024,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60025,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60026,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60027,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60028,
+          "first_valid_rank": 88,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60029,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60030,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60031,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60032,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60033,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60034,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60035,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60036,
+          "first_valid_rank": 12,
+          "success_top16": true,
+          "rank_clipped65": 12
+        },
+        {
+          "case_seed": 60037,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60038,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60039,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60040,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60041,
+          "first_valid_rank": 34,
+          "success_top16": false,
+          "rank_clipped65": 34
+        },
+        {
+          "case_seed": 60042,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60043,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60044,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60045,
+          "first_valid_rank": 60,
+          "success_top16": false,
+          "rank_clipped65": 60
+        },
+        {
+          "case_seed": 60046,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60047,
+          "first_valid_rank": 14,
+          "success_top16": true,
+          "rank_clipped65": 14
+        },
+        {
+          "case_seed": 60048,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60049,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60050,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60051,
+          "first_valid_rank": 30,
+          "success_top16": false,
+          "rank_clipped65": 30
+        },
+        {
+          "case_seed": 60052,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60053,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60054,
+          "first_valid_rank": 10,
+          "success_top16": true,
+          "rank_clipped65": 10
+        },
+        {
+          "case_seed": 60055,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60056,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60057,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60058,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60059,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60060,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60061,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60062,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60063,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60064,
+          "first_valid_rank": 11,
+          "success_top16": true,
+          "rank_clipped65": 11
+        },
+        {
+          "case_seed": 60065,
+          "first_valid_rank": 53,
+          "success_top16": false,
+          "rank_clipped65": 53
+        },
+        {
+          "case_seed": 60066,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60067,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60068,
+          "first_valid_rank": 7,
+          "success_top16": true,
+          "rank_clipped65": 7
+        },
+        {
+          "case_seed": 60069,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60070,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60071,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60072,
+          "first_valid_rank": 9,
+          "success_top16": true,
+          "rank_clipped65": 9
+        },
+        {
+          "case_seed": 60073,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60074,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60075,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60076,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60077,
+          "first_valid_rank": 39,
+          "success_top16": false,
+          "rank_clipped65": 39
+        },
+        {
+          "case_seed": 60078,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60079,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60080,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60081,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60082,
+          "first_valid_rank": 24,
+          "success_top16": false,
+          "rank_clipped65": 24
+        },
+        {
+          "case_seed": 60083,
+          "first_valid_rank": 25,
+          "success_top16": false,
+          "rank_clipped65": 25
+        },
+        {
+          "case_seed": 60084,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60085,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60086,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60087,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60088,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60089,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60090,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60091,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60092,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60093,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60094,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60095,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60096,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60097,
+          "first_valid_rank": 31,
+          "success_top16": false,
+          "rank_clipped65": 31
+        },
+        {
+          "case_seed": 60098,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60099,
+          "first_valid_rank": 39,
+          "success_top16": false,
+          "rank_clipped65": 39
+        },
+        {
+          "case_seed": 60100,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60101,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60102,
+          "first_valid_rank": 43,
+          "success_top16": false,
+          "rank_clipped65": 43
+        },
+        {
+          "case_seed": 60103,
+          "first_valid_rank": 10,
+          "success_top16": true,
+          "rank_clipped65": 10
+        },
+        {
+          "case_seed": 60104,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60105,
+          "first_valid_rank": 54,
+          "success_top16": false,
+          "rank_clipped65": 54
+        },
+        {
+          "case_seed": 60106,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60107,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60108,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60109,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60110,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60111,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60112,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60113,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60114,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60115,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60116,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60117,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60118,
+          "first_valid_rank": 72,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60119,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        }
+      ]
+    },
+    {
+      "variant": "full21",
+      "training_seed": 20261028,
+      "fit_seconds": 5.032238300002064,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 78,
+      "validation_mean_clipped_rank": 22.6,
+      "model_file": "outputs\\ablation-cnf-v3\\model_full21_20261028.json",
+      "model_sha256": "5c40ce080de61f92645f5baee8af726840a431bd5e66c5593cd2a0d5bac1cebb",
+      "validation_records": [
+        {
+          "case_seed": 60000,
+          "first_valid_rank": 9,
+          "success_top16": true,
+          "rank_clipped65": 9
+        },
+        {
+          "case_seed": 60001,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60002,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60003,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60004,
+          "first_valid_rank": 13,
+          "success_top16": true,
+          "rank_clipped65": 13
+        },
+        {
+          "case_seed": 60005,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60006,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60007,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60008,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60009,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60010,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60011,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60012,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60013,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60014,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60015,
+          "first_valid_rank": 13,
+          "success_top16": true,
+          "rank_clipped65": 13
+        },
+        {
+          "case_seed": 60016,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60017,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60018,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60019,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60020,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60021,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60022,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60023,
+          "first_valid_rank": 59,
+          "success_top16": false,
+          "rank_clipped65": 59
+        },
+        {
+          "case_seed": 60024,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60025,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60026,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60027,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60028,
+          "first_valid_rank": 75,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60029,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60030,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60031,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60032,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60033,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60034,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60035,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60036,
+          "first_valid_rank": 9,
+          "success_top16": true,
+          "rank_clipped65": 9
+        },
+        {
+          "case_seed": 60037,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60038,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60039,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60040,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60041,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60042,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60043,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60044,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60045,
+          "first_valid_rank": 64,
+          "success_top16": false,
+          "rank_clipped65": 64
+        },
+        {
+          "case_seed": 60046,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60047,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60048,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60049,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60050,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60051,
+          "first_valid_rank": 44,
+          "success_top16": false,
+          "rank_clipped65": 44
+        },
+        {
+          "case_seed": 60052,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60053,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60054,
+          "first_valid_rank": 25,
+          "success_top16": false,
+          "rank_clipped65": 25
+        },
+        {
+          "case_seed": 60055,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60056,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60057,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60058,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60059,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60060,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60061,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60062,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60063,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60064,
+          "first_valid_rank": 14,
+          "success_top16": true,
+          "rank_clipped65": 14
+        },
+        {
+          "case_seed": 60065,
+          "first_valid_rank": 49,
+          "success_top16": false,
+          "rank_clipped65": 49
+        },
+        {
+          "case_seed": 60066,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60067,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60068,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60069,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60070,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60071,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60072,
+          "first_valid_rank": 25,
+          "success_top16": false,
+          "rank_clipped65": 25
+        },
+        {
+          "case_seed": 60073,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60074,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60075,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60076,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60077,
+          "first_valid_rank": 65,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60078,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60079,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60080,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60081,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60082,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60083,
+          "first_valid_rank": 19,
+          "success_top16": false,
+          "rank_clipped65": 19
+        },
+        {
+          "case_seed": 60084,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60085,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60086,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60087,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60088,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60089,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60090,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60091,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60092,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60093,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60094,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60095,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60096,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60097,
+          "first_valid_rank": 45,
+          "success_top16": false,
+          "rank_clipped65": 45
+        },
+        {
+          "case_seed": 60098,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60099,
+          "first_valid_rank": 74,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60100,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60101,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60102,
+          "first_valid_rank": 45,
+          "success_top16": false,
+          "rank_clipped65": 45
+        },
+        {
+          "case_seed": 60103,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60104,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60105,
+          "first_valid_rank": 129,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60106,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60107,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60108,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60109,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60110,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60111,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60112,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60113,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60114,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60115,
+          "first_valid_rank": 7,
+          "success_top16": true,
+          "rank_clipped65": 7
+        },
+        {
+          "case_seed": 60116,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60117,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60118,
+          "first_valid_rank": 53,
+          "success_top16": false,
+          "rank_clipped65": 53
+        },
+        {
+          "case_seed": 60119,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        }
+      ]
+    },
+    {
+      "variant": "no_need13",
+      "training_seed": 20261026,
+      "fit_seconds": 5.1488658000016585,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 30,
+      "validation_mean_clipped_rank": 45.225,
+      "model_file": "outputs\\ablation-cnf-v3\\model_no_need13_20261026.json",
+      "model_sha256": "256ff69e440caf58c85302d316ce80d736368e61713901a0fe6051004f378bb4",
+      "validation_records": [
+        {
+          "case_seed": 60000,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60001,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60002,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60003,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60004,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60005,
+          "first_valid_rank": 100,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60006,
+          "first_valid_rank": 59,
+          "success_top16": false,
+          "rank_clipped65": 59
+        },
+        {
+          "case_seed": 60007,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60008,
+          "first_valid_rank": 40,
+          "success_top16": false,
+          "rank_clipped65": 40
+        },
+        {
+          "case_seed": 60009,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60010,
+          "first_valid_rank": 49,
+          "success_top16": false,
+          "rank_clipped65": 49
+        },
+        {
+          "case_seed": 60011,
+          "first_valid_rank": 68,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60012,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60013,
+          "first_valid_rank": 188,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60014,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60015,
+          "first_valid_rank": 334,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60016,
+          "first_valid_rank": 35,
+          "success_top16": false,
+          "rank_clipped65": 35
+        },
+        {
+          "case_seed": 60017,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60018,
+          "first_valid_rank": 62,
+          "success_top16": false,
+          "rank_clipped65": 62
+        },
+        {
+          "case_seed": 60019,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60020,
+          "first_valid_rank": 16,
+          "success_top16": true,
+          "rank_clipped65": 16
+        },
+        {
+          "case_seed": 60021,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60022,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60023,
+          "first_valid_rank": 238,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60024,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60025,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60026,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60027,
+          "first_valid_rank": 7,
+          "success_top16": true,
+          "rank_clipped65": 7
+        },
+        {
+          "case_seed": 60028,
+          "first_valid_rank": 24,
+          "success_top16": false,
+          "rank_clipped65": 24
+        },
+        {
+          "case_seed": 60029,
+          "first_valid_rank": 88,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60030,
+          "first_valid_rank": 14,
+          "success_top16": true,
+          "rank_clipped65": 14
+        },
+        {
+          "case_seed": 60031,
+          "first_valid_rank": 38,
+          "success_top16": false,
+          "rank_clipped65": 38
+        },
+        {
+          "case_seed": 60032,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60033,
+          "first_valid_rank": 19,
+          "success_top16": false,
+          "rank_clipped65": 19
+        },
+        {
+          "case_seed": 60034,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60035,
+          "first_valid_rank": 290,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60036,
+          "first_valid_rank": 98,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60037,
+          "first_valid_rank": 113,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60038,
+          "first_valid_rank": 13,
+          "success_top16": true,
+          "rank_clipped65": 13
+        },
+        {
+          "case_seed": 60039,
+          "first_valid_rank": 114,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60040,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60041,
+          "first_valid_rank": 415,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60042,
+          "first_valid_rank": 173,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60043,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60044,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60045,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60046,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60047,
+          "first_valid_rank": 92,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60048,
+          "first_valid_rank": 13,
+          "success_top16": true,
+          "rank_clipped65": 13
+        },
+        {
+          "case_seed": 60049,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60050,
+          "first_valid_rank": 32,
+          "success_top16": false,
+          "rank_clipped65": 32
+        },
+        {
+          "case_seed": 60051,
+          "first_valid_rank": 246,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60052,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60053,
+          "first_valid_rank": 47,
+          "success_top16": false,
+          "rank_clipped65": 47
+        },
+        {
+          "case_seed": 60054,
+          "first_valid_rank": 51,
+          "success_top16": false,
+          "rank_clipped65": 51
+        },
+        {
+          "case_seed": 60055,
+          "first_valid_rank": 39,
+          "success_top16": false,
+          "rank_clipped65": 39
+        },
+        {
+          "case_seed": 60056,
+          "first_valid_rank": 192,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60057,
+          "first_valid_rank": 343,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60058,
+          "first_valid_rank": 152,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60059,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60060,
+          "first_valid_rank": 90,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60061,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60062,
+          "first_valid_rank": 89,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60063,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60064,
+          "first_valid_rank": 117,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60065,
+          "first_valid_rank": 216,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60066,
+          "first_valid_rank": 47,
+          "success_top16": false,
+          "rank_clipped65": 47
+        },
+        {
+          "case_seed": 60067,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60068,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60069,
+          "first_valid_rank": 73,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60070,
+          "first_valid_rank": 40,
+          "success_top16": false,
+          "rank_clipped65": 40
+        },
+        {
+          "case_seed": 60071,
+          "first_valid_rank": 19,
+          "success_top16": false,
+          "rank_clipped65": 19
+        },
+        {
+          "case_seed": 60072,
+          "first_valid_rank": 206,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60073,
+          "first_valid_rank": 41,
+          "success_top16": false,
+          "rank_clipped65": 41
+        },
+        {
+          "case_seed": 60074,
+          "first_valid_rank": 26,
+          "success_top16": false,
+          "rank_clipped65": 26
+        },
+        {
+          "case_seed": 60075,
+          "first_valid_rank": 127,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60076,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60077,
+          "first_valid_rank": 259,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60078,
+          "first_valid_rank": 68,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60079,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60080,
+          "first_valid_rank": 96,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60081,
+          "first_valid_rank": 209,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60082,
+          "first_valid_rank": 35,
+          "success_top16": false,
+          "rank_clipped65": 35
+        },
+        {
+          "case_seed": 60083,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60084,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60085,
+          "first_valid_rank": 197,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60086,
+          "first_valid_rank": 84,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60087,
+          "first_valid_rank": 12,
+          "success_top16": true,
+          "rank_clipped65": 12
+        },
+        {
+          "case_seed": 60088,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60089,
+          "first_valid_rank": 324,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60090,
+          "first_valid_rank": 10,
+          "success_top16": true,
+          "rank_clipped65": 10
+        },
+        {
+          "case_seed": 60091,
+          "first_valid_rank": 47,
+          "success_top16": false,
+          "rank_clipped65": 47
+        },
+        {
+          "case_seed": 60092,
+          "first_valid_rank": 20,
+          "success_top16": false,
+          "rank_clipped65": 20
+        },
+        {
+          "case_seed": 60093,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60094,
+          "first_valid_rank": 62,
+          "success_top16": false,
+          "rank_clipped65": 62
+        },
+        {
+          "case_seed": 60095,
+          "first_valid_rank": 83,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60096,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60097,
+          "first_valid_rank": 180,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60098,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60099,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60100,
+          "first_valid_rank": 19,
+          "success_top16": false,
+          "rank_clipped65": 19
+        },
+        {
+          "case_seed": 60101,
+          "first_valid_rank": 11,
+          "success_top16": true,
+          "rank_clipped65": 11
+        },
+        {
+          "case_seed": 60102,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60103,
+          "first_valid_rank": 81,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60104,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60105,
+          "first_valid_rank": 171,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60106,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60107,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60108,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60109,
+          "first_valid_rank": 232,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60110,
+          "first_valid_rank": 29,
+          "success_top16": false,
+          "rank_clipped65": 29
+        },
+        {
+          "case_seed": 60111,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60112,
+          "first_valid_rank": 9,
+          "success_top16": true,
+          "rank_clipped65": 9
+        },
+        {
+          "case_seed": 60113,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60114,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60115,
+          "first_valid_rank": 177,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60116,
+          "first_valid_rank": 206,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60117,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60118,
+          "first_valid_rank": 172,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60119,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        }
+      ]
+    },
+    {
+      "variant": "no_need13",
+      "training_seed": 20261027,
+      "fit_seconds": 5.241166200001317,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 30,
+      "validation_mean_clipped_rank": 44.61666666666667,
+      "model_file": "outputs\\ablation-cnf-v3\\model_no_need13_20261027.json",
+      "model_sha256": "4e83e787709f01d7f4ef20dbc820c1a264489c2ee5ba85161f3194560897d01b",
+      "validation_records": [
+        {
+          "case_seed": 60000,
+          "first_valid_rank": 17,
+          "success_top16": false,
+          "rank_clipped65": 17
+        },
+        {
+          "case_seed": 60001,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60002,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60003,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60004,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60005,
+          "first_valid_rank": 131,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60006,
+          "first_valid_rank": 122,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60007,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60008,
+          "first_valid_rank": 22,
+          "success_top16": false,
+          "rank_clipped65": 22
+        },
+        {
+          "case_seed": 60009,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60010,
+          "first_valid_rank": 33,
+          "success_top16": false,
+          "rank_clipped65": 33
+        },
+        {
+          "case_seed": 60011,
+          "first_valid_rank": 181,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60012,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60013,
+          "first_valid_rank": 190,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60014,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60015,
+          "first_valid_rank": 315,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60016,
+          "first_valid_rank": 34,
+          "success_top16": false,
+          "rank_clipped65": 34
+        },
+        {
+          "case_seed": 60017,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60018,
+          "first_valid_rank": 60,
+          "success_top16": false,
+          "rank_clipped65": 60
+        },
+        {
+          "case_seed": 60019,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60020,
+          "first_valid_rank": 13,
+          "success_top16": true,
+          "rank_clipped65": 13
+        },
+        {
+          "case_seed": 60021,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60022,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60023,
+          "first_valid_rank": 229,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60024,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60025,
+          "first_valid_rank": 16,
+          "success_top16": true,
+          "rank_clipped65": 16
+        },
+        {
+          "case_seed": 60026,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60027,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60028,
+          "first_valid_rank": 19,
+          "success_top16": false,
+          "rank_clipped65": 19
+        },
+        {
+          "case_seed": 60029,
+          "first_valid_rank": 108,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60030,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60031,
+          "first_valid_rank": 32,
+          "success_top16": false,
+          "rank_clipped65": 32
+        },
+        {
+          "case_seed": 60032,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60033,
+          "first_valid_rank": 35,
+          "success_top16": false,
+          "rank_clipped65": 35
+        },
+        {
+          "case_seed": 60034,
+          "first_valid_rank": 10,
+          "success_top16": true,
+          "rank_clipped65": 10
+        },
+        {
+          "case_seed": 60035,
+          "first_valid_rank": 343,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60036,
+          "first_valid_rank": 74,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60037,
+          "first_valid_rank": 37,
+          "success_top16": false,
+          "rank_clipped65": 37
+        },
+        {
+          "case_seed": 60038,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60039,
+          "first_valid_rank": 110,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60040,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60041,
+          "first_valid_rank": 402,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60042,
+          "first_valid_rank": 170,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60043,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60044,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60045,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60046,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60047,
+          "first_valid_rank": 76,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60048,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60049,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60050,
+          "first_valid_rank": 40,
+          "success_top16": false,
+          "rank_clipped65": 40
+        },
+        {
+          "case_seed": 60051,
+          "first_valid_rank": 304,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60052,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60053,
+          "first_valid_rank": 50,
+          "success_top16": false,
+          "rank_clipped65": 50
+        },
+        {
+          "case_seed": 60054,
+          "first_valid_rank": 45,
+          "success_top16": false,
+          "rank_clipped65": 45
+        },
+        {
+          "case_seed": 60055,
+          "first_valid_rank": 54,
+          "success_top16": false,
+          "rank_clipped65": 54
+        },
+        {
+          "case_seed": 60056,
+          "first_valid_rank": 193,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60057,
+          "first_valid_rank": 342,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60058,
+          "first_valid_rank": 133,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60059,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60060,
+          "first_valid_rank": 75,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60061,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60062,
+          "first_valid_rank": 70,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60063,
+          "first_valid_rank": 11,
+          "success_top16": true,
+          "rank_clipped65": 11
+        },
+        {
+          "case_seed": 60064,
+          "first_valid_rank": 159,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60065,
+          "first_valid_rank": 197,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60066,
+          "first_valid_rank": 48,
+          "success_top16": false,
+          "rank_clipped65": 48
+        },
+        {
+          "case_seed": 60067,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60068,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60069,
+          "first_valid_rank": 137,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60070,
+          "first_valid_rank": 23,
+          "success_top16": false,
+          "rank_clipped65": 23
+        },
+        {
+          "case_seed": 60071,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60072,
+          "first_valid_rank": 219,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60073,
+          "first_valid_rank": 19,
+          "success_top16": false,
+          "rank_clipped65": 19
+        },
+        {
+          "case_seed": 60074,
+          "first_valid_rank": 19,
+          "success_top16": false,
+          "rank_clipped65": 19
+        },
+        {
+          "case_seed": 60075,
+          "first_valid_rank": 65,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60076,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60077,
+          "first_valid_rank": 276,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60078,
+          "first_valid_rank": 70,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60079,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60080,
+          "first_valid_rank": 50,
+          "success_top16": false,
+          "rank_clipped65": 50
+        },
+        {
+          "case_seed": 60081,
+          "first_valid_rank": 157,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60082,
+          "first_valid_rank": 44,
+          "success_top16": false,
+          "rank_clipped65": 44
+        },
+        {
+          "case_seed": 60083,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60084,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60085,
+          "first_valid_rank": 181,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60086,
+          "first_valid_rank": 100,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60087,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60088,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60089,
+          "first_valid_rank": 322,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60090,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60091,
+          "first_valid_rank": 22,
+          "success_top16": false,
+          "rank_clipped65": 22
+        },
+        {
+          "case_seed": 60092,
+          "first_valid_rank": 18,
+          "success_top16": false,
+          "rank_clipped65": 18
+        },
+        {
+          "case_seed": 60093,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60094,
+          "first_valid_rank": 60,
+          "success_top16": false,
+          "rank_clipped65": 60
+        },
+        {
+          "case_seed": 60095,
+          "first_valid_rank": 137,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60096,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60097,
+          "first_valid_rank": 207,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60098,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60099,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60100,
+          "first_valid_rank": 110,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60101,
+          "first_valid_rank": 11,
+          "success_top16": true,
+          "rank_clipped65": 11
+        },
+        {
+          "case_seed": 60102,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60103,
+          "first_valid_rank": 74,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60104,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60105,
+          "first_valid_rank": 77,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60106,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60107,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60108,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60109,
+          "first_valid_rank": 193,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60110,
+          "first_valid_rank": 25,
+          "success_top16": false,
+          "rank_clipped65": 25
+        },
+        {
+          "case_seed": 60111,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60112,
+          "first_valid_rank": 7,
+          "success_top16": true,
+          "rank_clipped65": 7
+        },
+        {
+          "case_seed": 60113,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60114,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60115,
+          "first_valid_rank": 172,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60116,
+          "first_valid_rank": 216,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60117,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60118,
+          "first_valid_rank": 120,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60119,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        }
+      ]
+    },
+    {
+      "variant": "no_need13",
+      "training_seed": 20261028,
+      "fit_seconds": 5.827288500000577,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 31,
+      "validation_mean_clipped_rank": 45.31666666666667,
+      "model_file": "outputs\\ablation-cnf-v3\\model_no_need13_20261028.json",
+      "model_sha256": "fad752425bed8663f3465e7efd7b3319ea8592d9efc4016129ccfcd821cf2066",
+      "validation_records": [
+        {
+          "case_seed": 60000,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60001,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60002,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60003,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60004,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60005,
+          "first_valid_rank": 80,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60006,
+          "first_valid_rank": 76,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60007,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60008,
+          "first_valid_rank": 28,
+          "success_top16": false,
+          "rank_clipped65": 28
+        },
+        {
+          "case_seed": 60009,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60010,
+          "first_valid_rank": 55,
+          "success_top16": false,
+          "rank_clipped65": 55
+        },
+        {
+          "case_seed": 60011,
+          "first_valid_rank": 45,
+          "success_top16": false,
+          "rank_clipped65": 45
+        },
+        {
+          "case_seed": 60012,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60013,
+          "first_valid_rank": 182,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60014,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60015,
+          "first_valid_rank": 301,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60016,
+          "first_valid_rank": 32,
+          "success_top16": false,
+          "rank_clipped65": 32
+        },
+        {
+          "case_seed": 60017,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60018,
+          "first_valid_rank": 72,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60019,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60020,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60021,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60022,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60023,
+          "first_valid_rank": 223,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60024,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60025,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60026,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60027,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60028,
+          "first_valid_rank": 35,
+          "success_top16": false,
+          "rank_clipped65": 35
+        },
+        {
+          "case_seed": 60029,
+          "first_valid_rank": 88,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60030,
+          "first_valid_rank": 14,
+          "success_top16": true,
+          "rank_clipped65": 14
+        },
+        {
+          "case_seed": 60031,
+          "first_valid_rank": 56,
+          "success_top16": false,
+          "rank_clipped65": 56
+        },
+        {
+          "case_seed": 60032,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60033,
+          "first_valid_rank": 98,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60034,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60035,
+          "first_valid_rank": 329,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60036,
+          "first_valid_rank": 122,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60037,
+          "first_valid_rank": 127,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60038,
+          "first_valid_rank": 9,
+          "success_top16": true,
+          "rank_clipped65": 9
+        },
+        {
+          "case_seed": 60039,
+          "first_valid_rank": 77,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60040,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60041,
+          "first_valid_rank": 397,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60042,
+          "first_valid_rank": 179,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60043,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60044,
+          "first_valid_rank": 6,
+          "success_top16": true,
+          "rank_clipped65": 6
+        },
+        {
+          "case_seed": 60045,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60046,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60047,
+          "first_valid_rank": 72,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60048,
+          "first_valid_rank": 18,
+          "success_top16": false,
+          "rank_clipped65": 18
+        },
+        {
+          "case_seed": 60049,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60050,
+          "first_valid_rank": 36,
+          "success_top16": false,
+          "rank_clipped65": 36
+        },
+        {
+          "case_seed": 60051,
+          "first_valid_rank": 233,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60052,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60053,
+          "first_valid_rank": 60,
+          "success_top16": false,
+          "rank_clipped65": 60
+        },
+        {
+          "case_seed": 60054,
+          "first_valid_rank": 39,
+          "success_top16": false,
+          "rank_clipped65": 39
+        },
+        {
+          "case_seed": 60055,
+          "first_valid_rank": 28,
+          "success_top16": false,
+          "rank_clipped65": 28
+        },
+        {
+          "case_seed": 60056,
+          "first_valid_rank": 198,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60057,
+          "first_valid_rank": 352,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60058,
+          "first_valid_rank": 129,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60059,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60060,
+          "first_valid_rank": 88,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60061,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60062,
+          "first_valid_rank": 68,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60063,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60064,
+          "first_valid_rank": 146,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60065,
+          "first_valid_rank": 163,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60066,
+          "first_valid_rank": 34,
+          "success_top16": false,
+          "rank_clipped65": 34
+        },
+        {
+          "case_seed": 60067,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60068,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60069,
+          "first_valid_rank": 106,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60070,
+          "first_valid_rank": 101,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60071,
+          "first_valid_rank": 8,
+          "success_top16": true,
+          "rank_clipped65": 8
+        },
+        {
+          "case_seed": 60072,
+          "first_valid_rank": 221,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60073,
+          "first_valid_rank": 20,
+          "success_top16": false,
+          "rank_clipped65": 20
+        },
+        {
+          "case_seed": 60074,
+          "first_valid_rank": 42,
+          "success_top16": false,
+          "rank_clipped65": 42
+        },
+        {
+          "case_seed": 60075,
+          "first_valid_rank": 194,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60076,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60077,
+          "first_valid_rank": 281,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60078,
+          "first_valid_rank": 92,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60079,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60080,
+          "first_valid_rank": 50,
+          "success_top16": false,
+          "rank_clipped65": 50
+        },
+        {
+          "case_seed": 60081,
+          "first_valid_rank": 209,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60082,
+          "first_valid_rank": 105,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60083,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60084,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60085,
+          "first_valid_rank": 182,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60086,
+          "first_valid_rank": 104,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60087,
+          "first_valid_rank": 9,
+          "success_top16": true,
+          "rank_clipped65": 9
+        },
+        {
+          "case_seed": 60088,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60089,
+          "first_valid_rank": 323,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60090,
+          "first_valid_rank": 12,
+          "success_top16": true,
+          "rank_clipped65": 12
+        },
+        {
+          "case_seed": 60091,
+          "first_valid_rank": 35,
+          "success_top16": false,
+          "rank_clipped65": 35
+        },
+        {
+          "case_seed": 60092,
+          "first_valid_rank": 23,
+          "success_top16": false,
+          "rank_clipped65": 23
+        },
+        {
+          "case_seed": 60093,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60094,
+          "first_valid_rank": 73,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60095,
+          "first_valid_rank": 81,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60096,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60097,
+          "first_valid_rank": 216,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60098,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60099,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60100,
+          "first_valid_rank": 12,
+          "success_top16": true,
+          "rank_clipped65": 12
+        },
+        {
+          "case_seed": 60101,
+          "first_valid_rank": 15,
+          "success_top16": true,
+          "rank_clipped65": 15
+        },
+        {
+          "case_seed": 60102,
+          "first_valid_rank": 5,
+          "success_top16": true,
+          "rank_clipped65": 5
+        },
+        {
+          "case_seed": 60103,
+          "first_valid_rank": 145,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60104,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60105,
+          "first_valid_rank": 178,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60106,
+          "first_valid_rank": 1,
+          "success_top16": true,
+          "rank_clipped65": 1
+        },
+        {
+          "case_seed": 60107,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60108,
+          "first_valid_rank": 2,
+          "success_top16": true,
+          "rank_clipped65": 2
+        },
+        {
+          "case_seed": 60109,
+          "first_valid_rank": 285,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60110,
+          "first_valid_rank": 3,
+          "success_top16": true,
+          "rank_clipped65": 3
+        },
+        {
+          "case_seed": 60111,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60112,
+          "first_valid_rank": 17,
+          "success_top16": false,
+          "rank_clipped65": 17
+        },
+        {
+          "case_seed": 60113,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60114,
+          "first_valid_rank": 12,
+          "success_top16": true,
+          "rank_clipped65": 12
+        },
+        {
+          "case_seed": 60115,
+          "first_valid_rank": 132,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60116,
+          "first_valid_rank": 209,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60117,
+          "first_valid_rank": 4,
+          "success_top16": true,
+          "rank_clipped65": 4
+        },
+        {
+          "case_seed": 60118,
+          "first_valid_rank": 163,
+          "success_top16": false,
+          "rank_clipped65": 65
+        },
+        {
+          "case_seed": 60119,
+          "first_valid_rank": null,
+          "success_top16": false,
+          "rank_clipped65": 65
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "full21": {
+      "variant": "full21",
+      "training_seed": 20261028,
+      "fit_seconds": 5.032238300002064,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 78,
+      "validation_mean_clipped_rank": 22.6,
+      "model_file": "outputs\\ablation-cnf-v3\\model_full21_20261028.json",
+      "model_sha256": "5c40ce080de61f92645f5baee8af726840a431bd5e66c5593cd2a0d5bac1cebb"
+    },
+    "no_need13": {
+      "variant": "no_need13",
+      "training_seed": 20261028,
+      "fit_seconds": 5.827288500000577,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 31,
+      "validation_mean_clipped_rank": 45.31666666666667,
+      "model_file": "outputs\\ablation-cnf-v3\\model_no_need13_20261028.json",
+      "model_sha256": "fad752425bed8663f3465e7efd7b3319ea8592d9efc4016129ccfcd821cf2066"
+    }
+  },
+  "training_seconds_total": 36.565555199998926,
+  "training_cases_sha256": "29c5fa9709953e01ff4da403b141c072474e542557d38bac108a10cb0eb81dd6",
+  "training_arrays_sha256": "675aca6974087bda428814e2590667cb569b10b9a6700e254e3e6ae136306152",
+  "protocol_sha256": "b7ce4656c58d1e7067f50e2233781e22e7ca392a358b67af6844a519c290c7cc",
+  "no_test_outcomes_used_for_selection": true
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "experiment_outcomes_used": false,
+  "checks": [
+    "constant success effect",
+    "actual time sign",
+    "failure penalty sign",
+    "matched successes exclude failed pair",
+    "identity contrast zero"
+  ]
+}

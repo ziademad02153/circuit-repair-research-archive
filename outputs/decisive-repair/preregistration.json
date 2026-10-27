@@ -1,0 +1,116 @@
+{
+  "registered_utc": "2026-10-25T09:42:47Z",
+  "groups": [
+    {
+      "group": "old400",
+      "n": null,
+      "gates": null,
+      "count": 400,
+      "start_seed": 90000
+    },
+    {
+      "group": "n10_g50",
+      "n": 10,
+      "gates": 50,
+      "count": 200,
+      "start_seed": 1000000
+    },
+    {
+      "group": "n10_g100",
+      "n": 10,
+      "gates": 100,
+      "count": 200,
+      "start_seed": 1010000
+    },
+    {
+      "group": "n10_g200",
+      "n": 10,
+      "gates": 200,
+      "count": 200,
+      "start_seed": 1020000
+    },
+    {
+      "group": "n12_g50",
+      "n": 12,
+      "gates": 50,
+      "count": 200,
+      "start_seed": 1030000
+    },
+    {
+      "group": "n12_g100",
+      "n": 12,
+      "gates": 100,
+      "count": 200,
+      "start_seed": 1040000
+    },
+    {
+      "group": "n12_g200",
+      "n": 12,
+      "gates": 200,
+      "count": 200,
+      "start_seed": 1050000
+    },
+    {
+      "group": "n16_g50",
+      "n": 16,
+      "gates": 50,
+      "count": 200,
+      "start_seed": 1060000
+    },
+    {
+      "group": "n16_g100",
+      "n": 16,
+      "gates": 100,
+      "count": 200,
+      "start_seed": 1070000
+    },
+    {
+      "group": "n16_g200",
+      "n": 16,
+      "gates": 200,
+      "count": 200,
+      "start_seed": 1080000
+    }
+  ],
+  "methods": [
+    "learned",
+    "cegis",
+    "exhaustive"
+  ],
+  "settings": [
+    "full",
+    "sample"
+  ],
+  "same_common_wall_clock_budget_seconds": 1.0,
+  "edit_budget": 1,
+  "edit_space": "exactly one non-noop LUT replacement or one earlier-source rewiring; same generator as legal_edits; stuck gates cannot be edited",
+  "fault_model": "original harmful-fault generator: LUT flip .4, wrong wire .4, known stuck-at-0/1 gate .2; conditional on changed output",
+  "sample_rows": 8,
+  "full": "All methods may use full truth-table checker. CEGIS starts from the same eight rows and adds actual counterexamples.",
+  "sample": "Only eight uniformly sampled rows available during search/acceptance; full specification and gold circuit withheld from worker. Complete oracle audit afterward is excluded from method runtime.",
+  "learned": "unchanged selected 24-tree model and feature code; all ranked candidates eligible until time budget, not the earlier 16-check cap",
+  "exhaustive": "deterministic legal_edits order, check every edit directly; complete checker in full setting, sample checker in sample setting",
+  "cegis": "Z3 symbolic one-edit encoding of same domain, sound localization to intersection of disagreeing-output cones and constant folding of unaffected gates. Incremental sampled-row constraints with complete-checker counterexamples in full setting. No complete oracle in sample setting.",
+  "timing": "candidate generation, features, solver encoding/solving, ranking and all acceptance checks included. Excludes common problem generation, model loading/compilation, interpreter/solver imports, input bit-pattern preparation, payload transfer, and post-hoc audit. Only one method runs at a time. Order deterministically shuffled per circuit and setting.",
+  "timeout": "deadline after 1.0 second. Cooperative checks, Z3 remaining-ms timeout, parent hard kill at 1.10 seconds. Any elapsed>1.0 or hard kill is a failure. Actual observed wall time and timeout counts retained.",
+  "failure_penalized_runtime": "success uses actual elapsed; timeout, wrong acceptance, unsat, exhausted, or error uses the full 1.0-second budget. Raw actual runtimes also reported.",
+  "criteria": {
+    "rule": "learned useful iff on at least one larger FULL-specification group its paired success-rate advantage OR paired failure-penalized runtime advantage over CEGIS has 95% bootstrap interval strictly above zero. Otherwise exact required label: SAT/CEGIS dominates.",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20261025,
+    "confidence": 0.95,
+    "multiple_testing": "unadjusted per comparison; additionally report Bonferroni simultaneous intervals for all 18 comparisons; primary label follows unadjusted user criterion",
+    "success": "accepted within budget and equivalent on every input; includes all requested cases in denominator",
+    "wrong_acceptance": "accepted within budget on available specification but differs on complete oracle; report wrong/accepted and wrong/all",
+    "no_tuning": true
+  },
+  "model_sha256": "e6cfd655b4912377d9a13f9881a3bd461da6a5b59881eca744bc678aa29229dd",
+  "source_sha256": {
+    "work\\decisive_engine.py": "56ed53ba690a04ac50808054cd0be9aad3f50dbde641498a76927ed169f49fb5",
+    "work\\decisive_run.py": "c9f7e830aa97dea7efa9d0fdfc6c639b2fed18a40d096651429b2cf261a27e2d",
+    "work\\circuit_pilot.py": "d40d9b15d8178ee28076bf34734ff9e7edc165fb68161136da46534fee2adfed",
+    "work\\local_repair_pilot.py": "d666bbdd7f9197326352cd9585dbf31f648f48b759bf41cd6c038518963bc9a1"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22631-SP0"
+}

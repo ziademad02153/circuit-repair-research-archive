@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-25T13:32:15Z",
+  "protocol_sha256": "b7ce4656c58d1e7067f50e2233781e22e7ca392a358b67af6844a519c290c7cc",
+  "sources": {
+    "work/v3_features.py": "649abc9429554cdd999ebf9d4cb016791b209b9eaa733c87350735607914e4c7",
+    "work/v3_train.py": "d83b26186e95f38cdb0fc6ed4539a3ca3b116c34ead2158195de2d787930fca7",
+    "work/circuit_pilot.py": "d40d9b15d8178ee28076bf34734ff9e7edc165fb68161136da46534fee2adfed",
+    "work/local_repair_pilot.py": "d666bbdd7f9197326352cd9585dbf31f648f48b759bf41cd6c038518963bc9a1",
+    "work/decisive_engine.py": "56ed53ba690a04ac50808054cd0be9aad3f50dbde641498a76927ed169f49fb5"
+  },
+  "clarification": "repeat_reason says nine methods in prose; authoritative methods list contains ten and expected_trials=9000. No design or count change."
+}

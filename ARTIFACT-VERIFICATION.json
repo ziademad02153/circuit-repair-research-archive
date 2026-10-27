@@ -1,0 +1,187 @@
+{
+  "status": "passed",
+  "date": "2026-10-27",
+  "copied_artifacts_verified": 121,
+  "frozen_source_and_model_hashes_verified": 26,
+  "v3_trials": 9000,
+  "v3_circuits": 300,
+  "solver_reported_unsat_cases": 51,
+  "observed_repaired_cases": 249,
+  "larger_budget_results": [
+    {
+      "budget_seconds": 0.1,
+      "methods": {
+        "learned_frozen": {
+          "successes": 54,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 196,
+            "accepted": 54
+          }
+        },
+        "forest_no_need_selected": {
+          "successes": 53,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 197,
+            "accepted": 53
+          }
+        },
+        "local_improvement": {
+          "successes": 123,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 121,
+            "exhausted": 6,
+            "accepted": 123
+          }
+        },
+        "sample_error": {
+          "successes": 108,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 139,
+            "accepted": 108,
+            "exhausted": 3
+          }
+        },
+        "cegis_z3": {
+          "successes": 10,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 226,
+            "unsat": 14,
+            "accepted": 10
+          }
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "circuits": 250,
+          "statuses": {
+            "accepted": 204,
+            "unsat": 46
+          }
+        }
+      }
+    },
+    {
+      "budget_seconds": 1.0,
+      "methods": {
+        "learned_frozen": {
+          "successes": 186,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 45,
+            "exhausted": 19,
+            "accepted": 186
+          }
+        },
+        "forest_no_need_selected": {
+          "successes": 147,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 84,
+            "exhausted": 19,
+            "accepted": 147
+          }
+        },
+        "local_improvement": {
+          "successes": 165,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 66,
+            "exhausted": 19,
+            "accepted": 165
+          }
+        },
+        "sample_error": {
+          "successes": 163,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 68,
+            "exhausted": 19,
+            "accepted": 163
+          }
+        },
+        "cegis_z3": {
+          "successes": 142,
+          "circuits": 250,
+          "statuses": {
+            "timeout": 70,
+            "unsat": 38,
+            "accepted": 142
+          }
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "circuits": 250,
+          "statuses": {
+            "accepted": 204,
+            "unsat": 46
+          }
+        }
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "methods": {
+        "learned_frozen": {
+          "successes": 202,
+          "circuits": 250,
+          "statuses": {
+            "accepted": 202,
+            "exhausted": 39,
+            "timeout": 9
+          }
+        },
+        "forest_no_need_selected": {
+          "successes": 190,
+          "circuits": 250,
+          "statuses": {
+            "accepted": 190,
+            "exhausted": 39,
+            "timeout": 21
+          }
+        },
+        "local_improvement": {
+          "successes": 188,
+          "circuits": 250,
+          "statuses": {
+            "accepted": 188,
+            "exhausted": 39,
+            "timeout": 23
+          }
+        },
+        "sample_error": {
+          "successes": 188,
+          "circuits": 250,
+          "statuses": {
+            "accepted": 188,
+            "exhausted": 39,
+            "timeout": 23
+          }
+        },
+        "cegis_z3": {
+          "successes": 200,
+          "circuits": 250,
+          "statuses": {
+            "accepted": 200,
+            "unsat": 45,
+            "timeout": 5
+          }
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "circuits": 250,
+          "statuses": {
+            "accepted": 204,
+            "unsat": 46
+          }
+        }
+      }
+    }
+  ],
+  "new_experiments": 0,
+  "raw_sha256": "1bcfa956793fdbdb0b957bd143f44b85210e13d3443f322c68c53327dfe73366",
+  "scope": "Checks retained files and recorded outcomes; does not re-prove UNSAT, rerun independent checking, or reproduce timings."
+}

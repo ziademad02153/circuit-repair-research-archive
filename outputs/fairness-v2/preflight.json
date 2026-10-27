@@ -1,0 +1,408 @@
+{
+  "status": "passed",
+  "tiny_method_comparisons": 168,
+  "tiny_cases": [
+    {
+      "seed": 6100000,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 14,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100001,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 2,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100002,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100003,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 3,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100004,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100005,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 2,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100006,
+      "fault_type": "lut",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100007,
+      "fault_type": "lut",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100008,
+      "fault_type": "lut",
+      "legal_candidates": 156,
+      "valid_repairs": 3,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100009,
+      "fault_type": "lut",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100010,
+      "fault_type": "lut",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100011,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100012,
+      "fault_type": "lut",
+      "legal_candidates": 156,
+      "valid_repairs": 14,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100013,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100014,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100015,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 2,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100016,
+      "fault_type": "lut",
+      "legal_candidates": 156,
+      "valid_repairs": 2,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100017,
+      "fault_type": "lut",
+      "legal_candidates": 156,
+      "valid_repairs": 3,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100018,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 2,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100019,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 3,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100020,
+      "fault_type": "permanent",
+      "legal_candidates": 135,
+      "valid_repairs": 0,
+      "statuses": {
+        "learned": "exhausted",
+        "local_improvement": "exhausted",
+        "local_after_error": "exhausted",
+        "sample_error": "exhausted",
+        "random": "exhausted",
+        "exhaustive": "exhausted",
+        "cegis": "unsat"
+      }
+    },
+    {
+      "seed": 6100021,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 1,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100022,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 3,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    },
+    {
+      "seed": 6100023,
+      "fault_type": "wire",
+      "legal_candidates": 156,
+      "valid_repairs": 10,
+      "statuses": {
+        "learned": "accepted",
+        "local_improvement": "accepted",
+        "local_after_error": "accepted",
+        "sample_error": "accepted",
+        "random": "accepted",
+        "exhaustive": "accepted",
+        "cegis": "accepted"
+      }
+    }
+  ],
+  "large_correctness_checks": [
+    {
+      "inputs": 6,
+      "gates": 18,
+      "candidate_keys_checked": 50,
+      "independent_full_candidate_checks": 5
+    },
+    {
+      "inputs": 10,
+      "gates": 50,
+      "candidate_keys_checked": 50,
+      "independent_full_candidate_checks": 5
+    },
+    {
+      "inputs": 10,
+      "gates": 100,
+      "candidate_keys_checked": 50,
+      "independent_full_candidate_checks": 5
+    },
+    {
+      "inputs": 12,
+      "gates": 100,
+      "candidate_keys_checked": 50,
+      "independent_full_candidate_checks": 5
+    },
+    {
+      "inputs": 16,
+      "gates": 100,
+      "candidate_keys_checked": 50,
+      "independent_full_candidate_checks": 5
+    },
+    {
+      "inputs": 16,
+      "gates": 200,
+      "candidate_keys_checked": 50,
+      "independent_full_candidate_checks": 5
+    }
+  ],
+  "z3_version": "5.3.1",
+  "ranking_api_has_no_complete_target": true,
+  "optimized_rules_match_reference_keys": true,
+  "purpose": "correctness only, not validation selection or test outcomes"
+}

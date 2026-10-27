@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-10-25T13:41:50Z",
+  "protocol_sha256": "b7ce4656c58d1e7067f50e2233781e22e7ca392a358b67af6844a519c290c7cc",
+  "sources": {
+    "work/v3_features.py": "649abc9429554cdd999ebf9d4cb016791b209b9eaa733c87350735607914e4c7",
+    "work/v3_train.py": "d83b26186e95f38cdb0fc6ed4539a3ca3b116c34ead2158195de2d787930fca7",
+    "work/v3_cnf.py": "900a4389c54b41d9b90267dfc11676ebeed68d07a701238636969279e07d9994",
+    "work/v3_validate.py": "803368309093c53979b9ae1fe1b863d0bcc6b511799c7ebf73ceabd8025844bd",
+    "work/v3_methods.py": "bfc90e1235df454de1d852f62aa924b7dfdbb83b568847d2fa354cf1d772ccb0",
+    "work/v3_run.py": "fa5e482deb0685e4f922332e2d1bb519ad5470c2d73b875d37698cbd0819bc0a",
+    "work/requirements-v3.txt": "30ce6303f0569628400851f103896877abf81a04d44509a7d50be70d516f299b",
+    "work/decisive_run.py": "c9f7e830aa97dea7efa9d0fdfc6c639b2fed18a40d096651429b2cf261a27e2d",
+    "work/fairness_v2_methods.py": "880fb7cde916bc7f16c77be36192d7950e71928aae7cdf0954c1fd557fb9ef05",
+    "work/decisive_engine.py": "56ed53ba690a04ac50808054cd0be9aad3f50dbde641498a76927ed169f49fb5",
+    "work/circuit_pilot.py": "d40d9b15d8178ee28076bf34734ff9e7edc165fb68161136da46534fee2adfed",
+    "work/local_repair_pilot.py": "d666bbdd7f9197326352cd9585dbf31f648f48b759bf41cd6c038518963bc9a1"
+  },
+  "models_freeze_sha256": "bd4807d412f7e58393163d4a8a1030491db9722feffe39e1ef32f3ade99ad455",
+  "preflight_sha256": "f0f90d00ee78c289c47d7e0078e1d7df5fe8d1b41a5619d286f5f7348b5ee161",
+  "backend": "g42",
+  "versions": {
+    "python_sat": "1.9.dev17",
+    "z3": "5.3.1",
+    "numpy": "2.5.4",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "clarification": "Initial repeat_reason prose says nine methods; authoritative methods list and expected count specify ten methods and 9000 trials."
+}

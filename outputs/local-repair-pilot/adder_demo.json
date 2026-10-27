@@ -1,0 +1,145 @@
+{
+  "task": "2-bit unsigned addition",
+  "inputs": 4,
+  "gates": 8,
+  "outputs": 3,
+  "known_stuck_gate": 0,
+  "stuck_value": 0,
+  "one_edit_repairs": 0,
+  "learned_beam_width": 16,
+  "max_edits": 2,
+  "solved": true,
+  "edits": [
+    [
+      "wire",
+      5,
+      1,
+      5
+    ],
+    [
+      "wire",
+      6,
+      1,
+      5
+    ]
+  ],
+  "exact_candidate_checks": 17,
+  "seconds": 0.008727300000828109,
+  "independent_verification_rows": 16,
+  "specification_rows_given_to_proposer": 16,
+  "warning": "One hand-built illustrative adder with a spare carry gate, not a real-hardware benchmark.",
+  "truth_table": [
+    {
+      "a": 0,
+      "b": 0,
+      "expected": 0,
+      "damaged": 0,
+      "repaired": 0
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "expected": 1,
+      "damaged": 1,
+      "repaired": 1
+    },
+    {
+      "a": 2,
+      "b": 0,
+      "expected": 2,
+      "damaged": 2,
+      "repaired": 2
+    },
+    {
+      "a": 3,
+      "b": 0,
+      "expected": 3,
+      "damaged": 3,
+      "repaired": 3
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "expected": 1,
+      "damaged": 1,
+      "repaired": 1
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "expected": 2,
+      "damaged": 0,
+      "repaired": 2
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "expected": 3,
+      "damaged": 3,
+      "repaired": 3
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "expected": 4,
+      "damaged": 2,
+      "repaired": 4
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "expected": 2,
+      "damaged": 2,
+      "repaired": 2
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "expected": 3,
+      "damaged": 3,
+      "repaired": 3
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "expected": 4,
+      "damaged": 4,
+      "repaired": 4
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "expected": 5,
+      "damaged": 5,
+      "repaired": 5
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "expected": 3,
+      "damaged": 3,
+      "repaired": 3
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "expected": 4,
+      "damaged": 2,
+      "repaired": 4
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "expected": 5,
+      "damaged": 5,
+      "repaired": 5
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "expected": 6,
+      "damaged": 4,
+      "repaired": 6
+    }
+  ]
+}

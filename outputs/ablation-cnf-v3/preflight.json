@@ -1,0 +1,492 @@
+{
+  "status": "passed",
+  "backend": "g42",
+  "exhaustive_fixed_edit_sat_checks": 2762,
+  "noop_constraints_checked": 342,
+  "cycle_constraints_checked": 90,
+  "cegis_cases": 24,
+  "cases": [
+    {
+      "seed": 6300000,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 96,
+      "cnf_metrics": {
+        "encoding_seconds": 0.00039670000114711,
+        "sat_solve_seconds": 0.0016891000013856683,
+        "verification_seconds": 4.73000000056345e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 132,
+        "variables": 36,
+        "clauses_constructed_attempts": 291
+      }
+    },
+    {
+      "seed": 6300001,
+      "valid_repairs": 2,
+      "status": "accepted",
+      "candidate_tests": 115,
+      "cnf_metrics": {
+        "encoding_seconds": 0.00037429999792948365,
+        "sat_solve_seconds": 0.00105489999987185,
+        "verification_seconds": 5.400000009103678e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 132,
+        "variables": 36,
+        "clauses_constructed_attempts": 291
+      }
+    },
+    {
+      "seed": 6300002,
+      "valid_repairs": 2,
+      "status": "accepted",
+      "candidate_tests": 156,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0011593999952310696,
+        "sat_solve_seconds": 0.0015229999989969656,
+        "verification_seconds": 4.7199999244185165e-05,
+        "checks": 3,
+        "sat_calls": 3,
+        "cegis_rows": 10,
+        "backend": "g42",
+        "clauses_added": 511,
+        "variables": 84,
+        "clauses_constructed_attempts": 880
+      }
+    },
+    {
+      "seed": 6300003,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 88,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0006838000008428935,
+        "sat_solve_seconds": 0.00040129999979399145,
+        "verification_seconds": 2.9400001949397847e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 289,
+        "variables": 62,
+        "clauses_constructed_attempts": 512
+      }
+    },
+    {
+      "seed": 6300004,
+      "valid_repairs": 2,
+      "status": "accepted",
+      "candidate_tests": 125,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0003844999991997611,
+        "sat_solve_seconds": 0.0007433999999193475,
+        "verification_seconds": 1.3900000340072438e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 178,
+        "variables": 48,
+        "clauses_constructed_attempts": 361
+      }
+    },
+    {
+      "seed": 6300005,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 144,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0005716999985452276,
+        "sat_solve_seconds": 0.0006131000009190757,
+        "verification_seconds": 1.2399999832268804e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 377,
+        "variables": 82,
+        "clauses_constructed_attempts": 616
+      }
+    },
+    {
+      "seed": 6300006,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 96,
+      "cnf_metrics": {
+        "encoding_seconds": 0.000454699998954311,
+        "sat_solve_seconds": 0.000809799999842653,
+        "verification_seconds": 1.21000011858996e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 252,
+        "variables": 48,
+        "clauses_constructed_attempts": 467
+      }
+    },
+    {
+      "seed": 6300007,
+      "valid_repairs": 3,
+      "status": "accepted",
+      "candidate_tests": 115,
+      "cnf_metrics": {
+        "encoding_seconds": 0.000574199999391567,
+        "sat_solve_seconds": 0.0004704999992100056,
+        "verification_seconds": 1.6499998309882358e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 289,
+        "variables": 58,
+        "clauses_constructed_attempts": 520
+      }
+    },
+    {
+      "seed": 6300008,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 156,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0008895999999367632,
+        "sat_solve_seconds": 0.0011255000026721973,
+        "verification_seconds": 3.070000093430281e-05,
+        "checks": 2,
+        "sat_calls": 2,
+        "cegis_rows": 9,
+        "backend": "g42",
+        "clauses_added": 439,
+        "variables": 70,
+        "clauses_constructed_attempts": 762
+      }
+    },
+    {
+      "seed": 6300009,
+      "valid_repairs": 2,
+      "status": "accepted",
+      "candidate_tests": 88,
+      "cnf_metrics": {
+        "encoding_seconds": 0.00025349999850732274,
+        "sat_solve_seconds": 0.0006307000003289431,
+        "verification_seconds": 1.840000186348334e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 143,
+        "variables": 38,
+        "clauses_constructed_attempts": 310
+      }
+    },
+    {
+      "seed": 6300010,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 125,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0003789000002143439,
+        "sat_solve_seconds": 0.0007053999979689252,
+        "verification_seconds": 3.2100000680657104e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 165,
+        "variables": 42,
+        "clauses_constructed_attempts": 348
+      }
+    },
+    {
+      "seed": 6300011,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 144,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0006777000016882084,
+        "sat_solve_seconds": 0.001215500000398606,
+        "verification_seconds": 1.2699998478638008e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 456,
+        "variables": 78,
+        "clauses_constructed_attempts": 711
+      }
+    },
+    {
+      "seed": 6300012,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 75,
+      "cnf_metrics": {
+        "encoding_seconds": 0.00033210000037797727,
+        "sat_solve_seconds": 0.0006573999999091029,
+        "verification_seconds": 1.340000017080456e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 143,
+        "variables": 38,
+        "clauses_constructed_attempts": 310
+      }
+    },
+    {
+      "seed": 6300013,
+      "valid_repairs": 0,
+      "status": "unsat",
+      "candidate_tests": 96,
+      "cnf_metrics": {
+        "encoding_seconds": 1.0200001270277426e-05,
+        "sat_solve_seconds": 0.0,
+        "verification_seconds": 0.0,
+        "checks": 0,
+        "sat_calls": 0,
+        "cegis_rows": 0,
+        "backend": "g42",
+        "clauses_added": 0,
+        "variables": 0
+      }
+    },
+    {
+      "seed": 6300014,
+      "valid_repairs": 0,
+      "status": "unsat",
+      "candidate_tests": 135,
+      "cnf_metrics": {
+        "encoding_seconds": 1.4900000678608194e-05,
+        "sat_solve_seconds": 0.0,
+        "verification_seconds": 0.0,
+        "checks": 0,
+        "sat_calls": 0,
+        "cegis_rows": 0,
+        "backend": "g42",
+        "clauses_added": 0,
+        "variables": 0
+      }
+    },
+    {
+      "seed": 6300015,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 88,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0005471000004035886,
+        "sat_solve_seconds": 0.0008462000005238224,
+        "verification_seconds": 1.0600000678095967e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 277,
+        "variables": 56,
+        "clauses_constructed_attempts": 500
+      }
+    },
+    {
+      "seed": 6300016,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 125,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0004866999988735188,
+        "sat_solve_seconds": 0.0008851999991748016,
+        "verification_seconds": 1.3100001524435356e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 309,
+        "variables": 54,
+        "clauses_constructed_attempts": 524
+      }
+    },
+    {
+      "seed": 6300017,
+      "valid_repairs": 0,
+      "status": "unsat",
+      "candidate_tests": 121,
+      "cnf_metrics": {
+        "encoding_seconds": 1.3799999578623101e-05,
+        "sat_solve_seconds": 0.0,
+        "verification_seconds": 0.0,
+        "checks": 0,
+        "sat_calls": 0,
+        "cegis_rows": 0,
+        "backend": "g42",
+        "clauses_added": 0,
+        "variables": 0
+      }
+    },
+    {
+      "seed": 6300018,
+      "valid_repairs": 0,
+      "status": "unsat",
+      "candidate_tests": 69,
+      "cnf_metrics": {
+        "encoding_seconds": 1.2599997717188671e-05,
+        "sat_solve_seconds": 0.0,
+        "verification_seconds": 0.0,
+        "checks": 0,
+        "sat_calls": 0,
+        "cegis_rows": 0,
+        "backend": "g42",
+        "clauses_added": 0,
+        "variables": 0
+      }
+    },
+    {
+      "seed": 6300019,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 115,
+      "cnf_metrics": {
+        "encoding_seconds": 0.00032279999868478626,
+        "sat_solve_seconds": 0.0005588999993051402,
+        "verification_seconds": 3.479999941191636e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 156,
+        "variables": 44,
+        "clauses_constructed_attempts": 323
+      }
+    },
+    {
+      "seed": 6300020,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 156,
+      "cnf_metrics": {
+        "encoding_seconds": 0.000571299999137409,
+        "sat_solve_seconds": 0.0008252000006905291,
+        "verification_seconds": 2.7700003556674346e-05,
+        "checks": 2,
+        "sat_calls": 2,
+        "cegis_rows": 9,
+        "backend": "g42",
+        "clauses_added": 315,
+        "variables": 57,
+        "clauses_constructed_attempts": 584
+      }
+    },
+    {
+      "seed": 6300021,
+      "valid_repairs": 0,
+      "status": "unsat",
+      "candidate_tests": 65,
+      "cnf_metrics": {
+        "encoding_seconds": 9.799998224480078e-06,
+        "sat_solve_seconds": 0.0,
+        "verification_seconds": 0.0,
+        "checks": 0,
+        "sat_calls": 0,
+        "cegis_rows": 0,
+        "backend": "g42",
+        "clauses_added": 0,
+        "variables": 0
+      }
+    },
+    {
+      "seed": 6300022,
+      "valid_repairs": 2,
+      "status": "accepted",
+      "candidate_tests": 125,
+      "cnf_metrics": {
+        "encoding_seconds": 0.000519900000654161,
+        "sat_solve_seconds": 0.0007603999983984977,
+        "verification_seconds": 1.6500001947861165e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 303,
+        "variables": 58,
+        "clauses_constructed_attempts": 518
+      }
+    },
+    {
+      "seed": 6300023,
+      "valid_repairs": 1,
+      "status": "accepted",
+      "candidate_tests": 144,
+      "cnf_metrics": {
+        "encoding_seconds": 0.0008530999984941445,
+        "sat_solve_seconds": 0.0012620000015886035,
+        "verification_seconds": 3.4100001357728615e-05,
+        "checks": 1,
+        "sat_calls": 1,
+        "cegis_rows": 8,
+        "backend": "g42",
+        "clauses_added": 489,
+        "variables": 74,
+        "clauses_constructed_attempts": 720
+      }
+    }
+  ],
+  "no_need_feature_checks": [
+    {
+      "inputs": 4,
+      "gates": 10,
+      "candidate_feature_rows": 300
+    },
+    {
+      "inputs": 5,
+      "gates": 14,
+      "candidate_feature_rows": 504
+    },
+    {
+      "inputs": 6,
+      "gates": 18,
+      "candidate_feature_rows": 756
+    },
+    {
+      "inputs": 10,
+      "gates": 50,
+      "candidate_feature_rows": 4100
+    },
+    {
+      "inputs": 10,
+      "gates": 100,
+      "candidate_feature_rows": 13200
+    },
+    {
+      "inputs": 12,
+      "gates": 100,
+      "candidate_feature_rows": 13600
+    },
+    {
+      "inputs": 16,
+      "gates": 100,
+      "candidate_feature_rows": 14400
+    },
+    {
+      "inputs": 16,
+      "gates": 200,
+      "candidate_feature_rows": 48800
+    }
+  ],
+  "prediction_reference_checks": [
+    {
+      "variant": "full21",
+      "candidates": 100
+    },
+    {
+      "variant": "no_need13",
+      "candidates": 100
+    }
+  ],
+  "native_interrupt_seconds": 0.034410700001899386,
+  "native_interrupt_returned_unknown": true,
+  "no_test_cases_used": true
+}

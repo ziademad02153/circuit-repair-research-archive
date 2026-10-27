@@ -1,0 +1,12 @@
+.research_deps/
+.deps/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.zip
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

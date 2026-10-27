@@ -1,0 +1,48 @@
+{
+  "scope": "exploratory; validation-only ensemble-size selection followed by unused test seeds",
+  "validation": {
+    "4": {
+      "successes_at_16": 75,
+      "cases": 120,
+      "predict_seconds": 0.07226049999371753
+    },
+    "8": {
+      "successes_at_16": 75,
+      "cases": 120,
+      "predict_seconds": 0.09990559999823745
+    },
+    "16": {
+      "successes_at_16": 74,
+      "cases": 120,
+      "predict_seconds": 0.15974860000278568
+    },
+    "24": {
+      "successes_at_16": 77,
+      "cases": 120,
+      "predict_seconds": 0.22260939999796392
+    },
+    "48": {
+      "successes_at_16": 77,
+      "cases": 120,
+      "predict_seconds": 0.40907579999475274
+    }
+  },
+  "selected_trees": 24,
+  "selection_rule": "highest validation success at 16 checks; ties use fewer trees",
+  "test_seeds": [
+    90000,
+    90399
+  ],
+  "test_count": 400,
+  "test_sizes": [
+    [
+      6,
+      18
+    ],
+    [
+      7,
+      22
+    ]
+  ],
+  "no_model_changes_after_opening_these_test_cases": true
+}

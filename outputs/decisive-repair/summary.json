@@ -1,0 +1,2248 @@
+{
+  "log_rows": 13200,
+  "expected_rows": 13200,
+  "complete": true,
+  "statistics": [
+    {
+      "group": "old400",
+      "inputs": null,
+      "gates": null,
+      "setting": "full",
+      "method": "learned",
+      "cases": 400,
+      "successes": 345,
+      "success_rate": 0.8625,
+      "success_wilson_95": [
+        0.8252880733424808,
+        0.8928155132651543
+      ],
+      "accepted": 345,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.011012047804411488
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 345,
+        "exhausted": 55
+      },
+      "mean_actual_seconds": 0.007552433000005294,
+      "median_actual_seconds": 0.0065714499996829545,
+      "p95_actual_seconds": 0.016721704999963546,
+      "mean_failure_penalized_seconds": 0.14303071375000853,
+      "sum_actual_seconds": 3.0209732000021177
+    },
+    {
+      "group": "old400",
+      "inputs": null,
+      "gates": null,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 400,
+      "successes": 345,
+      "success_rate": 0.8625,
+      "success_wilson_95": [
+        0.8252880733424808,
+        0.8928155132651543
+      ],
+      "accepted": 345,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.011012047804411488
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 345,
+        "unsat": 55
+      },
+      "mean_actual_seconds": 0.04953737925003679,
+      "median_actual_seconds": 0.04091994999907911,
+      "p95_actual_seconds": 0.11563518500015557,
+      "mean_failure_penalized_seconds": 0.18248277500004406,
+      "sum_actual_seconds": 19.814951700014717
+    },
+    {
+      "group": "old400",
+      "inputs": null,
+      "gates": null,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 400,
+      "successes": 345,
+      "success_rate": 0.8625,
+      "success_wilson_95": [
+        0.8252880733424808,
+        0.8928155132651543
+      ],
+      "accepted": 345,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.011012047804411488
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 345,
+        "exhausted": 55
+      },
+      "mean_actual_seconds": 0.004804940249978244,
+      "median_actual_seconds": 0.004218600000058359,
+      "p95_actual_seconds": 0.01106770499909544,
+      "mean_failure_penalized_seconds": 0.1410924647499678,
+      "sum_actual_seconds": 1.9219760999912978
+    },
+    {
+      "group": "old400",
+      "inputs": null,
+      "gates": null,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 400,
+      "successes": 171,
+      "success_rate": 0.4275,
+      "success_wilson_95": [
+        0.3799345878043344,
+        0.47644469487413854
+      ],
+      "accepted": 368,
+      "wrong_accepted": 197,
+      "wrong_per_accepted": 0.5353260869565217,
+      "wrong_per_accepted_wilson_95": [
+        0.48426629267755905,
+        0.5856559803321794
+      ],
+      "wrong_per_case": 0.4925,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 368,
+        "exhausted": 32
+      },
+      "mean_actual_seconds": 0.006889501499967992,
+      "median_actual_seconds": 0.00633060000018304,
+      "p95_actual_seconds": 0.01384140500003923,
+      "mean_failure_penalized_seconds": 0.5750611164999964,
+      "sum_actual_seconds": 2.7558005999871966
+    },
+    {
+      "group": "old400",
+      "inputs": null,
+      "gates": null,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 400,
+      "successes": 131,
+      "success_rate": 0.3275,
+      "success_wilson_95": [
+        0.2833400429179013,
+        0.37494169862743104
+      ],
+      "accepted": 368,
+      "wrong_accepted": 237,
+      "wrong_per_accepted": 0.6440217391304348,
+      "wrong_per_accepted_wilson_95": [
+        0.5938445048852289,
+        0.6912232235390895
+      ],
+      "wrong_per_case": 0.5925,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 368,
+        "unsat": 32
+      },
+      "mean_actual_seconds": 0.03203086225001698,
+      "median_actual_seconds": 0.03295400000024529,
+      "p95_actual_seconds": 0.045639395000125656,
+      "mean_failure_penalized_seconds": 0.6829414165000025,
+      "sum_actual_seconds": 12.812344900006792
+    },
+    {
+      "group": "old400",
+      "inputs": null,
+      "gates": null,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 400,
+      "successes": 147,
+      "success_rate": 0.3675,
+      "success_wilson_95": [
+        0.3217214385202667,
+        0.4157993194783218
+      ],
+      "accepted": 368,
+      "wrong_accepted": 221,
+      "wrong_per_accepted": 0.6005434782608695,
+      "wrong_per_accepted_wilson_95": [
+        0.5497114989372156,
+        0.6492980473212708
+      ],
+      "wrong_per_case": 0.5525,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 368,
+        "exhausted": 32
+      },
+      "mean_actual_seconds": 0.0038440404999619203,
+      "median_actual_seconds": 0.0016372000000046683,
+      "p95_actual_seconds": 0.012750684998718497,
+      "mean_failure_penalized_seconds": 0.6345074937499839,
+      "sum_actual_seconds": 1.5376161999847682
+    },
+    {
+      "group": "n10_g50",
+      "inputs": 10,
+      "gates": 50,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 164,
+      "success_rate": 0.82,
+      "success_wilson_95": [
+        0.7608852497127511,
+        0.8670537414057983
+      ],
+      "accepted": 164,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.022887425119427582
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 164,
+        "exhausted": 36
+      },
+      "mean_actual_seconds": 0.05130581850009548,
+      "median_actual_seconds": 0.030254899999818008,
+      "p95_actual_seconds": 0.1348362950006958,
+      "mean_failure_penalized_seconds": 0.20744868900008442,
+      "sum_actual_seconds": 10.261163700019097
+    },
+    {
+      "group": "n10_g50",
+      "inputs": 10,
+      "gates": 50,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 164,
+      "success_rate": 0.82,
+      "success_wilson_95": [
+        0.7608852497127511,
+        0.8670537414057983
+      ],
+      "accepted": 164,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.022887425119427582
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 164,
+        "unsat": 36
+      },
+      "mean_actual_seconds": 0.21257819799999197,
+      "median_actual_seconds": 0.17153109999981098,
+      "p95_actual_seconds": 0.5371807949999491,
+      "mean_failure_penalized_seconds": 0.3581354409999858,
+      "sum_actual_seconds": 42.515639599998394
+    },
+    {
+      "group": "n10_g50",
+      "inputs": 10,
+      "gates": 50,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 164,
+      "success_rate": 0.82,
+      "success_wilson_95": [
+        0.7608852497127511,
+        0.8670537414057983
+      ],
+      "accepted": 164,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.022887425119427582
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 164,
+        "exhausted": 36
+      },
+      "mean_actual_seconds": 0.04210416750010154,
+      "median_actual_seconds": 0.017260100000385137,
+      "p95_actual_seconds": 0.10728783000022302,
+      "mean_failure_penalized_seconds": 0.20349845500007177,
+      "sum_actual_seconds": 8.420833500020308
+    },
+    {
+      "group": "n10_g50",
+      "inputs": 10,
+      "gates": 50,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 46,
+      "success_rate": 0.23,
+      "success_wilson_95": [
+        0.17709343259068805,
+        0.2930830436530359
+      ],
+      "accepted": 189,
+      "wrong_accepted": 143,
+      "wrong_per_accepted": 0.7566137566137566,
+      "wrong_per_accepted_wilson_95": [
+        0.6907200232980768,
+        0.8122838462701967
+      ],
+      "wrong_per_case": 0.715,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 189,
+        "exhausted": 11
+      },
+      "mean_actual_seconds": 0.034395366499902595,
+      "median_actual_seconds": 0.02796535000015865,
+      "p95_actual_seconds": 0.11908471999968237,
+      "mean_failure_penalized_seconds": 0.7766640224999355,
+      "sum_actual_seconds": 6.879073299980519
+    },
+    {
+      "group": "n10_g50",
+      "inputs": 10,
+      "gates": 50,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 26,
+      "success_rate": 0.13,
+      "success_wilson_95": [
+        0.0902820227966932,
+        0.18366351872248407
+      ],
+      "accepted": 189,
+      "wrong_accepted": 163,
+      "wrong_per_accepted": 0.8624338624338624,
+      "wrong_per_accepted_wilson_95": [
+        0.8060663060799572,
+        0.9043618395989445
+      ],
+      "wrong_per_case": 0.815,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 189,
+        "unsat": 11
+      },
+      "mean_actual_seconds": 0.0850156774999141,
+      "median_actual_seconds": 0.08788654999989376,
+      "p95_actual_seconds": 0.12446179999969895,
+      "mean_failure_penalized_seconds": 0.8799392829999851,
+      "sum_actual_seconds": 17.003135499982818
+    },
+    {
+      "group": "n10_g50",
+      "inputs": 10,
+      "gates": 50,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 32,
+      "success_rate": 0.16,
+      "success_wilson_95": [
+        0.1156741203158702,
+        0.21714070162067106
+      ],
+      "accepted": 189,
+      "wrong_accepted": 157,
+      "wrong_per_accepted": 0.8306878306878307,
+      "wrong_per_accepted_wilson_95": [
+        0.7707610004117584,
+        0.8774398624339548
+      ],
+      "wrong_per_case": 0.785,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 189,
+        "exhausted": 11
+      },
+      "mean_actual_seconds": 0.0227160730000287,
+      "median_actual_seconds": 0.0020581000007950934,
+      "p95_actual_seconds": 0.10136720499976945,
+      "mean_failure_penalized_seconds": 0.843284812000029,
+      "sum_actual_seconds": 4.54321460000574
+    },
+    {
+      "group": "n10_g100",
+      "inputs": 10,
+      "gates": 100,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 163,
+      "success_rate": 0.815,
+      "success_wilson_95": [
+        0.7554293723884824,
+        0.8626980719938395
+      ],
+      "accepted": 163,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.023024605801502687
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 163,
+        "exhausted": 37
+      },
+      "mean_actual_seconds": 0.24510875999993914,
+      "median_actual_seconds": 0.11544959999991988,
+      "p95_actual_seconds": 0.7532873850001124,
+      "mean_failure_penalized_seconds": 0.29285932899994804,
+      "sum_actual_seconds": 49.02175199998783
+    },
+    {
+      "group": "n10_g100",
+      "inputs": 10,
+      "gates": 100,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 132,
+      "success_rate": 0.66,
+      "success_wilson_95": [
+        0.5918849552683626,
+        0.7220845402909121
+      ],
+      "accepted": 132,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.02827898679860847
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 46,
+      "statuses": {
+        "accepted": 132,
+        "unsat": 22,
+        "timeout": 46
+      },
+      "mean_actual_seconds": 0.5640755744999478,
+      "median_actual_seconds": 0.5218915999994351,
+      "p95_actual_seconds": 1.0181984149994605,
+      "mean_failure_penalized_seconds": 0.6431283804999657,
+      "sum_actual_seconds": 112.81511489998957
+    },
+    {
+      "group": "n10_g100",
+      "inputs": 10,
+      "gates": 100,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 163,
+      "success_rate": 0.815,
+      "success_wilson_95": [
+        0.7554293723884824,
+        0.8626980719938395
+      ],
+      "accepted": 163,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.023024605801502687
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 163,
+        "exhausted": 37
+      },
+      "mean_actual_seconds": 0.25485556999997244,
+      "median_actual_seconds": 0.0881876999992528,
+      "p95_actual_seconds": 0.6616983699994305,
+      "mean_failure_penalized_seconds": 0.3195070614999804,
+      "sum_actual_seconds": 50.971113999994486
+    },
+    {
+      "group": "n10_g100",
+      "inputs": 10,
+      "gates": 100,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 43,
+      "success_rate": 0.215,
+      "success_wilson_95": [
+        0.1637187625450758,
+        0.27702307348996613
+      ],
+      "accepted": 192,
+      "wrong_accepted": 149,
+      "wrong_per_accepted": 0.7760416666666666,
+      "wrong_per_accepted_wilson_95": [
+        0.7119887723978197,
+        0.8292653657111598
+      ],
+      "wrong_per_case": 0.745,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 192,
+        "exhausted": 8
+      },
+      "mean_actual_seconds": 0.12846619949998966,
+      "median_actual_seconds": 0.10409115000038582,
+      "p95_actual_seconds": 0.17721722499927603,
+      "mean_failure_penalized_seconds": 0.8087039514999924,
+      "sum_actual_seconds": 25.693239899997934
+    },
+    {
+      "group": "n10_g100",
+      "inputs": 10,
+      "gates": 100,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 19,
+      "success_rate": 0.095,
+      "success_wilson_95": [
+        0.06166310271738653,
+        0.1436016116481994
+      ],
+      "accepted": 192,
+      "wrong_accepted": 173,
+      "wrong_per_accepted": 0.9010416666666666,
+      "wrong_per_accepted_wilson_95": [
+        0.8506207684360072,
+        0.9357295831562837
+      ],
+      "wrong_per_case": 0.865,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 192,
+        "unsat": 8
+      },
+      "mean_actual_seconds": 0.18259699699991871,
+      "median_actual_seconds": 0.17655054999886488,
+      "p95_actual_seconds": 0.29184254999918263,
+      "mean_failure_penalized_seconds": 0.9210911964999832,
+      "sum_actual_seconds": 36.51939939998374
+    },
+    {
+      "group": "n10_g100",
+      "inputs": 10,
+      "gates": 100,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 36,
+      "success_rate": 0.18,
+      "success_wilson_95": [
+        0.13294625859420173,
+        0.23911475028724882
+      ],
+      "accepted": 192,
+      "wrong_accepted": 156,
+      "wrong_per_accepted": 0.8125,
+      "wrong_per_accepted_wilson_95": [
+        0.7513628261115768,
+        0.861377707596702
+      ],
+      "wrong_per_case": 0.78,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 192,
+        "exhausted": 8
+      },
+      "mean_actual_seconds": 0.09130207449996305,
+      "median_actual_seconds": 0.0030718500001967186,
+      "p95_actual_seconds": 0.4983366050008043,
+      "mean_failure_penalized_seconds": 0.8532088519999615,
+      "sum_actual_seconds": 18.26041489999261
+    },
+    {
+      "group": "n10_g200",
+      "inputs": 10,
+      "gates": 200,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 164,
+      "success_rate": 0.82,
+      "success_wilson_95": [
+        0.7608852497127511,
+        0.8670537414057983
+      ],
+      "accepted": 164,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.022887425119427582
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 36,
+      "statuses": {
+        "accepted": 164,
+        "timeout": 36
+      },
+      "mean_actual_seconds": 0.5343264180000551,
+      "median_actual_seconds": 0.40722569999979896,
+      "p95_actual_seconds": 1.0011273549999715,
+      "mean_failure_penalized_seconds": 0.534129903500043,
+      "sum_actual_seconds": 106.86528360001103
+    },
+    {
+      "group": "n10_g200",
+      "inputs": 10,
+      "gates": 200,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 49,
+      "success_rate": 0.245,
+      "success_wilson_95": [
+        0.1905686808903718,
+        0.30904243556203415
+      ],
+      "accepted": 49,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        6.938893903907228e-18,
+        0.07269781922049637
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 144,
+      "statuses": {
+        "accepted": 49,
+        "timeout": 144,
+        "unsat": 7
+      },
+      "mean_actual_seconds": 0.8902918439999121,
+      "median_actual_seconds": 1.0159549499994682,
+      "p95_actual_seconds": 1.0282767099999546,
+      "mean_failure_penalized_seconds": 0.9019745509999666,
+      "sum_actual_seconds": 178.05836879998242
+    },
+    {
+      "group": "n10_g200",
+      "inputs": 10,
+      "gates": 200,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 146,
+      "success_rate": 0.73,
+      "success_wilson_95": [
+        0.6645656480133157,
+        0.7867655018531416
+      ],
+      "accepted": 146,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.025636822084673896
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 54,
+      "statuses": {
+        "timeout": 54,
+        "accepted": 146
+      },
+      "mean_actual_seconds": 0.40867289099999654,
+      "median_actual_seconds": 0.18410694999965926,
+      "p95_actual_seconds": 1.000086380000448,
+      "mean_failure_penalized_seconds": 0.4086565240000073,
+      "sum_actual_seconds": 81.7345781999993
+    },
+    {
+      "group": "n10_g200",
+      "inputs": 10,
+      "gates": 200,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 33,
+      "success_rate": 0.165,
+      "success_wilson_95": [
+        0.11996855328217307,
+        0.2226578153905955
+      ],
+      "accepted": 196,
+      "wrong_accepted": 163,
+      "wrong_per_accepted": 0.8316326530612245,
+      "wrong_per_accepted_wilson_95": [
+        0.7729876407997478,
+        0.8775280268057479
+      ],
+      "wrong_per_case": 0.815,
+      "timeouts": 4,
+      "statuses": {
+        "accepted": 196,
+        "timeout": 4
+      },
+      "mean_actual_seconds": 0.39294713649998814,
+      "median_actual_seconds": 0.37589850000040315,
+      "p95_actual_seconds": 0.42339728500037366,
+      "mean_failure_penalized_seconds": 0.8974140959999931,
+      "sum_actual_seconds": 78.58942729999762
+    },
+    {
+      "group": "n10_g200",
+      "inputs": 10,
+      "gates": 200,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 13,
+      "success_rate": 0.065,
+      "success_wilson_95": [
+        0.03837635464915299,
+        0.10801907929906895
+      ],
+      "accepted": 193,
+      "wrong_accepted": 180,
+      "wrong_per_accepted": 0.9326424870466321,
+      "wrong_per_accepted_wilson_95": [
+        0.8881817442076985,
+        0.9602167639141237
+      ],
+      "wrong_per_case": 0.9,
+      "timeouts": 3,
+      "statuses": {
+        "accepted": 193,
+        "unsat": 4,
+        "timeout": 3
+      },
+      "mean_actual_seconds": 0.424711079500039,
+      "median_actual_seconds": 0.3814018000002761,
+      "p95_actual_seconds": 0.786536845000318,
+      "mean_failure_penalized_seconds": 0.9611177240000052,
+      "sum_actual_seconds": 84.9422159000078
+    },
+    {
+      "group": "n10_g200",
+      "inputs": 10,
+      "gates": 200,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 21,
+      "success_rate": 0.105,
+      "success_wilson_95": [
+        0.06970748792681017,
+        0.1551803199112304
+      ],
+      "accepted": 181,
+      "wrong_accepted": 160,
+      "wrong_per_accepted": 0.8839779005524862,
+      "wrong_per_accepted_wilson_95": [
+        0.8291454813516692,
+        0.9228503148665226
+      ],
+      "wrong_per_case": 0.8,
+      "timeouts": 19,
+      "statuses": {
+        "timeout": 19,
+        "accepted": 181
+      },
+      "mean_actual_seconds": 0.13177322799991997,
+      "median_actual_seconds": 0.001507149999270041,
+      "p95_actual_seconds": 1.0000525350005773,
+      "mean_failure_penalized_seconds": 0.9131705500000135,
+      "sum_actual_seconds": 26.354645599983996
+    },
+    {
+      "group": "n12_g50",
+      "inputs": 12,
+      "gates": 50,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 161,
+      "success_rate": 0.805,
+      "success_wilson_95": [
+        0.7445595562538726,
+        0.8539447946559949
+      ],
+      "accepted": 161,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.023303960351823035
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "exhausted": 39,
+        "accepted": 161
+      },
+      "mean_actual_seconds": 0.07508316699994794,
+      "median_actual_seconds": 0.03159959999993589,
+      "p95_actual_seconds": 0.24523600999918926,
+      "mean_failure_penalized_seconds": 0.22332780299992008,
+      "sum_actual_seconds": 15.016633399989587
+    },
+    {
+      "group": "n12_g50",
+      "inputs": 12,
+      "gates": 50,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 160,
+      "success_rate": 0.8,
+      "success_wilson_95": [
+        0.7391448134346212,
+        0.8495479907390189
+      ],
+      "accepted": 160,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.02344619517150519
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 2,
+      "statuses": {
+        "unsat": 38,
+        "accepted": 160,
+        "timeout": 2
+      },
+      "mean_actual_seconds": 0.18317073399997752,
+      "median_actual_seconds": 0.13202685000032943,
+      "p95_actual_seconds": 0.48665299000085693,
+      "mean_failure_penalized_seconds": 0.3367251845000101,
+      "sum_actual_seconds": 36.634146799995506
+    },
+    {
+      "group": "n12_g50",
+      "inputs": 12,
+      "gates": 50,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 161,
+      "success_rate": 0.805,
+      "success_wilson_95": [
+        0.7445595562538726,
+        0.8539447946559949
+      ],
+      "accepted": 161,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.023303960351823035
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 0,
+      "statuses": {
+        "exhausted": 39,
+        "accepted": 161
+      },
+      "mean_actual_seconds": 0.11023127450000175,
+      "median_actual_seconds": 0.09260985000037181,
+      "p95_actual_seconds": 0.2256327049994069,
+      "mean_failure_penalized_seconds": 0.26397343549999275,
+      "sum_actual_seconds": 22.04625490000035
+    },
+    {
+      "group": "n12_g50",
+      "inputs": 12,
+      "gates": 50,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 54,
+      "success_rate": 0.27,
+      "success_wilson_95": [
+        0.21323449814685846,
+        0.33543435198668425
+      ],
+      "accepted": 187,
+      "wrong_accepted": 133,
+      "wrong_per_accepted": 0.7112299465240641,
+      "wrong_per_accepted_wilson_95": [
+        0.6425403437175327,
+        0.77141582958035
+      ],
+      "wrong_per_case": 0.665,
+      "timeouts": 0,
+      "statuses": {
+        "exhausted": 13,
+        "accepted": 187
+      },
+      "mean_actual_seconds": 0.03737950249992537,
+      "median_actual_seconds": 0.029151099999580765,
+      "p95_actual_seconds": 0.1366829699990376,
+      "mean_failure_penalized_seconds": 0.7379628014999707,
+      "sum_actual_seconds": 7.475900499985073
+    },
+    {
+      "group": "n12_g50",
+      "inputs": 12,
+      "gates": 50,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 27,
+      "success_rate": 0.135,
+      "success_wilson_95": [
+        0.09446570454787906,
+        0.18929138370752552
+      ],
+      "accepted": 187,
+      "wrong_accepted": 160,
+      "wrong_per_accepted": 0.8556149732620321,
+      "wrong_per_accepted_wilson_95": [
+        0.7980787761721607,
+        0.8988347814052874
+      ],
+      "wrong_per_case": 0.8,
+      "timeouts": 0,
+      "statuses": {
+        "unsat": 13,
+        "accepted": 187
+      },
+      "mean_actual_seconds": 0.08127805599999192,
+      "median_actual_seconds": 0.08234390000052372,
+      "p95_actual_seconds": 0.1234951699999328,
+      "mean_failure_penalized_seconds": 0.8744874649999747,
+      "sum_actual_seconds": 16.255611199998384
+    },
+    {
+      "group": "n12_g50",
+      "inputs": 12,
+      "gates": 50,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 44,
+      "success_rate": 0.22,
+      "success_wilson_95": [
+        0.16816538358833258,
+        0.28238799918293667
+      ],
+      "accepted": 187,
+      "wrong_accepted": 143,
+      "wrong_per_accepted": 0.7647058823529411,
+      "wrong_per_accepted_wilson_95": [
+        0.6989604853098116,
+        0.819794719202725
+      ],
+      "wrong_per_case": 0.715,
+      "timeouts": 0,
+      "statuses": {
+        "exhausted": 13,
+        "accepted": 187
+      },
+      "mean_actual_seconds": 0.02953315200000361,
+      "median_actual_seconds": 0.005936950000432262,
+      "p95_actual_seconds": 0.11200995500030331,
+      "mean_failure_penalized_seconds": 0.7894277760000205,
+      "sum_actual_seconds": 5.906630400000722
+    },
+    {
+      "group": "n12_g100",
+      "inputs": 12,
+      "gates": 100,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 164,
+      "success_rate": 0.82,
+      "success_wilson_95": [
+        0.7608852497127511,
+        0.8670537414057983
+      ],
+      "accepted": 164,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.022887425119427582
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 36,
+      "statuses": {
+        "accepted": 164,
+        "timeout": 36
+      },
+      "mean_actual_seconds": 0.35439283949996025,
+      "median_actual_seconds": 0.22415269999874,
+      "p95_actual_seconds": 1.0006165449995934,
+      "mean_failure_penalized_seconds": 0.35429965449997325,
+      "sum_actual_seconds": 70.87856789999205
+    },
+    {
+      "group": "n12_g100",
+      "inputs": 12,
+      "gates": 100,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 97,
+      "success_rate": 0.485,
+      "success_wilson_95": [
+        0.41667385171877513,
+        0.5538915080725428
+      ],
+      "accepted": 97,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.03809404252594769
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 86,
+      "statuses": {
+        "accepted": 97,
+        "timeout": 86,
+        "unsat": 17
+      },
+      "mean_actual_seconds": 0.6987457700000596,
+      "median_actual_seconds": 0.7921312999997099,
+      "p95_actual_seconds": 1.0221553200001836,
+      "mean_failure_penalized_seconds": 0.7530418730000383,
+      "sum_actual_seconds": 139.7491540000119
+    },
+    {
+      "group": "n12_g100",
+      "inputs": 12,
+      "gates": 100,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 138,
+      "success_rate": 0.69,
+      "success_wilson_95": [
+        0.6228282243374195,
+        0.750010551639219
+      ],
+      "accepted": 138,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        1.734723475976807e-18,
+        0.027082764465572957
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 62,
+      "statuses": {
+        "accepted": 138,
+        "timeout": 62
+      },
+      "mean_actual_seconds": 0.4466978889999973,
+      "median_actual_seconds": 0.23891155000001163,
+      "p95_actual_seconds": 1.0001397199995155,
+      "mean_failure_penalized_seconds": 0.4466722034999475,
+      "sum_actual_seconds": 89.33957779999946
+    },
+    {
+      "group": "n12_g100",
+      "inputs": 12,
+      "gates": 100,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 43,
+      "success_rate": 0.215,
+      "success_wilson_95": [
+        0.1637187625450758,
+        0.27702307348996613
+      ],
+      "accepted": 193,
+      "wrong_accepted": 150,
+      "wrong_per_accepted": 0.7772020725388601,
+      "wrong_per_accepted_wilson_95": [
+        0.7134095535692231,
+        0.8301751192992497
+      ],
+      "wrong_per_case": 0.75,
+      "timeouts": 3,
+      "statuses": {
+        "accepted": 193,
+        "exhausted": 4,
+        "timeout": 3
+      },
+      "mean_actual_seconds": 0.1913405314999909,
+      "median_actual_seconds": 0.20802439999897615,
+      "p95_actual_seconds": 0.24597622999917804,
+      "mean_failure_penalized_seconds": 0.8205958900000314,
+      "sum_actual_seconds": 38.26810629999818
+    },
+    {
+      "group": "n12_g100",
+      "inputs": 12,
+      "gates": 100,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 23,
+      "success_rate": 0.115,
+      "success_wilson_95": [
+        0.07786373232561955,
+        0.16664716898487572
+      ],
+      "accepted": 192,
+      "wrong_accepted": 169,
+      "wrong_per_accepted": 0.8802083333333334,
+      "wrong_per_accepted_wilson_95": [
+        0.8266650028526277,
+        0.9188359798257781
+      ],
+      "wrong_per_case": 0.845,
+      "timeouts": 1,
+      "statuses": {
+        "accepted": 192,
+        "unsat": 7,
+        "timeout": 1
+      },
+      "mean_actual_seconds": 0.2891611689999081,
+      "median_actual_seconds": 0.27646330000061425,
+      "p95_actual_seconds": 0.5631726400014483,
+      "mean_failure_penalized_seconds": 0.9189501749999727,
+      "sum_actual_seconds": 57.83223379998162
+    },
+    {
+      "group": "n12_g100",
+      "inputs": 12,
+      "gates": 100,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 32,
+      "success_rate": 0.16,
+      "success_wilson_95": [
+        0.1156741203158702,
+        0.21714070162067106
+      ],
+      "accepted": 186,
+      "wrong_accepted": 154,
+      "wrong_per_accepted": 0.8279569892473119,
+      "wrong_per_accepted_wilson_95": [
+        0.7672244380920495,
+        0.8754170626521552
+      ],
+      "wrong_per_case": 0.77,
+      "timeouts": 10,
+      "statuses": {
+        "accepted": 186,
+        "exhausted": 4,
+        "timeout": 10
+      },
+      "mean_actual_seconds": 0.11296600999990006,
+      "median_actual_seconds": 0.007738450000033481,
+      "p95_actual_seconds": 0.9902310049997138,
+      "mean_failure_penalized_seconds": 0.8645837324999956,
+      "sum_actual_seconds": 22.59320199998001
+    },
+    {
+      "group": "n12_g200",
+      "inputs": 12,
+      "gates": 200,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 107,
+      "success_rate": 0.535,
+      "success_wilson_95": [
+        0.4658664687236316,
+        0.6028143584299599
+      ],
+      "accepted": 107,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.03465723801874867
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 93,
+      "statuses": {
+        "accepted": 107,
+        "timeout": 93
+      },
+      "mean_actual_seconds": 0.9298969269999998,
+      "median_actual_seconds": 0.958376299999145,
+      "p95_actual_seconds": 1.002381434999552,
+      "mean_failure_penalized_seconds": 0.9289595769999596,
+      "sum_actual_seconds": 185.97938539999996
+    },
+    {
+      "group": "n12_g200",
+      "inputs": 12,
+      "gates": 200,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 14,
+      "success_rate": 0.07,
+      "success_wilson_95": [
+        0.042152171828342806,
+        0.11405480885610647
+      ],
+      "accepted": 14,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        1.3877787807814457e-17,
+        0.2153108027376358
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 179,
+      "statuses": {
+        "timeout": 179,
+        "accepted": 14,
+        "unsat": 7
+      },
+      "mean_actual_seconds": 0.9593120949999684,
+      "median_actual_seconds": 1.0068200999994588,
+      "p95_actual_seconds": 1.0288578950004195,
+      "mean_failure_penalized_seconds": 0.9801029869999729,
+      "sum_actual_seconds": 191.86241899999368
+    },
+    {
+      "group": "n12_g200",
+      "inputs": 12,
+      "gates": 200,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 104,
+      "success_rate": 0.52,
+      "success_wilson_95": [
+        0.4510378507281424,
+        0.588208336216767
+      ],
+      "accepted": 104,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.03562135437245191
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 96,
+      "statuses": {
+        "accepted": 104,
+        "timeout": 96
+      },
+      "mean_actual_seconds": 0.6618378505000146,
+      "median_actual_seconds": 0.9038513000004968,
+      "p95_actual_seconds": 1.0003823900005955,
+      "mean_failure_penalized_seconds": 0.6617233929999747,
+      "sum_actual_seconds": 132.36757010000292
+    },
+    {
+      "group": "n12_g200",
+      "inputs": 12,
+      "gates": 200,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 24,
+      "success_rate": 0.12,
+      "success_wilson_95": [
+        0.08197992706375512,
+        0.17234252098296743
+      ],
+      "accepted": 194,
+      "wrong_accepted": 170,
+      "wrong_per_accepted": 0.8762886597938144,
+      "wrong_per_accepted_wilson_95": [
+        0.8225247825866759,
+        0.9154398526838383
+      ],
+      "wrong_per_case": 0.85,
+      "timeouts": 6,
+      "statuses": {
+        "accepted": 194,
+        "timeout": 6
+      },
+      "mean_actual_seconds": 0.845071123500029,
+      "median_actual_seconds": 0.8378007000010257,
+      "p95_actual_seconds": 0.9202837900001213,
+      "mean_failure_penalized_seconds": 0.9815894669999853,
+      "sum_actual_seconds": 169.0142247000058
+    },
+    {
+      "group": "n12_g200",
+      "inputs": 12,
+      "gates": 200,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 11,
+      "success_rate": 0.055,
+      "success_wilson_95": [
+        0.03098534170345884,
+        0.0957869987723084
+      ],
+      "accepted": 166,
+      "wrong_accepted": 155,
+      "wrong_per_accepted": 0.9337349397590361,
+      "wrong_per_accepted_wilson_95": [
+        0.8852504785759967,
+        0.9625990453263173
+      ],
+      "wrong_per_case": 0.775,
+      "timeouts": 28,
+      "statuses": {
+        "accepted": 166,
+        "timeout": 28,
+        "unsat": 6
+      },
+      "mean_actual_seconds": 0.7941478060000463,
+      "median_actual_seconds": 0.7887820500000089,
+      "p95_actual_seconds": 1.0224226949994772,
+      "mean_failure_penalized_seconds": 0.9847381885000049,
+      "sum_actual_seconds": 158.82956120000927
+    },
+    {
+      "group": "n12_g200",
+      "inputs": 12,
+      "gates": 200,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 12,
+      "success_rate": 0.06,
+      "success_wilson_95": [
+        0.03465219425433187,
+        0.1019316929576627
+      ],
+      "accepted": 182,
+      "wrong_accepted": 170,
+      "wrong_per_accepted": 0.9340659340659341,
+      "wrong_per_accepted_wilson_95": [
+        0.8883030186615747,
+        0.9618840225004491
+      ],
+      "wrong_per_case": 0.85,
+      "timeouts": 18,
+      "statuses": {
+        "accepted": 182,
+        "timeout": 18
+      },
+      "mean_actual_seconds": 0.15555777600005968,
+      "median_actual_seconds": 0.003706499998770596,
+      "p95_actual_seconds": 1.000092264999148,
+      "mean_failure_penalized_seconds": 0.9535243940000236,
+      "sum_actual_seconds": 31.111555200011935
+    },
+    {
+      "group": "n16_g50",
+      "inputs": 16,
+      "gates": 50,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 153,
+      "success_rate": 0.765,
+      "success_wilson_95": [
+        0.7015863111723746,
+        0.8184256658476741
+      ],
+      "accepted": 153,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        1.734723475976807e-18,
+        0.024492623631394532
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 47,
+      "statuses": {
+        "accepted": 153,
+        "timeout": 47
+      },
+      "mean_actual_seconds": 0.3409965964999355,
+      "median_actual_seconds": 0.09810529999958817,
+      "p95_actual_seconds": 1.000553794999996,
+      "mean_failure_penalized_seconds": 0.34090169099995365,
+      "sum_actual_seconds": 68.19931929998711
+    },
+    {
+      "group": "n16_g50",
+      "inputs": 16,
+      "gates": 50,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 148,
+      "success_rate": 0.74,
+      "success_wilson_95": [
+        0.6750925439746589,
+        0.7958616993642531
+      ],
+      "accepted": 148,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.025299143267784395
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 15,
+      "statuses": {
+        "accepted": 148,
+        "unsat": 37,
+        "timeout": 15
+      },
+      "mean_actual_seconds": 0.3994061185000373,
+      "median_actual_seconds": 0.31824150000011286,
+      "p95_actual_seconds": 1.0101723999996466,
+      "mean_failure_penalized_seconds": 0.5254826030000277,
+      "sum_actual_seconds": 79.88122370000747
+    },
+    {
+      "group": "n16_g50",
+      "inputs": 16,
+      "gates": 50,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 99,
+      "success_rate": 0.495,
+      "success_wilson_95": [
+        0.4264584535990475,
+        0.5637299996647251
+      ],
+      "accepted": 99,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.03735321206782739
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 101,
+      "statuses": {
+        "accepted": 99,
+        "timeout": 101
+      },
+      "mean_actual_seconds": 0.6538146494999637,
+      "median_actual_seconds": 1.000018300001102,
+      "p95_actual_seconds": 1.0005256650001684,
+      "mean_failure_penalized_seconds": 0.6536792084999797,
+      "sum_actual_seconds": 130.76292989999274
+    },
+    {
+      "group": "n16_g50",
+      "inputs": 16,
+      "gates": 50,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 53,
+      "success_rate": 0.265,
+      "success_wilson_95": [
+        0.2086815414710911,
+        0.3301757619262242
+      ],
+      "accepted": 188,
+      "wrong_accepted": 135,
+      "wrong_per_accepted": 0.7180851063829787,
+      "wrong_per_accepted_wilson_95": [
+        0.6499001696749764,
+        0.7775361128891687
+      ],
+      "wrong_per_case": 0.675,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 188,
+        "exhausted": 12
+      },
+      "mean_actual_seconds": 0.09210252350007977,
+      "median_actual_seconds": 0.07520500000009633,
+      "p95_actual_seconds": 0.34289441499868184,
+      "mean_failure_penalized_seconds": 0.7551261059999888,
+      "sum_actual_seconds": 18.420504700015954
+    },
+    {
+      "group": "n16_g50",
+      "inputs": 16,
+      "gates": 50,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 26,
+      "success_rate": 0.13,
+      "success_wilson_95": [
+        0.0902820227966932,
+        0.18366351872248407
+      ],
+      "accepted": 188,
+      "wrong_accepted": 162,
+      "wrong_per_accepted": 0.8617021276595744,
+      "wrong_per_accepted_wilson_95": [
+        0.8050755018156711,
+        0.9038432107297402
+      ],
+      "wrong_per_case": 0.81,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 188,
+        "unsat": 12
+      },
+      "mean_actual_seconds": 0.1667924160000166,
+      "median_actual_seconds": 0.1612316999990071,
+      "p95_actual_seconds": 0.26095451499932093,
+      "mean_failure_penalized_seconds": 0.8881622555000013,
+      "sum_actual_seconds": 33.35848320000332
+    },
+    {
+      "group": "n16_g50",
+      "inputs": 16,
+      "gates": 50,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 40,
+      "success_rate": 0.2,
+      "success_wilson_95": [
+        0.15045200926098115,
+        0.2608551865653788
+      ],
+      "accepted": 188,
+      "wrong_accepted": 148,
+      "wrong_per_accepted": 0.7872340425531915,
+      "wrong_per_accepted_wilson_95": [
+        0.7232840169324799,
+        0.8396808430300526
+      ],
+      "wrong_per_case": 0.74,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 188,
+        "exhausted": 12
+      },
+      "mean_actual_seconds": 0.08186494749999838,
+      "median_actual_seconds": 0.011697699999785982,
+      "p95_actual_seconds": 0.2887940200009325,
+      "mean_failure_penalized_seconds": 0.8288732729999992,
+      "sum_actual_seconds": 16.372989499999676
+    },
+    {
+      "group": "n16_g100",
+      "inputs": 16,
+      "gates": 100,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 132,
+      "success_rate": 0.66,
+      "success_wilson_95": [
+        0.5918849552683626,
+        0.7220845402909121
+      ],
+      "accepted": 132,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.02827898679860847
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 68,
+      "statuses": {
+        "accepted": 132,
+        "timeout": 68
+      },
+      "mean_actual_seconds": 0.5792803074999665,
+      "median_actual_seconds": 0.42658824999944045,
+      "p95_actual_seconds": 1.0015064950001942,
+      "mean_failure_penalized_seconds": 0.578893825499972,
+      "sum_actual_seconds": 115.8560614999933
+    },
+    {
+      "group": "n16_g100",
+      "inputs": 16,
+      "gates": 100,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 76,
+      "success_rate": 0.38,
+      "success_wilson_95": [
+        0.31559005848673627,
+        0.44893281984380773
+      ],
+      "accepted": 76,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.048113585065137326
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 104,
+      "statuses": {
+        "timeout": 104,
+        "unsat": 20,
+        "accepted": 76
+      },
+      "mean_actual_seconds": 0.7896143935000782,
+      "median_actual_seconds": 1.0079431499998464,
+      "p95_actual_seconds": 1.0221501000005446,
+      "mean_failure_penalized_seconds": 0.8476009170000088,
+      "sum_actual_seconds": 157.92287870001564
+    },
+    {
+      "group": "n16_g100",
+      "inputs": 16,
+      "gates": 100,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 78,
+      "success_rate": 0.39,
+      "success_wilson_95": [
+        0.3250834313746962,
+        0.4590625404283025
+      ],
+      "accepted": 78,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.04693780971219429
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 122,
+      "statuses": {
+        "accepted": 78,
+        "timeout": 122
+      },
+      "mean_actual_seconds": 0.7635934989999714,
+      "median_actual_seconds": 1.0002403999997114,
+      "p95_actual_seconds": 1.0011281100006273,
+      "mean_failure_penalized_seconds": 0.7632116699999552,
+      "sum_actual_seconds": 152.71869979999428
+    },
+    {
+      "group": "n16_g100",
+      "inputs": 16,
+      "gates": 100,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 26,
+      "success_rate": 0.13,
+      "success_wilson_95": [
+        0.0902820227966932,
+        0.18366351872248407
+      ],
+      "accepted": 191,
+      "wrong_accepted": 165,
+      "wrong_per_accepted": 0.8638743455497382,
+      "wrong_per_accepted_wilson_95": [
+        0.8080180487766231,
+        0.9053824812815967
+      ],
+      "wrong_per_case": 0.825,
+      "timeouts": 9,
+      "statuses": {
+        "accepted": 191,
+        "timeout": 9
+      },
+      "mean_actual_seconds": 0.2703826614999525,
+      "median_actual_seconds": 0.23519784999916737,
+      "p95_actual_seconds": 0.2684657049989242,
+      "mean_failure_penalized_seconds": 0.9008156889999828,
+      "sum_actual_seconds": 54.076532299990504
+    },
+    {
+      "group": "n16_g100",
+      "inputs": 16,
+      "gates": 100,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 16,
+      "success_rate": 0.08,
+      "success_wilson_95": [
+        0.049840585889759974,
+        0.12598948826714396
+      ],
+      "accepted": 191,
+      "wrong_accepted": 175,
+      "wrong_per_accepted": 0.9162303664921466,
+      "wrong_per_accepted_wilson_95": [
+        0.8682675631806837,
+        0.9477805251592945
+      ],
+      "wrong_per_case": 0.875,
+      "timeouts": 0,
+      "statuses": {
+        "accepted": 191,
+        "unsat": 9
+      },
+      "mean_actual_seconds": 0.36683715649995974,
+      "median_actual_seconds": 0.3694163500003924,
+      "p95_actual_seconds": 0.5580743350002193,
+      "mean_failure_penalized_seconds": 0.9478723379999974,
+      "sum_actual_seconds": 73.36743129999195
+    },
+    {
+      "group": "n16_g100",
+      "inputs": 16,
+      "gates": 100,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 16,
+      "success_rate": 0.08,
+      "success_wilson_95": [
+        0.049840585889759974,
+        0.12598948826714396
+      ],
+      "accepted": 175,
+      "wrong_accepted": 159,
+      "wrong_per_accepted": 0.9085714285714286,
+      "wrong_per_accepted_wilson_95": [
+        0.8566523944102744,
+        0.9429384887270149
+      ],
+      "wrong_per_case": 0.795,
+      "timeouts": 25,
+      "statuses": {
+        "accepted": 175,
+        "timeout": 25
+      },
+      "mean_actual_seconds": 0.18075068899989674,
+      "median_actual_seconds": 0.004909300000690564,
+      "p95_actual_seconds": 1.0000559049992261,
+      "mean_failure_penalized_seconds": 0.9319381190000149,
+      "sum_actual_seconds": 36.15013779997935
+    },
+    {
+      "group": "n16_g200",
+      "inputs": 16,
+      "gates": 200,
+      "setting": "full",
+      "method": "learned",
+      "cases": 200,
+      "successes": 66,
+      "success_rate": 0.33,
+      "success_wilson_95": [
+        0.26857425870603957,
+        0.39783315226223115
+      ],
+      "accepted": 66,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.05500255701354129
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 134,
+      "statuses": {
+        "timeout": 134,
+        "accepted": 66
+      },
+      "mean_actual_seconds": 0.95877207800012,
+      "median_actual_seconds": 1.0023896499997136,
+      "p95_actual_seconds": 1.0054598700025053,
+      "mean_failure_penalized_seconds": 0.955310728000095,
+      "sum_actual_seconds": 191.754415600024
+    },
+    {
+      "group": "n16_g200",
+      "inputs": 16,
+      "gates": 200,
+      "setting": "full",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 21,
+      "success_rate": 0.105,
+      "success_wilson_95": [
+        0.06970748792681017,
+        0.1551803199112304
+      ],
+      "accepted": 21,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.154639018924847
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 173,
+      "statuses": {
+        "timeout": 173,
+        "accepted": 21,
+        "unsat": 6
+      },
+      "mean_actual_seconds": 0.9600953305001166,
+      "median_actual_seconds": 1.015665449998778,
+      "p95_actual_seconds": 1.033267009998508,
+      "mean_failure_penalized_seconds": 0.967184522500047,
+      "sum_actual_seconds": 192.01906610002334
+    },
+    {
+      "group": "n16_g200",
+      "inputs": 16,
+      "gates": 200,
+      "setting": "full",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 43,
+      "success_rate": 0.215,
+      "success_wilson_95": [
+        0.1637187625450758,
+        0.27702307348996613
+      ],
+      "accepted": 43,
+      "wrong_accepted": 0,
+      "wrong_per_accepted": 0.0,
+      "wrong_per_accepted_wilson_95": [
+        0,
+        0.08200980322579117
+      ],
+      "wrong_per_case": 0.0,
+      "timeouts": 157,
+      "statuses": {
+        "timeout": 157,
+        "accepted": 43
+      },
+      "mean_actual_seconds": 0.8779321425001672,
+      "median_actual_seconds": 1.0008115999989968,
+      "p95_actual_seconds": 1.0021851150011571,
+      "mean_failure_penalized_seconds": 0.8770426080000289,
+      "sum_actual_seconds": 175.58642850003343
+    },
+    {
+      "group": "n16_g200",
+      "inputs": 16,
+      "gates": 200,
+      "setting": "sample",
+      "method": "learned",
+      "cases": 200,
+      "successes": 24,
+      "success_rate": 0.12,
+      "success_wilson_95": [
+        0.08197992706375512,
+        0.17234252098296743
+      ],
+      "accepted": 188,
+      "wrong_accepted": 164,
+      "wrong_per_accepted": 0.8723404255319149,
+      "wrong_per_accepted_wilson_95": [
+        0.8170774302080204,
+        0.9126918327063736
+      ],
+      "wrong_per_case": 0.82,
+      "timeouts": 12,
+      "statuses": {
+        "accepted": 188,
+        "timeout": 12
+      },
+      "mean_actual_seconds": 0.852813664000123,
+      "median_actual_seconds": 0.8571660500001599,
+      "p95_actual_seconds": 1.0017667900025118,
+      "mean_failure_penalized_seconds": 0.9830973565000295,
+      "sum_actual_seconds": 170.5627328000246
+    },
+    {
+      "group": "n16_g200",
+      "inputs": 16,
+      "gates": 200,
+      "setting": "sample",
+      "method": "cegis",
+      "cases": 200,
+      "successes": 12,
+      "success_rate": 0.06,
+      "success_wilson_95": [
+        0.03465219425433187,
+        0.1019316929576627
+      ],
+      "accepted": 165,
+      "wrong_accepted": 153,
+      "wrong_per_accepted": 0.9272727272727272,
+      "wrong_per_accepted_wilson_95": [
+        0.877192538041669,
+        0.9579104099240843
+      ],
+      "wrong_per_case": 0.765,
+      "timeouts": 31,
+      "statuses": {
+        "accepted": 165,
+        "timeout": 31,
+        "unsat": 4
+      },
+      "mean_actual_seconds": 0.7529253914998845,
+      "median_actual_seconds": 0.7533995000003415,
+      "p95_actual_seconds": 1.0242750449975575,
+      "mean_failure_penalized_seconds": 0.9793423844999961,
+      "sum_actual_seconds": 150.58507829997689
+    },
+    {
+      "group": "n16_g200",
+      "inputs": 16,
+      "gates": 200,
+      "setting": "sample",
+      "method": "exhaustive",
+      "cases": 200,
+      "successes": 12,
+      "success_rate": 0.06,
+      "success_wilson_95": [
+        0.03465219425433187,
+        0.1019316929576627
+      ],
+      "accepted": 176,
+      "wrong_accepted": 164,
+      "wrong_per_accepted": 0.9318181818181818,
+      "wrong_per_accepted_wilson_95": [
+        0.884618660586976,
+        0.9605702129727481
+      ],
+      "wrong_per_case": 0.82,
+      "timeouts": 24,
+      "statuses": {
+        "accepted": 176,
+        "timeout": 24
+      },
+      "mean_actual_seconds": 0.19297206749996804,
+      "median_actual_seconds": 0.0036885000008624047,
+      "p95_actual_seconds": 1.0001050349997058,
+      "mean_failure_penalized_seconds": 0.9560927074999926,
+      "sum_actual_seconds": 38.59441349999361
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "group": "n10_g50",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.0,
+      "success_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "success_difference_bonferroni_ci": [
+        0.0,
+        0.0
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.1506867519999014,
+      "penalized_time_advantage_ci95": [
+        0.12937155103726264,
+        0.1733814202125104
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        0.11829680528112453,
+        0.18671657137501516
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.16127237949989648,
+      "actual_time_advantage_ci95": [
+        0.1383706596123238,
+        0.18497744629989052
+      ],
+      "success_criterion_pass": false,
+      "time_criterion_pass": true,
+      "penalized_time_criterion_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "group": "n10_g100",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.155,
+      "success_difference_ci95": [
+        0.105,
+        0.205
+      ],
+      "success_difference_bonferroni_ci": [
+        0.085,
+        0.235
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.3502690515000177,
+      "penalized_time_advantage_ci95": [
+        0.30650236320000634,
+        0.39433844693743453
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        0.28423505879386834,
+        0.41894423043128837
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.3189668145000087,
+      "actual_time_advantage_ci95": [
+        0.262932401387588,
+        0.3748307666251085
+      ],
+      "success_criterion_pass": true,
+      "time_criterion_pass": true,
+      "penalized_time_criterion_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "group": "n10_g200",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.575,
+      "success_difference_ci95": [
+        0.505,
+        0.645
+      ],
+      "success_difference_bonferroni_ci": [
+        0.465,
+        0.685
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.3678446474999237,
+      "penalized_time_advantage_ci95": [
+        0.33093446531234394,
+        0.4036232024124133
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        0.3089036864373161,
+        0.42137417829994883
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.355965425999857,
+      "actual_time_advantage_ci95": [
+        0.30918660177494417,
+        0.4007498883123512
+      ],
+      "success_criterion_pass": true,
+      "time_criterion_pass": true,
+      "penalized_time_criterion_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "group": "n12_g50",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.005,
+      "success_difference_ci95": [
+        0.0,
+        0.015
+      ],
+      "success_difference_bonferroni_ci": [
+        0.0,
+        0.025
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.11339738150008997,
+      "penalized_time_advantage_ci95": [
+        0.0959330067250694,
+        0.13220859115020947
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        0.08717601451880125,
+        0.14328896229381774
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.1080875670000296,
+      "actual_time_advantage_ci95": [
+        0.08476640353759718,
+        0.1318500446376597
+      ],
+      "success_criterion_pass": false,
+      "time_criterion_pass": true,
+      "penalized_time_criterion_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "group": "n12_g100",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.335,
+      "success_difference_ci95": [
+        0.265,
+        0.405
+      ],
+      "success_difference_bonferroni_ci": [
+        0.23,
+        0.44
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.3987422185000651,
+      "penalized_time_advantage_ci95": [
+        0.35134605750009407,
+        0.44576126772510405
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        0.32705136922503847,
+        0.47438305371258377
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.3443529305000993,
+      "actual_time_advantage_ci95": [
+        0.27922655647505645,
+        0.4069225922625778
+      ],
+      "success_criterion_pass": true,
+      "time_criterion_pass": true,
+      "penalized_time_criterion_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "group": "n12_g200",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.465,
+      "success_difference_ci95": [
+        0.39987500000000015,
+        0.535
+      ],
+      "success_difference_bonferroni_ci": [
+        0.365,
+        0.575
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.051143410000013316,
+      "penalized_time_advantage_ci95": [
+        0.03817014553753279,
+        0.0640869905123975
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        0.03091365792490137,
+        0.07146221688121511
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.029415167999968617,
+      "actual_time_advantage_ci95": [
+        -0.0007089520125650779,
+        0.05596543810002139
+      ],
+      "success_criterion_pass": true,
+      "time_criterion_pass": false,
+      "penalized_time_criterion_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "group": "n16_g50",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.025,
+      "success_difference_ci95": [
+        -0.01,
+        0.06
+      ],
+      "success_difference_bonferroni_ci": [
+        -0.03,
+        0.08
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.184580912000074,
+      "penalized_time_advantage_ci95": [
+        0.1515458771751321,
+        0.21828929679999964
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        0.13287552421878684,
+        0.23607164800013383
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.058409522000101785,
+      "actual_time_advantage_ci95": [
+        -0.003459638000036874,
+        0.11729819523760941
+      ],
+      "success_criterion_pass": false,
+      "time_criterion_pass": false,
+      "penalized_time_criterion_pass": true,
+      "criterion_pass": false
+    },
+    {
+      "group": "n16_g100",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.28,
+      "success_difference_ci95": [
+        0.2,
+        0.355
+      ],
+      "success_difference_bonferroni_ci": [
+        0.16,
+        0.395
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.26870709150003674,
+      "penalized_time_advantage_ci95": [
+        0.22039643833766082,
+        0.3162329073377041
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        0.194047062731315,
+        0.33978524142505384
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.21033408600011172,
+      "actual_time_advantage_ci95": [
+        0.14582975366279402,
+        0.2725286878500917
+      ],
+      "success_criterion_pass": true,
+      "time_criterion_pass": true,
+      "penalized_time_criterion_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "group": "n16_g200",
+      "pairs": 200,
+      "success_difference_learned_minus_cegis": 0.225,
+      "success_difference_ci95": [
+        0.165,
+        0.285
+      ],
+      "success_difference_bonferroni_ci": [
+        0.135,
+        0.315
+      ],
+      "penalized_time_advantage_cegis_minus_learned_seconds": 0.011873794499952055,
+      "penalized_time_advantage_ci95": [
+        -0.0033497930000028187,
+        0.027549496524876746
+      ],
+      "penalized_time_advantage_bonferroni_ci": [
+        -0.011536025718786844,
+        0.03538409309374464
+      ],
+      "actual_time_advantage_cegis_minus_learned_seconds": 0.00132325249999667,
+      "actual_time_advantage_ci95": [
+        -0.025599043037446787,
+        0.026403321587450113
+      ],
+      "success_criterion_pass": true,
+      "time_criterion_pass": false,
+      "penalized_time_criterion_pass": false,
+      "criterion_pass": true
+    }
+  ],
+  "registered_criterion_label": "useful",
+  "passing_groups": [
+    "n10_g50",
+    "n10_g100",
+    "n10_g200",
+    "n12_g50",
+    "n12_g100",
+    "n12_g200",
+    "n16_g100",
+    "n16_g200"
+  ],
+  "criterion_runtime": "actual measured wall-clock seconds, following user request and pre-analysis clarification",
+  "secondary_failure_penalized_label": "useful",
+  "secondary_failure_penalized_passing_groups": [
+    "n10_g50",
+    "n10_g100",
+    "n10_g200",
+    "n12_g50",
+    "n12_g100",
+    "n12_g200",
+    "n16_g50",
+    "n16_g100",
+    "n16_g200"
+  ],
+  "raw_log_sha256": "18f9a4c271791440606e9175cac63046bee117cb6f26078f4c7db9ab7f4a94b0",
+  "model_sha256_unchanged": true
+}

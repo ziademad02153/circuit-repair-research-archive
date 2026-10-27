@@ -1,0 +1,450 @@
+{
+  "analysis_type": "post-hoc descriptive review of reviewer claims; not a new confirmatory test",
+  "raw_sha256": "a73dd0d301bf7ef41963b9f56d67f78d99443566fb1b79d4ba972c5fc3d3d0d2",
+  "primary": {
+    "comparator": "sample_error",
+    "unique_circuits": 250,
+    "repeats_per_circuit": 2,
+    "success": {
+      "difference": 0.09,
+      "ci95": [
+        0.054,
+        0.128
+      ],
+      "ci97_5": [
+        0.05,
+        0.13402500000000148
+      ]
+    },
+    "penalized_time": {
+      "difference": 0.01036280900004931,
+      "ci95": [
+        -0.020340672899906896,
+        0.04357921459016705
+      ],
+      "ci97_5": [
+        -0.024124513357611795,
+        0.04868792159753766
+      ]
+    },
+    "actual_time": {
+      "difference": 0.0069769110001798255,
+      "ci95": [
+        -0.02372284886987327,
+        0.03997702527506297
+      ],
+      "ci97_5": [
+        -0.027512872947406775,
+        0.045442088320176884
+      ]
+    },
+    "decision": "learned benefit demonstrated in a registered endpoint",
+    "success_benefit": true,
+    "penalized_time_benefit": false
+  },
+  "larger": {
+    "learned": {
+      "success_trials": 367,
+      "trials": 500,
+      "checks_observed_n": 405,
+      "mean_checks_observed": 1036.7827160493828,
+      "mean_checks_success_only": 332.36784741144413,
+      "median_checks_success_only": 25.0,
+      "p90_checks_success_only": 925.0,
+      "p95_checks_success_only": 1820.0,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.0018412370369737295
+        },
+        "feature_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.05383591950621512
+        },
+        "inference_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.09933443975299461
+        },
+        "sorting_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.0025622730864765966
+        },
+        "checking_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.086126334074041
+        }
+      },
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 367,
+        "timeout": 95
+      }
+    },
+    "sample_error": {
+      "success_trials": 322,
+      "trials": 500,
+      "checks_observed_n": 360,
+      "mean_checks_observed": 1528.4333333333334,
+      "mean_checks_success_only": 783.5962732919255,
+      "median_checks_success_only": 17.0,
+      "p90_checks_success_only": 2760.0,
+      "p95_checks_success_only": 4392.0,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 360,
+          "mean_on_observed": 0.001776836944372917
+        },
+        "feature_seconds": {
+          "observed_trials": 360,
+          "mean_on_observed": 0.044160076944465096
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 360,
+          "mean_on_observed": 0.0018649999999575408
+        },
+        "checking_seconds": {
+          "observed_trials": 360,
+          "mean_on_observed": 0.11114795499993811
+        }
+      },
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 322,
+        "timeout": 140
+      }
+    },
+    "local_improvement": {
+      "success_trials": 320,
+      "trials": 500,
+      "checks_observed_n": 358,
+      "mean_checks_observed": 1621.1061452513966,
+      "mean_checks_success_only": 882.61875,
+      "median_checks_success_only": 18.0,
+      "p90_checks_success_only": 2814.5000000000014,
+      "p95_checks_success_only": 5717.550000000005,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 358,
+          "mean_on_observed": 0.0017205650838251797
+        },
+        "feature_seconds": {
+          "observed_trials": 358,
+          "mean_on_observed": 0.014909776815624375
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 358,
+          "mean_on_observed": 0.0019082784915985813
+        },
+        "checking_seconds": {
+          "observed_trials": 358,
+          "mean_on_observed": 0.11523855642469483
+        }
+      },
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 320,
+        "timeout": 142
+      }
+    },
+    "cegis": {
+      "success_trials": 261,
+      "trials": 500,
+      "checks_observed_n": 337,
+      "mean_checks_observed": 2.578635014836795,
+      "mean_checks_success_only": 2.992337164750958,
+      "median_checks_success_only": 3.0,
+      "p90_checks_success_only": 5.0,
+      "p95_checks_success_only": 6.0,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      },
+      "statuses": {
+        "unsat": 76,
+        "accepted": 261,
+        "timeout": 163
+      }
+    }
+  },
+  "faults_all_test": [
+    {
+      "fault_type": "lut",
+      "method": "learned",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 194,
+      "success_rate": 0.8981481481481481,
+      "mean_penalized_seconds": 0.25901382638878406
+    },
+    {
+      "fault_type": "lut",
+      "method": "local_improvement",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 156,
+      "success_rate": 0.7222222222222222,
+      "mean_penalized_seconds": 0.3222560268518632
+    },
+    {
+      "fault_type": "lut",
+      "method": "local_after_error",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 104,
+      "success_rate": 0.48148148148148145,
+      "mean_penalized_seconds": 0.616171793055552
+    },
+    {
+      "fault_type": "lut",
+      "method": "sample_error",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 158,
+      "success_rate": 0.7314814814814815,
+      "mean_penalized_seconds": 0.3298350736112702
+    },
+    {
+      "fault_type": "lut",
+      "method": "random",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 138,
+      "success_rate": 0.6388888888888888,
+      "mean_penalized_seconds": 0.48859686018519183
+    },
+    {
+      "fault_type": "lut",
+      "method": "exhaustive",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 160,
+      "success_rate": 0.7407407407407407,
+      "mean_penalized_seconds": 0.37498948564820644
+    },
+    {
+      "fault_type": "lut",
+      "method": "cegis",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 163,
+      "success_rate": 0.7546296296296297,
+      "mean_penalized_seconds": 0.5158090824073346
+    },
+    {
+      "fault_type": "wire",
+      "method": "learned",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 235,
+      "success_rate": 0.9251968503937008,
+      "mean_penalized_seconds": 0.2488755279528551
+    },
+    {
+      "fault_type": "wire",
+      "method": "local_improvement",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 226,
+      "success_rate": 0.889763779527559,
+      "mean_penalized_seconds": 0.19415166929115732
+    },
+    {
+      "fault_type": "wire",
+      "method": "local_after_error",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 179,
+      "success_rate": 0.7047244094488189,
+      "mean_penalized_seconds": 0.41770769330701224
+    },
+    {
+      "fault_type": "wire",
+      "method": "sample_error",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 226,
+      "success_rate": 0.889763779527559,
+      "mean_penalized_seconds": 0.2115339527559326
+    },
+    {
+      "fault_type": "wire",
+      "method": "random",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 176,
+      "success_rate": 0.6929133858267716,
+      "mean_penalized_seconds": 0.4243488779526862
+    },
+    {
+      "fault_type": "wire",
+      "method": "exhaustive",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 197,
+      "success_rate": 0.7755905511811023,
+      "mean_penalized_seconds": 0.3276820192913158
+    },
+    {
+      "fault_type": "wire",
+      "method": "cegis",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 165,
+      "success_rate": 0.6496062992125984,
+      "mean_penalized_seconds": 0.5534747523622537
+    },
+    {
+      "fault_type": "permanent",
+      "method": "learned",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 28,
+      "success_rate": 0.2153846153846154,
+      "mean_penalized_seconds": 0.8167750192307441
+    },
+    {
+      "fault_type": "permanent",
+      "method": "local_improvement",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 28,
+      "success_rate": 0.2153846153846154,
+      "mean_penalized_seconds": 0.8035404607691956
+    },
+    {
+      "fault_type": "permanent",
+      "method": "local_after_error",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 24,
+      "success_rate": 0.18461538461538463,
+      "mean_penalized_seconds": 0.8365575438461047
+    },
+    {
+      "fault_type": "permanent",
+      "method": "sample_error",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 28,
+      "success_rate": 0.2153846153846154,
+      "mean_penalized_seconds": 0.8087050376923098
+    },
+    {
+      "fault_type": "permanent",
+      "method": "random",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 24,
+      "success_rate": 0.18461538461538463,
+      "mean_penalized_seconds": 0.8396136830769907
+    },
+    {
+      "fault_type": "permanent",
+      "method": "exhaustive",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 22,
+      "success_rate": 0.16923076923076924,
+      "mean_penalized_seconds": 0.861247444615471
+    },
+    {
+      "fault_type": "permanent",
+      "method": "cegis",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 23,
+      "success_rate": 0.17692307692307693,
+      "mean_penalized_seconds": 0.8752106738461477
+    }
+  ],
+  "larger_union_any_method_any_repeat": 194,
+  "larger_learned_any_repeat": 184,
+  "larger_learned_both_repeats": 183,
+  "matched_success_checks": {
+    "sample_error": {
+      "pairs": 320,
+      "learned_mean": 286.3,
+      "rule_mean": 785.375,
+      "learned_median": 14.5,
+      "rule_median": 17.0,
+      "learned_fewer": 176,
+      "rule_fewer": 104,
+      "equal": 40
+    },
+    "local_improvement": {
+      "pairs": 318,
+      "learned_mean": 281.47169811320754,
+      "rule_mean": 885.0251572327044,
+      "learned_median": 14.0,
+      "rule_median": 18.0,
+      "learned_fewer": 182,
+      "rule_fewer": 94,
+      "equal": 42
+    }
+  },
+  "permanent_cegis_all_test": {
+    "trials": 130,
+    "unique_circuits": 65,
+    "statuses": {
+      "unsat": 86,
+      "accepted": 23,
+      "timeout": 21
+    },
+    "unsat_unique": 43
+  },
+  "permanent_cegis_larger": {
+    "trials": 116,
+    "unique_circuits": 58,
+    "statuses": {
+      "unsat": 76,
+      "accepted": 19,
+      "timeout": 21
+    },
+    "unsat_unique": 38
+  },
+  "caveats": [
+    "Counts of checks with a recorded result mix successes and exhausted searches and exclude most timeouts.",
+    "Stage means condition on stage completion; missing values are not zeros.",
+    "Common-success comparisons still condition on successes inside the time budget; they are descriptive, not hardware-independent universal rank distributions.",
+    "Observed solved union is not a certified repairability ceiling.",
+    "UNSAT is a result of our current encoding in the fixed one-edit domain, not general physical irreparability. Counts must separate unique circuits and timing repeats.",
+    "Fault breakdown covers all 300 test circuits; primary pooled comparison covers 250 larger circuits.",
+    "Removing need features must also remove derived after-error/before-error/improvement/source-error and required-bit features, and avoid computing the removed messages."
+  ],
+  "no_need_remove_feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    17,
+    18,
+    19,
+    20
+  ]
+}

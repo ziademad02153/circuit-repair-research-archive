@@ -1,0 +1,65 @@
+{
+  "created": "2026-10-25",
+  "intent": "exploratory second pilot after seeing pilot 1; new held-out seeds",
+  "train": {
+    "seeds": [
+      50000,
+      50479
+    ],
+    "sizes": [
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        14
+      ]
+    ],
+    "count": 480
+  },
+  "validation": {
+    "seeds": [
+      60000,
+      60119
+    ],
+    "sizes": [
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        14
+      ]
+    ],
+    "count": 120
+  },
+  "test": {
+    "seeds": [
+      70000,
+      70399
+    ],
+    "sizes": [
+      [
+        6,
+        18
+      ],
+      [
+        7,
+        22
+      ]
+    ],
+    "count": 400
+  },
+  "sampled_specification_rows": 8,
+  "primary_budget": 16,
+  "model": {
+    "trees": 48,
+    "depth": 9,
+    "leaf": 12,
+    "seed": 20261026
+  },
+  "no_post_test_hyperparameter_selection": true,
+  "scope": "shared local proposer with global verifier; known stuck location; one-edit candidates; synthetic harmful faults conditional on changing outputs"
+}

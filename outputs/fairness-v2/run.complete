@@ -1,0 +1,7 @@
+{
+  "trials": 4380,
+  "raw_sha256": "a73dd0d301bf7ef41963b9f56d67f78d99443566fb1b79d4ba972c5fc3d3d0d2",
+  "cases_sha256": "326bf3757f23c0cd9cfde82625772ca1199ae70b740c4affe1cc114faab4c32c",
+  "selection_sha256": "45edbac0718d9a4b60d0333385fb6b829b4a7f69d7ae8ba6ff4cae37970c473e",
+  "seconds_this_run": 1842.831535600002
+}

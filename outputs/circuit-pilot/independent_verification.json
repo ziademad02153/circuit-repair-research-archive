@@ -1,0 +1,147 @@
+{
+  "all_16_boolean_operators_checked": true,
+  "random_circuits": 120,
+  "independent_input_assignments_checked": 5952,
+  "witness": {
+    "zero_one_edit_solutions": 0,
+    "one_edit_candidates": 69,
+    "two_edit_search_candidates_checked": 2754,
+    "automatically_found_edits": [
+      [
+        "wire",
+        2,
+        0,
+        4
+      ],
+      [
+        "wire",
+        3,
+        0,
+        4
+      ]
+    ],
+    "truth_table": [
+      {
+        "input": 0,
+        "target": [
+          0,
+          0
+        ],
+        "damaged": [
+          0,
+          0
+        ],
+        "repaired": [
+          0,
+          0
+        ]
+      },
+      {
+        "input": 1,
+        "target": [
+          0,
+          1
+        ],
+        "damaged": [
+          0,
+          0
+        ],
+        "repaired": [
+          0,
+          1
+        ]
+      },
+      {
+        "input": 2,
+        "target": [
+          0,
+          1
+        ],
+        "damaged": [
+          0,
+          0
+        ],
+        "repaired": [
+          0,
+          1
+        ]
+      },
+      {
+        "input": 3,
+        "target": [
+          0,
+          0
+        ],
+        "damaged": [
+          0,
+          0
+        ],
+        "repaired": [
+          0,
+          0
+        ]
+      },
+      {
+        "input": 4,
+        "target": [
+          0,
+          1
+        ],
+        "damaged": [
+          0,
+          1
+        ],
+        "repaired": [
+          0,
+          1
+        ]
+      },
+      {
+        "input": 5,
+        "target": [
+          1,
+          0
+        ],
+        "damaged": [
+          0,
+          1
+        ],
+        "repaired": [
+          1,
+          0
+        ]
+      },
+      {
+        "input": 6,
+        "target": [
+          1,
+          0
+        ],
+        "damaged": [
+          0,
+          1
+        ],
+        "repaired": [
+          1,
+          0
+        ]
+      },
+      {
+        "input": 7,
+        "target": [
+          0,
+          1
+        ],
+        "damaged": [
+          0,
+          1
+        ],
+        "repaired": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "seconds": 0.03653739999936079
+}

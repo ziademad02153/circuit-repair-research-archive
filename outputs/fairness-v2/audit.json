@@ -1,0 +1,14 @@
+{
+  "audit": "passed",
+  "raw_trials": 4380,
+  "unique_test_circuits": 300,
+  "development_selection_prefix_hash_verified": true,
+  "test_seen_at_selection": 0,
+  "all_gold_fingerprints_unique_and_disjoint_from_v1": true,
+  "frozen_sources_model_and_v1_logs_unchanged": true,
+  "independent_acceptance_checks": 2761,
+  "wrong_acceptances": 0,
+  "raw_sha256": "a73dd0d301bf7ef41963b9f56d67f78d99443566fb1b79d4ba972c5fc3d3d0d2",
+  "report_source_sha256": "c45e1bf7d6f662e8d64d40ad05678557c4196104c5c3b721c35b38b8f8e3c47f",
+  "audit_source_sha256": "9122ad42cbb289d30ad317912c70535941c7f028171001b23c50a67e16636290"
+}

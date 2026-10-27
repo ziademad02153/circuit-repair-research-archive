@@ -1,0 +1,40 @@
+{
+  "frozen_utc": "2026-10-25T13:32:52Z",
+  "selected": {
+    "full21": {
+      "variant": "full21",
+      "training_seed": 20261028,
+      "fit_seconds": 5.032238300002064,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 78,
+      "validation_mean_clipped_rank": 22.6,
+      "model_file": "outputs\\ablation-cnf-v3\\model_full21_20261028.json",
+      "model_sha256": "5c40ce080de61f92645f5baee8af726840a431bd5e66c5593cd2a0d5bac1cebb"
+    },
+    "no_need13": {
+      "variant": "no_need13",
+      "training_seed": 20261028,
+      "fit_seconds": 5.827288500000577,
+      "training_candidates": 189500,
+      "training_positive_candidates": 1527,
+      "validation_cases": 120,
+      "validation_top16_successes": 31,
+      "validation_mean_clipped_rank": 45.31666666666667,
+      "model_file": "outputs\\ablation-cnf-v3\\model_no_need13_20261028.json",
+      "model_sha256": "fad752425bed8663f3465e7efd7b3319ea8592d9efc4016129ccfcd821cf2066"
+    }
+  },
+  "all_model_hashes": {
+    "outputs\\ablation-cnf-v3\\model_full21_20261026.json": "57975a9687c8f0853b1068dc8623e434e74ff98415eeabf78e4ef381bf68cd2f",
+    "outputs\\ablation-cnf-v3\\model_full21_20261027.json": "9c7a084a6deb9745645cf5ad731db1d79228a97c7a32751385f4d460acf972b4",
+    "outputs\\ablation-cnf-v3\\model_full21_20261028.json": "5c40ce080de61f92645f5baee8af726840a431bd5e66c5593cd2a0d5bac1cebb",
+    "outputs\\ablation-cnf-v3\\model_no_need13_20261026.json": "256ff69e440caf58c85302d316ce80d736368e61713901a0fe6051004f378bb4",
+    "outputs\\ablation-cnf-v3\\model_no_need13_20261027.json": "4e83e787709f01d7f4ef20dbc820c1a264489c2ee5ba85161f3194560897d01b",
+    "outputs\\ablation-cnf-v3\\model_no_need13_20261028.json": "fad752425bed8663f3465e7efd7b3319ea8592d9efc4016129ccfcd821cf2066"
+  },
+  "training_summary_sha256": "5a5b57d71b90f72e0c0f7ea387d639b647a8acf5489c6b13e9c370d91a4a8342",
+  "protocol_sha256": "b7ce4656c58d1e7067f50e2233781e22e7ca392a358b67af6844a519c290c7cc",
+  "training_source_freeze_sha256": "8923a9fdccde148744b69879f92e0b9aac82ae5fa8298ffeddf5d6623d4be523"
+}

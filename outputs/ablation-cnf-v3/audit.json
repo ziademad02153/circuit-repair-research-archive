@@ -1,0 +1,16 @@
+{
+  "audit": "passed",
+  "trials": 9000,
+  "unique_test_circuits": 300,
+  "weights_validation_selection_verified": true,
+  "training_test_seeds_disjoint": true,
+  "full_control_original_seed_reproduced": true,
+  "protected_parents_sources_and_models_unchanged": true,
+  "no_unsat_or_exhaustion_vs_success_conflict": true,
+  "accepted_independent_audits": 5644,
+  "wrong_acceptances": 0,
+  "errors": 0,
+  "raw_sha256": "1bcfa956793fdbdb0b957bd143f44b85210e13d3443f322c68c53327dfe73366",
+  "report_sha256": "8517c7106b06025f4b1edc3c07f2352c8711fc10c8a675dfb0cc13116a22ce5e",
+  "audit_sha256": "2b0147ef2ce39c34c0a480f1b0201148deff00c34dc01ae700f94941582e8211"
+}

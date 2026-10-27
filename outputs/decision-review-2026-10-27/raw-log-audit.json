@@ -1,0 +1,604 @@
+{
+  "review_date": "2026-10-27",
+  "new_performance_experiments": 0,
+  "operations": "Hash checks, raw-log aggregation and exact re-execution of registered statistical analysis only.",
+  "raw_sha256": "1bcfa956793fdbdb0b957bd143f44b85210e13d3443f322c68c53327dfe73366",
+  "source_case_sha256": "502074d13a669e66d066f83c7ccc83e36f1ef0d8b940e232e676b537bd4de30c",
+  "frozen_hash_checks": [
+    {
+      "path": "outputs\\local-repair-pilot\\selected_model.json",
+      "expected": "e6cfd655b4912377d9a13f9881a3bd461da6a5b59881eca744bc678aa29229dd",
+      "actual": "e6cfd655b4912377d9a13f9881a3bd461da6a5b59881eca744bc678aa29229dd",
+      "matches": true
+    },
+    {
+      "path": "outputs\\fairness-v2\\preregistration.json",
+      "expected": "742d03d4a04a1f66050242b1bc61feab1c8a0af3c963e502b5ec91ceb1577297",
+      "actual": "742d03d4a04a1f66050242b1bc61feab1c8a0af3c963e502b5ec91ceb1577297",
+      "matches": true
+    },
+    {
+      "path": "outputs\\fairness-v2\\raw_trials.jsonl",
+      "expected": "a73dd0d301bf7ef41963b9f56d67f78d99443566fb1b79d4ba972c5fc3d3d0d2",
+      "actual": "a73dd0d301bf7ef41963b9f56d67f78d99443566fb1b79d4ba972c5fc3d3d0d2",
+      "matches": true
+    },
+    {
+      "path": "outputs\\fairness-v2\\summary.json",
+      "expected": "aed50225507eeffb51d3ce7dc5314dd53365ca4f1ae15370775d5958933b0f0c",
+      "actual": "aed50225507eeffb51d3ce7dc5314dd53365ca4f1ae15370775d5958933b0f0c",
+      "matches": true
+    },
+    {
+      "path": "work\\circuit_pilot.py",
+      "expected": "d40d9b15d8178ee28076bf34734ff9e7edc165fb68161136da46534fee2adfed",
+      "actual": "d40d9b15d8178ee28076bf34734ff9e7edc165fb68161136da46534fee2adfed",
+      "matches": true
+    },
+    {
+      "path": "work\\local_repair_pilot.py",
+      "expected": "d666bbdd7f9197326352cd9585dbf31f648f48b759bf41cd6c038518963bc9a1",
+      "actual": "d666bbdd7f9197326352cd9585dbf31f648f48b759bf41cd6c038518963bc9a1",
+      "matches": true
+    },
+    {
+      "path": "work\\decisive_engine.py",
+      "expected": "56ed53ba690a04ac50808054cd0be9aad3f50dbde641498a76927ed169f49fb5",
+      "actual": "56ed53ba690a04ac50808054cd0be9aad3f50dbde641498a76927ed169f49fb5",
+      "matches": true
+    },
+    {
+      "path": "work\\fairness_v2_methods.py",
+      "expected": "880fb7cde916bc7f16c77be36192d7950e71928aae7cdf0954c1fd557fb9ef05",
+      "actual": "880fb7cde916bc7f16c77be36192d7950e71928aae7cdf0954c1fd557fb9ef05",
+      "matches": true
+    },
+    {
+      "path": "work/v3_features.py",
+      "expected": "649abc9429554cdd999ebf9d4cb016791b209b9eaa733c87350735607914e4c7",
+      "actual": "649abc9429554cdd999ebf9d4cb016791b209b9eaa733c87350735607914e4c7",
+      "matches": true
+    },
+    {
+      "path": "work/v3_train.py",
+      "expected": "d83b26186e95f38cdb0fc6ed4539a3ca3b116c34ead2158195de2d787930fca7",
+      "actual": "d83b26186e95f38cdb0fc6ed4539a3ca3b116c34ead2158195de2d787930fca7",
+      "matches": true
+    },
+    {
+      "path": "work/v3_cnf.py",
+      "expected": "900a4389c54b41d9b90267dfc11676ebeed68d07a701238636969279e07d9994",
+      "actual": "900a4389c54b41d9b90267dfc11676ebeed68d07a701238636969279e07d9994",
+      "matches": true
+    },
+    {
+      "path": "work/v3_validate.py",
+      "expected": "803368309093c53979b9ae1fe1b863d0bcc6b511799c7ebf73ceabd8025844bd",
+      "actual": "803368309093c53979b9ae1fe1b863d0bcc6b511799c7ebf73ceabd8025844bd",
+      "matches": true
+    },
+    {
+      "path": "work/v3_methods.py",
+      "expected": "bfc90e1235df454de1d852f62aa924b7dfdbb83b568847d2fa354cf1d772ccb0",
+      "actual": "bfc90e1235df454de1d852f62aa924b7dfdbb83b568847d2fa354cf1d772ccb0",
+      "matches": true
+    },
+    {
+      "path": "work/v3_run.py",
+      "expected": "fa5e482deb0685e4f922332e2d1bb519ad5470c2d73b875d37698cbd0819bc0a",
+      "actual": "fa5e482deb0685e4f922332e2d1bb519ad5470c2d73b875d37698cbd0819bc0a",
+      "matches": true
+    },
+    {
+      "path": "work/requirements-v3.txt",
+      "expected": "30ce6303f0569628400851f103896877abf81a04d44509a7d50be70d516f299b",
+      "actual": "30ce6303f0569628400851f103896877abf81a04d44509a7d50be70d516f299b",
+      "matches": true
+    },
+    {
+      "path": "work/decisive_run.py",
+      "expected": "c9f7e830aa97dea7efa9d0fdfc6c639b2fed18a40d096651429b2cf261a27e2d",
+      "actual": "c9f7e830aa97dea7efa9d0fdfc6c639b2fed18a40d096651429b2cf261a27e2d",
+      "matches": true
+    },
+    {
+      "path": "work/fairness_v2_methods.py",
+      "expected": "880fb7cde916bc7f16c77be36192d7950e71928aae7cdf0954c1fd557fb9ef05",
+      "actual": "880fb7cde916bc7f16c77be36192d7950e71928aae7cdf0954c1fd557fb9ef05",
+      "matches": true
+    },
+    {
+      "path": "work/decisive_engine.py",
+      "expected": "56ed53ba690a04ac50808054cd0be9aad3f50dbde641498a76927ed169f49fb5",
+      "actual": "56ed53ba690a04ac50808054cd0be9aad3f50dbde641498a76927ed169f49fb5",
+      "matches": true
+    },
+    {
+      "path": "work/circuit_pilot.py",
+      "expected": "d40d9b15d8178ee28076bf34734ff9e7edc165fb68161136da46534fee2adfed",
+      "actual": "d40d9b15d8178ee28076bf34734ff9e7edc165fb68161136da46534fee2adfed",
+      "matches": true
+    },
+    {
+      "path": "work/local_repair_pilot.py",
+      "expected": "d666bbdd7f9197326352cd9585dbf31f648f48b759bf41cd6c038518963bc9a1",
+      "actual": "d666bbdd7f9197326352cd9585dbf31f648f48b759bf41cd6c038518963bc9a1",
+      "matches": true
+    },
+    {
+      "path": "outputs\\ablation-cnf-v3\\model_full21_20261026.json",
+      "expected": "57975a9687c8f0853b1068dc8623e434e74ff98415eeabf78e4ef381bf68cd2f",
+      "actual": "57975a9687c8f0853b1068dc8623e434e74ff98415eeabf78e4ef381bf68cd2f",
+      "matches": true
+    },
+    {
+      "path": "outputs\\ablation-cnf-v3\\model_full21_20261027.json",
+      "expected": "9c7a084a6deb9745645cf5ad731db1d79228a97c7a32751385f4d460acf972b4",
+      "actual": "9c7a084a6deb9745645cf5ad731db1d79228a97c7a32751385f4d460acf972b4",
+      "matches": true
+    },
+    {
+      "path": "outputs\\ablation-cnf-v3\\model_full21_20261028.json",
+      "expected": "5c40ce080de61f92645f5baee8af726840a431bd5e66c5593cd2a0d5bac1cebb",
+      "actual": "5c40ce080de61f92645f5baee8af726840a431bd5e66c5593cd2a0d5bac1cebb",
+      "matches": true
+    },
+    {
+      "path": "outputs\\ablation-cnf-v3\\model_no_need13_20261026.json",
+      "expected": "256ff69e440caf58c85302d316ce80d736368e61713901a0fe6051004f378bb4",
+      "actual": "256ff69e440caf58c85302d316ce80d736368e61713901a0fe6051004f378bb4",
+      "matches": true
+    },
+    {
+      "path": "outputs\\ablation-cnf-v3\\model_no_need13_20261027.json",
+      "expected": "4e83e787709f01d7f4ef20dbc820c1a264489c2ee5ba85161f3194560897d01b",
+      "actual": "4e83e787709f01d7f4ef20dbc820c1a264489c2ee5ba85161f3194560897d01b",
+      "matches": true
+    },
+    {
+      "path": "outputs\\ablation-cnf-v3\\model_no_need13_20261028.json",
+      "expected": "fad752425bed8663f3465e7efd7b3319ea8592d9efc4016129ccfcd821cf2066",
+      "actual": "fad752425bed8663f3465e7efd7b3319ea8592d9efc4016129ccfcd821cf2066",
+      "matches": true
+    }
+  ],
+  "existing_trials": 9000,
+  "unique_cases": 300,
+  "larger_cases": 250,
+  "case_source_matches_v2_test": true,
+  "all_accepted_audited": true,
+  "recorded_wrong_acceptances": 0,
+  "recorded_errors": 0,
+  "solver_reported_unsat": 51,
+  "observed_repaired_cases": 249,
+  "primary_contrasts_recomputed": [
+    {
+      "a": "forest_full_selected",
+      "b": "forest_no_need_selected",
+      "budget_seconds": 1.0,
+      "circuits": 250,
+      "success": {
+        "difference": 0.156,
+        "ci95": [
+          0.108,
+          0.208
+        ],
+        "ci97_5": [
+          0.1,
+          0.216
+        ]
+      },
+      "actual_time": {
+        "difference": 0.1429600200001005,
+        "ci95": [
+          0.10871379781025207,
+          0.17837587467992158
+        ],
+        "ci97_5": [
+          0.10400308075528701,
+          0.18264214462517522
+        ]
+      },
+      "penalized_time": {
+        "difference": 0.14294948680001834,
+        "ci95": [
+          0.10862946767990797,
+          0.17815132373005943
+        ],
+        "ci97_5": [
+          0.10407914024514375,
+          0.1825844726598116
+        ]
+      },
+      "matched_success_checks": {
+        "pairs": 143,
+        "a": {
+          "mean": 428.8111888111888,
+          "median": 22.0,
+          "p90": 996.7999999999998,
+          "p95": 2832.3000000000015
+        },
+        "b": {
+          "mean": 1712.8881118881118,
+          "median": 744.0,
+          "p90": 5373.0,
+          "p95": 6051.8
+        }
+      }
+    },
+    {
+      "a": "learned_frozen",
+      "b": "cegis_cnf",
+      "budget_seconds": 1.0,
+      "circuits": 250,
+      "success": {
+        "difference": -0.072,
+        "ci95": [
+          -0.104,
+          -0.04
+        ],
+        "ci97_5": [
+          -0.112,
+          -0.036
+        ]
+      },
+      "actual_time": {
+        "difference": -0.33846632480004335,
+        "ci95": [
+          -0.3825450687501034,
+          -0.29564439558024386
+        ],
+        "ci97_5": [
+          -0.3893535013849945,
+          -0.2898068170450627
+        ]
+      },
+      "penalized_time": {
+        "difference": -0.20356726440004422,
+        "ci95": [
+          -0.2382636763799466,
+          -0.1708586514599796
+        ],
+        "ci97_5": [
+          -0.2432017837849966,
+          -0.16643585533493716
+        ]
+      },
+      "matched_success_checks": {
+        "pairs": 186,
+        "a": {
+          "mean": 336.6182795698925,
+          "median": 26.5,
+          "p90": 875.5,
+          "p95": 1744.0
+        },
+        "b": {
+          "mean": 4.043010752688172,
+          "median": 3.5,
+          "p90": 7.0,
+          "p95": 9.0
+        }
+      }
+    }
+  ],
+  "larger_budget_table": [
+    {
+      "budget_seconds": 0.1,
+      "circuits": 250,
+      "methods": {
+        "learned_frozen": {
+          "successes": 54,
+          "mean_actual_seconds": 0.10823849160010286,
+          "statuses": {
+            "timeout": 196,
+            "accepted": 54
+          }
+        },
+        "forest_full_selected": {
+          "successes": 52,
+          "mean_actual_seconds": 0.10718210480002745,
+          "statuses": {
+            "timeout": 198,
+            "accepted": 52
+          }
+        },
+        "forest_no_need_selected": {
+          "successes": 53,
+          "mean_actual_seconds": 0.09644028039988188,
+          "statuses": {
+            "timeout": 197,
+            "accepted": 53
+          }
+        },
+        "local_improvement": {
+          "successes": 123,
+          "mean_actual_seconds": 0.06302543999999762,
+          "statuses": {
+            "timeout": 121,
+            "accepted": 123,
+            "exhausted": 6
+          }
+        },
+        "local_after_error": {
+          "successes": 49,
+          "mean_actual_seconds": 0.08992876600011368,
+          "statuses": {
+            "timeout": 197,
+            "accepted": 49,
+            "exhausted": 4
+          }
+        },
+        "sample_error": {
+          "successes": 108,
+          "mean_actual_seconds": 0.07114979919999315,
+          "statuses": {
+            "timeout": 139,
+            "accepted": 108,
+            "exhausted": 3
+          }
+        },
+        "random": {
+          "successes": 56,
+          "mean_actual_seconds": 0.08803710879999563,
+          "statuses": {
+            "timeout": 186,
+            "accepted": 56,
+            "exhausted": 8
+          }
+        },
+        "exhaustive": {
+          "successes": 94,
+          "mean_actual_seconds": 0.07376438079983927,
+          "statuses": {
+            "accepted": 94,
+            "timeout": 148,
+            "exhausted": 8
+          }
+        },
+        "cegis_z3": {
+          "successes": 10,
+          "mean_actual_seconds": 0.09873847039991233,
+          "statuses": {
+            "timeout": 226,
+            "unsat": 14,
+            "accepted": 10
+          }
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "mean_actual_seconds": 0.016429253199967207,
+          "statuses": {
+            "accepted": 204,
+            "unsat": 46
+          }
+        }
+      },
+      "learner_only_successes": 0,
+      "common_successes": 54,
+      "learner_faster_common_successes": 0,
+      "cnf_max_seconds": 0.07100540000101319
+    },
+    {
+      "budget_seconds": 1.0,
+      "circuits": 250,
+      "methods": {
+        "learned_frozen": {
+          "successes": 186,
+          "mean_actual_seconds": 0.355011393200024,
+          "statuses": {
+            "accepted": 186,
+            "exhausted": 19,
+            "timeout": 45
+          }
+        },
+        "forest_full_selected": {
+          "successes": 186,
+          "mean_actual_seconds": 0.35925941600004446,
+          "statuses": {
+            "accepted": 186,
+            "exhausted": 19,
+            "timeout": 45
+          }
+        },
+        "forest_no_need_selected": {
+          "successes": 147,
+          "mean_actual_seconds": 0.502219436000145,
+          "statuses": {
+            "accepted": 147,
+            "exhausted": 19,
+            "timeout": 84
+          }
+        },
+        "local_improvement": {
+          "successes": 165,
+          "mean_actual_seconds": 0.3670110548000521,
+          "statuses": {
+            "accepted": 165,
+            "exhausted": 19,
+            "timeout": 66
+          }
+        },
+        "local_after_error": {
+          "successes": 111,
+          "mean_actual_seconds": 0.610709520400007,
+          "statuses": {
+            "accepted": 111,
+            "exhausted": 19,
+            "timeout": 120
+          }
+        },
+        "sample_error": {
+          "successes": 163,
+          "mean_actual_seconds": 0.3770606764000549,
+          "statuses": {
+            "accepted": 163,
+            "exhausted": 19,
+            "timeout": 68
+          }
+        },
+        "random": {
+          "successes": 129,
+          "mean_actual_seconds": 0.5599774763999303,
+          "statuses": {
+            "accepted": 129,
+            "exhausted": 19,
+            "timeout": 102
+          }
+        },
+        "exhaustive": {
+          "successes": 148,
+          "mean_actual_seconds": 0.45960880399997406,
+          "statuses": {
+            "accepted": 148,
+            "exhausted": 19,
+            "timeout": 83
+          }
+        },
+        "cegis_z3": {
+          "successes": 142,
+          "mean_actual_seconds": 0.5420987455999712,
+          "statuses": {
+            "timeout": 70,
+            "accepted": 142,
+            "unsat": 38
+          }
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "mean_actual_seconds": 0.016545068399980663,
+          "statuses": {
+            "accepted": 204,
+            "unsat": 46
+          }
+        }
+      },
+      "learner_only_successes": 0,
+      "common_successes": 186,
+      "learner_faster_common_successes": 0,
+      "cnf_max_seconds": 0.06475719999798457
+    },
+    {
+      "budget_seconds": 10.0,
+      "circuits": 250,
+      "methods": {
+        "learned_frozen": {
+          "successes": 202,
+          "mean_actual_seconds": 0.9678115339999058,
+          "statuses": {
+            "accepted": 202,
+            "exhausted": 39,
+            "timeout": 9
+          }
+        },
+        "forest_full_selected": {
+          "successes": 201,
+          "mean_actual_seconds": 1.007265336399927,
+          "statuses": {
+            "accepted": 201,
+            "exhausted": 39,
+            "timeout": 10
+          }
+        },
+        "forest_no_need_selected": {
+          "successes": 190,
+          "mean_actual_seconds": 1.9585248968001252,
+          "statuses": {
+            "accepted": 190,
+            "exhausted": 39,
+            "timeout": 21
+          }
+        },
+        "local_improvement": {
+          "successes": 188,
+          "mean_actual_seconds": 1.5870060243999033,
+          "statuses": {
+            "accepted": 188,
+            "exhausted": 39,
+            "timeout": 23
+          }
+        },
+        "local_after_error": {
+          "successes": 171,
+          "mean_actual_seconds": 2.7528348480000857,
+          "statuses": {
+            "accepted": 171,
+            "exhausted": 39,
+            "timeout": 40
+          }
+        },
+        "sample_error": {
+          "successes": 188,
+          "mean_actual_seconds": 1.6100684652001218,
+          "statuses": {
+            "accepted": 188,
+            "exhausted": 39,
+            "timeout": 23
+          }
+        },
+        "random": {
+          "successes": 176,
+          "mean_actual_seconds": 2.4516970171999275,
+          "statuses": {
+            "accepted": 176,
+            "exhausted": 39,
+            "timeout": 35
+          }
+        },
+        "exhaustive": {
+          "successes": 193,
+          "mean_actual_seconds": 1.6899337423999532,
+          "statuses": {
+            "accepted": 193,
+            "exhausted": 39,
+            "timeout": 18
+          }
+        },
+        "cegis_z3": {
+          "successes": 200,
+          "mean_actual_seconds": 1.1363919156000337,
+          "statuses": {
+            "accepted": 200,
+            "unsat": 45,
+            "timeout": 5
+          }
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "mean_actual_seconds": 0.01668896760001371,
+          "statuses": {
+            "accepted": 204,
+            "unsat": 46
+          }
+        }
+      },
+      "learner_only_successes": 0,
+      "common_successes": 202,
+      "learner_faster_common_successes": 0,
+      "cnf_max_seconds": 0.06914659999893047
+    }
+  ],
+  "overhead_common_successes_1s": {
+    "matched_successes": 186,
+    "candidate_plus_features_slower_than_cnf": 172,
+    "mean_candidate_plus_feature_seconds": 0.05026353279576416,
+    "mean_inference_seconds": 0.09036015537626504,
+    "mean_sorting_seconds": 0.0025207645160085657,
+    "mean_complete_cnf_seconds": 0.016722433870933355,
+    "caution": "Conditional measured stages; not a causal speedup attribution or a new algorithm with inference removed."
+  },
+  "v2_larger_trial_counts": {
+    "learned": {
+      "successful_trials": 367,
+      "trials": 500
+    },
+    "sample_error": {
+      "successful_trials": 322,
+      "trials": 500
+    },
+    "local_improvement": {
+      "successful_trials": 320,
+      "trials": 500
+    }
+  },
+  "review_script_sha256": "1f6a4b6afe8b20d84a2a05aeb747dc1c51a0fcabde8be3f79f1e04382f524dc8"
+}

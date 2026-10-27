@@ -1,0 +1,15 @@
+{
+  "recorded_utc": "2026-10-25T09:59:12Z",
+  "stage": "before running any summary/comparison script or inspecting success counts or runtimes in the current benchmark; only completion, hard-kill and execution-error counts inspected",
+  "reason": "The human criterion says wall-clock time. The initial protocol added failure-penalized time without an explicit human request. Apply the original human criterion to actual wall-clock time; retain the added penalty metric and original protocol unchanged for transparency.",
+  "primary_rule": "learned useful iff paired 95% CI of success difference learned minus CEGIS OR actual mean wall-time difference CEGIS minus learned is strictly above zero in at least one larger full-spec group; else SAT/CEGIS dominates.",
+  "unchanged": [
+    "all model weights and feature code",
+    "all algorithms and candidate space",
+    "all case seeds and counts",
+    "all budgets and timeout handling",
+    "all raw logs",
+    "confidence level and bootstrap specification"
+  ],
+  "secondary": "also report the initially recorded failure-penalized criterion label separately"
+}

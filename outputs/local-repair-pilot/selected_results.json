@@ -1,0 +1,7685 @@
+{
+  "protocol": {
+    "scope": "exploratory; validation-only ensemble-size selection followed by unused test seeds",
+    "validation": {
+      "4": {
+        "successes_at_16": 75,
+        "cases": 120,
+        "predict_seconds": 0.07226049999371753
+      },
+      "8": {
+        "successes_at_16": 75,
+        "cases": 120,
+        "predict_seconds": 0.09990559999823745
+      },
+      "16": {
+        "successes_at_16": 74,
+        "cases": 120,
+        "predict_seconds": 0.15974860000278568
+      },
+      "24": {
+        "successes_at_16": 77,
+        "cases": 120,
+        "predict_seconds": 0.22260939999796392
+      },
+      "48": {
+        "successes_at_16": 77,
+        "cases": 120,
+        "predict_seconds": 0.40907579999475274
+      }
+    },
+    "selected_trees": 24,
+    "selection_rule": "highest validation success at 16 checks; ties use fewer trees",
+    "test_seeds": [
+      90000,
+      90399
+    ],
+    "test_count": 400,
+    "test_sizes": [
+      [
+        6,
+        18
+      ],
+      [
+        7,
+        22
+      ]
+    ],
+    "no_model_changes_after_opening_these_test_cases": true
+  },
+  "test": {
+    "cases": 400,
+    "one_edit_repairable": 345,
+    "methods": {
+      "learned_local": {
+        "successes": 272,
+        "mean_ms": 5.428187500024251,
+        "median_ms": 5.60715000028722,
+        "mean_checks": 7.015
+      },
+      "global_small_edit": {
+        "successes": 263,
+        "mean_ms": 8.339844250044735,
+        "median_ms": 9.017700001095363,
+        "mean_checks": 7.24
+      }
+    },
+    "paired_success_difference": {
+      "difference": 0.0225,
+      "bootstrap_95_percent": [
+        -0.01,
+        0.0575
+      ]
+    },
+    "mean_runtime_ratio_global_over_local": {
+      "ratio": 1.5363957582540169,
+      "paired_bootstrap_95_percent": [
+        1.5156336134997832,
+        1.5570939445705139
+      ]
+    }
+  },
+  "seconds": 13.660573800001657,
+  "cases": [
+    {
+      "seed": 90000,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 5.766000000221538,
+        "end_to_end_ms": 5.863200000021607
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.774800000130199,
+        "end_to_end_ms": 6.798099999286933
+      }
+    },
+    {
+      "seed": 90001,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.097799999130075,
+        "end_to_end_ms": 10.406899998997687
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 14,
+        "ranking_ms": 6.227500000022701,
+        "end_to_end_ms": 6.3902000001689885
+      }
+    },
+    {
+      "seed": 90002,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 4.977700000381446,
+        "end_to_end_ms": 5.08570000056352
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.122399998479523,
+        "end_to_end_ms": 7.270899999639369
+      }
+    },
+    {
+      "seed": 90003,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.491300001172931,
+        "end_to_end_ms": 9.644800000387477
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.646800000657095,
+        "end_to_end_ms": 8.270800000900635
+      }
+    },
+    {
+      "seed": 90004,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.71319999996922,
+        "end_to_end_ms": 4.740999998830375
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.040100000973325,
+        "end_to_end_ms": 6.0545000014826655
+      }
+    },
+    {
+      "seed": 90005,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 15,
+        "ranking_ms": 9.73869999870658,
+        "end_to_end_ms": 9.928999999829102
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.2099000006128335,
+        "end_to_end_ms": 6.403400000635884
+      }
+    },
+    {
+      "seed": 90006,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.624200000762357,
+        "end_to_end_ms": 4.650099999707891
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.4284000002080575,
+        "end_to_end_ms": 7.4492000003374415
+      }
+    },
+    {
+      "seed": 90007,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.971299999961047,
+        "end_to_end_ms": 10.364400000980822
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.242999999813037,
+        "end_to_end_ms": 6.266899999900488
+      }
+    },
+    {
+      "seed": 90008,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.765199999383185,
+        "end_to_end_ms": 4.794799999217503
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.726600000547478,
+        "end_to_end_ms": 6.746499999280786
+      }
+    },
+    {
+      "seed": 90009,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.571799999524956,
+        "end_to_end_ms": 10.6047999997827
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 6.693700001051184,
+        "end_to_end_ms": 6.77949999953853
+      }
+    },
+    {
+      "seed": 90010,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.847000000154367,
+        "end_to_end_ms": 5.021100001613377
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.67049999901792,
+        "end_to_end_ms": 6.804699998610886
+      }
+    },
+    {
+      "seed": 90011,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.337599998820224,
+        "end_to_end_ms": 10.360899999795947
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.782500000554137,
+        "end_to_end_ms": 6.8277999998827
+      }
+    },
+    {
+      "seed": 90012,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.167400000573252,
+        "end_to_end_ms": 5.201699999815901
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.592300000193063,
+        "end_to_end_ms": 6.614199999603443
+      }
+    },
+    {
+      "seed": 90013,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.189900000113994,
+        "end_to_end_ms": 10.214600000836072
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.556099999215803,
+        "end_to_end_ms": 6.58589999875403
+      }
+    },
+    {
+      "seed": 90014,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.664099998990423,
+        "end_to_end_ms": 4.686000000219792
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.697000000916887,
+        "end_to_end_ms": 7.721699999819975
+      }
+    },
+    {
+      "seed": 90015,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 17.34480000050098,
+        "end_to_end_ms": 17.384700000548037
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.246000001032371,
+        "end_to_end_ms": 7.444500000929111
+      }
+    },
+    {
+      "seed": 90016,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.858600001170998,
+        "end_to_end_ms": 4.891000000498025
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.386600000041653,
+        "end_to_end_ms": 6.403000001228065
+      }
+    },
+    {
+      "seed": 90017,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.427500001242151,
+        "end_to_end_ms": 10.453200000483776
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.221600000571925,
+        "end_to_end_ms": 6.2491000007867115
+      }
+    },
+    {
+      "seed": 90018,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 13,
+        "ranking_ms": 4.549600000245846,
+        "end_to_end_ms": 4.6938000014051795
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 13,
+        "ranking_ms": 6.96330000027956,
+        "end_to_end_ms": 7.0833999998285435
+      }
+    },
+    {
+      "seed": 90019,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 12.119400000301539,
+        "end_to_end_ms": 12.148800000431947
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.77680000080727,
+        "end_to_end_ms": 6.8257000002631685
+      }
+    },
+    {
+      "seed": 90020,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.367499999716529,
+        "end_to_end_ms": 4.517699999269098
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.384399999864399,
+        "end_to_end_ms": 7.530799999585724
+      }
+    },
+    {
+      "seed": 90021,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 11.305500000162283,
+        "end_to_end_ms": 11.528400000315742
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.9743000001617474,
+        "end_to_end_ms": 6.144499999209074
+      }
+    },
+    {
+      "seed": 90022,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 4.521700000623241,
+        "end_to_end_ms": 4.5988000001671026
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.768000001102337,
+        "end_to_end_ms": 6.79149999996298
+      }
+    },
+    {
+      "seed": 90023,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 12.162499999249121,
+        "end_to_end_ms": 12.354200000117999
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.1337000006460585,
+        "end_to_end_ms": 6.327400000373018
+      }
+    },
+    {
+      "seed": 90024,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.156700000952696,
+        "end_to_end_ms": 5.183100000067498
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.647500000326545,
+        "end_to_end_ms": 6.665499999144231
+      }
+    },
+    {
+      "seed": 90025,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 10.162499998841668,
+        "end_to_end_ms": 10.19809999888821
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.456000000980566,
+        "end_to_end_ms": 6.506400000944268
+      }
+    },
+    {
+      "seed": 90026,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.493899999943096,
+        "end_to_end_ms": 4.5189000011305325
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.4562999996269355,
+        "end_to_end_ms": 6.472299999586539
+      }
+    },
+    {
+      "seed": 90027,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.995999999067863,
+        "end_to_end_ms": 11.169899999003974
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.418599999960861,
+        "end_to_end_ms": 6.596600000193575
+      }
+    },
+    {
+      "seed": 90028,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.1182000008557225,
+        "end_to_end_ms": 6.282700000156183
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.500199999209144,
+        "end_to_end_ms": 7.461100000000442
+      }
+    },
+    {
+      "seed": 90029,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 11.991499999567168,
+        "end_to_end_ms": 12.047899999743095
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.618400000661495,
+        "end_to_end_ms": 6.643599999733851
+      }
+    },
+    {
+      "seed": 90030,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.266000000119675,
+        "end_to_end_ms": 5.313399999067769
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 8.063299999776063,
+        "end_to_end_ms": 8.121900000332971
+      }
+    },
+    {
+      "seed": 90031,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.278499999913038,
+        "end_to_end_ms": 10.303200000635115
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.119800000509713,
+        "end_to_end_ms": 7.14710000102059
+      }
+    },
+    {
+      "seed": 90032,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.118499999298365,
+        "end_to_end_ms": 5.375099999582744
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.884200000262354,
+        "end_to_end_ms": 8.020999999644118
+      }
+    },
+    {
+      "seed": 90033,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.487200001080055,
+        "end_to_end_ms": 10.511300000871415
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.479099998818128,
+        "end_to_end_ms": 7.515600000260747
+      }
+    },
+    {
+      "seed": 90034,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.61390000054962,
+        "end_to_end_ms": 4.770200001075864
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.693699999435921,
+        "end_to_end_ms": 7.852799999454874
+      }
+    },
+    {
+      "seed": 90035,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 11.712400000760681,
+        "end_to_end_ms": 11.895100000401726
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 11,
+        "ranking_ms": 6.226899999091984,
+        "end_to_end_ms": 6.366199999320088
+      }
+    },
+    {
+      "seed": 90036,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.8998000002029585,
+        "end_to_end_ms": 5.079399999885936
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.494399998700828,
+        "end_to_end_ms": 6.632699998590397
+      }
+    },
+    {
+      "seed": 90037,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 10.779500000353437,
+        "end_to_end_ms": 10.83939999989525
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.189400000948808,
+        "end_to_end_ms": 6.2373000000661705
+      }
+    },
+    {
+      "seed": 90038,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.636199999367818,
+        "end_to_end_ms": 4.6612999994977145
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.504200000563287,
+        "end_to_end_ms": 6.5198000011150725
+      }
+    },
+    {
+      "seed": 90039,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 10.184999999182764,
+        "end_to_end_ms": 10.28760000008333
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.538700001328834,
+        "end_to_end_ms": 6.575900000825641
+      }
+    },
+    {
+      "seed": 90040,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.446099999971921,
+        "end_to_end_ms": 5.483400000230176
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.470400001489907,
+        "end_to_end_ms": 6.485800000518793
+      }
+    },
+    {
+      "seed": 90041,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.568600000624429,
+        "end_to_end_ms": 10.743800001364434
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.384500000422122,
+        "end_to_end_ms": 6.434599999920465
+      }
+    },
+    {
+      "seed": 90042,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.463499999474152,
+        "end_to_end_ms": 4.618699998900411
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.787700000335462,
+        "end_to_end_ms": 7.9674999997223495
+      }
+    },
+    {
+      "seed": 90043,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.591500000373344,
+        "end_to_end_ms": 10.775200000352925
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.209600000147475,
+        "end_to_end_ms": 6.396200000381214
+      }
+    },
+    {
+      "seed": 90044,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 4.653100000723498,
+        "end_to_end_ms": 4.7171000005619135
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.911600001330953,
+        "end_to_end_ms": 6.952400000955095
+      }
+    },
+    {
+      "seed": 90045,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.846400000242284,
+        "end_to_end_ms": 9.868099999948754
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.488100000045961,
+        "end_to_end_ms": 7.521100000303704
+      }
+    },
+    {
+      "seed": 90046,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.57520000054501,
+        "end_to_end_ms": 4.5992000013939105
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.5602000013313955,
+        "end_to_end_ms": 6.576400000994909
+      }
+    },
+    {
+      "seed": 90047,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.59580000017013,
+        "end_to_end_ms": 9.643400000641122
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.809800000861287,
+        "end_to_end_ms": 5.848900000273716
+      }
+    },
+    {
+      "seed": 90048,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.186200000025565,
+        "end_to_end_ms": 5.3658999986510025
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.540599999425467,
+        "end_to_end_ms": 6.680599999526748
+      }
+    },
+    {
+      "seed": 90049,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 10.260099999868544,
+        "end_to_end_ms": 10.344799999074894
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.344999999782885,
+        "end_to_end_ms": 6.412999999156455
+      }
+    },
+    {
+      "seed": 90050,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.490000001373119,
+        "end_to_end_ms": 5.6072000006679446
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.102699999450124,
+        "end_to_end_ms": 7.127500000933651
+      }
+    },
+    {
+      "seed": 90051,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.566700000708806,
+        "end_to_end_ms": 10.59250000071188
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.860199999820907,
+        "end_to_end_ms": 9.90040000033332
+      }
+    },
+    {
+      "seed": 90052,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 14,
+        "ranking_ms": 5.629199999020784,
+        "end_to_end_ms": 5.800299999464187
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 8.416099999521975,
+        "end_to_end_ms": 8.512099999279599
+      }
+    },
+    {
+      "seed": 90053,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 12.604799998371163,
+        "end_to_end_ms": 12.809500000003027
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.87610000022687,
+        "end_to_end_ms": 7.076800000504591
+      }
+    },
+    {
+      "seed": 90054,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 5.347199999960139,
+        "end_to_end_ms": 5.510400000275695
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.314700000279117,
+        "end_to_end_ms": 7.338999999774387
+      }
+    },
+    {
+      "seed": 90055,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 10.788000001412001,
+        "end_to_end_ms": 10.850900000150432
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 7.170099999711965,
+        "end_to_end_ms": 7.309900000109337
+      }
+    },
+    {
+      "seed": 90056,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.14140000086627,
+        "end_to_end_ms": 5.17279999985476
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 7.493900000554277,
+        "end_to_end_ms": 7.528699999966193
+      }
+    },
+    {
+      "seed": 90057,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 10.732599999755621,
+        "end_to_end_ms": 10.818500000823406
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 6.401700000424171,
+        "end_to_end_ms": 6.510299999717972
+      }
+    },
+    {
+      "seed": 90058,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 4.629799999747775,
+        "end_to_end_ms": 4.693000000770553
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.601600000067265,
+        "end_to_end_ms": 6.630199999563047
+      }
+    },
+    {
+      "seed": 90059,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.208800000327756,
+        "end_to_end_ms": 10.38200000039069
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.265699999858043,
+        "end_to_end_ms": 6.440999999540509
+      }
+    },
+    {
+      "seed": 90060,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.57539999842993,
+        "end_to_end_ms": 4.61409999843454
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.516899999041925,
+        "end_to_end_ms": 6.532899999001529
+      }
+    },
+    {
+      "seed": 90061,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.543500000494532,
+        "end_to_end_ms": 10.712600000260863
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.291200001214747,
+        "end_to_end_ms": 6.4848000001802575
+      }
+    },
+    {
+      "seed": 90062,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.561099998682039,
+        "end_to_end_ms": 4.585599999700207
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.49149999844667,
+        "end_to_end_ms": 6.506599998829188
+      }
+    },
+    {
+      "seed": 90063,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.21489999948244,
+        "end_to_end_ms": 10.38909999988391
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.386999999449472,
+        "end_to_end_ms": 6.4354999994975515
+      }
+    },
+    {
+      "seed": 90064,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.56560000020545,
+        "end_to_end_ms": 4.719600001408253
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.312800000363495,
+        "end_to_end_ms": 7.456299999830662
+      }
+    },
+    {
+      "seed": 90065,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.716700000557466,
+        "end_to_end_ms": 10.89239999964775
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.84069999968051,
+        "end_to_end_ms": 6.014100001266343
+      }
+    },
+    {
+      "seed": 90066,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.59219999902416,
+        "end_to_end_ms": 4.746399999930873
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.529100000989274,
+        "end_to_end_ms": 6.674899999779882
+      }
+    },
+    {
+      "seed": 90067,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.398399999758112,
+        "end_to_end_ms": 10.420999999041669
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.183899999290588,
+        "end_to_end_ms": 7.221199999548844
+      }
+    },
+    {
+      "seed": 90068,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.398999999670195,
+        "end_to_end_ms": 5.435500001112814
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.548499999553314,
+        "end_to_end_ms": 6.565200001205085
+      }
+    },
+    {
+      "seed": 90069,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 11.094899999079644,
+        "end_to_end_ms": 11.270599999988917
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.181100001413142,
+        "end_to_end_ms": 6.356600000799517
+      }
+    },
+    {
+      "seed": 90070,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.474400000617607,
+        "end_to_end_ms": 4.633099999409751
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.3955000005080365,
+        "end_to_end_ms": 6.52769999942393
+      }
+    },
+    {
+      "seed": 90071,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.240900000804686,
+        "end_to_end_ms": 9.429800000361865
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.251799999517971,
+        "end_to_end_ms": 6.285699999352801
+      }
+    },
+    {
+      "seed": 90072,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.2310000008001225,
+        "end_to_end_ms": 4.387400000268826
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.083899999794085,
+        "end_to_end_ms": 6.203299999469891
+      }
+    },
+    {
+      "seed": 90073,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.698500000013155,
+        "end_to_end_ms": 9.872799999357085
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.158900001537404,
+        "end_to_end_ms": 6.345000001601875
+      }
+    },
+    {
+      "seed": 90074,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.502599998886581,
+        "end_to_end_ms": 4.530899999735993
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 5.927100000917562,
+        "end_to_end_ms": 5.986300000586198
+      }
+    },
+    {
+      "seed": 90075,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.835500000917818,
+        "end_to_end_ms": 9.99020000017481
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.6561999990663026,
+        "end_to_end_ms": 5.686599999535247
+      }
+    },
+    {
+      "seed": 90076,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.389900001115166,
+        "end_to_end_ms": 4.545100000541424
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 9.494399999312009,
+        "end_to_end_ms": 9.539700000459561
+      }
+    },
+    {
+      "seed": 90077,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 10,
+        "ranking_ms": 9.037900001203525,
+        "end_to_end_ms": 9.136300001046038
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.606300001090858,
+        "end_to_end_ms": 5.7667000000947155
+      }
+    },
+    {
+      "seed": 90078,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.007000001365668,
+        "end_to_end_ms": 4.02600000052189
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.828199999086792,
+        "end_to_end_ms": 5.841399999553687
+      }
+    },
+    {
+      "seed": 90079,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.157499998967978,
+        "end_to_end_ms": 10.456499998326763
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 5.7100000012724195,
+        "end_to_end_ms": 5.8083000003534835
+      }
+    },
+    {
+      "seed": 90080,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.797500001586741,
+        "end_to_end_ms": 4.825300000447896
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.548299999849405,
+        "end_to_end_ms": 6.564200000866549
+      }
+    },
+    {
+      "seed": 90081,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.014399998704903,
+        "end_to_end_ms": 9.033999998791842
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.969399999230518,
+        "end_to_end_ms": 5.992500000502332
+      }
+    },
+    {
+      "seed": 90082,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.101699998500408,
+        "end_to_end_ms": 4.257900000084192
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.066899999495945,
+        "end_to_end_ms": 6.192099999680067
+      }
+    },
+    {
+      "seed": 90083,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.69719999920926,
+        "end_to_end_ms": 9.844599999269121
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.786600000647013,
+        "end_to_end_ms": 5.944299999100622
+      }
+    },
+    {
+      "seed": 90084,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.28490000012971,
+        "end_to_end_ms": 4.310000000259606
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.964299998595379,
+        "end_to_end_ms": 5.977899998470093
+      }
+    },
+    {
+      "seed": 90085,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.338000000047032,
+        "end_to_end_ms": 10.356500000852975
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.651200001011603,
+        "end_to_end_ms": 5.67600000067614
+      }
+    },
+    {
+      "seed": 90086,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.798999998456566,
+        "end_to_end_ms": 4.82939999892551
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.651699999565608,
+        "end_to_end_ms": 6.679899999653571
+      }
+    },
+    {
+      "seed": 90087,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.899099999529426,
+        "end_to_end_ms": 9.921499999109074
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.576699999641278,
+        "end_to_end_ms": 6.613099998503458
+      }
+    },
+    {
+      "seed": 90088,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.287199999453151,
+        "end_to_end_ms": 4.31169999865233
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.05129999894416,
+        "end_to_end_ms": 6.08749999992142
+      }
+    },
+    {
+      "seed": 90089,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 10.049500000604894,
+        "end_to_end_ms": 10.09400000111782
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.17939999938244,
+        "end_to_end_ms": 6.217000000106054
+      }
+    },
+    {
+      "seed": 90090,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.904600000372739,
+        "end_to_end_ms": 4.944500000419794
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.548600000314764,
+        "end_to_end_ms": 6.565300000147545
+      }
+    },
+    {
+      "seed": 90091,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.108399999604444,
+        "end_to_end_ms": 9.123499999986961
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.016100000124425,
+        "end_to_end_ms": 6.037200000719167
+      }
+    },
+    {
+      "seed": 90092,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.2412000002514105,
+        "end_to_end_ms": 4.26300000071933
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 16,
+        "ranking_ms": 5.919199998970726,
+        "end_to_end_ms": 6.039699999746517
+      }
+    },
+    {
+      "seed": 90093,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.361099999499856,
+        "end_to_end_ms": 10.539999999309657
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.140499999673921,
+        "end_to_end_ms": 6.308699999863165
+      }
+    },
+    {
+      "seed": 90094,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.397900000185473,
+        "end_to_end_ms": 4.436200000782264
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.529499998578103,
+        "end_to_end_ms": 6.569600000148057
+      }
+    },
+    {
+      "seed": 90095,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.250699999029166,
+        "end_to_end_ms": 9.267199999158038
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.024599999364,
+        "end_to_end_ms": 6.045099999028025
+      }
+    },
+    {
+      "seed": 90096,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 3.972000000430853,
+        "end_to_end_ms": 4.119499999433174
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.529199999931734,
+        "end_to_end_ms": 6.655299999692943
+      }
+    },
+    {
+      "seed": 90097,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 10.105800000019372,
+        "end_to_end_ms": 10.13779999993858
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 6.118499999502092,
+        "end_to_end_ms": 6.198399998538662
+      }
+    },
+    {
+      "seed": 90098,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 4.068599999300204,
+        "end_to_end_ms": 4.10839999858581
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 6.021000001055654,
+        "end_to_end_ms": 6.068100001357379
+      }
+    },
+    {
+      "seed": 90099,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 9.247699999832548,
+        "end_to_end_ms": 9.287799999583513
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.8767999998963205,
+        "end_to_end_ms": 6.048299999747542
+      }
+    },
+    {
+      "seed": 90100,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 4.758799999763141,
+        "end_to_end_ms": 4.826299998967443
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 6.617099999857601,
+        "end_to_end_ms": 6.677400000626221
+      }
+    },
+    {
+      "seed": 90101,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.514699999272125,
+        "end_to_end_ms": 9.535499999401509
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.209099999978207,
+        "end_to_end_ms": 6.229399999938323
+      }
+    },
+    {
+      "seed": 90102,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.2317000006733,
+        "end_to_end_ms": 4.254699999364675
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.791300000259071,
+        "end_to_end_ms": 6.8090000004303874
+      }
+    },
+    {
+      "seed": 90103,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.351400000217836,
+        "end_to_end_ms": 10.512999999264139
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.689399999027955,
+        "end_to_end_ms": 5.8625000001484295
+      }
+    },
+    {
+      "seed": 90104,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.145999999309424,
+        "end_to_end_ms": 4.165599999396363
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.038200001057703,
+        "end_to_end_ms": 6.051800000932417
+      }
+    },
+    {
+      "seed": 90105,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 8.994900001198403,
+        "end_to_end_ms": 9.012100001200452
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.740399999922374,
+        "end_to_end_ms": 5.763600000136648
+      }
+    },
+    {
+      "seed": 90106,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.052800000863499,
+        "end_to_end_ms": 4.073500000231434
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.965799999103183,
+        "end_to_end_ms": 5.980299998554983
+      }
+    },
+    {
+      "seed": 90107,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.24729999860574,
+        "end_to_end_ms": 9.397799998623668
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.551299998842296,
+        "end_to_end_ms": 5.716499999834923
+      }
+    },
+    {
+      "seed": 90108,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 3.9073000007192604,
+        "end_to_end_ms": 4.0638000009494135
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.093600001098821,
+        "end_to_end_ms": 7.241100000101142
+      }
+    },
+    {
+      "seed": 90109,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.012500000811997,
+        "end_to_end_ms": 10.034900000391644
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.996000000071945,
+        "end_to_end_ms": 7.034199999907287
+      }
+    },
+    {
+      "seed": 90110,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.460500000277534,
+        "end_to_end_ms": 4.639299999325885
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.942100000742357,
+        "end_to_end_ms": 7.072600001265528
+      }
+    },
+    {
+      "seed": 90111,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.893599999690196,
+        "end_to_end_ms": 11.072499999499996
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.052000000636326,
+        "end_to_end_ms": 6.2277000015456
+      }
+    },
+    {
+      "seed": 90112,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.754800000227988,
+        "end_to_end_ms": 4.781100000400329
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 7.021600000371109,
+        "end_to_end_ms": 7.051099999443977
+      }
+    },
+    {
+      "seed": 90113,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 10.666399999536225,
+        "end_to_end_ms": 10.703199999625213
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.516800000099465,
+        "end_to_end_ms": 6.56400000116264
+      }
+    },
+    {
+      "seed": 90114,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.794499998955871,
+        "end_to_end_ms": 5.83080000069458
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.8257000002631685,
+        "end_to_end_ms": 6.850800000393065
+      }
+    },
+    {
+      "seed": 90115,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.815800000273157,
+        "end_to_end_ms": 11.000100001183455
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.885800001124153,
+        "end_to_end_ms": 6.068300001061289
+      }
+    },
+    {
+      "seed": 90116,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.65989999975136,
+        "end_to_end_ms": 4.821099999389844
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.050700000036159,
+        "end_to_end_ms": 7.187499999417923
+      }
+    },
+    {
+      "seed": 90117,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.055499998794403,
+        "end_to_end_ms": 9.073600000192528
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.177100000058999,
+        "end_to_end_ms": 6.223599999430007
+      }
+    },
+    {
+      "seed": 90118,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.505599999902188,
+        "end_to_end_ms": 4.526300001089112
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.4925999995466555,
+        "end_to_end_ms": 6.507399999463814
+      }
+    },
+    {
+      "seed": 90119,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 11.939799998799572,
+        "end_to_end_ms": 12.10729999911564
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.070500001442269,
+        "end_to_end_ms": 6.108999999923981
+      }
+    },
+    {
+      "seed": 90120,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.894900001090718,
+        "end_to_end_ms": 5.05429999975604
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.663099999059341,
+        "end_to_end_ms": 6.806499999584048
+      }
+    },
+    {
+      "seed": 90121,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.90069999897969,
+        "end_to_end_ms": 10.06989999950747
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.275400000959053,
+        "end_to_end_ms": 6.455400000049849
+      }
+    },
+    {
+      "seed": 90122,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 4.806899998584413,
+        "end_to_end_ms": 4.891799999313662
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.914999999731663,
+        "end_to_end_ms": 5.93019999905664
+      }
+    },
+    {
+      "seed": 90123,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.071100001368904,
+        "end_to_end_ms": 10.095200001160265
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.432500000300934,
+        "end_to_end_ms": 6.47200000094017
+      }
+    },
+    {
+      "seed": 90124,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.436299999724724,
+        "end_to_end_ms": 4.458499999600463
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 6.366799998431816,
+        "end_to_end_ms": 6.430399998862413
+      }
+    },
+    {
+      "seed": 90125,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.006100001191953,
+        "end_to_end_ms": 10.025100000348175
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.599399999686284,
+        "end_to_end_ms": 6.659599999693455
+      }
+    },
+    {
+      "seed": 90126,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.2554999999993015,
+        "end_to_end_ms": 4.3917000002693385
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.1255999989953125,
+        "end_to_end_ms": 6.248300000152085
+      }
+    },
+    {
+      "seed": 90127,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 9.204500000123517,
+        "end_to_end_ms": 9.252899999410147
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.599100000836188,
+        "end_to_end_ms": 5.619400000796304
+      }
+    },
+    {
+      "seed": 90128,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.245399999490473,
+        "end_to_end_ms": 4.393100000015693
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.87859999925422,
+        "end_to_end_ms": 7.006699999692501
+      }
+    },
+    {
+      "seed": 90129,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 9.371199999804958,
+        "end_to_end_ms": 9.446800000660005
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.602100000236533,
+        "end_to_end_ms": 6.655799999862211
+      }
+    },
+    {
+      "seed": 90130,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.2840000005526235,
+        "end_to_end_ms": 4.432100000485661
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.909100000280887,
+        "end_to_end_ms": 5.92289999985951
+      }
+    },
+    {
+      "seed": 90131,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.01279999925464,
+        "end_to_end_ms": 9.16479999978037
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.645799999911105,
+        "end_to_end_ms": 5.825599999297992
+      }
+    },
+    {
+      "seed": 90132,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 11,
+        "ranking_ms": 4.039100000227336,
+        "end_to_end_ms": 4.143600001043524
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.832999999256572,
+        "end_to_end_ms": 5.854499999259133
+      }
+    },
+    {
+      "seed": 90133,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.81739999972342,
+        "end_to_end_ms": 10.839000000487431
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.8963000010407995,
+        "end_to_end_ms": 5.917600001339451
+      }
+    },
+    {
+      "seed": 90134,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.495799999858718,
+        "end_to_end_ms": 4.51950000024226
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.4806999998836545,
+        "end_to_end_ms": 6.497200000012526
+      }
+    },
+    {
+      "seed": 90135,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.880600000542472,
+        "end_to_end_ms": 9.905000000799191
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.146200001239777,
+        "end_to_end_ms": 6.172500001412118
+      }
+    },
+    {
+      "seed": 90136,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.053699998621596,
+        "end_to_end_ms": 4.08649999917543
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.6568999991432065,
+        "end_to_end_ms": 6.686900000204332
+      }
+    },
+    {
+      "seed": 90137,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 11.897800000951975,
+        "end_to_end_ms": 12.07310000063444
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 13.264799999888055,
+        "end_to_end_ms": 13.353399999687099
+      }
+    },
+    {
+      "seed": 90138,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.516200000580284,
+        "end_to_end_ms": 4.548300001260941
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.31249999969441,
+        "end_to_end_ms": 6.334899999274057
+      }
+    },
+    {
+      "seed": 90139,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.317999998529558,
+        "end_to_end_ms": 9.345200000097975
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.15999999899941,
+        "end_to_end_ms": 6.184699999721488
+      }
+    },
+    {
+      "seed": 90140,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.09140000010666,
+        "end_to_end_ms": 4.223800000545452
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.456599998273305,
+        "end_to_end_ms": 6.595899998501409
+      }
+    },
+    {
+      "seed": 90141,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.088000000701868,
+        "end_to_end_ms": 9.107199999561999
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.907300001126714,
+        "end_to_end_ms": 5.929700000706362
+      }
+    },
+    {
+      "seed": 90142,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.807200000868761,
+        "end_to_end_ms": 4.963499999576015
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.61249999939173,
+        "end_to_end_ms": 6.752299999789102
+      }
+    },
+    {
+      "seed": 90143,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.263300000384334,
+        "end_to_end_ms": 9.41400000010617
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 5.705399998987559,
+        "end_to_end_ms": 5.745500000557513
+      }
+    },
+    {
+      "seed": 90144,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.0372999994579,
+        "end_to_end_ms": 5.066099998657592
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 7.093399999575922,
+        "end_to_end_ms": 7.126900000002934
+      }
+    },
+    {
+      "seed": 90145,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 9.280899999794201,
+        "end_to_end_ms": 9.339700000055018
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 6.460500000684988,
+        "end_to_end_ms": 6.534400001328322
+      }
+    },
+    {
+      "seed": 90146,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.08889999926032,
+        "end_to_end_ms": 4.110599998966791
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 5.97600000037346,
+        "end_to_end_ms": 6.008199999996577
+      }
+    },
+    {
+      "seed": 90147,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 11.021599999367027,
+        "end_to_end_ms": 11.186899999302113
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.909500001507695,
+        "end_to_end_ms": 6.0826999997516396
+      }
+    },
+    {
+      "seed": 90148,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.06150000001071,
+        "end_to_end_ms": 5.094199999803095
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.729400000040187,
+        "end_to_end_ms": 6.747100000211503
+      }
+    },
+    {
+      "seed": 90149,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.700700000394136,
+        "end_to_end_ms": 9.726900001624017
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 5.711800000426592,
+        "end_to_end_ms": 5.761300000813208
+      }
+    },
+    {
+      "seed": 90150,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.544999999779975,
+        "end_to_end_ms": 4.565100000036182
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.856300000232295,
+        "end_to_end_ms": 5.86960000146064
+      }
+    },
+    {
+      "seed": 90151,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.461600000577164,
+        "end_to_end_ms": 9.610799999791197
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.6190000013884855,
+        "end_to_end_ms": 5.78970000060508
+      }
+    },
+    {
+      "seed": 90152,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.503399999521207,
+        "end_to_end_ms": 4.523799998423783
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.090099999710219,
+        "end_to_end_ms": 6.108499999754713
+      }
+    },
+    {
+      "seed": 90153,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.821499999816297,
+        "end_to_end_ms": 9.98540000000503
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.174399999508751,
+        "end_to_end_ms": 6.358700000419049
+      }
+    },
+    {
+      "seed": 90154,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.287800000383868,
+        "end_to_end_ms": 4.434200000105193
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.951699999059201,
+        "end_to_end_ms": 6.079299999328214
+      }
+    },
+    {
+      "seed": 90155,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.30030000017723,
+        "end_to_end_ms": 9.315999999671476
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.040099999154336,
+        "end_to_end_ms": 6.0656999994535
+      }
+    },
+    {
+      "seed": 90156,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.208899999866844,
+        "end_to_end_ms": 4.3472999986988725
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.466200000431854,
+        "end_to_end_ms": 6.515400000353111
+      }
+    },
+    {
+      "seed": 90157,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 12.404200000673882,
+        "end_to_end_ms": 12.56170000124257
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.639500001052511,
+        "end_to_end_ms": 5.800700000690995
+      }
+    },
+    {
+      "seed": 90158,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 4.095300000699353,
+        "end_to_end_ms": 4.154899999775807
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.943899999692803,
+        "end_to_end_ms": 5.957900000794325
+      }
+    },
+    {
+      "seed": 90159,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 10.107799998877454,
+        "end_to_end_ms": 10.163899998588022
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.628199998682248,
+        "end_to_end_ms": 5.647899999530637
+      }
+    },
+    {
+      "seed": 90160,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.25829999949201,
+        "end_to_end_ms": 4.278299998986768
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.999400000291644,
+        "end_to_end_ms": 6.014400001731701
+      }
+    },
+    {
+      "seed": 90161,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.606399999029236,
+        "end_to_end_ms": 9.758799998962786
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.65679999999702,
+        "end_to_end_ms": 5.846699999892735
+      }
+    },
+    {
+      "seed": 90162,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.119699999137083,
+        "end_to_end_ms": 4.153099998802645
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.094200000006822,
+        "end_to_end_ms": 6.10929999857035
+      }
+    },
+    {
+      "seed": 90163,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.387800000695279,
+        "end_to_end_ms": 9.418100000402774
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.77290000001085,
+        "end_to_end_ms": 5.793600001197774
+      }
+    },
+    {
+      "seed": 90164,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.25820000054955,
+        "end_to_end_ms": 4.278999998859945
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.049199999324628,
+        "end_to_end_ms": 6.063400000130059
+      }
+    },
+    {
+      "seed": 90165,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.129100000791368,
+        "end_to_end_ms": 9.282900000471273
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.463800000346964,
+        "end_to_end_ms": 6.647700000030454
+      }
+    },
+    {
+      "seed": 90166,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 4.675799998949515,
+        "end_to_end_ms": 4.717800000435091
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.624899999223999,
+        "end_to_end_ms": 6.662399999186164
+      }
+    },
+    {
+      "seed": 90167,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.64399999975285,
+        "end_to_end_ms": 9.674000000813976
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.359400000292226,
+        "end_to_end_ms": 6.421800000680378
+      }
+    },
+    {
+      "seed": 90168,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.681900000126916,
+        "end_to_end_ms": 5.706500000087544
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.038600000465522,
+        "end_to_end_ms": 6.053000000974862
+      }
+    },
+    {
+      "seed": 90169,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.32360000135668,
+        "end_to_end_ms": 10.499900001377682
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.417799999326235,
+        "end_to_end_ms": 6.592899999304791
+      }
+    },
+    {
+      "seed": 90170,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.2804000004252885,
+        "end_to_end_ms": 4.313600000386941
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.992000000333064,
+        "end_to_end_ms": 6.01730000016687
+      }
+    },
+    {
+      "seed": 90171,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 10.545900000579422,
+        "end_to_end_ms": 10.60210000105144
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 5.532000001039705,
+        "end_to_end_ms": 5.597999999736203
+      }
+    },
+    {
+      "seed": 90172,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 4.096999999092077,
+        "end_to_end_ms": 4.139299999224022
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.020100001478568,
+        "end_to_end_ms": 6.033100000422564
+      }
+    },
+    {
+      "seed": 90173,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.787400000277557,
+        "end_to_end_ms": 9.805000001506414
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.194999999934225,
+        "end_to_end_ms": 6.213099999513361
+      }
+    },
+    {
+      "seed": 90174,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.6213000005081994,
+        "end_to_end_ms": 4.642500000045402
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.397700000889017,
+        "end_to_end_ms": 6.413299999621813
+      }
+    },
+    {
+      "seed": 90175,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.265200000299956,
+        "end_to_end_ms": 9.41650000095251
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.693699999028468,
+        "end_to_end_ms": 5.858999998963554
+      }
+    },
+    {
+      "seed": 90176,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.206499999781954,
+        "end_to_end_ms": 4.239699999743607
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.930999999691267,
+        "end_to_end_ms": 5.956200000582612
+      }
+    },
+    {
+      "seed": 90177,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 9.630500000639586,
+        "end_to_end_ms": 9.715400001368835
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.802200001198798,
+        "end_to_end_ms": 5.821700000524288
+      }
+    },
+    {
+      "seed": 90178,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.544500001429697,
+        "end_to_end_ms": 4.690300000220304
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.447000001571723,
+        "end_to_end_ms": 6.486800000857329
+      }
+    },
+    {
+      "seed": 90179,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 9.172799998850678,
+        "end_to_end_ms": 9.260599999834085
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 11,
+        "ranking_ms": 5.669900001521455,
+        "end_to_end_ms": 5.785800000012387
+      }
+    },
+    {
+      "seed": 90180,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 4.529000001639361,
+        "end_to_end_ms": 4.592400000547059
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.394899999577319,
+        "end_to_end_ms": 6.409999999959837
+      }
+    },
+    {
+      "seed": 90181,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 9.611100000256556,
+        "end_to_end_ms": 9.654600000430946
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.250200000067707,
+        "end_to_end_ms": 6.275800000366871
+      }
+    },
+    {
+      "seed": 90182,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.561499999908847,
+        "end_to_end_ms": 4.5845999993616715
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.263799999942421,
+        "end_to_end_ms": 6.27859999985958
+      }
+    },
+    {
+      "seed": 90183,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.466199999224045,
+        "end_to_end_ms": 9.486099999776343
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.053099999917322,
+        "end_to_end_ms": 6.076400000893045
+      }
+    },
+    {
+      "seed": 90184,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 4.590500000631437,
+        "end_to_end_ms": 4.6648999996250495
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.436399999074638,
+        "end_to_end_ms": 6.451899998864974
+      }
+    },
+    {
+      "seed": 90185,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.596100000635488,
+        "end_to_end_ms": 9.614100001272163
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.913999999393127,
+        "end_to_end_ms": 5.9380000002420275
+      }
+    },
+    {
+      "seed": 90186,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 4.474900000786874,
+        "end_to_end_ms": 4.56329999906302
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.504299999505747,
+        "end_to_end_ms": 6.64150000011432
+      }
+    },
+    {
+      "seed": 90187,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 15,
+        "ranking_ms": 9.068899998965207,
+        "end_to_end_ms": 9.213699999236269
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.8951999999408145,
+        "end_to_end_ms": 6.08730000021751
+      }
+    },
+    {
+      "seed": 90188,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.53659999948286,
+        "end_to_end_ms": 4.557300000669784
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.81319999966945,
+        "end_to_end_ms": 6.831499998952495
+      }
+    },
+    {
+      "seed": 90189,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.232299999188399,
+        "end_to_end_ms": 10.252699999909964
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 13,
+        "ranking_ms": 6.224699998711003,
+        "end_to_end_ms": 6.380699998771888
+      }
+    },
+    {
+      "seed": 90190,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 3.9152999997895677,
+        "end_to_end_ms": 4.070799999681185
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.166799999846262,
+        "end_to_end_ms": 6.2849999994796235
+      }
+    },
+    {
+      "seed": 90191,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 9.00520000141114,
+        "end_to_end_ms": 9.065100000952953
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.710100000214879,
+        "end_to_end_ms": 5.866800000148942
+      }
+    },
+    {
+      "seed": 90192,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.294300000765361,
+        "end_to_end_ms": 4.434000000401284
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.992599999444792,
+        "end_to_end_ms": 6.005499999446329
+      }
+    },
+    {
+      "seed": 90193,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 9.176599998681922,
+        "end_to_end_ms": 9.250299999621348
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.648399999699905,
+        "end_to_end_ms": 5.683999999746447
+      }
+    },
+    {
+      "seed": 90194,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.020599999421393,
+        "end_to_end_ms": 4.0377999994234415
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.947600000581588,
+        "end_to_end_ms": 5.972600001769024
+      }
+    },
+    {
+      "seed": 90195,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.081899999728194,
+        "end_to_end_ms": 9.09969999884197
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.178300000101444,
+        "end_to_end_ms": 6.204700001035235
+      }
+    },
+    {
+      "seed": 90196,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 3.989900000306079,
+        "end_to_end_ms": 4.1373999993084
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.2242000003607245,
+        "end_to_end_ms": 6.344299999909708
+      }
+    },
+    {
+      "seed": 90197,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 9.233299999323208,
+        "end_to_end_ms": 9.327499999926658
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 5.844900000738562,
+        "end_to_end_ms": 5.946400000539143
+      }
+    },
+    {
+      "seed": 90198,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.511600000114413,
+        "end_to_end_ms": 4.547900000034133
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.459199999881093,
+        "end_to_end_ms": 6.4990999999281485
+      }
+    },
+    {
+      "seed": 90199,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 13.860600000043632,
+        "end_to_end_ms": 14.019500000358676
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.59860000066692,
+        "end_to_end_ms": 5.756599999585887
+      }
+    },
+    {
+      "seed": 90200,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.198000000542379,
+        "end_to_end_ms": 4.218500000206404
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.00029999986873,
+        "end_to_end_ms": 6.024899999829358
+      }
+    },
+    {
+      "seed": 90201,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.82049999947776,
+        "end_to_end_ms": 9.838199999649078
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 5.702099999325583,
+        "end_to_end_ms": 5.767699998614262
+      }
+    },
+    {
+      "seed": 90202,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.1693000004888745,
+        "end_to_end_ms": 5.32779999957711
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.6882999999506865,
+        "end_to_end_ms": 6.833999999798834
+      }
+    },
+    {
+      "seed": 90203,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.139699999854201,
+        "end_to_end_ms": 10.162299999137758
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.144699998912984,
+        "end_to_end_ms": 6.169999998746789
+      }
+    },
+    {
+      "seed": 90204,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 4.104899999219924,
+        "end_to_end_ms": 4.161299999395851
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 5.948800000624033,
+        "end_to_end_ms": 5.98589999935939
+      }
+    },
+    {
+      "seed": 90205,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.103899999900023,
+        "end_to_end_ms": 9.256000001187203
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.526799999643117,
+        "end_to_end_ms": 5.693799999789917
+      }
+    },
+    {
+      "seed": 90206,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.11799999892537,
+        "end_to_end_ms": 4.258999999365187
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.560699999681674,
+        "end_to_end_ms": 6.703200000629295
+      }
+    },
+    {
+      "seed": 90207,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.014800000135438,
+        "end_to_end_ms": 10.187199999563745
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 6.2772999990556855,
+        "end_to_end_ms": 6.385299999237759
+      }
+    },
+    {
+      "seed": 90208,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.612799999449635,
+        "end_to_end_ms": 4.642199999580043
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.089200000133133,
+        "end_to_end_ms": 6.113600000389852
+      }
+    },
+    {
+      "seed": 90209,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 9.180699998978525,
+        "end_to_end_ms": 9.228499999153428
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.727699999624747,
+        "end_to_end_ms": 5.749699999796576
+      }
+    },
+    {
+      "seed": 90210,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.204599999866332,
+        "end_to_end_ms": 4.352300000391551
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.926399999225396,
+        "end_to_end_ms": 6.049100000382168
+      }
+    },
+    {
+      "seed": 90211,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 9.916599999996834,
+        "end_to_end_ms": 9.988399999201647
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.020199998805765,
+        "end_to_end_ms": 7.058099999994738
+      }
+    },
+    {
+      "seed": 90212,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.147499999817228,
+        "end_to_end_ms": 4.178699999101809
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.400899999789544,
+        "end_to_end_ms": 6.436800000301446
+      }
+    },
+    {
+      "seed": 90213,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.622800000215648,
+        "end_to_end_ms": 9.643299999879673
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.222699999852921,
+        "end_to_end_ms": 6.24460000108229
+      }
+    },
+    {
+      "seed": 90214,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.114600000320934,
+        "end_to_end_ms": 4.150499999013846
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.551500000568922,
+        "end_to_end_ms": 6.5818999992188765
+      }
+    },
+    {
+      "seed": 90215,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.78199999917706,
+        "end_to_end_ms": 9.799999999813735
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 5.510400000275695,
+        "end_to_end_ms": 5.567800000790157
+      }
+    },
+    {
+      "seed": 90216,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.484600000068895,
+        "end_to_end_ms": 4.6367000013560755
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.892100000186474,
+        "end_to_end_ms": 7.014599999820348
+      }
+    },
+    {
+      "seed": 90217,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.17699999990873,
+        "end_to_end_ms": 9.361700000226847
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.7954999994981335,
+        "end_to_end_ms": 6.828699999459786
+      }
+    },
+    {
+      "seed": 90218,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.640799999833689,
+        "end_to_end_ms": 4.669800000556279
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 6.421000000045751,
+        "end_to_end_ms": 6.470700000136276
+      }
+    },
+    {
+      "seed": 90219,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.241800000381772,
+        "end_to_end_ms": 9.395900000527035
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.624299999908544,
+        "end_to_end_ms": 5.7916000005207025
+      }
+    },
+    {
+      "seed": 90220,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.453399998965324,
+        "end_to_end_ms": 4.472799999348354
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.919999999809079,
+        "end_to_end_ms": 6.939200000488199
+      }
+    },
+    {
+      "seed": 90221,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 10.376300000643823,
+        "end_to_end_ms": 10.420200000226032
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.342700000459445,
+        "end_to_end_ms": 6.365799999912269
+      }
+    },
+    {
+      "seed": 90222,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.521099999692524,
+        "end_to_end_ms": 4.545399999187794
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.529000000227825,
+        "end_to_end_ms": 6.544400001075701
+      }
+    },
+    {
+      "seed": 90223,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.80139999956009,
+        "end_to_end_ms": 9.837999999945168
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.909999999857973,
+        "end_to_end_ms": 5.942399999185
+      }
+    },
+    {
+      "seed": 90224,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.975699999704375,
+        "end_to_end_ms": 5.015700000512879
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.5204000002268,
+        "end_to_end_ms": 6.546100001287414
+      }
+    },
+    {
+      "seed": 90225,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 9.040700000696233,
+        "end_to_end_ms": 9.119899999859626
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 5.691799999112845,
+        "end_to_end_ms": 5.764699999417644
+      }
+    },
+    {
+      "seed": 90226,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.011999999420368,
+        "end_to_end_ms": 4.155299999183626
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.482400000095367,
+        "end_to_end_ms": 6.626700000197161
+      }
+    },
+    {
+      "seed": 90227,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.450499999933527,
+        "end_to_end_ms": 10.621199999150122
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.065499999749591,
+        "end_to_end_ms": 6.234200000108103
+      }
+    },
+    {
+      "seed": 90228,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.114999999728752,
+        "end_to_end_ms": 4.135499999392778
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.679500000245753,
+        "end_to_end_ms": 6.704800000079558
+      }
+    },
+    {
+      "seed": 90229,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 9.221899999829475,
+        "end_to_end_ms": 9.30260000131966
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.2653999993926845,
+        "end_to_end_ms": 6.466799999543582
+      }
+    },
+    {
+      "seed": 90230,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.766699999890989,
+        "end_to_end_ms": 4.91630000033183
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.45020000047225,
+        "end_to_end_ms": 6.572600001163664
+      }
+    },
+    {
+      "seed": 90231,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 13,
+        "ranking_ms": 9.207699999024044,
+        "end_to_end_ms": 9.338399999251124
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.107700000939076,
+        "end_to_end_ms": 6.3008000015543075
+      }
+    },
+    {
+      "seed": 90232,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 4.610100000718376,
+        "end_to_end_ms": 4.674600000726059
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 6.941300000107731,
+        "end_to_end_ms": 7.002399999691988
+      }
+    },
+    {
+      "seed": 90233,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.994300000471412,
+        "end_to_end_ms": 10.146000000531785
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.8951000009983545,
+        "end_to_end_ms": 6.069400000342284
+      }
+    },
+    {
+      "seed": 90234,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.064299999299692,
+        "end_to_end_ms": 4.084300000613439
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.018800000674673,
+        "end_to_end_ms": 6.0338000002957415
+      }
+    },
+    {
+      "seed": 90235,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.361099999499856,
+        "end_to_end_ms": 10.516399999687565
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 11,
+        "ranking_ms": 6.309100001089973,
+        "end_to_end_ms": 6.457700001192279
+      }
+    },
+    {
+      "seed": 90236,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.691199999797391,
+        "end_to_end_ms": 4.725700000562938
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.757099999958882,
+        "end_to_end_ms": 6.783299999369774
+      }
+    },
+    {
+      "seed": 90237,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 8.970799999588053,
+        "end_to_end_ms": 9.116199998970842
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.573999998887302,
+        "end_to_end_ms": 5.737299999964307
+      }
+    },
+    {
+      "seed": 90238,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.438800000571064,
+        "end_to_end_ms": 4.472900000109803
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.102599998484948,
+        "end_to_end_ms": 6.119199999375269
+      }
+    },
+    {
+      "seed": 90239,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.336299999835319,
+        "end_to_end_ms": 10.357000001022243
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.277999998928863,
+        "end_to_end_ms": 6.303699999989476
+      }
+    },
+    {
+      "seed": 90240,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.613000000972534,
+        "end_to_end_ms": 4.637699999875622
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.562000000485568,
+        "end_to_end_ms": 6.589000000531087
+      }
+    },
+    {
+      "seed": 90241,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 11.197699999684119,
+        "end_to_end_ms": 11.357400000633788
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.676499999026419,
+        "end_to_end_ms": 5.837099999553175
+      }
+    },
+    {
+      "seed": 90242,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.956200000378885,
+        "end_to_end_ms": 5.296400000588619
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 15,
+        "ranking_ms": 6.1334000001807,
+        "end_to_end_ms": 6.256500000745291
+      }
+    },
+    {
+      "seed": 90243,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.34170000073209,
+        "end_to_end_ms": 9.575800000675372
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.737400000725756,
+        "end_to_end_ms": 5.924100001720944
+      }
+    },
+    {
+      "seed": 90244,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 3.9979999983188463,
+        "end_to_end_ms": 4.036799999084906
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.576399999175919,
+        "end_to_end_ms": 6.599999998798012
+      }
+    },
+    {
+      "seed": 90245,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.087099999509519,
+        "end_to_end_ms": 10.237200000119628
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.40030000047409,
+        "end_to_end_ms": 5.5697999996482395
+      }
+    },
+    {
+      "seed": 90246,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 4.699299999629147,
+        "end_to_end_ms": 4.751200000100653
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 6.399699999747099,
+        "end_to_end_ms": 6.451799999922514
+      }
+    },
+    {
+      "seed": 90247,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.283499999583,
+        "end_to_end_ms": 9.458599999561557
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.608800000321935,
+        "end_to_end_ms": 6.789499999285908
+      }
+    },
+    {
+      "seed": 90248,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 4.3668999987858115,
+        "end_to_end_ms": 4.44950000019162
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.0183000005054055,
+        "end_to_end_ms": 6.141699999716366
+      }
+    },
+    {
+      "seed": 90249,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 14,
+        "ranking_ms": 9.851300001173513,
+        "end_to_end_ms": 10.009600000557839
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.222500000149012,
+        "end_to_end_ms": 6.406599999536411
+      }
+    },
+    {
+      "seed": 90250,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 3.8916999983484857,
+        "end_to_end_ms": 3.9139999989856733
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.347599999571685,
+        "end_to_end_ms": 6.36560000020836
+      }
+    },
+    {
+      "seed": 90251,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.572999999363674,
+        "end_to_end_ms": 9.72130000081961
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.936600000495673,
+        "end_to_end_ms": 6.110500000431784
+      }
+    },
+    {
+      "seed": 90252,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.177999999432359,
+        "end_to_end_ms": 5.333299999620067
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.392400000549969,
+        "end_to_end_ms": 6.529099999170285
+      }
+    },
+    {
+      "seed": 90253,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.015300000304705,
+        "end_to_end_ms": 10.179900000366615
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.8441999990463955,
+        "end_to_end_ms": 6.002500000249711
+      }
+    },
+    {
+      "seed": 90254,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.124899998714682,
+        "end_to_end_ms": 4.148099998928956
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.108600000516162,
+        "end_to_end_ms": 6.1230999999679625
+      }
+    },
+    {
+      "seed": 90255,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 9.166199999526725,
+        "end_to_end_ms": 9.210700000039651
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 5.699299999832874,
+        "end_to_end_ms": 5.757000000812695
+      }
+    },
+    {
+      "seed": 90256,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.480600000533741,
+        "end_to_end_ms": 4.503899999690475
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.564499999512918,
+        "end_to_end_ms": 6.580399998711073
+      }
+    },
+    {
+      "seed": 90257,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.427499999423162,
+        "end_to_end_ms": 10.448900000483263
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.138799999462208,
+        "end_to_end_ms": 6.336800001008669
+      }
+    },
+    {
+      "seed": 90258,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.432799998539849,
+        "end_to_end_ms": 4.465399999389774
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.061500000214437,
+        "end_to_end_ms": 6.085100001655519
+      }
+    },
+    {
+      "seed": 90259,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 11.733699999240343,
+        "end_to_end_ms": 11.777599998822552
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.021100000201841,
+        "end_to_end_ms": 7.059600000502542
+      }
+    },
+    {
+      "seed": 90260,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.753100000016275,
+        "end_to_end_ms": 4.783000000315951
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 10.913100000834675,
+        "end_to_end_ms": 10.962199999994482
+      }
+    },
+    {
+      "seed": 90261,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.901200000967947,
+        "end_to_end_ms": 9.921599999870523
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.4693000003899215,
+        "end_to_end_ms": 6.496899999547168
+      }
+    },
+    {
+      "seed": 90262,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.443199999514036,
+        "end_to_end_ms": 4.463400000531692
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.355000001349254,
+        "end_to_end_ms": 6.3706000000820495
+      }
+    },
+    {
+      "seed": 90263,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.974499998861575,
+        "end_to_end_ms": 10.14020000002347
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.741700000726269,
+        "end_to_end_ms": 5.900500000279862
+      }
+    },
+    {
+      "seed": 90264,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.058900000018184,
+        "end_to_end_ms": 4.0776999994704966
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.069099999876926,
+        "end_to_end_ms": 6.083000000216998
+      }
+    },
+    {
+      "seed": 90265,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.168299999146257,
+        "end_to_end_ms": 9.186400000544381
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.715899998904206,
+        "end_to_end_ms": 5.7434999998804415
+      }
+    },
+    {
+      "seed": 90266,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 15,
+        "ranking_ms": 4.075900000316324,
+        "end_to_end_ms": 4.201699999612174
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.365999999616179,
+        "end_to_end_ms": 6.5121000006911345
+      }
+    },
+    {
+      "seed": 90267,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 13.214200000220444,
+        "end_to_end_ms": 13.29999999870779
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.5977000012935605,
+        "end_to_end_ms": 6.627300001127878
+      }
+    },
+    {
+      "seed": 90268,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.4768999996449566,
+        "end_to_end_ms": 4.913099999612314
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.488799999715411,
+        "end_to_end_ms": 6.628999999520602
+      }
+    },
+    {
+      "seed": 90269,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.188199999698554,
+        "end_to_end_ms": 9.340299999166746
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.596999999397667,
+        "end_to_end_ms": 5.634799999825191
+      }
+    },
+    {
+      "seed": 90270,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.662899998947978,
+        "end_to_end_ms": 4.701599998952588
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 7.035500000711181,
+        "end_to_end_ms": 7.089500000802218
+      }
+    },
+    {
+      "seed": 90271,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.649099998772726,
+        "end_to_end_ms": 10.808499999257037
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.013700000039535,
+        "end_to_end_ms": 6.185199999890756
+      }
+    },
+    {
+      "seed": 90272,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 4.407399999763584,
+        "end_to_end_ms": 4.476199999771779
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.492400001661736,
+        "end_to_end_ms": 6.630500000028405
+      }
+    },
+    {
+      "seed": 90273,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 10.21490000130143,
+        "end_to_end_ms": 10.266900000715395
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 6.15749999997206,
+        "end_to_end_ms": 6.219700000656303
+      }
+    },
+    {
+      "seed": 90274,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 4.027400000268244,
+        "end_to_end_ms": 4.070499999215826
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.39479999881587,
+        "end_to_end_ms": 6.582300000445684
+      }
+    },
+    {
+      "seed": 90275,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.896400000798167,
+        "end_to_end_ms": 9.916200000589015
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.335899999612593,
+        "end_to_end_ms": 6.359699998938595
+      }
+    },
+    {
+      "seed": 90276,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.438800000571064,
+        "end_to_end_ms": 4.460800000742893
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.470300000728457,
+        "end_to_end_ms": 6.485300000349525
+      }
+    },
+    {
+      "seed": 90277,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.434700001496822,
+        "end_to_end_ms": 10.458599999765283
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.176699998832191,
+        "end_to_end_ms": 6.197700000484474
+      }
+    },
+    {
+      "seed": 90278,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 4.202199999781442,
+        "end_to_end_ms": 4.285900000468246
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.485899999461253,
+        "end_to_end_ms": 6.630600000789855
+      }
+    },
+    {
+      "seed": 90279,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.24259999919741,
+        "end_to_end_ms": 9.275700000216602
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.281699999817647,
+        "end_to_end_ms": 6.307899999228539
+      }
+    },
+    {
+      "seed": 90280,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.554299999654177,
+        "end_to_end_ms": 4.574800001137191
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.03419999970356,
+        "end_to_end_ms": 6.050800000593881
+      }
+    },
+    {
+      "seed": 90281,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.622600000511738,
+        "end_to_end_ms": 9.640899999794783
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.0100999999122,
+        "end_to_end_ms": 6.033499999830383
+      }
+    },
+    {
+      "seed": 90282,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.076000001077773,
+        "end_to_end_ms": 4.096399999980349
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.214299999555806,
+        "end_to_end_ms": 6.229900000107591
+      }
+    },
+    {
+      "seed": 90283,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.645399999499205,
+        "end_to_end_ms": 9.67549999950279
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.740000000514556,
+        "end_to_end_ms": 5.758799999966868
+      }
+    },
+    {
+      "seed": 90284,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 11,
+        "ranking_ms": 4.2228999991493765,
+        "end_to_end_ms": 4.332500000600703
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.852700000308687,
+        "end_to_end_ms": 6.871499999760999
+      }
+    },
+    {
+      "seed": 90285,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.439999999813153,
+        "end_to_end_ms": 9.656599999289028
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.292100000791834,
+        "end_to_end_ms": 6.46720000077039
+      }
+    },
+    {
+      "seed": 90286,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 4.234399999404559,
+        "end_to_end_ms": 4.28009999995993
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.881900000531459,
+        "end_to_end_ms": 5.896600001506158
+      }
+    },
+    {
+      "seed": 90287,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.608700000171666,
+        "end_to_end_ms": 9.62719999915862
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 5.672700001014164,
+        "end_to_end_ms": 5.779600000096252
+      }
+    },
+    {
+      "seed": 90288,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.510900000241236,
+        "end_to_end_ms": 4.535100000794046
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.4473000002180925,
+        "end_to_end_ms": 6.463900001108414
+      }
+    },
+    {
+      "seed": 90289,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.781200000361423,
+        "end_to_end_ms": 9.81359999968845
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.214500001078704,
+        "end_to_end_ms": 6.258499999603373
+      }
+    },
+    {
+      "seed": 90290,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.511200000706594,
+        "end_to_end_ms": 4.53160000142816
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.12120000005234,
+        "end_to_end_ms": 6.145999999716878
+      }
+    },
+    {
+      "seed": 90291,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.8537999985856,
+        "end_to_end_ms": 11.040699999284698
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.229299999176874,
+        "end_to_end_ms": 6.400599999324186
+      }
+    },
+    {
+      "seed": 90292,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.467500000828295,
+        "end_to_end_ms": 4.616700000042329
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.38020000042161,
+        "end_to_end_ms": 6.513099999210681
+      }
+    },
+    {
+      "seed": 90293,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 12.337300000581308,
+        "end_to_end_ms": 12.515200000052573
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.436199999370729,
+        "end_to_end_ms": 6.614699999772711
+      }
+    },
+    {
+      "seed": 90294,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.236000000673812,
+        "end_to_end_ms": 4.376299999421462
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.717300000877003,
+        "end_to_end_ms": 7.899100000940962
+      }
+    },
+    {
+      "seed": 90295,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.249900000213529,
+        "end_to_end_ms": 9.267700001146295
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.694699999367003,
+        "end_to_end_ms": 5.8678999994299375
+      }
+    },
+    {
+      "seed": 90296,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.047299999001552,
+        "end_to_end_ms": 4.079500000443659
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.317900000794907,
+        "end_to_end_ms": 6.335699999908684
+      }
+    },
+    {
+      "seed": 90297,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.435099998881924,
+        "end_to_end_ms": 9.613999998691725
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.153100001029088,
+        "end_to_end_ms": 6.357500000376604
+      }
+    },
+    {
+      "seed": 90298,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.076400000485592,
+        "end_to_end_ms": 4.098800000065239
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.018299998686416,
+        "end_to_end_ms": 6.145600000309059
+      }
+    },
+    {
+      "seed": 90299,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.415300001113792,
+        "end_to_end_ms": 10.591700000077253
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 7,
+        "ranking_ms": 6.406599999536411,
+        "end_to_end_ms": 6.494799999927636
+      }
+    },
+    {
+      "seed": 90300,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.092900000614463,
+        "end_to_end_ms": 4.11550000171701
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.931900001087342,
+        "end_to_end_ms": 5.946100000073784
+      }
+    },
+    {
+      "seed": 90301,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 9.156300000540796,
+        "end_to_end_ms": 9.203900001011789
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.981700000120327,
+        "end_to_end_ms": 6.007300000419491
+      }
+    },
+    {
+      "seed": 90302,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.449199999726261,
+        "end_to_end_ms": 4.467099999601487
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.721900001139147,
+        "end_to_end_ms": 6.7376000006333925
+      }
+    },
+    {
+      "seed": 90303,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.077500000785221,
+        "end_to_end_ms": 9.239200000592973
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 5.65430000096967,
+        "end_to_end_ms": 5.724200000258861
+      }
+    },
+    {
+      "seed": 90304,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 4.360499999165768,
+        "end_to_end_ms": 4.45919999947364
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 6.625400001212256,
+        "end_to_end_ms": 6.683000001430628
+      }
+    },
+    {
+      "seed": 90305,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.16669999989972,
+        "end_to_end_ms": 10.341999999582185
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.35119999969902,
+        "end_to_end_ms": 6.550000000061118
+      }
+    },
+    {
+      "seed": 90306,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.388700001072721,
+        "end_to_end_ms": 4.419500000949483
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.262199998673168,
+        "end_to_end_ms": 6.284799999775714
+      }
+    },
+    {
+      "seed": 90307,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.185700000671204,
+        "end_to_end_ms": 9.342600000309176
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.850499999723979,
+        "end_to_end_ms": 6.062299999030074
+      }
+    },
+    {
+      "seed": 90308,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.806099999768776,
+        "end_to_end_ms": 4.8284000004059635
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.954599999313359,
+        "end_to_end_ms": 5.976599999485188
+      }
+    },
+    {
+      "seed": 90309,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 10.536199999478413,
+        "end_to_end_ms": 10.589600000457722
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.451300001368509,
+        "end_to_end_ms": 5.4829000000609085
+      }
+    },
+    {
+      "seed": 90310,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.308199999286444,
+        "end_to_end_ms": 4.452299999684328
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 5.949899999905028,
+        "end_to_end_ms": 5.979900000966154
+      }
+    },
+    {
+      "seed": 90311,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.140599999431288,
+        "end_to_end_ms": 10.166099998969003
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.3438999986829,
+        "end_to_end_ms": 6.369599999743514
+      }
+    },
+    {
+      "seed": 90312,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 4.433199999766657,
+        "end_to_end_ms": 4.479499999433756
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.408700000974932,
+        "end_to_end_ms": 6.423100001484272
+      }
+    },
+    {
+      "seed": 90313,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 9.66599999992468,
+        "end_to_end_ms": 9.721200000058161
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.2300999998115,
+        "end_to_end_ms": 6.409600000552018
+      }
+    },
+    {
+      "seed": 90314,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.09370000124909,
+        "end_to_end_ms": 4.128399999899557
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.063700000595418,
+        "end_to_end_ms": 6.0766000005969545
+      }
+    },
+    {
+      "seed": 90315,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.020000001532026,
+        "end_to_end_ms": 10.040300001492142
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.217500000275322,
+        "end_to_end_ms": 6.239000000277883
+      }
+    },
+    {
+      "seed": 90316,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.795999999259948,
+        "end_to_end_ms": 4.8202999987552175
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.628900000578142,
+        "end_to_end_ms": 6.768300001567695
+      }
+    },
+    {
+      "seed": 90317,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 9.174499999062391,
+        "end_to_end_ms": 9.215499998390442
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.899899999349145,
+        "end_to_end_ms": 6.074099999750615
+      }
+    },
+    {
+      "seed": 90318,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.184400000667665,
+        "end_to_end_ms": 4.213700000036624
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 6.069199998819386,
+        "end_to_end_ms": 6.1149999983172165
+      }
+    },
+    {
+      "seed": 90319,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.427700000742334,
+        "end_to_end_ms": 9.583100001691491
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.679399999280577,
+        "end_to_end_ms": 5.8690999994723825
+      }
+    },
+    {
+      "seed": 90320,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 4.431299999851035,
+        "end_to_end_ms": 4.479999999603024
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 5.967799999780254,
+        "end_to_end_ms": 5.998399999953108
+      }
+    },
+    {
+      "seed": 90321,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.30260000131966,
+        "end_to_end_ms": 9.320700000898796
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.721899999931338,
+        "end_to_end_ms": 9.748599999511498
+      }
+    },
+    {
+      "seed": 90322,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.20020000092336,
+        "end_to_end_ms": 4.232499999488937
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 5.9220999992248835,
+        "end_to_end_ms": 5.9440999993967125
+      }
+    },
+    {
+      "seed": 90323,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.94660000105796,
+        "end_to_end_ms": 9.96830000076443
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.2731999987590825,
+        "end_to_end_ms": 6.297399999311892
+      }
+    },
+    {
+      "seed": 90324,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 3.8222000002861023,
+        "end_to_end_ms": 3.9675000007264316
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.233100000827108,
+        "end_to_end_ms": 6.349299999783398
+      }
+    },
+    {
+      "seed": 90325,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.1037999993423,
+        "end_to_end_ms": 10.126600000148755
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.2319999997271225,
+        "end_to_end_ms": 6.255500000406755
+      }
+    },
+    {
+      "seed": 90326,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 4.552599999442464,
+        "end_to_end_ms": 4.637899999579531
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.031599999914761,
+        "end_to_end_ms": 6.057700000383193
+      }
+    },
+    {
+      "seed": 90327,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.218999999779044,
+        "end_to_end_ms": 10.241199999654782
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.33419999940088,
+        "end_to_end_ms": 6.361100000503939
+      }
+    },
+    {
+      "seed": 90328,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.679400000895839,
+        "end_to_end_ms": 4.703200000221841
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.955099999482627,
+        "end_to_end_ms": 5.969199999526609
+      }
+    },
+    {
+      "seed": 90329,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.12569999875268,
+        "end_to_end_ms": 10.285599999406259
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.637300000875257,
+        "end_to_end_ms": 6.82539999979781
+      }
+    },
+    {
+      "seed": 90330,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 8,
+        "ranking_ms": 4.3839000009029405,
+        "end_to_end_ms": 4.471900001590257
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 15,
+        "ranking_ms": 6.39940000110073,
+        "end_to_end_ms": 6.51810000090336
+      }
+    },
+    {
+      "seed": 90331,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 8.977299999969546,
+        "end_to_end_ms": 8.99790000039502
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.268099999942933,
+        "end_to_end_ms": 6.296399998973357
+      }
+    },
+    {
+      "seed": 90332,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.549300001599477,
+        "end_to_end_ms": 4.570000000967411
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.449400001656613,
+        "end_to_end_ms": 6.465100001150859
+      }
+    },
+    {
+      "seed": 90333,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.071200000107638,
+        "end_to_end_ms": 9.224299999914365
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.876999999803957,
+        "end_to_end_ms": 7.1898000005603535
+      }
+    },
+    {
+      "seed": 90334,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.31159999970987,
+        "end_to_end_ms": 4.455399999642395
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.056899999748566,
+        "end_to_end_ms": 6.243300000278396
+      }
+    },
+    {
+      "seed": 90335,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.926299999278854,
+        "end_to_end_ms": 9.948099999746773
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.393199999365606,
+        "end_to_end_ms": 6.4170999994530575
+      }
+    },
+    {
+      "seed": 90336,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.185099998721853,
+        "end_to_end_ms": 4.208799999105395
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.9905999987677205,
+        "end_to_end_ms": 6.003200000122888
+      }
+    },
+    {
+      "seed": 90337,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.147599999982049,
+        "end_to_end_ms": 10.169500001211418
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.129900000814814,
+        "end_to_end_ms": 6.150600000182749
+      }
+    },
+    {
+      "seed": 90338,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.0687000000616536,
+        "end_to_end_ms": 4.089899999598856
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.010699999023927,
+        "end_to_end_ms": 6.025299999237177
+      }
+    },
+    {
+      "seed": 90339,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.008200000607758,
+        "end_to_end_ms": 9.023300000990275
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.596999999397667,
+        "end_to_end_ms": 5.627599999570521
+      }
+    },
+    {
+      "seed": 90340,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.05759999921429,
+        "end_to_end_ms": 4.086700000698329
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.820800000947202,
+        "end_to_end_ms": 5.941800000073272
+      }
+    },
+    {
+      "seed": 90341,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.096499999941443,
+        "end_to_end_ms": 9.122599998590886
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.668699999660021,
+        "end_to_end_ms": 5.692299999282113
+      }
+    },
+    {
+      "seed": 90342,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 4.087000001163688,
+        "end_to_end_ms": 4.168299999946612
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.784700000731391,
+        "end_to_end_ms": 5.902200000491575
+      }
+    },
+    {
+      "seed": 90343,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.397999998327577,
+        "end_to_end_ms": 9.414999998625717
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.791499999759253,
+        "end_to_end_ms": 5.812100000184728
+      }
+    },
+    {
+      "seed": 90344,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.002000001491979,
+        "end_to_end_ms": 4.1625000012572855
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.104500000219559,
+        "end_to_end_ms": 6.229399999938323
+      }
+    },
+    {
+      "seed": 90345,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.48609999998007,
+        "end_to_end_ms": 10.658799999873736
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.324600000880309,
+        "end_to_end_ms": 6.497099999251077
+      }
+    },
+    {
+      "seed": 90346,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 4.14939999973285,
+        "end_to_end_ms": 4.231099999742582
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.524800000988762,
+        "end_to_end_ms": 6.540300000779098
+      }
+    },
+    {
+      "seed": 90347,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.67540000056033,
+        "end_to_end_ms": 9.696000000985805
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.356600000799517,
+        "end_to_end_ms": 6.400199999916367
+      }
+    },
+    {
+      "seed": 90348,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.721900000731694,
+        "end_to_end_ms": 4.76150000031339
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.878299998788862,
+        "end_to_end_ms": 6.897699999171891
+      }
+    },
+    {
+      "seed": 90349,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 4,
+        "ranking_ms": 9.270000000469736,
+        "end_to_end_ms": 9.317800000644638
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.816500000946689,
+        "end_to_end_ms": 5.835100000695093
+      }
+    },
+    {
+      "seed": 90350,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.093900000952999,
+        "end_to_end_ms": 4.127000000153203
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 6.022599998686928,
+        "end_to_end_ms": 6.048499999451451
+      }
+    },
+    {
+      "seed": 90351,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.183699999994133,
+        "end_to_end_ms": 9.20109999970009
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.851699999970151,
+        "end_to_end_ms": 7.015200000751065
+      }
+    },
+    {
+      "seed": 90352,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.5417999990604585,
+        "end_to_end_ms": 4.720899998574168
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.446199999321834,
+        "end_to_end_ms": 7.585699999253848
+      }
+    },
+    {
+      "seed": 90353,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.417999999641324,
+        "end_to_end_ms": 9.573600000294391
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.419299999834038,
+        "end_to_end_ms": 6.624800000281539
+      }
+    },
+    {
+      "seed": 90354,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.752199998620199,
+        "end_to_end_ms": 4.78339999972377
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.496999998489628,
+        "end_to_end_ms": 6.511899999168236
+      }
+    },
+    {
+      "seed": 90355,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.574399999313755,
+        "end_to_end_ms": 10.752799998954288
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.115799998951843,
+        "end_to_end_ms": 6.287700000029872
+      }
+    },
+    {
+      "seed": 90356,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 4.650400000173249,
+        "end_to_end_ms": 4.696800000601797
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 6.423200000426732,
+        "end_to_end_ms": 6.474699999671429
+      }
+    },
+    {
+      "seed": 90357,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.129700000106823,
+        "end_to_end_ms": 10.288000001310138
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.926799998633214,
+        "end_to_end_ms": 6.099099999119062
+      }
+    },
+    {
+      "seed": 90358,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.103399998712121,
+        "end_to_end_ms": 4.124999999476131
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 5.912599999646773,
+        "end_to_end_ms": 5.96399999994901
+      }
+    },
+    {
+      "seed": 90359,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.025099998325459,
+        "end_to_end_ms": 9.055399999851943
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 7.083200000124634,
+        "end_to_end_ms": 7.112499999493593
+      }
+    },
+    {
+      "seed": 90360,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.251100001056329,
+        "end_to_end_ms": 4.278600001271116
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.429099999877508,
+        "end_to_end_ms": 6.4443999999639345
+      }
+    },
+    {
+      "seed": 90361,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.78209999993851,
+        "end_to_end_ms": 9.803499999179621
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.254600000829669,
+        "end_to_end_ms": 6.27850000091712
+      }
+    },
+    {
+      "seed": 90362,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.290300001230207,
+        "end_to_end_ms": 4.458299999896553
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.864799999675597,
+        "end_to_end_ms": 6.989699999394361
+      }
+    },
+    {
+      "seed": 90363,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.330999999292544,
+        "end_to_end_ms": 9.48699999935343
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.352400001356727,
+        "end_to_end_ms": 5.528900001081638
+      }
+    },
+    {
+      "seed": 90364,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.29450000046927,
+        "end_to_end_ms": 4.316100001233281
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.989899998894543,
+        "end_to_end_ms": 6.003299999065348
+      }
+    },
+    {
+      "seed": 90365,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.055300000909483,
+        "end_to_end_ms": 9.085900001082337
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 11,
+        "ranking_ms": 5.8136000006925315,
+        "end_to_end_ms": 5.944999998973799
+      }
+    },
+    {
+      "seed": 90366,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.492400001254282,
+        "end_to_end_ms": 4.513300000326126
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.7298000012669945,
+        "end_to_end_ms": 6.762900000467198
+      }
+    },
+    {
+      "seed": 90367,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 9.354699999676086,
+        "end_to_end_ms": 9.419500000149128
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 6.011600000420003,
+        "end_to_end_ms": 6.089300000894582
+      }
+    },
+    {
+      "seed": 90368,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.175000000032014,
+        "end_to_end_ms": 4.195800000161398
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.039399999281159,
+        "end_to_end_ms": 6.053199998859782
+      }
+    },
+    {
+      "seed": 90369,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.522599999603699,
+        "end_to_end_ms": 10.544400000071619
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.953900001462898,
+        "end_to_end_ms": 6.982300001254771
+      }
+    },
+    {
+      "seed": 90370,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.324600000472856,
+        "end_to_end_ms": 4.452700000911136
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.208500000866479,
+        "end_to_end_ms": 6.322200000795419
+      }
+    },
+    {
+      "seed": 90371,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.899500000756234,
+        "end_to_end_ms": 9.918300000208546
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.201600001077168,
+        "end_to_end_ms": 6.273299999520532
+      }
+    },
+    {
+      "seed": 90372,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.094300000360818,
+        "end_to_end_ms": 4.115300000194111
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.060300000171992,
+        "end_to_end_ms": 6.0778000006393995
+      }
+    },
+    {
+      "seed": 90373,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.999199999583652,
+        "end_to_end_ms": 10.17140000112704
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.697399999917252,
+        "end_to_end_ms": 5.854600000020582
+      }
+    },
+    {
+      "seed": 90374,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.329200000938727,
+        "end_to_end_ms": 4.352500000095461
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.137500000477303,
+        "end_to_end_ms": 6.1516000005212845
+      }
+    },
+    {
+      "seed": 90375,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 9.214399999109446,
+        "end_to_end_ms": 9.30510000034701
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 6.048499999451451,
+        "end_to_end_ms": 6.164000000353553
+      }
+    },
+    {
+      "seed": 90376,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.135199998927419,
+        "end_to_end_ms": 4.2905999998765765
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.568300001163152,
+        "end_to_end_ms": 6.708700000672252
+      }
+    },
+    {
+      "seed": 90377,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 9.903300000587478,
+        "end_to_end_ms": 9.938000001056935
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.356699999741977,
+        "end_to_end_ms": 6.38029999936407
+      }
+    },
+    {
+      "seed": 90378,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 3.8037000012991484,
+        "end_to_end_ms": 3.9466000016545877
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.217099999048514,
+        "end_to_end_ms": 6.338899998809211
+      }
+    },
+    {
+      "seed": 90379,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.75219999984256,
+        "end_to_end_ms": 10.942900000372902
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.980199999612523,
+        "end_to_end_ms": 6.171400000312133
+      }
+    },
+    {
+      "seed": 90380,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.655799999454757,
+        "end_to_end_ms": 4.800900000191177
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.524200000058045,
+        "end_to_end_ms": 6.665900000371039
+      }
+    },
+    {
+      "seed": 90381,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 9.40709999849787,
+        "end_to_end_ms": 9.465299999646959
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 5.667699999321485,
+        "end_to_end_ms": 5.689999999958673
+      }
+    },
+    {
+      "seed": 90382,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 3.8566000002902,
+        "end_to_end_ms": 3.9901999989524484
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.55929999993532,
+        "end_to_end_ms": 6.6919000000780215
+      }
+    },
+    {
+      "seed": 90383,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 14.113200000792858,
+        "end_to_end_ms": 14.27020000119228
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 6.188699999256642,
+        "end_to_end_ms": 6.375700000717188
+      }
+    },
+    {
+      "seed": 90384,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.364899999927729,
+        "end_to_end_ms": 4.420600000230479
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 5.88650000099733,
+        "end_to_end_ms": 5.962000001090928
+      }
+    },
+    {
+      "seed": 90385,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.22249999914493,
+        "end_to_end_ms": 10.254400000121677
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.298600001173327,
+        "end_to_end_ms": 6.322799999907147
+      }
+    },
+    {
+      "seed": 90386,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.056299998410395,
+        "end_to_end_ms": 4.197399999611662
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.4838000000454485,
+        "end_to_end_ms": 7.622600000104285
+      }
+    },
+    {
+      "seed": 90387,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 10.295699999915087,
+        "end_to_end_ms": 10.317500000383006
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 3,
+        "ranking_ms": 6.380999999237247,
+        "end_to_end_ms": 6.4366999995399965
+      }
+    },
+    {
+      "seed": 90388,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.218300000502495,
+        "end_to_end_ms": 4.238600000462611
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.0325000013108365,
+        "end_to_end_ms": 6.04610000118555
+      }
+    },
+    {
+      "seed": 90389,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 9.782499999346328,
+        "end_to_end_ms": 9.841899998718873
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 10,
+        "ranking_ms": 6.187000000863918,
+        "end_to_end_ms": 6.3009000004967675
+      }
+    },
+    {
+      "seed": 90390,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 4.722399999081972,
+        "end_to_end_ms": 4.890000000159489
+      },
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 7.225900000776164,
+        "end_to_end_ms": 7.35750000058033
+      }
+    },
+    {
+      "seed": 90391,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.157200000117882,
+        "end_to_end_ms": 9.308400000008987
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 14,
+        "ranking_ms": 5.718499998693005,
+        "end_to_end_ms": 5.855299999893759
+      }
+    },
+    {
+      "seed": 90392,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 4.620100000465754,
+        "end_to_end_ms": 4.644700000426383
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.703299999571755,
+        "end_to_end_ms": 6.720100000165985
+      }
+    },
+    {
+      "seed": 90393,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 8.979599999292986,
+        "end_to_end_ms": 9.130299999014824
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 5.664799999067327,
+        "end_to_end_ms": 5.717500000173459
+      }
+    },
+    {
+      "seed": 90394,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 6,
+        "ranking_ms": 4.705400000602822,
+        "end_to_end_ms": 4.7761999994691
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 6.482299999333918,
+        "end_to_end_ms": 6.499199998870608
+      }
+    },
+    {
+      "seed": 90395,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 9.944800000084797,
+        "end_to_end_ms": 10.099999999511056
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.423099999461556,
+        "end_to_end_ms": 5.607099999906495
+      }
+    },
+    {
+      "seed": 90396,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 2,
+        "ranking_ms": 4.469299999982468,
+        "end_to_end_ms": 4.503999998632935
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 9,
+        "ranking_ms": 6.564299999809009,
+        "end_to_end_ms": 6.650200000876794
+      }
+    },
+    {
+      "seed": 90397,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "wire",
+      "one_edit_repairable": true,
+      "global_small_edit": {
+        "success": true,
+        "checks": 1,
+        "ranking_ms": 9.70430000052147,
+        "end_to_end_ms": 9.723600000143051
+      },
+      "learned_local": {
+        "success": true,
+        "checks": 14,
+        "ranking_ms": 5.798700000013923,
+        "end_to_end_ms": 5.943399999523535
+      }
+    },
+    {
+      "seed": 90398,
+      "inputs": 6,
+      "gates": 18,
+      "fault": "lut",
+      "one_edit_repairable": true,
+      "learned_local": {
+        "success": true,
+        "checks": 5,
+        "ranking_ms": 4.055999999764026,
+        "end_to_end_ms": 4.10829999964335
+      },
+      "global_small_edit": {
+        "success": true,
+        "checks": 14,
+        "ranking_ms": 5.978799999866169,
+        "end_to_end_ms": 6.08979999924486
+      }
+    },
+    {
+      "seed": 90399,
+      "inputs": 7,
+      "gates": 22,
+      "fault": "permanent",
+      "one_edit_repairable": false,
+      "global_small_edit": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 10.453099999722326,
+        "end_to_end_ms": 10.614700000587618
+      },
+      "learned_local": {
+        "success": false,
+        "checks": 16,
+        "ranking_ms": 5.674699999872246,
+        "end_to_end_ms": 5.8499000006122515
+      }
+    }
+  ]
+}

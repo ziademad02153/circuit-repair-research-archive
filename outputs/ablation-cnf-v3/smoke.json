@@ -1,0 +1,185 @@
+{
+  "purpose": "pre-timing correctness smoke, disjoint seed",
+  "records": [
+    {
+      "method": "learned_frozen",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.027692200001183664
+    },
+    {
+      "method": "forest_full_selected",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.0014087999988987576
+    },
+    {
+      "method": "forest_no_need_selected",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.0011568000008992385
+    },
+    {
+      "method": "local_improvement",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.00024930000290623866
+    },
+    {
+      "method": "local_after_error",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.0002994999995280523
+    },
+    {
+      "method": "sample_error",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.0002997999981744215
+    },
+    {
+      "method": "random",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.0002590000003692694
+    },
+    {
+      "method": "exhaustive",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.0006489000006695278
+    },
+    {
+      "method": "cegis_z3",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.02402730000176234
+    },
+    {
+      "method": "cegis_cnf",
+      "budget": 0.1,
+      "status": "accepted",
+      "elapsed": 0.0015856999998504762
+    },
+    {
+      "method": "learned_frozen",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.0014444999978877604
+    },
+    {
+      "method": "forest_full_selected",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.001271900000574533
+    },
+    {
+      "method": "forest_no_need_selected",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.0012692999989667442
+    },
+    {
+      "method": "local_improvement",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.00023779999901307747
+    },
+    {
+      "method": "local_after_error",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.0003012999986822251
+    },
+    {
+      "method": "sample_error",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.00029880000147386454
+    },
+    {
+      "method": "random",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.00024330000087502412
+    },
+    {
+      "method": "exhaustive",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.00058319999880041
+    },
+    {
+      "method": "cegis_z3",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.01711970000178553
+    },
+    {
+      "method": "cegis_cnf",
+      "budget": 1.0,
+      "status": "accepted",
+      "elapsed": 0.0014612999984819908
+    },
+    {
+      "method": "learned_frozen",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.001288600000407314
+    },
+    {
+      "method": "forest_full_selected",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.0011842999992950354
+    },
+    {
+      "method": "forest_no_need_selected",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.0013283000007504597
+    },
+    {
+      "method": "local_improvement",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.00026079999952344224
+    },
+    {
+      "method": "local_after_error",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.00026230000003124587
+    },
+    {
+      "method": "sample_error",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.0002811999984260183
+    },
+    {
+      "method": "random",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.00023800000053597614
+    },
+    {
+      "method": "exhaustive",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.0005823000028613023
+    },
+    {
+      "method": "cegis_z3",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.01732569999876432
+    },
+    {
+      "method": "cegis_cnf",
+      "budget": 10.0,
+      "status": "accepted",
+      "elapsed": 0.0015823000030650292
+    }
+  ]
+}

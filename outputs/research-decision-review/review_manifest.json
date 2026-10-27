@@ -1,0 +1,51 @@
+{
+  "review_date": "2026-10-25",
+  "new_performance_trials": 0,
+  "analysis": "post-hoc explanation from frozen v3 logs; no changed preregistration",
+  "decision": "NO-GO for the current learned-ranking superiority paper; reuse infrastructure and change research question",
+  "alternative_research_gap_validated": false,
+  "sources": [
+    {
+      "title": "Iterative Circuit Repair Against Formal Specifications",
+      "url": "https://arxiv.org/html/2303.01158v1",
+      "read": "task/evaluation and Appendix L"
+    },
+    {
+      "title": "Comprehensive search for ECO rectification using symbolic sampling",
+      "url": "https://research.ibm.com/publications/comprehensive-search-for-eco-rectification-using-symbolic-sampling",
+      "read": "publisher abstract; full PDF unavailable this round"
+    },
+    {
+      "title": "Formalization of Rectification Learning for Economic Design Updates",
+      "url": "https://research.ibm.com/publications/formalization-of-rectification-learning-for-economic-design-updates",
+      "read": "publisher abstract"
+    },
+    {
+      "title": "Self-Organising Digital Circuits",
+      "url": "https://arxiv.org/html/2608.02606v2",
+      "read": "method, experiments and limitations"
+    },
+    {
+      "title": "SATzilla: An Algorithm Portfolio for SAT",
+      "url": "https://www.cs.ubc.ca/~kevinlb/papers/SATzilla04.pdf",
+      "read": "full two-page author solver description"
+    },
+    {
+      "title": "Logic Gate Neural Networks are Good for Verification",
+      "url": "https://arxiv.org/html/2505.19932v2",
+      "read": "abstract and SAT encoding section"
+    },
+    {
+      "title": "What Do RTL Repair Benchmarks Actually Measure?",
+      "url": "https://arxiv.org/html/2610.28595v1",
+      "read": "evaluation design, scoring, conclusion and limitations; preprint"
+    }
+  ],
+  "sha256": {
+    "work\\research_decision_audit.py": "82af021cbba2d0ca941956d1a6cc90fc37c91f48e3bad0584e9bcfdb963053e3",
+    "outputs\\research-decision-review\\diagnostics.json": "9c56212f496cb2238fe1cf3451031d4b10678b6a1b69c500df4edb4b7957a456",
+    "docs\\research-go-no-go-2026-10-25.md": "f8a84bf0e9511dfda4c15ce4902536333af441387008b7a1b6ac42181469dc2f",
+    "outputs\\ablation-cnf-v3\\summary.json": "63ccf04f7dbe3f7477cfbabd0d7315e86de67bbfd67152df01148fb5d24e00da",
+    "outputs\\ablation-cnf-v3\\audit.json": "66fe651917b7a3405aa26393e1f284cf4acdd161172ec83dbb1b9d7c4ad989c5"
+  }
+}

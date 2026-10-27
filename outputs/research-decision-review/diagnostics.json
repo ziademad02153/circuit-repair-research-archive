@@ -1,0 +1,144 @@
+{
+  "analysis_type": "Post-hoc explanatory review; no new experiment or changed preregistration",
+  "source_raw_sha256": "1bcfa956793fdbdb0b957bd143f44b85210e13d3443f322c68c53327dfe73366",
+  "source_protocol_sha256": "b7ce4656c58d1e7067f50e2233781e22e7ca392a358b67af6844a519c290c7cc",
+  "audit_source_sha256": "82af021cbba2d0ca941956d1a6cc90fc37c91f48e3bad0584e9bcfdb963053e3",
+  "comparisons": [
+    {
+      "scope": "all",
+      "budget_seconds": 0.1,
+      "circuits": 300,
+      "learned_successes": 99,
+      "cnf_successes": 249,
+      "cnf_statuses": {
+        "accepted": 249,
+        "unsat": 51
+      },
+      "learned_success_cnf_failure_cases": [],
+      "cnf_success_learned_failure_count": 150,
+      "common_success_pairs": 99,
+      "learned_faster_on_common_success_count": 2,
+      "cnf_max_actual_seconds": 0.07100540000101319,
+      "mean_learned_checks_on_common_successes": 34.90909090909091,
+      "mean_cnf_checks_on_common_successes": 2.6262626262626263,
+      "median_learned_checks_on_common_successes": 2,
+      "median_cnf_checks_on_common_successes": 2
+    },
+    {
+      "scope": "all",
+      "budget_seconds": 1.0,
+      "circuits": 300,
+      "learned_successes": 231,
+      "cnf_successes": 249,
+      "cnf_statuses": {
+        "accepted": 249,
+        "unsat": 51
+      },
+      "learned_success_cnf_failure_cases": [],
+      "cnf_success_learned_failure_count": 18,
+      "common_success_pairs": 231,
+      "learned_faster_on_common_success_count": 3,
+      "cnf_max_actual_seconds": 0.06475719999798457,
+      "mean_learned_checks_on_common_successes": 273.8181818181818,
+      "mean_cnf_checks_on_common_successes": 3.6623376623376624,
+      "median_learned_checks_on_common_successes": 14,
+      "median_cnf_checks_on_common_successes": 3
+    },
+    {
+      "scope": "all",
+      "budget_seconds": 10.0,
+      "circuits": 300,
+      "learned_successes": 247,
+      "cnf_successes": 249,
+      "cnf_statuses": {
+        "accepted": 249,
+        "unsat": 51
+      },
+      "learned_success_cnf_failure_cases": [],
+      "cnf_success_learned_failure_count": 2,
+      "common_success_pairs": 247,
+      "learned_faster_on_common_success_count": 2,
+      "cnf_max_actual_seconds": 0.06914659999893047,
+      "mean_learned_checks_on_common_successes": 436.9230769230769,
+      "mean_cnf_checks_on_common_successes": 3.748987854251012,
+      "median_learned_checks_on_common_successes": 18,
+      "median_cnf_checks_on_common_successes": 3
+    },
+    {
+      "scope": "larger",
+      "budget_seconds": 0.1,
+      "circuits": 250,
+      "learned_successes": 54,
+      "cnf_successes": 204,
+      "cnf_statuses": {
+        "accepted": 204,
+        "unsat": 46
+      },
+      "learned_success_cnf_failure_cases": [],
+      "cnf_success_learned_failure_count": 150,
+      "common_success_pairs": 54,
+      "learned_faster_on_common_success_count": 0,
+      "cnf_max_actual_seconds": 0.07100540000101319,
+      "mean_learned_checks_on_common_successes": 52.129629629629626,
+      "mean_cnf_checks_on_common_successes": 3.074074074074074,
+      "median_learned_checks_on_common_successes": 2.0,
+      "median_cnf_checks_on_common_successes": 3.0
+    },
+    {
+      "scope": "larger",
+      "budget_seconds": 1.0,
+      "circuits": 250,
+      "learned_successes": 186,
+      "cnf_successes": 204,
+      "cnf_statuses": {
+        "accepted": 204,
+        "unsat": 46
+      },
+      "learned_success_cnf_failure_cases": [],
+      "cnf_success_learned_failure_count": 18,
+      "common_success_pairs": 186,
+      "learned_faster_on_common_success_count": 0,
+      "cnf_max_actual_seconds": 0.06475719999798457,
+      "mean_learned_checks_on_common_successes": 336.6182795698925,
+      "mean_cnf_checks_on_common_successes": 4.043010752688172,
+      "median_learned_checks_on_common_successes": 26.5,
+      "median_cnf_checks_on_common_successes": 3.5
+    },
+    {
+      "scope": "larger",
+      "budget_seconds": 10.0,
+      "circuits": 250,
+      "learned_successes": 202,
+      "cnf_successes": 204,
+      "cnf_statuses": {
+        "accepted": 204,
+        "unsat": 46
+      },
+      "learned_success_cnf_failure_cases": [],
+      "cnf_success_learned_failure_count": 2,
+      "common_success_pairs": 202,
+      "learned_faster_on_common_success_count": 0,
+      "cnf_max_actual_seconds": 0.06914659999893047,
+      "mean_learned_checks_on_common_successes": 531.0841584158416,
+      "mean_cnf_checks_on_common_successes": 4.118811881188119,
+      "median_learned_checks_on_common_successes": 44.0,
+      "median_cnf_checks_on_common_successes": 4.0
+    }
+  ],
+  "observed_preprocessing": {
+    "population": "larger, 1 second, matched successful cases only",
+    "pairs": 186,
+    "candidate_plus_features_exceeds_complete_cnf_trial_count": 172,
+    "mean_candidate_plus_feature_seconds": 0.05026353279576416,
+    "mean_inference_seconds": 0.09036015537626504,
+    "mean_cnf_actual_seconds": 0.016722433870933355,
+    "interpretation_limit": "Observed stage costs, not a new zero-inference algorithm, predicted speedup, or causal hardware-independent estimate."
+  },
+  "limitations": [
+    "Known synthetic v2 cases",
+    "One timing run per method/budget",
+    "UNSAT is relative to the validated one-edit encoding; no independent proof certificate",
+    "No conclusion about all circuit repair methods or published models",
+    "No publication probability inferred"
+  ]
+}

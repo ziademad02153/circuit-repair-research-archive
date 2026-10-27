@@ -1,0 +1,498 @@
+{
+  "protocol": {
+    "seed": 20261025,
+    "train_seed_range": [
+      10000,
+      10319
+    ],
+    "validation_seed_range": [
+      20000,
+      20099
+    ],
+    "test_seed_range": [
+      30000,
+      30239
+    ],
+    "training_sizes": [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        12
+      ]
+    ],
+    "test_sizes": [
+      [
+        5,
+        14
+      ],
+      [
+        6,
+        18
+      ]
+    ],
+    "observed_specification_rows": 8,
+    "candidate_space": "one LUT replacement or one acyclic wire source replacement; permanently stuck gates cannot be edited",
+    "verification": "exhaustive enumeration of all 2^n inputs; no approximate acceptance",
+    "selected_hyperparameters_without_test_tuning": true,
+    "warning": "Candidate feature generation simulates every legal edit on sampled inputs; verifier-query counts alone are not total compute."
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "numpy": "2.5.4"
+  },
+  "training": {
+    "circuits": 320,
+    "candidates": 107464,
+    "positives": 1032,
+    "fit_seconds": 1.4140829000007216
+  },
+  "validation": {
+    "total": 100,
+    "repairable_one_edit": 81,
+    "sample_invisible_faults": 10,
+    "feature_seconds": 0.34837960000004387,
+    "predict_seconds": 0.5855922000027931,
+    "methods": {
+      "learned": {
+        "1": {
+          "successes": 55,
+          "all_cases_rate": 0.55,
+          "repairable_rate": 0.6790123456790124
+        },
+        "4": {
+          "successes": 69,
+          "all_cases_rate": 0.69,
+          "repairable_rate": 0.8518518518518519
+        },
+        "16": {
+          "successes": 77,
+          "all_cases_rate": 0.77,
+          "repairable_rate": 0.9506172839506173
+        },
+        "64": {
+          "successes": 81,
+          "all_cases_rate": 0.81,
+          "repairable_rate": 1.0
+        }
+      },
+      "sample_greedy": {
+        "1": {
+          "successes": 54,
+          "all_cases_rate": 0.54,
+          "repairable_rate": 0.6666666666666666
+        },
+        "4": {
+          "successes": 69,
+          "all_cases_rate": 0.69,
+          "repairable_rate": 0.8518518518518519
+        },
+        "16": {
+          "successes": 76,
+          "all_cases_rate": 0.76,
+          "repairable_rate": 0.9382716049382716
+        },
+        "64": {
+          "successes": 80,
+          "all_cases_rate": 0.8,
+          "repairable_rate": 0.9876543209876543
+        }
+      },
+      "sample_greedy_small_edit": {
+        "1": {
+          "successes": 57,
+          "all_cases_rate": 0.57,
+          "repairable_rate": 0.7037037037037037
+        },
+        "4": {
+          "successes": 70,
+          "all_cases_rate": 0.7,
+          "repairable_rate": 0.8641975308641975
+        },
+        "16": {
+          "successes": 76,
+          "all_cases_rate": 0.76,
+          "repairable_rate": 0.9382716049382716
+        },
+        "64": {
+          "successes": 79,
+          "all_cases_rate": 0.79,
+          "repairable_rate": 0.9753086419753086
+        }
+      },
+      "random": {
+        "1": {
+          "successes": 2,
+          "all_cases_rate": 0.02,
+          "repairable_rate": 0.024691358024691357
+        },
+        "4": {
+          "successes": 5,
+          "all_cases_rate": 0.05,
+          "repairable_rate": 0.06172839506172839
+        },
+        "16": {
+          "successes": 10,
+          "all_cases_rate": 0.1,
+          "repairable_rate": 0.12345679012345678
+        },
+        "64": {
+          "successes": 33,
+          "all_cases_rate": 0.33,
+          "repairable_rate": 0.4074074074074074
+        }
+      }
+    }
+  },
+  "test": {
+    "total": 240,
+    "repairable_one_edit": 197,
+    "sample_invisible_faults": 47,
+    "feature_seconds": 2.254756299991641,
+    "predict_seconds": 1.7567290000060893,
+    "methods": {
+      "learned": {
+        "1": {
+          "successes": 89,
+          "all_cases_rate": 0.37083333333333335,
+          "repairable_rate": 0.4517766497461929
+        },
+        "4": {
+          "successes": 121,
+          "all_cases_rate": 0.5041666666666667,
+          "repairable_rate": 0.6142131979695431
+        },
+        "16": {
+          "successes": 160,
+          "all_cases_rate": 0.6666666666666666,
+          "repairable_rate": 0.8121827411167513
+        },
+        "64": {
+          "successes": 191,
+          "all_cases_rate": 0.7958333333333333,
+          "repairable_rate": 0.9695431472081218
+        }
+      },
+      "sample_greedy": {
+        "1": {
+          "successes": 82,
+          "all_cases_rate": 0.3416666666666667,
+          "repairable_rate": 0.41624365482233505
+        },
+        "4": {
+          "successes": 136,
+          "all_cases_rate": 0.5666666666666667,
+          "repairable_rate": 0.6903553299492385
+        },
+        "16": {
+          "successes": 156,
+          "all_cases_rate": 0.65,
+          "repairable_rate": 0.7918781725888325
+        },
+        "64": {
+          "successes": 169,
+          "all_cases_rate": 0.7041666666666667,
+          "repairable_rate": 0.8578680203045685
+        }
+      },
+      "sample_greedy_small_edit": {
+        "1": {
+          "successes": 92,
+          "all_cases_rate": 0.38333333333333336,
+          "repairable_rate": 0.467005076142132
+        },
+        "4": {
+          "successes": 133,
+          "all_cases_rate": 0.5541666666666667,
+          "repairable_rate": 0.6751269035532995
+        },
+        "16": {
+          "successes": 157,
+          "all_cases_rate": 0.6541666666666667,
+          "repairable_rate": 0.7969543147208121
+        },
+        "64": {
+          "successes": 170,
+          "all_cases_rate": 0.7083333333333334,
+          "repairable_rate": 0.8629441624365483
+        }
+      },
+      "random": {
+        "1": {
+          "successes": 1,
+          "all_cases_rate": 0.004166666666666667,
+          "repairable_rate": 0.005076142131979695
+        },
+        "4": {
+          "successes": 6,
+          "all_cases_rate": 0.025,
+          "repairable_rate": 0.030456852791878174
+        },
+        "16": {
+          "successes": 18,
+          "all_cases_rate": 0.075,
+          "repairable_rate": 0.09137055837563451
+        },
+        "64": {
+          "successes": 53,
+          "all_cases_rate": 0.22083333333333333,
+          "repairable_rate": 0.26903553299492383
+        }
+      }
+    }
+  },
+  "sensitivity": {
+    "4": {
+      "total": 80,
+      "repairable_one_edit": 71,
+      "sample_invisible_faults": 41,
+      "feature_seconds": 0.8254905000103463,
+      "predict_seconds": 0.5628807000011875,
+      "methods": {
+        "learned": {
+          "1": {
+            "successes": 16,
+            "all_cases_rate": 0.2,
+            "repairable_rate": 0.22535211267605634
+          },
+          "4": {
+            "successes": 24,
+            "all_cases_rate": 0.3,
+            "repairable_rate": 0.3380281690140845
+          },
+          "16": {
+            "successes": 39,
+            "all_cases_rate": 0.4875,
+            "repairable_rate": 0.5492957746478874
+          },
+          "64": {
+            "successes": 56,
+            "all_cases_rate": 0.7,
+            "repairable_rate": 0.7887323943661971
+          }
+        },
+        "sample_greedy": {
+          "1": {
+            "successes": 7,
+            "all_cases_rate": 0.0875,
+            "repairable_rate": 0.09859154929577464
+          },
+          "4": {
+            "successes": 16,
+            "all_cases_rate": 0.2,
+            "repairable_rate": 0.22535211267605634
+          },
+          "16": {
+            "successes": 35,
+            "all_cases_rate": 0.4375,
+            "repairable_rate": 0.49295774647887325
+          },
+          "64": {
+            "successes": 47,
+            "all_cases_rate": 0.5875,
+            "repairable_rate": 0.6619718309859155
+          }
+        },
+        "sample_greedy_small_edit": {
+          "1": {
+            "successes": 8,
+            "all_cases_rate": 0.1,
+            "repairable_rate": 0.11267605633802817
+          },
+          "4": {
+            "successes": 18,
+            "all_cases_rate": 0.225,
+            "repairable_rate": 0.2535211267605634
+          },
+          "16": {
+            "successes": 35,
+            "all_cases_rate": 0.4375,
+            "repairable_rate": 0.49295774647887325
+          },
+          "64": {
+            "successes": 43,
+            "all_cases_rate": 0.5375,
+            "repairable_rate": 0.6056338028169014
+          }
+        },
+        "random": {
+          "1": {
+            "successes": 0,
+            "all_cases_rate": 0.0,
+            "repairable_rate": 0.0
+          },
+          "4": {
+            "successes": 1,
+            "all_cases_rate": 0.0125,
+            "repairable_rate": 0.014084507042253521
+          },
+          "16": {
+            "successes": 6,
+            "all_cases_rate": 0.075,
+            "repairable_rate": 0.08450704225352113
+          },
+          "64": {
+            "successes": 18,
+            "all_cases_rate": 0.225,
+            "repairable_rate": 0.2535211267605634
+          }
+        }
+      }
+    },
+    "16": {
+      "total": 80,
+      "repairable_one_edit": 71,
+      "sample_invisible_faults": 4,
+      "feature_seconds": 1.4038994999900751,
+      "predict_seconds": 0.6258358999839402,
+      "methods": {
+        "learned": {
+          "1": {
+            "successes": 37,
+            "all_cases_rate": 0.4625,
+            "repairable_rate": 0.5211267605633803
+          },
+          "4": {
+            "successes": 61,
+            "all_cases_rate": 0.7625,
+            "repairable_rate": 0.8591549295774648
+          },
+          "16": {
+            "successes": 68,
+            "all_cases_rate": 0.85,
+            "repairable_rate": 0.9577464788732394
+          },
+          "64": {
+            "successes": 70,
+            "all_cases_rate": 0.875,
+            "repairable_rate": 0.9859154929577465
+          }
+        },
+        "sample_greedy": {
+          "1": {
+            "successes": 55,
+            "all_cases_rate": 0.6875,
+            "repairable_rate": 0.7746478873239436
+          },
+          "4": {
+            "successes": 66,
+            "all_cases_rate": 0.825,
+            "repairable_rate": 0.9295774647887324
+          },
+          "16": {
+            "successes": 68,
+            "all_cases_rate": 0.85,
+            "repairable_rate": 0.9577464788732394
+          },
+          "64": {
+            "successes": 69,
+            "all_cases_rate": 0.8625,
+            "repairable_rate": 0.971830985915493
+          }
+        },
+        "sample_greedy_small_edit": {
+          "1": {
+            "successes": 55,
+            "all_cases_rate": 0.6875,
+            "repairable_rate": 0.7746478873239436
+          },
+          "4": {
+            "successes": 65,
+            "all_cases_rate": 0.8125,
+            "repairable_rate": 0.9154929577464789
+          },
+          "16": {
+            "successes": 67,
+            "all_cases_rate": 0.8375,
+            "repairable_rate": 0.9436619718309859
+          },
+          "64": {
+            "successes": 69,
+            "all_cases_rate": 0.8625,
+            "repairable_rate": 0.971830985915493
+          }
+        },
+        "random": {
+          "1": {
+            "successes": 0,
+            "all_cases_rate": 0.0,
+            "repairable_rate": 0.0
+          },
+          "4": {
+            "successes": 1,
+            "all_cases_rate": 0.0125,
+            "repairable_rate": 0.014084507042253521
+          },
+          "16": {
+            "successes": 6,
+            "all_cases_rate": 0.075,
+            "repairable_rate": 0.08450704225352113
+          },
+          "64": {
+            "successes": 18,
+            "all_cases_rate": 0.225,
+            "repairable_rate": 0.2535211267605634
+          }
+        }
+      }
+    }
+  },
+  "feature_importance": {
+    "sample_errors": 0.5273064350938633,
+    "relative_improvement": 0.27135229277257905,
+    "outputs_reachable": 0.08489495555481524,
+    "current_sample_errors": 0.07292629371974313,
+    "local_change_fraction": 0.011749268735030387,
+    "relative_gate_depth": 0.009900172614748345,
+    "fanout": 0.008510566920601937,
+    "output_gate": 0.005024423789565735,
+    "source_ones": 0.0023964433288980336,
+    "relative_old_source_depth": 0.0021774105648734612,
+    "relative_source_depth": 0.0013022686504307662,
+    "fault_ancestor": 0.0006670942309665302,
+    "source_similarity": 0.0005638223301441929,
+    "old_lut_ones": 0.00047037585836477356,
+    "lut_edit_distance": 0.00019897350525379854,
+    "source_is_input": 0.0001854657023956595,
+    "new_lut_ones": 0.0001345876705378413,
+    "kind_wire": 0.00012426547244670443,
+    "kind_lut": 0.00011488348474116686,
+    "source_is_fault": 0.0
+  },
+  "structural_witness": {
+    "inputs": 3,
+    "gates": 4,
+    "permanent_fault_gate": 0,
+    "wire_edits": 2,
+    "all_input_assignments": 8,
+    "exact_equivalence": true,
+    "fixed_wiring_input_support": [
+      [
+        2
+      ],
+      [
+        2
+      ]
+    ],
+    "target_depends_on_inputs": [
+      0,
+      1,
+      2
+    ],
+    "meaning": "Fixed wiring disconnects x0,x1 from both outputs; no LUT-only edit can recover their dependence. Two rewires use an existing spare XOR gate."
+  },
+  "total_seconds": 26.353143999998792,
+  "limitations": [
+    "synthetic small combinational DAGs",
+    "known reference specification",
+    "single-edit learned ranker only",
+    "not a decentralised rule",
+    "no physical hardware",
+    "not a reproduction or measured comparison to SODC or ICLR 2023",
+    "global novelty and publication suitability not proven by this experiment"
+  ]
+}

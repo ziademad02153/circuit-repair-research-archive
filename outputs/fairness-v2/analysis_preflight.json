@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "identical methods give zero intervals",
+    "constant timing advantage has exact interval",
+    "success uses within-circuit repeat mean",
+    "unique circuit denominator excludes duplicate timing repeats"
+  ],
+  "benchmark_outcomes_used": false
+}

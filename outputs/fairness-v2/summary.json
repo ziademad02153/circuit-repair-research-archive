@@ -1,0 +1,3047 @@
+{
+  "complete": true,
+  "development_trials": 180,
+  "test_trials": 4200,
+  "unique_test_circuits": 300,
+  "primary_unique_circuits": 250,
+  "selection": {
+    "selected_rule": "sample_error",
+    "scores": [
+      {
+        "method": "local_improvement",
+        "cases": 50,
+        "successes": 31,
+        "mean_penalized_seconds": 0.45800192400020023
+      },
+      {
+        "method": "local_after_error",
+        "cases": 50,
+        "successes": 23,
+        "mean_penalized_seconds": 0.6799917639997876
+      },
+      {
+        "method": "sample_error",
+        "cases": 50,
+        "successes": 32,
+        "mean_penalized_seconds": 0.4579324080002698
+      }
+    ],
+    "selected_utc": "2026-10-25T12:22:36Z",
+    "development_log_sha256_at_selection": "971aabff48e991c85cffc15494d9b28d73b736c961aba7ac15b5315fe43dcb57",
+    "test_trials_seen": 0
+  },
+  "primary": {
+    "comparator": "sample_error",
+    "unique_circuits": 250,
+    "repeats_per_circuit": 2,
+    "success": {
+      "difference": 0.09,
+      "ci95": [
+        0.054,
+        0.128
+      ],
+      "ci97_5": [
+        0.05,
+        0.13402500000000148
+      ]
+    },
+    "penalized_time": {
+      "difference": 0.01036280900004931,
+      "ci95": [
+        -0.020340672899906896,
+        0.04357921459016705
+      ],
+      "ci97_5": [
+        -0.024124513357611795,
+        0.04868792159753766
+      ]
+    },
+    "actual_time": {
+      "difference": 0.0069769110001798255,
+      "ci95": [
+        -0.02372284886987327,
+        0.03997702527506297
+      ],
+      "ci97_5": [
+        -0.027512872947406775,
+        0.045442088320176884
+      ]
+    },
+    "decision": "learned benefit demonstrated in a registered endpoint",
+    "success_benefit": true,
+    "penalized_time_benefit": false
+  },
+  "exploratory_comparisons": [
+    {
+      "comparator": "local_improvement",
+      "unique_circuits": 250,
+      "repeats_per_circuit": 2,
+      "success": {
+        "difference": 0.094,
+        "ci95": [
+          0.058,
+          0.132
+        ],
+        "ci97_5": [
+          0.052,
+          0.14
+        ]
+      },
+      "penalized_time": {
+        "difference": -0.0029270482000283665,
+        "ci95": [
+          -0.0361963023999644,
+          0.03191261390992748
+        ],
+        "ci97_5": [
+          -0.04054760673756391,
+          0.03752612164746883
+        ]
+      },
+      "actual_time": {
+        "difference": -0.007702080999901227,
+        "ci95": [
+          -0.04109620380996148,
+          0.027510255540012258
+        ],
+        "ci97_5": [
+          -0.045251535297471945,
+          0.032723087392464156
+        ]
+      },
+      "scope": "larger_pooled"
+    },
+    {
+      "comparator": "local_after_error",
+      "unique_circuits": 250,
+      "repeats_per_circuit": 2,
+      "success": {
+        "difference": 0.3,
+        "ci95": [
+          0.244,
+          0.36
+        ],
+        "ci97_5": [
+          0.236,
+          0.366
+        ]
+      },
+      "penalized_time": {
+        "difference": 0.24591014179996273,
+        "ci95": [
+          0.20390735440496338,
+          0.289516458809906
+        ],
+        "ci97_5": [
+          0.19837872292001582,
+          0.29553837696501417
+        ]
+      },
+      "actual_time": {
+        "difference": 0.24147235239999282,
+        "ci95": [
+          0.19886879376997005,
+          0.28544159245013506
+        ],
+        "ci97_5": [
+          0.19319237477994827,
+          0.2917609165750201
+        ]
+      },
+      "scope": "larger_pooled"
+    },
+    {
+      "comparator": "sample_error",
+      "unique_circuits": 250,
+      "repeats_per_circuit": 2,
+      "success": {
+        "difference": 0.09,
+        "ci95": [
+          0.054,
+          0.128
+        ],
+        "ci97_5": [
+          0.05,
+          0.134
+        ]
+      },
+      "penalized_time": {
+        "difference": 0.01036280900004931,
+        "ci95": [
+          -0.020452255744873218,
+          0.04250410599014976
+        ],
+        "ci97_5": [
+          -0.024179982327474408,
+          0.04760498430249797
+        ]
+      },
+      "actual_time": {
+        "difference": 0.0069769110001798255,
+        "ci95": [
+          -0.023859252804842798,
+          0.03946853277012412
+        ],
+        "ci97_5": [
+          -0.02735337931246586,
+          0.044306352102743446
+        ]
+      },
+      "scope": "larger_pooled"
+    },
+    {
+      "comparator": "random",
+      "unique_circuits": 250,
+      "repeats_per_circuit": 2,
+      "success": {
+        "difference": 0.238,
+        "ci95": [
+          0.186,
+          0.292
+        ],
+        "ci97_5": [
+          0.178,
+          0.302
+        ]
+      },
+      "penalized_time": {
+        "difference": 0.1950472184000173,
+        "ci95": [
+          0.15601285709505755,
+          0.23474764714994964
+        ],
+        "ci97_5": [
+          0.1503420760124993,
+          0.24134938501260061
+        ]
+      },
+      "actual_time": {
+        "difference": 0.18998550440005785,
+        "ci95": [
+          0.15052726372009637,
+          0.23041608598503918
+        ],
+        "ci97_5": [
+          0.14482849621520444,
+          0.23645307373503796
+        ]
+      },
+      "scope": "larger_pooled"
+    },
+    {
+      "comparator": "exhaustive",
+      "unique_circuits": 250,
+      "repeats_per_circuit": 2,
+      "success": {
+        "difference": 0.156,
+        "ci95": [
+          0.1,
+          0.214
+        ],
+        "ci97_5": [
+          0.092,
+          0.22202500000000147
+        ]
+      },
+      "penalized_time": {
+        "difference": 0.10243958840002597,
+        "ci95": [
+          0.055097905245038784,
+          0.14922488619496144
+        ],
+        "ci97_5": [
+          0.0487690722776224,
+          0.15566943152999976
+        ]
+      },
+      "actual_time": {
+        "difference": 0.09670099960009974,
+        "ci95": [
+          0.04936959181014973,
+          0.14363018306506325
+        ],
+        "ci97_5": [
+          0.043156763847625554,
+          0.15070934885502704
+        ]
+      },
+      "scope": "larger_pooled"
+    },
+    {
+      "comparator": "cegis",
+      "unique_circuits": 250,
+      "repeats_per_circuit": 2,
+      "success": {
+        "difference": 0.212,
+        "ci95": [
+          0.16,
+          0.266
+        ],
+        "ci97_5": [
+          0.152,
+          0.274
+        ]
+      },
+      "penalized_time": {
+        "difference": 0.26968340680003894,
+        "ci95": [
+          0.23216225987997716,
+          0.30722299629009187
+        ],
+        "ci97_5": [
+          0.22673814297253073,
+          0.3132801827050694
+        ]
+      },
+      "actual_time": {
+        "difference": 0.19998744180015637,
+        "ci95": [
+          0.14509374605528827,
+          0.25423613519515526
+        ],
+        "ci97_5": [
+          0.13622298462274401,
+          0.2609151283176134
+        ]
+      },
+      "scope": "larger_pooled"
+    }
+  ],
+  "statistics": [
+    {
+      "group": "n6_g18",
+      "method": "learned",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 90,
+      "success_rate": 0.9,
+      "mean_actual_seconds": 0.00829909200023394,
+      "median_actual_seconds": 0.007201750000604079,
+      "p95_actual_seconds": 0.015579825002532742,
+      "mean_failure_penalized_seconds": 0.10667406100015796,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 90,
+      "errors": 0,
+      "statuses": {
+        "accepted": 90,
+        "exhausted": 10
+      },
+      "mean_checks_on_trials_with_check_count": 84.28,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0001318639999226434
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0024383110000417217
+        },
+        "inference_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.004516929999881541
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00010118999987753341
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0010741209998741397
+        }
+      }
+    },
+    {
+      "group": "n6_g18",
+      "method": "local_improvement",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 90,
+      "success_rate": 0.9,
+      "mean_actual_seconds": 0.002655554999837477,
+      "median_actual_seconds": 0.0013568499980465276,
+      "p95_actual_seconds": 0.009356234998995204,
+      "mean_failure_penalized_seconds": 0.1017089279998254,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 90,
+      "errors": 0,
+      "statuses": {
+        "accepted": 90,
+        "exhausted": 10
+      },
+      "mean_checks_on_trials_with_check_count": 120.74,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00013374299993301975
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0009404450000511133
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00011400000024877955
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00143972500005475
+        }
+      }
+    },
+    {
+      "group": "n6_g18",
+      "method": "local_after_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 90,
+      "success_rate": 0.9,
+      "mean_actual_seconds": 0.004164446000140742,
+      "median_actual_seconds": 0.0034630999998626066,
+      "p95_actual_seconds": 0.00975969000082841,
+      "mean_failure_penalized_seconds": 0.10313554200009094,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 90,
+      "errors": 0,
+      "statuses": {
+        "accepted": 90,
+        "exhausted": 10
+      },
+      "mean_checks_on_trials_with_check_count": 223.16,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00013333399991097394
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0009892940002828253
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00010937700018985197
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0029024400003254416
+        }
+      }
+    },
+    {
+      "group": "n6_g18",
+      "method": "sample_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 90,
+      "success_rate": 0.9,
+      "mean_actual_seconds": 0.003524752000339504,
+      "median_actual_seconds": 0.0022729000011167955,
+      "p95_actual_seconds": 0.010457034998762538,
+      "mean_failure_penalized_seconds": 0.10249533300033363,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 90,
+      "errors": 0,
+      "statuses": {
+        "accepted": 90,
+        "exhausted": 10
+      },
+      "mean_checks_on_trials_with_check_count": 116.82,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00013167300021450502
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0018756300001041381
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00010798599996633129
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0013826170001993887
+        }
+      }
+    },
+    {
+      "group": "n6_g18",
+      "method": "random",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 90,
+      "success_rate": 0.9,
+      "mean_actual_seconds": 0.003677410999989661,
+      "median_actual_seconds": 0.0026995999996870523,
+      "p95_actual_seconds": 0.009033410000120057,
+      "mean_failure_penalized_seconds": 0.1027298940000037,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 90,
+      "errors": 0,
+      "statuses": {
+        "accepted": 90,
+        "exhausted": 10
+      },
+      "mean_checks_on_trials_with_check_count": 253.32,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00013681500004167902
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00016910099981032545
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0033405820001644313
+        }
+      }
+    },
+    {
+      "group": "n6_g18",
+      "method": "exhaustive",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 90,
+      "success_rate": 0.9,
+      "mean_actual_seconds": 0.0038129740002113975,
+      "median_actual_seconds": 0.002187850001064362,
+      "p95_actual_seconds": 0.00958314500257984,
+      "mean_failure_penalized_seconds": 0.10296618400021544,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 90,
+      "errors": 0,
+      "statuses": {
+        "accepted": 90,
+        "exhausted": 10
+      },
+      "mean_checks_on_trials_with_check_count": 289.46,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.003801890999857278
+        }
+      }
+    },
+    {
+      "group": "n6_g18",
+      "method": "cegis",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 90,
+      "success_rate": 0.9,
+      "mean_actual_seconds": 0.07123191799990308,
+      "median_actual_seconds": 0.05626689999917289,
+      "p95_actual_seconds": 0.15066785999988497,
+      "mean_failure_penalized_seconds": 0.16258316099992953,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 90,
+      "errors": 0,
+      "statuses": {
+        "accepted": 90,
+        "unsat": 10
+      },
+      "mean_checks_on_trials_with_check_count": 1.94,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      }
+    },
+    {
+      "group": "n10_g50",
+      "method": "learned",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 78,
+      "success_rate": 0.78,
+      "mean_actual_seconds": 0.06417846299998928,
+      "median_actual_seconds": 0.03671005000069272,
+      "p95_actual_seconds": 0.15342777000059868,
+      "mean_failure_penalized_seconds": 0.2511042620000808,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 78,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 22,
+        "accepted": 78
+      },
+      "mean_checks_on_trials_with_check_count": 1022.96,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0005547310001202277
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.011956571999908192
+        },
+        "inference_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.021067399999883493
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0005539720000160742
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.029925052000071447
+        }
+      }
+    },
+    {
+      "group": "n10_g50",
+      "method": "local_improvement",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 78,
+      "success_rate": 0.78,
+      "mean_actual_seconds": 0.04131674999989628,
+      "median_actual_seconds": 0.007603199999721255,
+      "p95_actual_seconds": 0.12837563999801205,
+      "mean_failure_penalized_seconds": 0.23434571399986454,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 78,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 22,
+        "accepted": 78
+      },
+      "mean_checks_on_trials_with_check_count": 1215.52,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.000509004000123241
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0042434910000883974
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0004977240000152961
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.03597652500033291
+        }
+      }
+    },
+    {
+      "group": "n10_g50",
+      "method": "local_after_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 78,
+      "success_rate": 0.78,
+      "mean_actual_seconds": 0.07061341399978119,
+      "median_actual_seconds": 0.08104864999950223,
+      "p95_actual_seconds": 0.1255389300016759,
+      "mean_failure_penalized_seconds": 0.26355110999989845,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 78,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 22,
+        "accepted": 78
+      },
+      "mean_checks_on_trials_with_check_count": 2202.06,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0005441530000462081
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.004235533999890322
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0004856599999766331
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.06524881500023184
+        }
+      }
+    },
+    {
+      "group": "n10_g50",
+      "method": "sample_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 78,
+      "success_rate": 0.78,
+      "mean_actual_seconds": 0.04627649000020028,
+      "median_actual_seconds": 0.013068899999780115,
+      "p95_actual_seconds": 0.13433797499910724,
+      "mean_failure_penalized_seconds": 0.23738052100012283,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 78,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 22,
+        "accepted": 78
+      },
+      "mean_checks_on_trials_with_check_count": 1164.4,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0005224469996392145
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.010158220999910554
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00048270699990098364
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.035025065999834626
+        }
+      }
+    },
+    {
+      "group": "n10_g50",
+      "method": "random",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 78,
+      "success_rate": 0.78,
+      "mean_actual_seconds": 0.06910866699996404,
+      "median_actual_seconds": 0.0668382499989093,
+      "p95_actual_seconds": 0.1244050100001914,
+      "mean_failure_penalized_seconds": 0.26268509699999415,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 78,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 22,
+        "accepted": 78
+      },
+      "mean_checks_on_trials_with_check_count": 2274.74,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0005221740002525621
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.00027853300012793626
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.06821235500006878
+        }
+      }
+    },
+    {
+      "group": "n10_g50",
+      "method": "exhaustive",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 78,
+      "success_rate": 0.78,
+      "mean_actual_seconds": 0.05707680000032269,
+      "median_actual_seconds": 0.04577649999919231,
+      "p95_actual_seconds": 0.12184921500011113,
+      "mean_failure_penalized_seconds": 0.25122481200018226,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 78,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 22,
+        "accepted": 78
+      },
+      "mean_checks_on_trials_with_check_count": 1946.5,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.05706583500013949
+        }
+      }
+    },
+    {
+      "group": "n10_g50",
+      "method": "cegis",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 78,
+      "success_rate": 0.78,
+      "mean_actual_seconds": 0.2663405650000641,
+      "median_actual_seconds": 0.23419169999942824,
+      "p95_actual_seconds": 0.6160177099991415,
+      "mean_failure_penalized_seconds": 0.44438541300001816,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 78,
+      "errors": 0,
+      "statuses": {
+        "unsat": 22,
+        "accepted": 78
+      },
+      "mean_checks_on_trials_with_check_count": 3.18,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      }
+    },
+    {
+      "group": "n10_g100",
+      "method": "learned",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 84,
+      "success_rate": 0.84,
+      "mean_actual_seconds": 0.269924249999749,
+      "median_actual_seconds": 0.13710564999928465,
+      "p95_actual_seconds": 0.8636216349983442,
+      "mean_failure_penalized_seconds": 0.29077415199975803,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 84,
+      "errors": 0,
+      "statuses": {
+        "accepted": 84,
+        "exhausted": 16
+      },
+      "mean_checks_on_trials_with_check_count": 2481.32,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0015807669998685015
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.04203088000005664
+        },
+        "inference_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.08261503900004755
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0020239780000338215
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.141133211000124
+        }
+      }
+    },
+    {
+      "group": "n10_g100",
+      "method": "local_improvement",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 84,
+      "success_rate": 0.84,
+      "mean_actual_seconds": 0.22958510800017393,
+      "median_actual_seconds": 0.03266905000054976,
+      "p95_actual_seconds": 0.7632007000023805,
+      "mean_failure_penalized_seconds": 0.26854187000011737,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 84,
+      "errors": 0,
+      "statuses": {
+        "accepted": 84,
+        "exhausted": 16
+      },
+      "mean_checks_on_trials_with_check_count": 3748.02,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0015507490000891265
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.012963470999784477
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0015723559998878046
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.2132155810000404
+        }
+      }
+    },
+    {
+      "group": "n10_g100",
+      "method": "local_after_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 84,
+      "success_rate": 0.84,
+      "mean_actual_seconds": 0.40613930099985734,
+      "median_actual_seconds": 0.4014878999987559,
+      "p95_actual_seconds": 0.7654647900017153,
+      "mean_failure_penalized_seconds": 0.4446147309997832,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 84,
+      "errors": 0,
+      "statuses": {
+        "accepted": 84,
+        "exhausted": 16
+      },
+      "mean_checks_on_trials_with_check_count": 6750.88,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0016123590000643162
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.013136781999783124
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0015306439999039868
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.3895623660000274
+        }
+      }
+    },
+    {
+      "group": "n10_g100",
+      "method": "sample_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 84,
+      "success_rate": 0.84,
+      "mean_actual_seconds": 0.24490559000005305,
+      "median_actual_seconds": 0.060080350000134786,
+      "p95_actual_seconds": 0.7911196149996612,
+      "mean_failure_penalized_seconds": 0.27899383300005864,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 84,
+      "errors": 0,
+      "statuses": {
+        "accepted": 84,
+        "exhausted": 16
+      },
+      "mean_checks_on_trials_with_check_count": 3499.36,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0016327740000633638
+        },
+        "feature_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.037972536999986914
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0015477340000143159
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.20346409299978405
+        }
+      }
+    },
+    {
+      "group": "n10_g100",
+      "method": "random",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 84,
+      "success_rate": 0.84,
+      "mean_actual_seconds": 0.3640914399999019,
+      "median_actual_seconds": 0.30507959999886225,
+      "p95_actual_seconds": 0.7551073000009637,
+      "mean_failure_penalized_seconds": 0.40489794999994044,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 84,
+      "errors": 0,
+      "statuses": {
+        "accepted": 84,
+        "exhausted": 16
+      },
+      "mean_checks_on_trials_with_check_count": 6250.14,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0016502590001618955
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.0005630699999892386
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.36160948900011136
+        }
+      }
+    },
+    {
+      "group": "n10_g100",
+      "method": "exhaustive",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 84,
+      "success_rate": 0.84,
+      "mean_actual_seconds": 0.22870572099993297,
+      "median_actual_seconds": 0.0704924999990908,
+      "p95_actual_seconds": 0.7429970399978628,
+      "mean_failure_penalized_seconds": 0.27070073499984576,
+      "timeouts": 0,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 84,
+      "errors": 0,
+      "statuses": {
+        "accepted": 84,
+        "exhausted": 16
+      },
+      "mean_checks_on_trials_with_check_count": 3996.76,
+      "check_count_observed_trials": 100,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 100,
+          "mean_on_observed": 0.22869335300019883
+        }
+      }
+    },
+    {
+      "group": "n10_g100",
+      "method": "cegis",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 55,
+      "success_rate": 0.55,
+      "mean_actual_seconds": 0.5897517969998444,
+      "median_actual_seconds": 0.5426517500000045,
+      "p95_actual_seconds": 1.02011109499781,
+      "mean_failure_penalized_seconds": 0.6981498839997948,
+      "timeouts": 29,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 55,
+      "errors": 0,
+      "statuses": {
+        "timeout": 29,
+        "accepted": 55,
+        "unsat": 16
+      },
+      "mean_checks_on_trials_with_check_count": 2.0422535211267605,
+      "check_count_observed_trials": 71,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      }
+    },
+    {
+      "group": "n12_g100",
+      "method": "learned",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 78,
+      "success_rate": 0.78,
+      "mean_actual_seconds": 0.38275225399986085,
+      "median_actual_seconds": 0.17448365000200283,
+      "p95_actual_seconds": 1.000368494999566,
+      "mean_failure_penalized_seconds": 0.38267825799997807,
+      "timeouts": 22,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 78,
+      "errors": 0,
+      "statuses": {
+        "accepted": 78,
+        "timeout": 22
+      },
+      "mean_checks_on_trials_with_check_count": 667.5384615384615,
+      "check_count_observed_trials": 78,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 78,
+          "mean_on_observed": 0.0016334038461466732
+        },
+        "feature_seconds": {
+          "observed_trials": 78,
+          "mean_on_observed": 0.042691560256618036
+        },
+        "inference_seconds": {
+          "observed_trials": 78,
+          "mean_on_observed": 0.08309624999972771
+        },
+        "sorting_seconds": {
+          "observed_trials": 78,
+          "mean_on_observed": 0.002060455128090465
+        },
+        "checking_seconds": {
+          "observed_trials": 78,
+          "mean_on_observed": 0.07863882051275048
+        }
+      }
+    },
+    {
+      "group": "n12_g100",
+      "method": "local_improvement",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 54,
+      "success_rate": 0.54,
+      "mean_actual_seconds": 0.5535701359997983,
+      "median_actual_seconds": 0.6701367999994545,
+      "p95_actual_seconds": 1.0004424799995832,
+      "mean_failure_penalized_seconds": 0.5534195029997864,
+      "timeouts": 46,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 54,
+      "errors": 0,
+      "statuses": {
+        "accepted": 54,
+        "timeout": 46
+      },
+      "mean_checks_on_trials_with_check_count": 1341.4444444444443,
+      "check_count_observed_trials": 54,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 54,
+          "mean_on_observed": 0.0015748814812805332
+        },
+        "feature_seconds": {
+          "observed_trials": 54,
+          "mean_on_observed": 0.013268444444394036
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 54,
+          "mean_on_observed": 0.0015713425927296393
+        },
+        "checking_seconds": {
+          "observed_trials": 54,
+          "mean_on_observed": 0.1562633462962603
+        }
+      }
+    },
+    {
+      "group": "n12_g100",
+      "method": "local_after_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 37,
+      "success_rate": 0.37,
+      "mean_actual_seconds": 0.778695650999689,
+      "median_actual_seconds": 1.000248250000368,
+      "p95_actual_seconds": 1.0005124599982083,
+      "mean_failure_penalized_seconds": 0.7784806269999172,
+      "timeouts": 63,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 37,
+      "errors": 0,
+      "statuses": {
+        "accepted": 37,
+        "timeout": 63
+      },
+      "mean_checks_on_trials_with_check_count": 3255.6216216216217,
+      "check_count_observed_trials": 37,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 37,
+          "mean_on_observed": 0.0016796675679231427
+        },
+        "feature_seconds": {
+          "observed_trials": 37,
+          "mean_on_observed": 0.013344978378488638
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 37,
+          "mean_on_observed": 0.0015617675675752547
+        },
+        "checking_seconds": {
+          "observed_trials": 37,
+          "mean_on_observed": 0.38437438378339817
+        }
+      }
+    },
+    {
+      "group": "n12_g100",
+      "method": "sample_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 56,
+      "success_rate": 0.56,
+      "mean_actual_seconds": 0.5478191330001573,
+      "median_actual_seconds": 0.6392456499997934,
+      "p95_actual_seconds": 1.000442070000463,
+      "mean_failure_penalized_seconds": 0.5476730699999826,
+      "timeouts": 44,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 56,
+      "errors": 0,
+      "statuses": {
+        "accepted": 56,
+        "timeout": 44
+      },
+      "mean_checks_on_trials_with_check_count": 1294.0714285714287,
+      "check_count_observed_trials": 56,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 56,
+          "mean_on_observed": 0.00159926964287089
+        },
+        "feature_seconds": {
+          "observed_trials": 56,
+          "mean_on_observed": 0.038032505357153114
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 56,
+          "mean_on_observed": 0.00159119107144891
+        },
+        "checking_seconds": {
+          "observed_trials": 56,
+          "mean_on_observed": 0.15078051964292172
+        }
+      }
+    },
+    {
+      "group": "n12_g100",
+      "method": "random",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 64,
+      "success_rate": 0.64,
+      "mean_actual_seconds": 0.5834576409998772,
+      "median_actual_seconds": 0.5798631999987265,
+      "p95_actual_seconds": 1.0003547599977538,
+      "mean_failure_penalized_seconds": 0.5833524469999974,
+      "timeouts": 36,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 64,
+      "errors": 0,
+      "statuses": {
+        "accepted": 64,
+        "timeout": 36
+      },
+      "mean_checks_on_trials_with_check_count": 2964.125,
+      "check_count_observed_trials": 64,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 64,
+          "mean_on_observed": 0.0016868093749167201
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 64,
+          "mean_on_observed": 0.0005538078123095147
+        },
+        "checking_seconds": {
+          "observed_trials": 64,
+          "mean_on_observed": 0.3464831828122783
+        }
+      }
+    },
+    {
+      "group": "n12_g100",
+      "method": "exhaustive",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 56,
+      "success_rate": 0.56,
+      "mean_actual_seconds": 0.5495935379998628,
+      "median_actual_seconds": 0.4799573000000237,
+      "p95_actual_seconds": 1.000107874998139,
+      "mean_failure_penalized_seconds": 0.5495619440000155,
+      "timeouts": 44,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 56,
+      "errors": 0,
+      "statuses": {
+        "accepted": 56,
+        "timeout": 44
+      },
+      "mean_checks_on_trials_with_check_count": 1646.0357142857142,
+      "check_count_observed_trials": 56,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 56,
+          "mean_on_observed": 0.1956340339287895
+        }
+      }
+    },
+    {
+      "group": "n12_g100",
+      "method": "cegis",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 58,
+      "success_rate": 0.58,
+      "mean_actual_seconds": 0.5784746950001499,
+      "median_actual_seconds": 0.5954644000012195,
+      "p95_actual_seconds": 1.0193700149980942,
+      "mean_failure_penalized_seconds": 0.702435017000098,
+      "timeouts": 26,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 58,
+      "errors": 0,
+      "statuses": {
+        "timeout": 26,
+        "accepted": 58,
+        "unsat": 16
+      },
+      "mean_checks_on_trials_with_check_count": 2.4864864864864864,
+      "check_count_observed_trials": 74,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      }
+    },
+    {
+      "group": "n16_g100",
+      "method": "learned",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 72,
+      "success_rate": 0.72,
+      "mean_actual_seconds": 0.4440966940000362,
+      "median_actual_seconds": 0.20503110000026936,
+      "p95_actual_seconds": 1.0006900599997608,
+      "mean_failure_penalized_seconds": 0.44394109200002274,
+      "timeouts": 28,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 72,
+      "errors": 0,
+      "statuses": {
+        "accepted": 72,
+        "timeout": 28
+      },
+      "mean_checks_on_trials_with_check_count": 172.16666666666666,
+      "check_count_observed_trials": 72,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 72,
+          "mean_on_observed": 0.001739348610852984
+        },
+        "feature_seconds": {
+          "observed_trials": 72,
+          "mean_on_observed": 0.04565352361108429
+        },
+        "inference_seconds": {
+          "observed_trials": 72,
+          "mean_on_observed": 0.08903499027777191
+        },
+        "sorting_seconds": {
+          "observed_trials": 72,
+          "mean_on_observed": 0.002179775000311363
+        },
+        "checking_seconds": {
+          "observed_trials": 72,
+          "mean_on_observed": 0.08869087083308437
+        }
+      }
+    },
+    {
+      "group": "n16_g100",
+      "method": "local_improvement",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 58,
+      "success_rate": 0.58,
+      "mean_actual_seconds": 0.4730301380001765,
+      "median_actual_seconds": 0.20931610000116052,
+      "p95_actual_seconds": 1.0007464800015442,
+      "mean_failure_penalized_seconds": 0.47281626800002413,
+      "timeouts": 42,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 58,
+      "errors": 0,
+      "statuses": {
+        "timeout": 42,
+        "accepted": 58
+      },
+      "mean_checks_on_trials_with_check_count": 139.86206896551724,
+      "check_count_observed_trials": 58,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 58,
+          "mean_on_observed": 0.0016147948273759665
+        },
+        "feature_seconds": {
+          "observed_trials": 58,
+          "mean_on_observed": 0.013890010345017674
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 58,
+          "mean_on_observed": 0.0017214517239812393
+        },
+        "checking_seconds": {
+          "observed_trials": 58,
+          "mean_on_observed": 0.07355760344831526
+        }
+      }
+    },
+    {
+      "group": "n16_g100",
+      "method": "local_after_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 16,
+      "success_rate": 0.16,
+      "mean_actual_seconds": 0.9050942770001348,
+      "median_actual_seconds": 1.0004669500012824,
+      "p95_actual_seconds": 1.0008693150024555,
+      "mean_failure_penalized_seconds": 0.9046356470000319,
+      "timeouts": 84,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 16,
+      "errors": 0,
+      "statuses": {
+        "timeout": 84,
+        "accepted": 16
+      },
+      "mean_checks_on_trials_with_check_count": 744.375,
+      "check_count_observed_trials": 16,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 16,
+          "mean_on_observed": 0.0017104249998283194
+        },
+        "feature_seconds": {
+          "observed_trials": 16,
+          "mean_on_observed": 0.014147143749823954
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 16,
+          "mean_on_observed": 0.0016104562500913744
+        },
+        "checking_seconds": {
+          "observed_trials": 16,
+          "mean_on_observed": 0.3862208750006175
+        }
+      }
+    },
+    {
+      "group": "n16_g100",
+      "method": "sample_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 58,
+      "success_rate": 0.58,
+      "mean_actual_seconds": 0.48627081000006,
+      "median_actual_seconds": 0.22485369999958493,
+      "p95_actual_seconds": 1.0008281699994768,
+      "mean_failure_penalized_seconds": 0.48601675799996885,
+      "timeouts": 42,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 58,
+      "errors": 0,
+      "statuses": {
+        "timeout": 42,
+        "accepted": 58
+      },
+      "mean_checks_on_trials_with_check_count": 139.9655172413793,
+      "check_count_observed_trials": 58,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 58,
+          "mean_on_observed": 0.0016919724138429516
+        },
+        "feature_seconds": {
+          "observed_trials": 58,
+          "mean_on_observed": 0.03743408448299933
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 58,
+          "mean_on_observed": 0.0016494862069019543
+        },
+        "checking_seconds": {
+          "observed_trials": 58,
+          "mean_on_observed": 0.07275769482783226
+        }
+      }
+    },
+    {
+      "group": "n16_g100",
+      "method": "random",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 18,
+      "success_rate": 0.18,
+      "mean_actual_seconds": 0.9010304630003884,
+      "median_actual_seconds": 1.0004405500021676,
+      "p95_actual_seconds": 1.0008685350021551,
+      "mean_failure_penalized_seconds": 0.9005800660000023,
+      "timeouts": 82,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 18,
+      "errors": 0,
+      "statuses": {
+        "timeout": 82,
+        "accepted": 18
+      },
+      "mean_checks_on_trials_with_check_count": 852.2222222222222,
+      "check_count_observed_trials": 18,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 18,
+          "mean_on_observed": 0.0018435999999282002
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 18,
+          "mean_on_observed": 0.0006081333332177666
+        },
+        "checking_seconds": {
+          "observed_trials": 18,
+          "mean_on_observed": 0.4449071111113072
+        }
+      }
+    },
+    {
+      "group": "n16_g100",
+      "method": "exhaustive",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 43,
+      "success_rate": 0.43,
+      "mean_actual_seconds": 0.7493133950000265,
+      "median_actual_seconds": 1.000072500000897,
+      "p95_actual_seconds": 1.0004866049979682,
+      "mean_failure_penalized_seconds": 0.7491631299999426,
+      "timeouts": 57,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 43,
+      "errors": 0,
+      "statuses": {
+        "accepted": 43,
+        "timeout": 57
+      },
+      "mean_checks_on_trials_with_check_count": 802.0697674418604,
+      "check_count_observed_trials": 43,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 43,
+          "mean_on_observed": 0.41664316744115854
+        }
+      }
+    },
+    {
+      "group": "n16_g100",
+      "method": "cegis",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 58,
+      "success_rate": 0.58,
+      "mean_actual_seconds": 0.6351828080000632,
+      "median_actual_seconds": 0.6482094000002689,
+      "p95_actual_seconds": 1.0195202149976468,
+      "mean_failure_penalized_seconds": 0.714125238000015,
+      "timeouts": 30,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 58,
+      "errors": 0,
+      "statuses": {
+        "accepted": 58,
+        "timeout": 30,
+        "unsat": 12
+      },
+      "mean_checks_on_trials_with_check_count": 2.8857142857142857,
+      "check_count_observed_trials": 70,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      }
+    },
+    {
+      "group": "n16_g200",
+      "method": "learned",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 55,
+      "success_rate": 0.55,
+      "mean_actual_seconds": 0.7789171460000216,
+      "median_actual_seconds": 0.8306455499987351,
+      "p95_actual_seconds": 1.0019348800016814,
+      "mean_failure_penalized_seconds": 0.7782494059999954,
+      "timeouts": 45,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 55,
+      "errors": 0,
+      "statuses": {
+        "timeout": 45,
+        "accepted": 55
+      },
+      "mean_checks_on_trials_with_check_count": 91.0,
+      "check_count_observed_trials": 55,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 55,
+          "mean_on_observed": 0.005082047272629676
+        },
+        "feature_seconds": {
+          "observed_trials": 55,
+          "mean_on_observed": 0.17796012363647937
+        },
+        "inference_seconds": {
+          "observed_trials": 55,
+          "mean_on_observed": 0.3085486799998431
+        },
+        "sorting_seconds": {
+          "observed_trials": 55,
+          "mean_on_observed": 0.008404841818264685
+        },
+        "checking_seconds": {
+          "observed_trials": 55,
+          "mean_on_observed": 0.09555942363619
+        }
+      }
+    },
+    {
+      "group": "n16_g200",
+      "method": "local_improvement",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 46,
+      "success_rate": 0.46,
+      "mean_actual_seconds": 0.6038562700001058,
+      "median_actual_seconds": 1.000939900000958,
+      "p95_actual_seconds": 1.0022965250000198,
+      "mean_failure_penalized_seconds": 0.6029885739999008,
+      "timeouts": 54,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 46,
+      "errors": 0,
+      "statuses": {
+        "timeout": 54,
+        "accepted": 46
+      },
+      "mean_checks_on_trials_with_check_count": 75.04347826086956,
+      "check_count_observed_trials": 46,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 46,
+          "mean_on_observed": 0.005027941304591798
+        },
+        "feature_seconds": {
+          "observed_trials": 46,
+          "mean_on_observed": 0.04554102826082469
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 46,
+          "mean_on_observed": 0.0063360652174710794
+        },
+        "checking_seconds": {
+          "observed_trials": 46,
+          "mean_on_observed": 0.07894849782615379
+        }
+      }
+    },
+    {
+      "group": "n16_g200",
+      "method": "local_after_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 2,
+      "success_rate": 0.02,
+      "mean_actual_seconds": 0.9866879260001588,
+      "median_actual_seconds": 1.001492800000051,
+      "p95_actual_seconds": 1.0031023550005558,
+      "mean_failure_penalized_seconds": 0.985015764000018,
+      "timeouts": 98,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 2,
+      "errors": 0,
+      "statuses": {
+        "timeout": 98,
+        "accepted": 2
+      },
+      "mean_checks_on_trials_with_check_count": 197.0,
+      "check_count_observed_trials": 2,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 2,
+          "mean_on_observed": 0.004559299999527866
+        },
+        "feature_seconds": {
+          "observed_trials": 2,
+          "mean_on_observed": 0.046963599999799044
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 2,
+          "mean_on_observed": 0.005653650001477217
+        },
+        "checking_seconds": {
+          "observed_trials": 2,
+          "mean_on_observed": 0.1928115999999136
+        }
+      }
+    },
+    {
+      "group": "n16_g200",
+      "method": "sample_error",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 46,
+      "success_rate": 0.46,
+      "mean_actual_seconds": 0.6494813390000854,
+      "median_actual_seconds": 1.0010035499999503,
+      "p95_actual_seconds": 1.0029392899990852,
+      "mean_failure_penalized_seconds": 0.6484970329999488,
+      "timeouts": 54,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 46,
+      "errors": 0,
+      "statuses": {
+        "timeout": 54,
+        "accepted": 46
+      },
+      "mean_checks_on_trials_with_check_count": 71.17391304347827,
+      "check_count_observed_trials": 46,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 46,
+          "mean_on_observed": 0.00514012391305068
+        },
+        "feature_seconds": {
+          "observed_trials": 46,
+          "mean_on_observed": 0.14746858043485112
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 46,
+          "mean_on_observed": 0.006164760869385487
+        },
+        "checking_seconds": {
+          "observed_trials": 46,
+          "mean_on_observed": 0.07610201086952104
+        }
+      }
+    },
+    {
+      "group": "n16_g200",
+      "method": "random",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 4,
+      "success_rate": 0.04,
+      "mean_actual_seconds": 0.9721081179998146,
+      "median_actual_seconds": 1.001592200000232,
+      "p95_actual_seconds": 1.0028217499975653,
+      "mean_failure_penalized_seconds": 0.9704677019999872,
+      "timeouts": 96,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 4,
+      "errors": 0,
+      "statuses": {
+        "timeout": 96,
+        "accepted": 4
+      },
+      "mean_checks_on_trials_with_check_count": 249.5,
+      "check_count_observed_trials": 4,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 4,
+          "mean_on_observed": 0.0050899749985546805
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 4,
+          "mean_on_observed": 0.0015233500007525436
+        },
+        "checking_seconds": {
+          "observed_trials": 4,
+          "mean_on_observed": 0.2539777750007488
+        }
+      }
+    },
+    {
+      "group": "n16_g200",
+      "method": "exhaustive",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 28,
+      "success_rate": 0.28,
+      "mean_actual_seconds": 0.8386843510000108,
+      "median_actual_seconds": 1.0004012499994133,
+      "p95_actual_seconds": 1.0009289850009737,
+      "mean_failure_penalized_seconds": 0.8382944909999788,
+      "timeouts": 72,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 28,
+      "errors": 0,
+      "statuses": {
+        "timeout": 72,
+        "accepted": 28
+      },
+      "mean_checks_on_trials_with_check_count": 399.7857142857143,
+      "check_count_observed_trials": 28,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 28,
+          "mean_on_observed": 0.4224639178575152
+        }
+      }
+    },
+    {
+      "group": "n16_g200",
+      "method": "cegis",
+      "unique_circuits": 50,
+      "timed_trials": 100,
+      "successes": 12,
+      "success_rate": 0.12,
+      "mean_actual_seconds": 0.8700561510003172,
+      "median_actual_seconds": 1.018386300000202,
+      "p95_actual_seconds": 1.027904595001928,
+      "mean_failure_penalized_seconds": 0.9360686520001036,
+      "timeouts": 78,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 12,
+      "errors": 0,
+      "statuses": {
+        "timeout": 78,
+        "unsat": 10,
+        "accepted": 12
+      },
+      "mean_checks_on_trials_with_check_count": 0.9090909090909091,
+      "check_count_observed_trials": 22,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      }
+    },
+    {
+      "group": "all",
+      "method": "learned",
+      "unique_circuits": 300,
+      "timed_trials": 600,
+      "successes": 457,
+      "success_rate": 0.7616666666666667,
+      "mean_actual_seconds": 0.32469464983331514,
+      "median_actual_seconds": 0.14525374999902851,
+      "p95_actual_seconds": 1.0012242499975401,
+      "mean_failure_penalized_seconds": 0.3755702051666655,
+      "timeouts": 95,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 457,
+      "errors": 0,
+      "statuses": {
+        "accepted": 457,
+        "exhausted": 48,
+        "timeout": 95
+      },
+      "mean_checks_on_trials_with_check_count": 848.1683168316831,
+      "check_count_observed_trials": 505,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 505,
+          "mean_on_observed": 0.0015027473266665838
+        },
+        "feature_seconds": {
+          "observed_trials": 505,
+          "mean_on_observed": 0.04365817524756692
+        },
+        "inference_seconds": {
+          "observed_trials": 505,
+          "mean_on_observed": 0.08055869524742766
+        },
+        "sorting_seconds": {
+          "observed_trials": 505,
+          "mean_on_observed": 0.0020749299010114357
+        },
+        "checking_seconds": {
+          "observed_trials": 505,
+          "mean_on_observed": 0.06928431168311687
+        }
+      }
+    },
+    {
+      "group": "all",
+      "method": "local_improvement",
+      "unique_circuits": 300,
+      "timed_trials": 600,
+      "successes": 410,
+      "success_rate": 0.6833333333333333,
+      "mean_actual_seconds": 0.31733565949999804,
+      "median_actual_seconds": 0.05521424999824376,
+      "p95_actual_seconds": 1.001451730001645,
+      "mean_failure_penalized_seconds": 0.37230347616658643,
+      "timeouts": 142,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 410,
+      "errors": 0,
+      "statuses": {
+        "accepted": 410,
+        "exhausted": 48,
+        "timeout": 142
+      },
+      "mean_checks_on_trials_with_check_count": 1293.5152838427948,
+      "check_count_observed_trials": 458,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 458,
+          "mean_on_observed": 0.0013740973799185945
+        },
+        "feature_seconds": {
+          "observed_trials": 458,
+          "mean_on_observed": 0.011859704366809252
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 458,
+          "mean_on_observed": 0.00151651462885845
+        },
+        "checking_seconds": {
+          "observed_trials": 458,
+          "mean_on_observed": 0.09039165000010092
+        }
+      }
+    },
+    {
+      "group": "all",
+      "method": "local_after_error",
+      "unique_circuits": 300,
+      "timed_trials": 600,
+      "successes": 307,
+      "success_rate": 0.5116666666666667,
+      "mean_actual_seconds": 0.5252325024999603,
+      "median_actual_seconds": 0.5779817000002367,
+      "p95_actual_seconds": 1.001791604997561,
+      "mean_failure_penalized_seconds": 0.5799055701666233,
+      "timeouts": 245,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 307,
+      "errors": 0,
+      "statuses": {
+        "accepted": 307,
+        "exhausted": 48,
+        "timeout": 245
+      },
+      "mean_checks_on_trials_with_check_count": 2958.794366197183,
+      "check_count_observed_trials": 355,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 355,
+          "mean_on_observed": 0.0009228667605960984
+        },
+        "feature_seconds": {
+          "observed_trials": 355,
+          "mean_on_observed": 0.007465370985905601
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 355,
+          "mean_on_observed": 0.000865994647920417
+        },
+        "checking_seconds": {
+          "observed_trials": 355,
+          "mean_on_observed": 0.18748837042268707
+        }
+      }
+    },
+    {
+      "group": "all",
+      "method": "sample_error",
+      "unique_circuits": 300,
+      "timed_trials": 600,
+      "successes": 412,
+      "success_rate": 0.6866666666666666,
+      "mean_actual_seconds": 0.32971301900014927,
+      "median_actual_seconds": 0.07227690000036091,
+      "p95_actual_seconds": 1.0016454749989863,
+      "mean_failure_penalized_seconds": 0.3835094246667359,
+      "timeouts": 140,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 412,
+      "errors": 0,
+      "statuses": {
+        "accepted": 412,
+        "exhausted": 48,
+        "timeout": 140
+      },
+      "mean_checks_on_trials_with_check_count": 1221.5608695652174,
+      "check_count_observed_trials": 460,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 460,
+          "mean_on_observed": 0.0014191926086863057
+        },
+        "feature_seconds": {
+          "observed_trials": 460,
+          "mean_on_observed": 0.03496780586960402
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 460,
+          "mean_on_observed": 0.0014830404347420604
+        },
+        "checking_seconds": {
+          "observed_trials": 460,
+          "mean_on_observed": 0.08728592499999492
+        }
+      }
+    },
+    {
+      "group": "all",
+      "method": "random",
+      "unique_circuits": 300,
+      "timed_trials": 600,
+      "successes": 338,
+      "success_rate": 0.5633333333333334,
+      "mean_actual_seconds": 0.4822456233333226,
+      "median_actual_seconds": 0.331549399999858,
+      "p95_actual_seconds": 1.0018282450002516,
+      "mean_failure_penalized_seconds": 0.5374521926666542,
+      "timeouts": 214,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 338,
+      "errors": 0,
+      "statuses": {
+        "accepted": 338,
+        "exhausted": 48,
+        "timeout": 214
+      },
+      "mean_checks_on_trials_with_check_count": 2807.9326424870465,
+      "check_count_observed_trials": 386,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 386,
+          "mean_on_observed": 0.0010166458550083164
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 386,
+          "mean_on_observed": 0.0003978080310401268
+        },
+        "checking_seconds": {
+          "observed_trials": 386,
+          "mean_on_observed": 0.19304509170991396
+        }
+      }
+    },
+    {
+      "group": "all",
+      "method": "exhaustive",
+      "unique_circuits": 300,
+      "timed_trials": 600,
+      "successes": 379,
+      "success_rate": 0.6316666666666667,
+      "mean_actual_seconds": 0.4045311298333945,
+      "median_actual_seconds": 0.11683755000012752,
+      "p95_actual_seconds": 1.0005939900014709,
+      "mean_failure_penalized_seconds": 0.46031854933336336,
+      "timeouts": 173,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 379,
+      "errors": 0,
+      "statuses": {
+        "accepted": 379,
+        "exhausted": 48,
+        "timeout": 173
+      },
+      "mean_checks_on_trials_with_check_count": 1782.512880562061,
+      "check_count_observed_trials": 427,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 427,
+          "mean_on_observed": 0.16312941381735835
+        }
+      }
+    },
+    {
+      "group": "all",
+      "method": "cegis",
+      "unique_circuits": 300,
+      "timed_trials": 600,
+      "successes": 351,
+      "success_rate": 0.585,
+      "mean_actual_seconds": 0.5018396556667236,
+      "median_actual_seconds": 0.38653784999951313,
+      "p95_actual_seconds": 1.0234914299999218,
+      "mean_failure_penalized_seconds": 0.6096245608333265,
+      "timeouts": 163,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 351,
+      "errors": 0,
+      "statuses": {
+        "accepted": 351,
+        "unsat": 86,
+        "timeout": 163
+      },
+      "mean_checks_on_trials_with_check_count": 2.4324942791762014,
+      "check_count_observed_trials": 437,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      }
+    },
+    {
+      "group": "larger",
+      "method": "learned",
+      "unique_circuits": 250,
+      "timed_trials": 500,
+      "successes": 367,
+      "success_rate": 0.734,
+      "mean_actual_seconds": 0.3879737613999314,
+      "median_actual_seconds": 0.16545494999991206,
+      "p95_actual_seconds": 1.001322865002112,
+      "mean_failure_penalized_seconds": 0.429349433999967,
+      "timeouts": 95,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 367,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 367,
+        "timeout": 95
+      },
+      "mean_checks_on_trials_with_check_count": 1036.7827160493828,
+      "check_count_observed_trials": 405,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.0018412370369737295
+        },
+        "feature_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.05383591950621512
+        },
+        "inference_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.09933443975299461
+        },
+        "sorting_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.0025622730864765966
+        },
+        "checking_seconds": {
+          "observed_trials": 405,
+          "mean_on_observed": 0.086126334074041
+        }
+      }
+    },
+    {
+      "group": "larger",
+      "method": "local_improvement",
+      "unique_circuits": 250,
+      "timed_trials": 500,
+      "successes": 320,
+      "success_rate": 0.64,
+      "mean_actual_seconds": 0.3802716804000302,
+      "median_actual_seconds": 0.11735359999875072,
+      "p95_actual_seconds": 1.001606209998863,
+      "mean_failure_penalized_seconds": 0.42642238579993863,
+      "timeouts": 142,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 320,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 320,
+        "timeout": 142
+      },
+      "mean_checks_on_trials_with_check_count": 1621.1061452513966,
+      "check_count_observed_trials": 358,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 358,
+          "mean_on_observed": 0.0017205650838251797
+        },
+        "feature_seconds": {
+          "observed_trials": 358,
+          "mean_on_observed": 0.014909776815624375
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 358,
+          "mean_on_observed": 0.0019082784915985813
+        },
+        "checking_seconds": {
+          "observed_trials": 358,
+          "mean_on_observed": 0.11523855642469483
+        }
+      }
+    },
+    {
+      "group": "larger",
+      "method": "local_after_error",
+      "unique_circuits": 250,
+      "timed_trials": 500,
+      "successes": 217,
+      "success_rate": 0.434,
+      "mean_actual_seconds": 0.6294461137999242,
+      "median_actual_seconds": 0.8817963500023325,
+      "p95_actual_seconds": 1.001952644998346,
+      "mean_failure_penalized_seconds": 0.6752595757999298,
+      "timeouts": 245,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 217,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 217,
+        "timeout": 245
+      },
+      "mean_checks_on_trials_with_check_count": 4031.592156862745,
+      "check_count_observed_trials": 255,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 255,
+          "mean_on_observed": 0.0012324874510608532
+        },
+        "feature_seconds": {
+          "observed_trials": 255,
+          "mean_on_observed": 0.010005009019483159
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 255,
+          "mean_on_observed": 0.0011627074509520112
+        },
+        "checking_seconds": {
+          "observed_trials": 255,
+          "mean_on_observed": 0.25987500980400535
+        }
+      }
+    },
+    {
+      "group": "larger",
+      "method": "sample_error",
+      "unique_circuits": 250,
+      "timed_trials": 500,
+      "successes": 322,
+      "success_rate": 0.644,
+      "mean_actual_seconds": 0.3949506724001112,
+      "median_actual_seconds": 0.15728820000003907,
+      "p95_actual_seconds": 1.0016862249984115,
+      "mean_failure_penalized_seconds": 0.4397122430000163,
+      "timeouts": 140,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 322,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 322,
+        "timeout": 140
+      },
+      "mean_checks_on_trials_with_check_count": 1528.4333333333334,
+      "check_count_observed_trials": 360,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 360,
+          "mean_on_observed": 0.001776836944372917
+        },
+        "feature_seconds": {
+          "observed_trials": 360,
+          "mean_on_observed": 0.044160076944465096
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 360,
+          "mean_on_observed": 0.0018649999999575408
+        },
+        "checking_seconds": {
+          "observed_trials": 360,
+          "mean_on_observed": 0.11114795499993811
+        }
+      }
+    },
+    {
+      "group": "larger",
+      "method": "random",
+      "unique_circuits": 250,
+      "timed_trials": 500,
+      "successes": 248,
+      "success_rate": 0.496,
+      "mean_actual_seconds": 0.5779592657999892,
+      "median_actual_seconds": 0.6539365499975247,
+      "p95_actual_seconds": 1.0019262799996795,
+      "mean_failure_penalized_seconds": 0.6243966523999843,
+      "timeouts": 214,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 248,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 248,
+        "timeout": 214
+      },
+      "mean_checks_on_trials_with_check_count": 3701.153846153846,
+      "check_count_observed_trials": 286,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 286,
+          "mean_on_observed": 0.001324279021080567
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 286,
+          "mean_on_observed": 0.00047777552447712026
+        },
+        "checking_seconds": {
+          "observed_trials": 286,
+          "mean_on_observed": 0.259375339860176
+        }
+      }
+    },
+    {
+      "group": "larger",
+      "method": "exhaustive",
+      "unique_circuits": 250,
+      "timed_trials": 500,
+      "successes": 289,
+      "success_rate": 0.578,
+      "mean_actual_seconds": 0.48467476100003115,
+      "median_actual_seconds": 0.3051806500006933,
+      "p95_actual_seconds": 1.0006698300008794,
+      "mean_failure_penalized_seconds": 0.5317890223999929,
+      "timeouts": 173,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 289,
+      "errors": 0,
+      "statuses": {
+        "exhausted": 38,
+        "accepted": 289,
+        "timeout": 173
+      },
+      "mean_checks_on_trials_with_check_count": 2239.103975535168,
+      "check_count_observed_trials": 327,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 327,
+          "mean_on_observed": 0.2118534269113954
+        }
+      }
+    },
+    {
+      "group": "larger",
+      "method": "cegis",
+      "unique_circuits": 250,
+      "timed_trials": 500,
+      "successes": 261,
+      "success_rate": 0.522,
+      "mean_actual_seconds": 0.5879612032000877,
+      "median_actual_seconds": 0.5593187499998749,
+      "p95_actual_seconds": 1.0242815000019618,
+      "mean_failure_penalized_seconds": 0.6990328408000059,
+      "timeouts": 163,
+      "hard_kills": 0,
+      "wrong_accepted": 0,
+      "accepted": 261,
+      "errors": 0,
+      "statuses": {
+        "unsat": 76,
+        "accepted": 261,
+        "timeout": 163
+      },
+      "mean_checks_on_trials_with_check_count": 2.578635014836795,
+      "check_count_observed_trials": 337,
+      "stages": {
+        "candidate_generation_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "feature_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "inference_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "sorting_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        },
+        "checking_seconds": {
+          "observed_trials": 0,
+          "mean_on_observed": null
+        }
+      }
+    }
+  ],
+  "fault_breakdown": [
+    {
+      "fault_type": "lut",
+      "method": "learned",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 194,
+      "success_rate": 0.8981481481481481,
+      "mean_penalized_seconds": 0.25901382638878406
+    },
+    {
+      "fault_type": "lut",
+      "method": "local_improvement",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 156,
+      "success_rate": 0.7222222222222222,
+      "mean_penalized_seconds": 0.3222560268518632
+    },
+    {
+      "fault_type": "lut",
+      "method": "local_after_error",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 104,
+      "success_rate": 0.48148148148148145,
+      "mean_penalized_seconds": 0.616171793055552
+    },
+    {
+      "fault_type": "lut",
+      "method": "sample_error",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 158,
+      "success_rate": 0.7314814814814815,
+      "mean_penalized_seconds": 0.3298350736112702
+    },
+    {
+      "fault_type": "lut",
+      "method": "random",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 138,
+      "success_rate": 0.6388888888888888,
+      "mean_penalized_seconds": 0.48859686018519183
+    },
+    {
+      "fault_type": "lut",
+      "method": "exhaustive",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 160,
+      "success_rate": 0.7407407407407407,
+      "mean_penalized_seconds": 0.37498948564820644
+    },
+    {
+      "fault_type": "lut",
+      "method": "cegis",
+      "unique_circuits": 108,
+      "timed_trials": 216,
+      "successes": 163,
+      "success_rate": 0.7546296296296297,
+      "mean_penalized_seconds": 0.5158090824073346
+    },
+    {
+      "fault_type": "wire",
+      "method": "learned",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 235,
+      "success_rate": 0.9251968503937008,
+      "mean_penalized_seconds": 0.2488755279528551
+    },
+    {
+      "fault_type": "wire",
+      "method": "local_improvement",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 226,
+      "success_rate": 0.889763779527559,
+      "mean_penalized_seconds": 0.19415166929115732
+    },
+    {
+      "fault_type": "wire",
+      "method": "local_after_error",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 179,
+      "success_rate": 0.7047244094488189,
+      "mean_penalized_seconds": 0.41770769330701224
+    },
+    {
+      "fault_type": "wire",
+      "method": "sample_error",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 226,
+      "success_rate": 0.889763779527559,
+      "mean_penalized_seconds": 0.2115339527559326
+    },
+    {
+      "fault_type": "wire",
+      "method": "random",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 176,
+      "success_rate": 0.6929133858267716,
+      "mean_penalized_seconds": 0.4243488779526862
+    },
+    {
+      "fault_type": "wire",
+      "method": "exhaustive",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 197,
+      "success_rate": 0.7755905511811023,
+      "mean_penalized_seconds": 0.3276820192913158
+    },
+    {
+      "fault_type": "wire",
+      "method": "cegis",
+      "unique_circuits": 127,
+      "timed_trials": 254,
+      "successes": 165,
+      "success_rate": 0.6496062992125984,
+      "mean_penalized_seconds": 0.5534747523622537
+    },
+    {
+      "fault_type": "permanent",
+      "method": "learned",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 28,
+      "success_rate": 0.2153846153846154,
+      "mean_penalized_seconds": 0.8167750192307441
+    },
+    {
+      "fault_type": "permanent",
+      "method": "local_improvement",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 28,
+      "success_rate": 0.2153846153846154,
+      "mean_penalized_seconds": 0.8035404607691956
+    },
+    {
+      "fault_type": "permanent",
+      "method": "local_after_error",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 24,
+      "success_rate": 0.18461538461538463,
+      "mean_penalized_seconds": 0.8365575438461047
+    },
+    {
+      "fault_type": "permanent",
+      "method": "sample_error",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 28,
+      "success_rate": 0.2153846153846154,
+      "mean_penalized_seconds": 0.8087050376923098
+    },
+    {
+      "fault_type": "permanent",
+      "method": "random",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 24,
+      "success_rate": 0.18461538461538463,
+      "mean_penalized_seconds": 0.8396136830769907
+    },
+    {
+      "fault_type": "permanent",
+      "method": "exhaustive",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 22,
+      "success_rate": 0.16923076923076924,
+      "mean_penalized_seconds": 0.861247444615471
+    },
+    {
+      "fault_type": "permanent",
+      "method": "cegis",
+      "unique_circuits": 65,
+      "timed_trials": 130,
+      "successes": 23,
+      "success_rate": 0.17692307692307693,
+      "mean_penalized_seconds": 0.8752106738461477
+    }
+  ],
+  "raw_sha256": "a73dd0d301bf7ef41963b9f56d67f78d99443566fb1b79d4ba972c5fc3d3d0d2",
+  "report_script_sha256": "c45e1bf7d6f662e8d64d40ad05678557c4196104c5c3b721c35b38b8f8e3c47f",
+  "all_accepted_independently_audited": true,
+  "v1_protected_files_unchanged": true,
+  "frozen_model_unchanged": true,
+  "source_hashes_unchanged": true
+}

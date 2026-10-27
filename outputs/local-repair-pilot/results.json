@@ -1,0 +1,356 @@
+{
+  "protocol": {
+    "created": "2026-10-25",
+    "intent": "exploratory second pilot after seeing pilot 1; new held-out seeds",
+    "train": {
+      "seeds": [
+        50000,
+        50479
+      ],
+      "sizes": [
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          14
+        ]
+      ],
+      "count": 480
+    },
+    "validation": {
+      "seeds": [
+        60000,
+        60119
+      ],
+      "sizes": [
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          14
+        ]
+      ],
+      "count": 120
+    },
+    "test": {
+      "seeds": [
+        70000,
+        70399
+      ],
+      "sizes": [
+        [
+          6,
+          18
+        ],
+        [
+          7,
+          22
+        ]
+      ],
+      "count": 400
+    },
+    "sampled_specification_rows": 8,
+    "primary_budget": 16,
+    "model": {
+      "trees": 48,
+      "depth": 9,
+      "leaf": 12,
+      "seed": 20261026
+    },
+    "no_post_test_hyperparameter_selection": true,
+    "scope": "shared local proposer with global verifier; known stuck location; one-edit candidates; synthetic harmful faults conditional on changing outputs"
+  },
+  "training": {
+    "cases": 480,
+    "candidate_rows": 189500,
+    "positive_candidates": 1527,
+    "fit_seconds": 10.24694240000099
+  },
+  "validation": {
+    "cases": 120,
+    "one_edit_repairable": 92,
+    "methods": {
+      "learned_local": {
+        "1": {
+          "success": 44,
+          "total": 120
+        },
+        "4": {
+          "success": 63,
+          "total": 120
+        },
+        "16": {
+          "success": 77,
+          "total": 120
+        },
+        "64": {
+          "success": 86,
+          "total": 120
+        }
+      },
+      "local_greedy": {
+        "1": {
+          "success": 50,
+          "total": 120
+        },
+        "4": {
+          "success": 66,
+          "total": 120
+        },
+        "16": {
+          "success": 76,
+          "total": 120
+        },
+        "64": {
+          "success": 80,
+          "total": 120
+        }
+      },
+      "global_sample_greedy": {
+        "1": {
+          "success": 59,
+          "total": 120
+        },
+        "4": {
+          "success": 74,
+          "total": 120
+        },
+        "16": {
+          "success": 77,
+          "total": 120
+        },
+        "64": {
+          "success": 85,
+          "total": 120
+        }
+      },
+      "global_small_edit": {
+        "1": {
+          "success": 57,
+          "total": 120
+        },
+        "4": {
+          "success": 73,
+          "total": 120
+        },
+        "16": {
+          "success": 77,
+          "total": 120
+        },
+        "64": {
+          "success": 81,
+          "total": 120
+        }
+      },
+      "exhaustive_order": {
+        "1": {
+          "success": 1,
+          "total": 120
+        },
+        "4": {
+          "success": 3,
+          "total": 120
+        },
+        "16": {
+          "success": 16,
+          "total": 120
+        },
+        "64": {
+          "success": 35,
+          "total": 120
+        }
+      }
+    },
+    "timing_ms": {
+      "local_features_mean": 0.7380750000265834,
+      "learned_ranking_mean": 3.076147499950821,
+      "global_features_mean": 2.9561366666863855,
+      "one_exact_verification_mean": 0.0059567187482419594
+    },
+    "paired_difference_at_16": {
+      "global_sample_greedy": {
+        "mean": 0.0,
+        "bootstrap_95_percent": [
+          -0.05,
+          0.05
+        ]
+      },
+      "global_small_edit": {
+        "mean": 0.0,
+        "bootstrap_95_percent": [
+          -0.041666666666666664,
+          0.041666666666666664
+        ]
+      },
+      "local_greedy": {
+        "mean": 0.008333333333333333,
+        "bootstrap_95_percent": [
+          -0.025,
+          0.05
+        ]
+      }
+    }
+  },
+  "test": {
+    "cases": 400,
+    "one_edit_repairable": 314,
+    "methods": {
+      "learned_local": {
+        "1": {
+          "success": 139,
+          "total": 400
+        },
+        "4": {
+          "success": 202,
+          "total": 400
+        },
+        "16": {
+          "success": 250,
+          "total": 400
+        },
+        "64": {
+          "success": 288,
+          "total": 400
+        }
+      },
+      "local_greedy": {
+        "1": {
+          "success": 114,
+          "total": 400
+        },
+        "4": {
+          "success": 193,
+          "total": 400
+        },
+        "16": {
+          "success": 235,
+          "total": 400
+        },
+        "64": {
+          "success": 257,
+          "total": 400
+        }
+      },
+      "global_sample_greedy": {
+        "1": {
+          "success": 122,
+          "total": 400
+        },
+        "4": {
+          "success": 208,
+          "total": 400
+        },
+        "16": {
+          "success": 248,
+          "total": 400
+        },
+        "64": {
+          "success": 264,
+          "total": 400
+        }
+      },
+      "global_small_edit": {
+        "1": {
+          "success": 128,
+          "total": 400
+        },
+        "4": {
+          "success": 208,
+          "total": 400
+        },
+        "16": {
+          "success": 247,
+          "total": 400
+        },
+        "64": {
+          "success": 260,
+          "total": 400
+        }
+      },
+      "exhaustive_order": {
+        "1": {
+          "success": 0,
+          "total": 400
+        },
+        "4": {
+          "success": 6,
+          "total": 400
+        },
+        "16": {
+          "success": 24,
+          "total": 400
+        },
+        "64": {
+          "success": 71,
+          "total": 400
+        }
+      }
+    },
+    "timing_ms": {
+      "local_features_mean": 1.7752372499353442,
+      "learned_ranking_mean": 6.698491250026564,
+      "global_features_mean": 8.586210000025858,
+      "one_exact_verification_mean": 0.009957093750472268
+    },
+    "paired_difference_at_16": {
+      "global_sample_greedy": {
+        "mean": 0.005,
+        "bootstrap_95_percent": [
+          -0.0225,
+          0.0325
+        ]
+      },
+      "global_small_edit": {
+        "mean": 0.0075,
+        "bootstrap_95_percent": [
+          -0.02,
+          0.0375
+        ]
+      },
+      "local_greedy": {
+        "mean": 0.0375,
+        "bootstrap_95_percent": [
+          0.0125,
+          0.065
+        ]
+      }
+    }
+  },
+  "feature_importance": {
+    "local_improvement": 0.3130791623304762,
+    "local_after_error": 0.29417937728049715,
+    "need_fraction": 0.11077843455964312,
+    "before_error": 0.11063875525981164,
+    "fanout": 0.034232606890168944,
+    "required_one_fraction": 0.023751121501042527,
+    "source_after_error": 0.022755204610064434,
+    "local_change": 0.02254478434759048,
+    "required_zero_fraction": 0.017269472072757752,
+    "source_gap": 0.01231857302937395,
+    "source_ones": 0.009419204883670682,
+    "old_lut_ones": 0.007232614198939709,
+    "source_similarity": 0.004363487527480857,
+    "new_lut_ones": 0.004193718025688866,
+    "source_is_input": 0.003908313654115694,
+    "is_output": 0.0036669284709156926,
+    "lut_edit_distance": 0.002644777958171486,
+    "need_conflict": 0.0015982805033456088,
+    "kind_wire": 0.0006695596256617057,
+    "kind_lut": 0.0006015575834106274,
+    "source_is_stuck": 0.00015406568717281105
+  },
+  "total_seconds": 29.097110499998962,
+  "limitations": [
+    "exploratory synthetic pilot",
+    "one-edit proposal space only",
+    "global verifier and scheduler remain",
+    "message propagation is heuristic and not a new theorem",
+    "no claim of speedup over SAT/ECO tools",
+    "no comparison to published learned controllers yet",
+    "not evidence of global novelty or acceptance probability"
+  ]
+}
