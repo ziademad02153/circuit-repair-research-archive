@@ -14,3 +14,4 @@ for item in d.get('descriptive_budget_contrasts', []):
         print(item.get('a'), 'vs', item.get('b'))
         print('  actual_time:', item.get('actual_time'))
         print('  matched_success_checks:', item.get('matched_success_checks'))
+

@@ -22,3 +22,4 @@ for g in sorted(cnf_times.keys()):
     c_med = np.median(cnf_times[g])
     v_m = np.mean(verif_times_per_check[g])
     print(f"  {g}: CNF mean={c_m:.1f} ms (med={c_med:.1f} ms) | Verifier per check={v_m:.3f} ms")
+

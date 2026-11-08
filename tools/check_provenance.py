@@ -8,3 +8,4 @@ pilot_model = json.loads(open('outputs/local-repair-pilot/selected_model.json').
 print("\nPilot model keys:")
 print(pilot_model.keys())
 print("Pilot model metadata / trees:", len(pilot_model.get('trees', [])))
+

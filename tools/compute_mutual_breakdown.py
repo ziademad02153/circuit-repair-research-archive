@@ -60,3 +60,4 @@ print(f"CNF Total Time: mean={np.mean(cnf_time):.1f} ms, median={np.median(cnf_t
 # How many cases had overhead > cnf_time?
 count_overhead_gt_cnf = sum(1 for o, c in zip(overhead_ff, cnf_time) if o > c)
 print(f"Cases where overhead > complete CNF: {count_overhead_gt_cnf} / {len(mutual_ff)} ({count_overhead_gt_cnf/len(mutual_ff)*100:.1f}%)")
+

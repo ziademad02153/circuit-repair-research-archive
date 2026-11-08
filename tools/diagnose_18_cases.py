@@ -44,3 +44,4 @@ for cid, cnf, ff1, ff10 in cases_18:
     print(f"Case {cid} ({grp}): Cands={cand_count}")
     print(f"  At 1.0s: checks={checks_1s}, feat={feat_1s*1000:.1f}ms, inf={inf_1s*1000:.1f}ms, elapsed={elapsed_1s:.3f}s, status={ff1.get('status')}")
     print(f"  At 10.0s: status={status_10s}, checks={checks_10s}, elapsed={elapsed_10s:.3f}s")
+
