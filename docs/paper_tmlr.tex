@@ -6,7 +6,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{microtype}
-\usepackage{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 \usepackage{tabularx}
 \usepackage{enumitem}
 \setlist{itemsep=2.5pt, topsep=3pt, parsep=0pt}
@@ -178,6 +178,7 @@ To explore the scale-dependence of guidance overhead and search behavior, Table~
 \label{tab:size_strata}
 \centering
 \small
+\setlength{\tabcolsep}{4.5pt}
 \begin{tabular}{llrrrrrrr}
 \toprule
 \textbf{Group} & \textbf{Parameters} & \textbf{Cands} & \textbf{Overhead} & \textbf{Top-16} & \textbf{0.1 s (L/C)} & \textbf{1.0 s (L/C)} & \textbf{10.0 s (L/C)} & \textbf{CNF Time} \\
