@@ -17,3 +17,4 @@ print("Phrase search results:")
 for p in phrases:
     matches = [i+1 for i, line in enumerate(text.splitlines()) if p in line]
     print(f'"{p}": count={len(matches)}, lines={matches}')
+

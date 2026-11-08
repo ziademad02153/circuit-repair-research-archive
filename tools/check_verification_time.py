@@ -17,3 +17,4 @@ print("Verification time per check across strata:")
 for g in sorted(time_per_check.keys()):
     vals = time_per_check[g]
     print(f"  {g}: mean = {np.mean(vals)*1000:.3f} ms, median = {np.median(vals)*1000:.3f} ms (N={len(vals)})")
+

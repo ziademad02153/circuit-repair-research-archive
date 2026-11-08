@@ -10,3 +10,4 @@ for item in d.get('primary_comparisons', []):
 for item in d.get('descriptive_budget_contrasts', []):
     if 'cegis_cnf' in (item.get('a'), item.get('b')):
         print(item.get('a'), 'vs', item.get('b'), item.get('budget_seconds'), 's:', item.get('success'))
+

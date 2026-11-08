@@ -50,3 +50,4 @@ for g in groups:
         print(f"    Top-1 rate: {np.mean(top1_acc)*100:.1f}%, Top-16 rate: {np.mean(top16_acc)*100:.1f}%")
         print(f"  Success: 0.1s={s_01}/{total} ({s_01/total*100:.1f}%), 1.0s={s_10}/{total} ({s_10/total*100:.1f}%), 10.0s={s_100}/{total} ({s_100/total*100:.1f}%)")
         print(f"  CNF Success: 0.1s={cnf_s01}/{total}, 1.0s={cnf_s10}/{total}, 10.0s={cnf_s100}/{total}")
+

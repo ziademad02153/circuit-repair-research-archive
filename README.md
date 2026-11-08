@@ -9,7 +9,7 @@ not outperform the stronger direct-CNF baseline in the final comparison.
 The archive preserves the code, protocols and negative findings for inspection
 and reuse. This work has not been submitted to a journal.
 
-GitHub repository: https://github.com/ziademad02153/circuit-repair-research-archive
+Repository: Anonymized for Double-Blind Review (OpenReview Supplementary Material / https://anonymous.4open.science/r/circuit-repair-research-archive)
 
 ## Main result
 

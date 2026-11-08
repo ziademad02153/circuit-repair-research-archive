@@ -1,7 +1,7 @@
 # The Inference Overhead Barrier: Why Learned Guidance Struggles Against Factored CNF in Single-Edit Combinational Circuit Repair
 
 **Technical Report & Research Archive**  
-*Repository:* [https://github.com/ziademad02153/circuit-repair-research-archive](https://github.com/ziademad02153/circuit-repair-research-archive)  
+*Repository:* [https://anonymous.4open.science/r/circuit-repair-research-archive](https://anonymous.4open.science/r/circuit-repair-research-archive)  
 *Status:* Completed experimental study; auditable open research archive.  
 *Artifact Verification:* Verified reproducible (`tools/verify_archive.py` passes all 121 artifacts and 26 frozen hashes).
 
@@ -161,7 +161,7 @@ The registered protocol included an ablation experiment comparing the selected f
 
 At 1.0 second, the full forest outperformed the ablated model by **+15.6 percentage points** (186/250 vs. 147/250; 97.5% CI: `[+10.0, +21.6]`).
 
-However, code inspection of [`work/v3_features.py`](file:///c:/Users/zelsay03/Documents/Codex/2026-10-22/new-chat/CircuitRepair-Research-Archive/work/v3_features.py) reveals an important methodological confound:
+However, code inspection of `work/v3_features.py` reveals an important methodological confound:
 * `no_need_features` does not accept the `target` argument; removing the 8 need features stripped **all information regarding the desired output specification** from the feature matrix.
 * Consequently, this ablation does not demonstrate a unique advantage of *backward message propagation* over other forms of target-conditioned signals (such as forward error simulation on output rows). It merely shows that conditioning edit selection on the target output is superior to ranking edits solely by topological graph structure.
 
