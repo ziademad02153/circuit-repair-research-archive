@@ -8,6 +8,13 @@
 \usepackage{microtype}
 \usepackage{hyperref}
 \usepackage{tabularx}
+\usepackage{enumitem}
+\setlist{itemsep=2.5pt, topsep=3pt, parsep=0pt}
+
+% Clean float spacing to avoid orphan lines on trailing pages
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
 
 \title{Guidance Overhead Across Circuit Scale\\in Learned Combinational Circuit Repair}
 
@@ -114,7 +121,7 @@ The symbolic solver formulates single-edit synthesis into Propositional CNF~\cit
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.75\columnwidth]{figures/success_vs_budget.pdf}
+    \includegraphics[width=0.68\columnwidth]{figures/success_vs_budget.pdf}
     \caption{Repair success rate across wall-clock deadlines on 250 larger synthetic circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$). Direct CNF reaches maximum performance within 0.1~s, while learned rankers require longer deadlines to overcome upfront guidance overhead.}
     \label{fig:success_budget}
 \end{figure}
@@ -128,7 +135,7 @@ The evaluation suite encompasses 300 circuits: 250 larger circuits ($n \in \{10,
 \subsection{Success Rate Comparison on Larger Circuits}
 Table~\ref{tab:larger_results} and Figure~\ref{fig:success_budget} summarize the results on the 250 larger circuits across all ten evaluated methods.
 
-\begin{table}[h]
+\begin{table}[t]
 \caption{Repair Success Across Execution Budgets on Larger Circuits ($N=250$)}
 \label{tab:larger_results}
 \centering
@@ -166,7 +173,7 @@ Thus, learned ranking represents the most effective search strategy among non-fa
 \subsection{Exploratory Scale-Stratified Analysis}
 To explore the scale-dependence of guidance overhead and search behavior, Table~\ref{tab:size_strata} reports a post-hoc stratification across the six evaluated parameter configurations.
 
-\begin{table}[h]
+\begin{table}[t]
 \caption{Scale-Stratified Performance Profile ($N=50$ per group, \texttt{forest\_full\_selected} vs. \texttt{cegis\_cnf}). Top-16 rate is evaluated across solvable instances within each stratum.}
 \label{tab:size_strata}
 \centering
@@ -210,7 +217,7 @@ Tracking these exact 18 cases across budgets demonstrates that this deficit is d
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.85\columnwidth]{figures/latency_breakdown.pdf}
+    \includegraphics[width=0.74\columnwidth]{figures/latency_breakdown.pdf}
     \caption{Fine-grained execution latency breakdown across the 186 mutually solved larger instances at 1.0~s. Upfront guidance overhead (144.8~ms) exceeds complete CNF solving and verification time (16.7~ms).}
     \label{fig:latency_breakdown}
 \end{figure}
