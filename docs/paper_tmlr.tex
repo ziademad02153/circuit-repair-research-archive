@@ -23,7 +23,7 @@
 \maketitle
 
 \begin{abstract}
-Machine learning guidance is frequently proposed to accelerate combinatorial search by ranking candidate modifications. In this work, we present a controlled empirical evaluation examining whether a lightweight learned ranker (a histogram decision forest utilizing local structural features and backward Boolean need-message propagation) can outperform modern symbolic solvers in single-edit combinational circuit repair. Evaluating a frozen protocol of 9,000 trials across 300 synthetic 2-LUT circuits under strict wall-clock budgets (0.1s, 1.0s, and 10.0s), our results demonstrate that a direct, factored Boolean CNF encoding solved via Glucose 4.2.1 in a Counterexample-Guided Inductive Synthesis (CEGIS) loop substantially outperforms the learned approach under tight operational deadlines ($\le 1.0$~s), while performance converges at a 10.0-second budget (delta = $-0.8$ percentage points, 95\% CI [$-2.0, 0.0$]).
+Machine learning guidance is frequently proposed to accelerate combinatorial search by ranking candidate modifications. In this work, we present a controlled empirical evaluation examining whether a lightweight learned ranker (a histogram decision forest utilizing local structural features and backward Boolean need-message propagation) can outperform modern symbolic solvers in single-edit combinational circuit repair. Evaluating a frozen protocol of 9,000 trials across 300 synthetic 2-LUT circuits and ten distinct repair methods under strict wall-clock budgets (0.1s, 1.0s, and 10.0s), our results demonstrate that a direct, factored Boolean CNF encoding solved via Glucose 4.2.1 in a Counterexample-Guided Inductive Synthesis (CEGIS) loop substantially outperforms the learned approach under tight operational deadlines ($\le 1.0$~s), while performance converges at a 10.0-second budget (delta = $-0.8$ percentage points, 95\% CI [$-2.0, 0.0$]).
 
 At a 0.1-second deadline on the 250 larger circuits, direct CNF achieves an 81.6\% repair rate (204/250) compared to 21.6\% (54/250) for the learned ranker. At a 10.0-second deadline, the learned ranker repairs 202 of the 250 larger circuits (amounting to 80.8\% of the total larger population, or 99.0\% of the 204 solvable instances), demonstrating that asymptotic solvability is closely matched, albeit with a significant latency penalty. Latency profiling on mutually solved instances reveals that candidate generation and feature extraction require an average of 50.3~ms, and forest inference adds 90.4~ms (a combined guidance overhead of 143.1~ms including sorting), whereas complete CNF synthesis terminates in a mean of 16.7~ms. We observe that while candidate truth-table checks are sub-millisecond evaluations (mean ~0.63~ms per candidate check), evaluating hundreds of candidate edits sequentially (mean 336.6 evaluations) creates latency that exceeds direct SAT solving. An ablation study shows that need-derived features improve repair success rate at 1.0~s over an ablated variant by +15.6 percentage points, but this reflects access to target specification values rather than a unique property of backward message passing. All accepted repairs were verified with zero incorrect acceptances. We discuss the implications of these empirical measurements for neuro-symbolic system design and benchmark transparency.
 \end{abstract}
@@ -79,13 +79,13 @@ The learned approach generates all legal single edits, extracts a 21-dimensional
 \begin{itemize}
     \item \textbf{Backward Need Messages}: For 8 sampled specification rows where the circuit output mismatches the target, binary requirements (\texttt{need\_0}, \texttt{need\_1}) are initialized at the outputs and propagated backwards along wires in reverse DAG order.
     \item \textbf{Feature Bundle (21 Dimensions)}: 13 structural features (fanout, output proximity, edit distance, signal switching activity) combined with 8 target-conditioned features measuring candidate alignment with propagated need masks.
-    \item \textbf{Model Execution}: A histogram-based decision forest (\texttt{TinyForest}, depth 9, minimum leaf size 12, 10--20 trees) implemented in NumPy with vectorized branch evaluation to minimize Python interpreter overhead.
+    \item \textbf{Model Execution}: A histogram-based decision forest (\texttt{TinyForest}, depth 9, minimum leaf size 12, 24 trees) implemented in NumPy with vectorized branch evaluation to minimize Python interpreter overhead.
 \end{itemize}
 
 \subsection{Model Architecture and Training Protocol}
 To ensure methodological fairness and prevent data leakage, the learned models were trained and selected according to a strict frozen protocol:
 \begin{itemize}
-    \item \textbf{Training Corpus}: The training set comprised 189,500 candidate edits extracted from synthetic circuits, containing exactly 1,527 positive (functionally valid) repair candidates.
+    \item \textbf{Training Corpus and Class Imbalance}: The training set comprised 189,500 candidate edits extracted from 480 synthetic circuits, containing exactly 1,527 positive (functionally valid) repair candidates. Because only $\approx 0.8\%$ of candidate edits are valid repairs, training employed inverse-frequency balanced sample weighting: $w_i = \frac{N}{2 \cdot N_{\text{pos}}}$ for positive edits and $w_i = \frac{N}{2 \cdot N_{\text{neg}}}$ for negative edits, equalizing the effective gradient contribution of positive and negative classes during histogram splitting.
     \item \textbf{Validation and Hyperparameter Selection}: A disjoint validation set of 120 synthetic circuits (case seeds 60000--60119) was used strictly for hyperparameter tuning and seed selection. Models were trained across three independent random seeds (20261026, 20261027, 20261028). Selection was governed by two pre-registered validation endpoints: top-16 repair success rate and mean clipped rank (rank clipped at 65).
     \item \textbf{Validation Performance}: Full-feature models (\texttt{full21}) achieved 77/120, 77/120, and 78/120 top-16 validation successes (mean clipped rank $\approx 22.6$), while ablated models (\texttt{no\_need13}) achieved 30/120, 30/120, and 31/120 (mean clipped rank $\approx 44.6$).
     \item \textbf{Freezing Rule}: The best-performing model on validation was frozen prior to opening the 300 test circuits. Test cases were evaluated once without post-hoc tuning.
@@ -109,7 +109,7 @@ The symbolic solver formulates single-edit synthesis into Propositional CNF~\cit
 \section{Empirical Evaluation on the 300-Circuit Benchmark}
 
 \subsection{Benchmark Protocol}
-The evaluation suite encompasses 300 circuits: 250 larger circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$) and 50 small reference circuits ($n=6, G=18$). All ten methods were evaluated across three separately executed wall-clock budgets: 0.1~s, 1.0~s, and 10.0~s, generating 9,000 recorded trials. Candidate generation, feature extraction, model inference, and verification all execute strictly inside the wall-clock deadline.
+The v3 evaluation suite encompasses 300 circuits: 250 larger circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$) and 50 small reference circuits ($n=6, G=18$). All ten methods were evaluated across three separately executed wall-clock budgets: 0.1~s, 1.0~s, and 10.0~s, generating 9,000 recorded trials. Candidate generation, feature extraction, model inference, and verification all execute strictly inside the wall-clock deadline.
 
 \subsection{Success Rate Comparison}
 Table~\ref{tab:larger_results} and Figure~\ref{fig:success_budget} summarize the results on the 250 larger circuits across all ten evaluated methods.
@@ -180,7 +180,7 @@ Because the defect cannot be repaired by any single non-noop edit (0 single-edit
 \section{Limitations and Threats to Validity}
 
 \subsection{Implementation Language and Verification Disparity}
-The feature extraction pipeline, decision forest inference, and sequential candidate verifier were implemented in Python using vectorized NumPy operations, whereas Glucose 4.2.1 is implemented in native C++. A native C++ or batched implementation of feature extraction and candidate simulation would certainly reduce both the 143.1~ms upfront overhead and the 211.9~ms sequential verification time. Therefore, our timing measurements characterize this specific Python/NumPy architecture rather than establishing a theoretical lower bound on candidate verification.
+The feature extraction pipeline, decision forest inference, and sequential candidate verifier were implemented in Python using vectorized NumPy operations, whereas Glucose 4.2.1 is implemented in native C++. A native C++ or batched implementation of feature extraction and candidate simulation would reduce both the 143.1~ms upfront overhead and the 211.9~ms sequential verification time. Therefore, our timing measurements characterize this specific Python/NumPy architecture rather than establishing a theoretical lower bound on candidate verification.
 
 \subsection{Synthetic Topologies and Benchmark Scope}
 The benchmark consists of synthetically generated 2-LUT DAGs and does not evaluate standard industrial benchmark suites (e.g., ISCAS-85 or EPFL). In addition, stuck-at fault locations were provided to both systems, and repairs were restricted to single non-noop edits.
@@ -192,6 +192,9 @@ These results underscore the importance of comparing learned guidance against op
 
 \subsubsection*{Reproducibility Statement}
 The complete code, frozen protocols, model artifacts, and raw trial logs are available in an open research archive at \url{https://anonymous.4open.science/r/circuit-repair-research-archive}. All numerical figures and bootstrap intervals can be reproduced via standard Python 3.12 library scripts without proprietary dependencies.
+
+\subsubsection*{Author Disclosure on AI Assistance}
+In accordance with TMLR editorial policy, the authors disclose that an AI coding assistant was utilized to assist in grammar editing, LaTeX formatting, and code artifact packaging. All underlying experimental data, statistical calculations, and analytical interpretations were derived directly from audited local experimental logs, and the authors assume full responsibility for the contents of this manuscript.
 
 \bibliography{references}
 \bibliographystyle{tmlr}
