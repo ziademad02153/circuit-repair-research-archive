@@ -1,0 +1,362 @@
+{
+  "reviewed_at": "2026-11-08T13:36:04.453233+00:00",
+  "new_experiments": 0,
+  "operations": "Hash checking, saved-trial aggregation, registered bootstrap reanalysis and source inspection only.",
+  "v3_trials": 9000,
+  "v3_distinct_circuits": 300,
+  "raw_sha256": "1bcfa956793fdbdb0b957bd143f44b85210e13d3443f322c68c53327dfe73366",
+  "primary_intervals_exactly_match_saved": true,
+  "primary_comparisons": [
+    {
+      "a": "forest_full_selected",
+      "b": "forest_no_need_selected",
+      "budget_seconds": 1.0,
+      "circuits": 250,
+      "success": {
+        "difference": 0.156,
+        "ci95": [
+          0.108,
+          0.208
+        ],
+        "ci97_5": [
+          0.1,
+          0.216
+        ]
+      },
+      "actual_time": {
+        "difference": 0.1429600200001005,
+        "ci95": [
+          0.10871379781025207,
+          0.17837587467992158
+        ],
+        "ci97_5": [
+          0.10400308075528701,
+          0.18264214462517522
+        ]
+      },
+      "penalized_time": {
+        "difference": 0.14294948680001834,
+        "ci95": [
+          0.10862946767990797,
+          0.17815132373005943
+        ],
+        "ci97_5": [
+          0.10407914024514375,
+          0.1825844726598116
+        ]
+      },
+      "matched_success_checks": {
+        "pairs": 143,
+        "a": {
+          "mean": 428.8111888111888,
+          "median": 22.0,
+          "p90": 996.7999999999998,
+          "p95": 2832.3000000000015
+        },
+        "b": {
+          "mean": 1712.8881118881118,
+          "median": 744.0,
+          "p90": 5373.0,
+          "p95": 6051.8
+        }
+      }
+    },
+    {
+      "a": "learned_frozen",
+      "b": "cegis_cnf",
+      "budget_seconds": 1.0,
+      "circuits": 250,
+      "success": {
+        "difference": -0.072,
+        "ci95": [
+          -0.104,
+          -0.04
+        ],
+        "ci97_5": [
+          -0.112,
+          -0.036
+        ]
+      },
+      "actual_time": {
+        "difference": -0.33846632480004335,
+        "ci95": [
+          -0.3825450687501034,
+          -0.29564439558024386
+        ],
+        "ci97_5": [
+          -0.3893535013849945,
+          -0.2898068170450627
+        ]
+      },
+      "penalized_time": {
+        "difference": -0.20356726440004422,
+        "ci95": [
+          -0.2382636763799466,
+          -0.1708586514599796
+        ],
+        "ci97_5": [
+          -0.2432017837849966,
+          -0.16643585533493716
+        ]
+      },
+      "matched_success_checks": {
+        "pairs": 186,
+        "a": {
+          "mean": 336.6182795698925,
+          "median": 26.5,
+          "p90": 875.5,
+          "p95": 1744.0
+        },
+        "b": {
+          "mean": 4.043010752688172,
+          "median": 3.5,
+          "p90": 7.0,
+          "p95": 9.0
+        }
+      }
+    }
+  ],
+  "larger_budget_table": [
+    {
+      "budget_seconds": 0.1,
+      "methods": {
+        "learned_frozen": {
+          "successes": 54,
+          "circuits": 250,
+          "mean_actual_seconds": 0.10823849160010286,
+          "timeouts": 196
+        },
+        "forest_full_selected": {
+          "successes": 52,
+          "circuits": 250,
+          "mean_actual_seconds": 0.10718210480002745,
+          "timeouts": 198
+        },
+        "forest_no_need_selected": {
+          "successes": 53,
+          "circuits": 250,
+          "mean_actual_seconds": 0.09644028039988188,
+          "timeouts": 197
+        },
+        "local_improvement": {
+          "successes": 123,
+          "circuits": 250,
+          "mean_actual_seconds": 0.06302543999999762,
+          "timeouts": 121
+        },
+        "local_after_error": {
+          "successes": 49,
+          "circuits": 250,
+          "mean_actual_seconds": 0.08992876600011368,
+          "timeouts": 197
+        },
+        "sample_error": {
+          "successes": 108,
+          "circuits": 250,
+          "mean_actual_seconds": 0.07114979919999315,
+          "timeouts": 139
+        },
+        "random": {
+          "successes": 56,
+          "circuits": 250,
+          "mean_actual_seconds": 0.08803710879999563,
+          "timeouts": 186
+        },
+        "exhaustive": {
+          "successes": 94,
+          "circuits": 250,
+          "mean_actual_seconds": 0.07376438079983927,
+          "timeouts": 148
+        },
+        "cegis_z3": {
+          "successes": 10,
+          "circuits": 250,
+          "mean_actual_seconds": 0.09873847039991233,
+          "timeouts": 226
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "circuits": 250,
+          "mean_actual_seconds": 0.016429253199967207,
+          "timeouts": 0
+        }
+      },
+      "learner_only_successes": 0,
+      "cnf_only_successes": 150
+    },
+    {
+      "budget_seconds": 1.0,
+      "methods": {
+        "learned_frozen": {
+          "successes": 186,
+          "circuits": 250,
+          "mean_actual_seconds": 0.355011393200024,
+          "timeouts": 45
+        },
+        "forest_full_selected": {
+          "successes": 186,
+          "circuits": 250,
+          "mean_actual_seconds": 0.35925941600004446,
+          "timeouts": 45
+        },
+        "forest_no_need_selected": {
+          "successes": 147,
+          "circuits": 250,
+          "mean_actual_seconds": 0.502219436000145,
+          "timeouts": 84
+        },
+        "local_improvement": {
+          "successes": 165,
+          "circuits": 250,
+          "mean_actual_seconds": 0.3670110548000521,
+          "timeouts": 66
+        },
+        "local_after_error": {
+          "successes": 111,
+          "circuits": 250,
+          "mean_actual_seconds": 0.610709520400007,
+          "timeouts": 120
+        },
+        "sample_error": {
+          "successes": 163,
+          "circuits": 250,
+          "mean_actual_seconds": 0.3770606764000549,
+          "timeouts": 68
+        },
+        "random": {
+          "successes": 129,
+          "circuits": 250,
+          "mean_actual_seconds": 0.5599774763999303,
+          "timeouts": 102
+        },
+        "exhaustive": {
+          "successes": 148,
+          "circuits": 250,
+          "mean_actual_seconds": 0.45960880399997406,
+          "timeouts": 83
+        },
+        "cegis_z3": {
+          "successes": 142,
+          "circuits": 250,
+          "mean_actual_seconds": 0.5420987455999712,
+          "timeouts": 70
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "circuits": 250,
+          "mean_actual_seconds": 0.016545068399980663,
+          "timeouts": 0
+        }
+      },
+      "learner_only_successes": 0,
+      "cnf_only_successes": 18
+    },
+    {
+      "budget_seconds": 10.0,
+      "methods": {
+        "learned_frozen": {
+          "successes": 202,
+          "circuits": 250,
+          "mean_actual_seconds": 0.9678115339999058,
+          "timeouts": 9
+        },
+        "forest_full_selected": {
+          "successes": 201,
+          "circuits": 250,
+          "mean_actual_seconds": 1.007265336399927,
+          "timeouts": 10
+        },
+        "forest_no_need_selected": {
+          "successes": 190,
+          "circuits": 250,
+          "mean_actual_seconds": 1.9585248968001252,
+          "timeouts": 21
+        },
+        "local_improvement": {
+          "successes": 188,
+          "circuits": 250,
+          "mean_actual_seconds": 1.5870060243999033,
+          "timeouts": 23
+        },
+        "local_after_error": {
+          "successes": 171,
+          "circuits": 250,
+          "mean_actual_seconds": 2.7528348480000857,
+          "timeouts": 40
+        },
+        "sample_error": {
+          "successes": 188,
+          "circuits": 250,
+          "mean_actual_seconds": 1.6100684652001218,
+          "timeouts": 23
+        },
+        "random": {
+          "successes": 176,
+          "circuits": 250,
+          "mean_actual_seconds": 2.4516970171999275,
+          "timeouts": 35
+        },
+        "exhaustive": {
+          "successes": 193,
+          "circuits": 250,
+          "mean_actual_seconds": 1.6899337423999532,
+          "timeouts": 18
+        },
+        "cegis_z3": {
+          "successes": 200,
+          "circuits": 250,
+          "mean_actual_seconds": 1.1363919156000337,
+          "timeouts": 5
+        },
+        "cegis_cnf": {
+          "successes": 204,
+          "circuits": 250,
+          "mean_actual_seconds": 0.01668896760001371,
+          "timeouts": 0
+        }
+      },
+      "learner_only_successes": 0,
+      "cnf_only_successes": 2
+    }
+  ],
+  "matched_overhead_1s": {
+    "common_successes": 186,
+    "candidate_plus_features_slower_than_complete_cnf": 172,
+    "mean_candidate_plus_feature_seconds": 0.05026353279576416,
+    "mean_inference_seconds": 0.09036015537626504,
+    "mean_complete_cnf_seconds": 0.016722433870933355
+  },
+  "v2_counts": {
+    "learned": {
+      "successful_trials": 367,
+      "trials": 500,
+      "distinct_circuits": 250
+    },
+    "sample_error": {
+      "successful_trials": 322,
+      "trials": 500,
+      "distinct_circuits": 250
+    },
+    "local_improvement": {
+      "successful_trials": 320,
+      "trials": 500,
+      "distinct_circuits": 250
+    }
+  },
+  "wrong_acceptances_recorded": 0,
+  "successful_trials_with_recorded_independent_audit": 5644,
+  "solver_reported_unsat_distinct_cases": 51,
+  "source_evidence": {
+    "no_need_features": "work/v3_features.py:no_need_features has no target argument; KEEP=4..16 removes all target-derived features.",
+    "full_features": "work/local_repair_pilot.py:local_features takes target and computes backward masks.",
+    "cnf_pruning": "work/v3_cnf.py:cnf_cegis uses full-target disagreement cones; rankers use sampled rows and enumerate legal candidates.",
+    "budget": "work/v3_methods.py:execute includes candidate/feature/inference/check costs; worker excludes startup warmup as registered."
+  },
+  "limits": [
+    "Synthetic, known follow-up cases; not untouched final evaluation.",
+    "One timing run per circuit/method/budget in v3.",
+    "Ablation removes target conditioning as well as need features.",
+    "System comparison does not isolate representation, pruning and encoding costs.",
+    "Recorded independent acceptance audits are not rerun here; UNSAT proof certificates absent."
+  ]
+}

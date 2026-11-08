@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this research archive or reference these findings, please cite it as below."
+authors:
+  - family-names: "Research Archive"
+    given-names: "CircuitRepair"
+title: "The Inference Overhead Barrier: Why Learned Guidance Struggles Against Factored CNF in Single-Edit Combinational Circuit Repair"
+version: 1.0.0
+date-released: 2026-10-28
+url: "https://github.com/ziademad02153/circuit-repair-research-archive"
+repository-code: "https://github.com/ziademad02153/circuit-repair-research-archive"
+keywords:
+  - "circuit repair"
+  - "formal verification"
+  - "SAT solver"
+  - "CEGIS"
+  - "neuro-symbolic"
+  - "negative results"
+license: "MIT"
+

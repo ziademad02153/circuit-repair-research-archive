@@ -1,0 +1,50 @@
+{
+  "completed_at": "2026-10-28T08:12:25.768571+00:00",
+  "decision": "Close current journal-paper line; retain as technical report. Human-review drafts, not a journal/arXiv submission.",
+  "new_experiments": 0,
+  "original_tracked_files_modified": false,
+  "original_archive_verification": "passed",
+  "primary_intervals_recomputed_exactly": true,
+  "files": [
+    {
+      "path": "docs/three-draft-answers-2026-10-28.ar.md",
+      "bytes": 10261,
+      "sha256": "c9a04e629a86a35d1c942c44ce94c150f880288e7bfeec5d5ba2359b1dc549fa"
+    },
+    {
+      "path": "docs/technical-report-draft-2026-10-28.md",
+      "bytes": 4776,
+      "sha256": "f56542082d169838a3d5b85c3c1c01f5bff5324fe17a7a06d65987c8b0a79ae5"
+    },
+    {
+      "path": "tools/review_saved_results_20261028.py",
+      "bytes": 6711,
+      "sha256": "613442693806c77293926caa2b324d38ebd81cfa456b82854787fb645ae57f10"
+    },
+    {
+      "path": "tools/write_review_drafts_20261028.py",
+      "bytes": 17334,
+      "sha256": "5100e2e700f86f5f1ffab6a8a6e7012923704fb237bf71fe4ee7a6a2b6761b2b"
+    },
+    {
+      "path": "outputs/one-session-review-2026-10-28/archive-verification-console.json",
+      "bytes": 4596,
+      "sha256": "6067537afb58149a06a6dc06f349ca8653eb30bda2d0a6abd8bcf32ca0bda089"
+    },
+    {
+      "path": "outputs/one-session-review-2026-10-28/publication-status.json",
+      "bytes": 476,
+      "sha256": "a847274c840fb0418a5789d0930f991e5d440a988ca4dbf194501ef148cf5466"
+    },
+    {
+      "path": "outputs/one-session-review-2026-10-28/saved-data-audit.json",
+      "bytes": 10468,
+      "sha256": "1f68996d3a099081b097da2a7e6f8e4006c11016e87ab1d9ac3dc5031eee667f"
+    },
+    {
+      "path": "outputs/one-session-review-2026-10-28/scope.json",
+      "bytes": 508,
+      "sha256": "d43d4f3fbf5b9bf9ea82f0b0b6b2767922ceb45fd9740cb685a892d85a3234d9"
+    }
+  ]
+}
