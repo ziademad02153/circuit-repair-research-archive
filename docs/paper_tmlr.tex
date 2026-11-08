@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage{tmlr}
 
-% Optional packages
+% Essential packages
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -11,9 +11,8 @@
 
 \title{Guidance Overhead and Search Latency:\\An Empirical Comparison of Learned and SAT-Based Circuit Repair}
 
-% For submission under double-blind review
-\author{\name Anonymous Authors \email anonymous@openreview.net \\
-        \addr OpenReview Submission ID: TMLR-2026-Submission}
+\author{\name Anonymous Authors \\
+        \addr Paper under double-blind review for TMLR}
 
 \def\month{10}
 \def\year{2026}
@@ -24,9 +23,9 @@
 \maketitle
 
 \begin{abstract}
-Machine learning guidance is frequently proposed to accelerate combinatorial search by ranking candidate modifications. In this work, we present a controlled empirical evaluation examining whether a lightweight learned ranker (a histogram decision forest utilizing local structural features and backward Boolean need-message propagation) can outperform modern symbolic solvers in single-edit combinational circuit repair. Evaluating a frozen protocol of 9,000 trials across 300 synthetic 2-LUT circuits under strict wall-clock budgets (0.1s, 1.0s, and 10.0s), our results demonstrate that a direct, factored Boolean CNF encoding solved via Glucose 4.2.1 in a Counterexample-Guided Inductive Synthesis (CEGIS) loop consistently outperforms the learned approach across operational deadlines. 
+Machine learning guidance is frequently proposed to accelerate combinatorial search by ranking candidate modifications. In this work, we present a controlled empirical evaluation examining whether a lightweight learned ranker (a histogram decision forest utilizing local structural features and backward Boolean need-message propagation) can outperform modern symbolic solvers in single-edit combinational circuit repair. Evaluating a frozen protocol of 9,000 trials across 300 synthetic 2-LUT circuits under strict wall-clock budgets (0.1s, 1.0s, and 10.0s), our results demonstrate that a direct, factored Boolean CNF encoding solved via Glucose 4.2.1 in a Counterexample-Guided Inductive Synthesis (CEGIS) loop substantially outperforms the learned approach under tight operational deadlines ($\le 1.0$~s), while performance converges at a 10.0-second budget (delta = $-0.8$ percentage points, 95\% CI [$-2.0, 0.0$]).
 
-At a 0.1-second deadline on the 250 larger circuits, direct CNF achieves an 81.6\% repair rate (204/250) compared to 21.6\% (54/250) for the learned ranker. At a 10.0-second deadline, the learned ranker recovers to 80.8\% (202/250), demonstrating that asymptotic solvability is closely matched (delta = $-0.8$ percentage points, 95\% CI [$-2.0, 0.0$]), but with a substantial latency penalty. Latency profiling on mutually solved instances reveals that candidate generation and feature extraction require an average of 50.3~ms, and forest inference adds 90.4~ms (a combined guidance overhead of 143.1~ms including sorting), whereas complete CNF synthesis terminates in a mean of 16.7~ms. We observe that while candidate truth-table checks are computationally lightweight, evaluating dozens of candidate edits sequentially creates latency that exceeds direct SAT solving. An ablation study shows that need-derived features improve ranking accuracy over an ablated variant by +15.6 percentage points, but this reflects access to target specification values rather than a unique property of backward message passing. All accepted repairs were verified with zero incorrect acceptances. We discuss the implications of these empirical measurements for neuro-symbolic system design and benchmark transparency.
+At a 0.1-second deadline on the 250 larger circuits, direct CNF achieves an 81.6\% repair rate (204/250) compared to 21.6\% (54/250) for the learned ranker. At a 10.0-second deadline, the learned ranker repairs 202 of the 250 larger circuits (amounting to 80.8\% of the total larger population, or 99.0\% of the 204 solvable instances), demonstrating that asymptotic solvability is closely matched, albeit with a significant latency penalty. Latency profiling on mutually solved instances reveals that candidate generation and feature extraction require an average of 50.3~ms, and forest inference adds 90.4~ms (a combined guidance overhead of 143.1~ms including sorting), whereas complete CNF synthesis terminates in a mean of 16.7~ms. We observe that while candidate truth-table checks are sub-millisecond evaluations (mean ~0.63~ms per candidate check), evaluating hundreds of candidate edits sequentially (mean 336.6 evaluations) creates latency that exceeds direct SAT solving. An ablation study shows that need-derived features improve repair success rate at 1.0~s over an ablated variant by +15.6 percentage points, but this reflects access to target specification values rather than a unique property of backward message passing. All accepted repairs were verified with zero incorrect acceptances. We discuss the implications of these empirical measurements for neuro-symbolic system design and benchmark transparency.
 \end{abstract}
 
 \section{Introduction}
@@ -41,7 +40,18 @@ To resolve this question rigorously, we executed a frozen experimental protocol 
     \item \textbf{Direct Factored CNF}: A dedicated Propositional Conjunctive Normal Form (CNF) encoding with sequential counter cardinality constraints and structural cone-of-influence pruning, solved incrementally via Glucose 4.2.1~\citep{audemard2018glucose,ignatiev2018pysat}.
 \end{enumerate}
 
-The resulting evidence demonstrates a clear performance advantage for the direct symbolic approach under practical operational deadlines. Rather than discarding or reformulating these findings after the fact, this paper documents the experimental methodology, latency profiles, and ablation analyses to characterize the factors governing learned guidance and symbolic solving in logic repair.
+The resulting evidence demonstrates a clear performance advantage for the direct symbolic approach under tight operational deadlines ($\le 1.0$~s), with convergence at relaxed budgets (10.0~s). Rather than discarding or reformulating these findings after the fact, this paper documents the experimental methodology, training protocols, latency profiles, and ablation analyses to characterize the factors governing learned guidance and symbolic solving in logic repair.
+
+\section{Related Work}
+
+\subsection{Symbolic Program and Circuit Synthesis}
+Automated synthesis and repair of digital circuits and programs have historically relied on formal logic engines. Counterexample-Guided Inductive Synthesis (CEGIS), pioneered by \citet{solar2006combinatorial} in program sketching and generalized by \citet{jha2010oracle}, operates by alternating between a synthesizer that proposes candidate solutions on a finite sample of inputs and a verification oracle that either proves correctness or returns counterexample inputs. In hardware logic repair, symbolic techniques frequently formulate the repair domain into Boolean Satisfiability (SAT) or Quantified Boolean Formulas (QBF), leveraging structural techniques such as Craig interpolation and dependency graphs~\citep{barke2020just}. Our symbolic baseline builds directly on incremental CEGIS over Propositional CNF, using sequential counter cardinality encodings and cone-of-influence pruning~\citep{ignatiev2018pysat}.
+
+\subsection{Learned and Neural Circuit Repair}
+Recent research has increasingly focused on applying deep learning to digital logic. \citet{cosler2023neural} introduced neural circuit repair, employing graph neural networks (GNNs) and transformers to localize and fix errors in sequential circuits against Linear Temporal Logic (LTL) specifications. While neural models can identify structural patterns across large design corpora, their practical utility depends on the balance between proposal accuracy and inference latency. Our work examines this trade-off within combinational Look-Up Table (LUT) architectures, focusing on whether lightweight learned decision models can accelerate search without the computational weight of large neural models.
+
+\subsection{Learned Guidance in Automated Reasoning}
+Integrating learned predictors with combinatorial solvers has a rich history in algorithms and satisfiability testing. Portfolio-based algorithm selection, exemplified by SATzilla~\citep{xu2008satzilla}, demonstrates that runtime prediction models can effectively select optimal solvers, but explicitly recognizes that the cost of feature extraction must be strictly bounded lest guidance overhead swamp solver execution times. Similarly, recent work on neuro-symbolic reasoning and neural SAT solvers, such as NeuroSAT~\citep{selsam2019learning}, explores learning solver heuristics directly from data. Our study directly investigates this guidance overhead threshold in the context of single-edit circuit repair.
 
 \section{Problem Formulation}
 
@@ -62,18 +72,27 @@ A legal repair is defined as exactly \textit{one} non-noop modification to a non
 \end{equation}
 No gates may be added, primary output connections are fixed, and stuck gates cannot be edited. A candidate repair is accepted if and only if the modified circuit $\mathcal{C}'$ satisfies the complete truth table specification across all $2^n$ primary input vectors.
 
-\section{System Architectures}
+\section{System Architectures and Training Protocol}
 
 \subsection{Learned Guidance via Need Propagation}
 The learned approach generates all legal single edits, extracts a 21-dimensional feature vector per candidate, scores candidates using a vectorized decision forest, and evaluates them sequentially against an exact verifier:
 \begin{itemize}
     \item \textbf{Backward Need Messages}: For 8 sampled specification rows where the circuit output mismatches the target, binary requirements (\texttt{need\_0}, \texttt{need\_1}) are initialized at the outputs and propagated backwards along wires in reverse DAG order.
     \item \textbf{Feature Bundle (21 Dimensions)}: 13 structural features (fanout, output proximity, edit distance, signal switching activity) combined with 8 target-conditioned features measuring candidate alignment with propagated need masks.
-    \item \textbf{Model Execution}: A histogram-based decision forest (\texttt{TinyForest}, 10--20 trees, depth 9) implemented in NumPy with vectorized branch evaluation to minimize Python interpreter overhead.
+    \item \textbf{Model Execution}: A histogram-based decision forest (\texttt{TinyForest}, depth 9, minimum leaf size 12, 10--20 trees) implemented in NumPy with vectorized branch evaluation to minimize Python interpreter overhead.
+\end{itemize}
+
+\subsection{Model Architecture and Training Protocol}
+To ensure methodological fairness and prevent data leakage, the learned models were trained and selected according to a strict frozen protocol:
+\begin{itemize}
+    \item \textbf{Training Corpus}: The training set comprised 189,500 candidate edits extracted from synthetic circuits, containing exactly 1,527 positive (functionally valid) repair candidates.
+    \item \textbf{Validation and Hyperparameter Selection}: A disjoint validation set of 120 synthetic circuits (case seeds 60000--60119) was used strictly for hyperparameter tuning and seed selection. Models were trained across three independent random seeds (20261026, 20261027, 20261028). Selection was governed by two pre-registered validation endpoints: top-16 repair success rate and mean clipped rank (rank clipped at 65).
+    \item \textbf{Validation Performance}: Full-feature models (\texttt{full21}) achieved 77/120, 77/120, and 78/120 top-16 validation successes (mean clipped rank $\approx 22.6$), while ablated models (\texttt{no\_need13}) achieved 30/120, 30/120, and 31/120 (mean clipped rank $\approx 44.6$).
+    \item \textbf{Freezing Rule}: The best-performing model on validation was frozen prior to opening the 300 test circuits. Test cases were evaluated once without post-hoc tuning.
 \end{itemize}
 
 \subsection{Direct-CNF CEGIS Baseline}
-The symbolic solver formulates single-edit synthesis into Propositional CNF~\citep{sinha2007cegis}:
+The symbolic solver formulates single-edit synthesis into Propositional CNF~\citep{solar2006combinatorial,ignatiev2018pysat}:
 \begin{itemize}
     \item \textbf{Exact-One Cardinality}: Gate selection and modification modes are constrained using sequential counter networks via PySAT~\citep{ignatiev2018pysat}.
     \item \textbf{Cone-of-Influence Pruning}: Gates outside the transitive fan-in of failing outputs are eliminated from eligibility upfront.
@@ -90,7 +109,7 @@ The symbolic solver formulates single-edit synthesis into Propositional CNF~\cit
 \section{Empirical Evaluation on the 300-Circuit Benchmark}
 
 \subsection{Benchmark Protocol}
-The v3 evaluation suite encompasses 300 circuits: 250 larger circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$) and 50 small reference circuits ($n=6, G=18$). All ten methods were evaluated across three separately executed wall-clock budgets: 0.1~s, 1.0~s, and 10.0~s, generating 9,000 recorded trials. Candidate generation, feature extraction, model inference, and verification all execute strictly inside the wall-clock deadline.
+The evaluation suite encompasses 300 circuits: 250 larger circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$) and 50 small reference circuits ($n=6, G=18$). All ten methods were evaluated across three separately executed wall-clock budgets: 0.1~s, 1.0~s, and 10.0~s, generating 9,000 recorded trials. Candidate generation, feature extraction, model inference, and verification all execute strictly inside the wall-clock deadline.
 
 \subsection{Success Rate Comparison}
 Table~\ref{tab:larger_results} and Figure~\ref{fig:success_budget} summarize the results on the 250 larger circuits across all ten evaluated methods.
@@ -119,7 +138,7 @@ Legacy SMT (\texttt{cegis\_z3}) & 10 (4.0\%) & 142 (56.8\%) & 200 (80.0\%) \\
 
 Of the 250 larger instances, exactly 204 are repairable within the single-edit space, while 46 instances were proved UNSAT by the CNF solver ($204 + 46 = 250$). Across all 300 benchmark circuits (including the 50 small circuits), exactly 249 instances were repaired and 51 were proved UNSAT ($249 + 51 = 300$).
 
-At the primary 1.0-second endpoint, the frozen learned ranker lagged direct CNF by \textbf{$-7.2$ percentage points} (paired 97.5\% bootstrap CI: $[-11.2, -3.6]$). At the 10.0-second deadline, the frozen ranker repaired 202 of the 204 solvable cases ($80.8\%$), leaving a small difference of $-0.8$ percentage points (95\% CI: $[-2.0, 0.0]$). In zero cases did the learned model repair a circuit that CNF failed to repair at the same budget.
+At the primary 1.0-second endpoint, the frozen learned ranker lagged direct CNF by \textbf{$-7.2$ percentage points} (paired 97.5\% bootstrap CI: $[-11.2, -3.6]$). At the 10.0-second deadline, the frozen ranker repaired 202 of the 250 larger circuits (amounting to 80.8\% of the total larger population, or 99.0\% of the 204 solvable instances), leaving a small difference of $-0.8$ percentage points (95\% CI: $[-2.0, 0.0]$). In zero cases did the learned model repair a circuit that CNF failed to repair at the same budget.
 
 \begin{figure}[t]
     \centering
@@ -146,7 +165,7 @@ In \textbf{172 of the 186 shared successes (92.5\%)}, the learned ranker had not
 \subsection{Search Granularity and Verification Costs}
 On the 186 mutually solved instances, the learned ranker evaluated a mean of 336.6 candidate modifications before locating a valid edit, whereas CEGIS required a mean of 4.0 solver-verifier iterations. 
 
-We note an important distinction in computational cost per step: evaluating a candidate repair against a bit-parallel truth-table simulation is computationally lightweight (taking microseconds per check), whereas a CEGIS iteration involves an incremental SAT solver invocation. Therefore, the difference in step counts reflects the structural granularity of the guidance rather than identical unit computational operations. In practice, the total wall-clock time spent evaluating candidate truth tables sequentially (mean 211.9~ms) substantially exceeds the total time spent by the incremental SAT solver (mean 16.7~ms).
+We note an important distinction in computational cost per step: evaluating a candidate repair against a bit-parallel truth-table simulation is a sub-millisecond evaluation (averaging ~0.63~ms per candidate check in Python), whereas a CEGIS iteration involves an incremental SAT solver invocation. Therefore, the difference in step counts reflects the structural granularity of the guidance rather than identical unit computational operations. In practice, the total wall-clock time spent evaluating candidate truth tables sequentially (mean 211.9~ms) substantially exceeds the total time spent by the incremental SAT solver (mean 16.7~ms).
 
 \subsection{Ablation and Information Parity}
 Comparing the full forest against the ablated model lacking need features showed a $+15.6$~pp difference at 1.0~s ($186/250$ vs. $147/250$; $97.5\%$ CI: $[+10.0, +21.6]$). 
@@ -160,8 +179,8 @@ Because the defect cannot be repaired by any single non-noop edit (0 single-edit
 
 \section{Limitations and Threats to Validity}
 
-\subsection{Implementation Language Disparity}
-The feature extraction pipeline and decision forest inference were implemented in Python using vectorized NumPy operations, whereas Glucose 4.2.1 is implemented in native C++. A C++ implementation of feature extraction would reduce the 143.1~ms overhead. However, because the learned ranker must still perform sequential truth-table verifications over dozens or hundreds of candidates, reducing feature extraction time alone would not eliminate the gap between the methods.
+\subsection{Implementation Language and Verification Disparity}
+The feature extraction pipeline, decision forest inference, and sequential candidate verifier were implemented in Python using vectorized NumPy operations, whereas Glucose 4.2.1 is implemented in native C++. A native C++ or batched implementation of feature extraction and candidate simulation would certainly reduce both the 143.1~ms upfront overhead and the 211.9~ms sequential verification time. Therefore, our timing measurements characterize this specific Python/NumPy architecture rather than establishing a theoretical lower bound on candidate verification.
 
 \subsection{Synthetic Topologies and Benchmark Scope}
 The benchmark consists of synthetically generated 2-LUT DAGs and does not evaluate standard industrial benchmark suites (e.g., ISCAS-85 or EPFL). In addition, stuck-at fault locations were provided to both systems, and repairs were restricted to single non-noop edits.
@@ -172,7 +191,7 @@ This study provides an empirical comparison of learned guidance and direct Boole
 These results underscore the importance of comparing learned guidance against optimized symbolic baselines and accounting for complete proposal latencies in combinatorial synthesis.
 
 \subsubsection*{Reproducibility Statement}
-The complete code, frozen protocols, model artifacts, and raw trial logs are available in an open research archive. All numerical figures and bootstrap intervals can be reproduced via standard Python 3.12 library scripts without proprietary dependencies.
+The complete code, frozen protocols, model artifacts, and raw trial logs are available in an open research archive at \url{https://anonymous.4open.science/r/circuit-repair-research-archive}. All numerical figures and bootstrap intervals can be reproduced via standard Python 3.12 library scripts without proprietary dependencies.
 
 \bibliography{references}
 \bibliographystyle{tmlr}
