@@ -113,15 +113,15 @@ def plot_latency_breakdown():
     total_learned_ms = overhead_ms + verif_ms   # 199.9 ms
     cnf_ms = 16.7
     
-    # We increase the figure height and adjust ylim and title pad so the arrow and text have plenty of headroom!
-    fig, ax = plt.subplots(figsize=(8.5, 3.8), dpi=300)
+    # Wide figure with ample vertical and horizontal headroom
+    fig, ax = plt.subplots(figsize=(8.8, 3.8), dpi=300)
     methods = ['Direct CNF\n(Glucose 4.2.1)', 'Learned Ranker\n(forest_full_selected)']
-    y = np.array([0.3, 1.1])
-    height = 0.38
+    y = np.array([0.35, 1.15])
+    height = 0.32
     
     # Direct CNF bar
     ax.barh(y[0], cnf_ms, height, label=f'CNF Solving & CEGIS Checking ({cnf_ms:.1f} ms)', color='#1b9e77')
-    ax.text(cnf_ms + 4, y[0], f'{cnf_ms:.1f} ms total', va='center', fontsize=9.5, fontweight='bold', color='#1b9e77')
+    ax.text(cnf_ms + 3, y[0], f'{cnf_ms:.1f} ms total', va='center', fontsize=9.5, fontweight='bold', color='#1b9e77')
     
     # Learned Ranker stacked bar
     left = 0
@@ -133,25 +133,26 @@ def plot_latency_breakdown():
     left += sort_ms
     ax.barh(y[1], verif_ms, height, label=f'Verification Loop ({verif_ms:.1f} ms)', color='#2c7bb6', left=left)
     
-    ax.text(left + 5, y[1], f'{total_learned_ms:.1f} ms total', va='center', fontsize=9.5, fontweight='bold', color='#2c7bb6')
+    ax.text(left + 4, y[1], f'{total_learned_ms:.1f} ms total', va='center', fontsize=9.5, fontweight='bold', color='#2c7bb6')
     
     # Overhead bracket/arrow annotation ABOVE the bar with ample vertical clearance
     arrow_y = y[1] + height / 2 + 0.08
     text_y = arrow_y + 0.07
     
     ax.annotate('', xy=(overhead_ms, arrow_y), xytext=(0, arrow_y),
-                arrowprops=dict(arrowstyle='<->', color='#b2182b', lw=1.6))
+                arrowprops=dict(arrowstyle='<->', color='#b2182b', lw=1.5))
     ax.text(overhead_ms / 2, text_y, f'Upfront Guidance Overhead: {overhead_ms:.1f} ms',
             ha='center', va='bottom', fontsize=9.5, fontweight='bold', color='#b2182b')
     
     ax.set_yticks(y)
     ax.set_yticklabels(methods, fontsize=10.5)
     ax.set_xlabel('Mean Wall-Clock Latency (Milliseconds)', labelpad=8)
-    ax.set_title("Fine-Grained Latency Breakdown on Matched Solved Instances (N = 186)", pad=22, fontweight='bold')
-    ax.set_xlim(0, 260)
-    ax.set_ylim(-0.1, 1.65)  # Plenty of headroom above the arrow!
+    ax.set_title('Fine-Grained Latency Breakdown on Matched Instances (N = 186)', pad=22, fontsize=11.0, fontweight='bold')
+    ax.set_xlim(0, 270)
+    ax.set_ylim(-0.05, 1.7)
     ax.grid(axis='x', linestyle='--', alpha=0.5)
-    ax.legend(loc='center right', fontsize=8.5, framealpha=0.92, edgecolor='#cccccc')
+    # Lower right placement guarantees zero overlap with the learned ranker bar above
+    ax.legend(loc='lower right', fontsize=8.5, framealpha=0.95, edgecolor='#cccccc')
     
     plt.tight_layout()
     out_png = DOCS_DIR / 'latency_breakdown.png'
