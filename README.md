@@ -1,27 +1,28 @@
-# Learned guidance vs. symbolic circuit repair
+# Guidance Overhead Across Circuit Scale in Learned Combinational Circuit Repair
 
-An unpublished research archive comparing a small learned edit ranker with
-simple heuristics, exhaustive search, and SAT/CEGIS for single-edit Boolean
-circuit repair. Experiments ran on CPU.
+A research archive and reproducibility package evaluating lightweight learned
+edit rankers versus symbolic SAT/CEGIS baselines for single-edit Boolean circuit
+repair across increasing circuit scales under strict wall-clock deadlines.
 
-**Status: completed experimental study; unpublished.** The learned method did
-not outperform the stronger direct-CNF baseline in the final comparison.
-The archive preserves the code, protocols and negative findings for inspection
-and reuse. This work has not been submitted to a journal.
+**Status: Under double-blind review for Transactions on Machine Learning Research (TMLR).**
+The archive preserves the complete code, registered frozen protocols, model
+artifacts, raw trial logs, and independent verification audit scripts.
 
-Repository: Anonymized for Double-Blind Review (OpenReview Supplementary Material / https://anonymous.4open.science/r/circuit-repair-research-archive)
+Repository: Anonymized for Double-Blind Review (OpenReview Supplementary Material / https://anonymous.4open.science/r/circuit-repair-research-archive-67A7)
 
 ## Main result
 
-The stronger direct-CNF baseline outperformed or matched the frozen learner in
-observed repair success on the tested larger synthetic circuits. No larger
-case was repaired by the learner but not CNF at the same budget.
+A direct, factored Boolean CNF encoding solved via Glucose 4.2.1 in a CEGIS loop
+substantially outperforms the learned ranker under tight sub-second deadlines (0.1 s)
+due to candidate-scaling guidance overhead. Performance matches on compact scales
+and intermediate configurations ($n \le 12$) at 1.0 s, converging closely across
+five of six scale strata at 10.0 s.
 
-| Wall-clock budget | Frozen learner | Direct CNF/CEGIS |
-|---|---:|---:|
-| 0.1 s | 54 / 250 | 204 / 250 |
-| 1 s | 186 / 250 | 204 / 250 |
-| 10 s | 202 / 250 | 204 / 250 |
+| Wall-clock budget | Learned Ranker (Validated) | Learned Ranker (Pilot) | Direct CNF/CEGIS |
+|---|---:|---:|---:|
+| 0.1 s | 52 / 250 (20.8%) | 54 / 250 (21.6%) | 204 / 250 (81.6%) |
+| 1.0 s | 186 / 250 (74.4%) | 186 / 250 (74.4%) | 204 / 250 (81.6%) |
+| 10.0 s | 201 / 250 (80.4%) | 202 / 250 (80.8%) | 204 / 250 (81.6%) |
 
 The need-derived feature bundle helped the forest relative to removing that
 bundle. This ablation also removes all target-derived features, so it does not
