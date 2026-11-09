@@ -177,8 +177,7 @@ To explore the scale-dependence of guidance overhead and search behavior, Table~
 \caption{Scale-Stratified Performance Profile ($N=50$ per group, \texttt{forest\_full\_selected} vs. \texttt{cegis\_cnf}). Top-16 rate is evaluated across solvable instances within each stratum.}
 \label{tab:size_strata}
 \centering
-\small
-\setlength{\tabcolsep}{4.5pt}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llrrrrrrr}
 \toprule
 \textbf{Group} & \textbf{Parameters} & \textbf{Cands} & \textbf{Overhead} & \textbf{Top-16} & \textbf{0.1 s (L/C)} & \textbf{1.0 s (L/C)} & \textbf{10.0 s (L/C)} & \textbf{CNF Time} \\
@@ -190,7 +189,8 @@ Larger & $n=12, G=100$ & 13,564.5 & 107.7~ms & 35.9\% & 6 / 39 & 39 / 39 & 39 / 
 Larger & $n=16, G=100$ & 14,376.7 & 117.4~ms & 46.3\% & 0 / 41 & 36 / 41 & 41 / 41 & 16.7~ms \\
 Larger & $n=16, G=200$ & 48,761.1 & 428.6~ms & 18.6\% & 0 / 43 & 30 / 43 & 40 / 43 & 31.5~ms \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 This stratification reveals key empirical dynamics:
