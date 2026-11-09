@@ -12,6 +12,8 @@
 \setlist{itemsep=2.5pt, topsep=3pt, parsep=0pt}
 
 % Clean float spacing to avoid orphan lines on trailing pages
+\setlength{\headheight}{14pt}
+\addtolength{\topmargin}{-2pt}
 \setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
 \setlength{\floatsep}{10pt plus 2pt minus 2pt}
 \setlength{\intextsep}{10pt plus 2pt minus 2pt}
@@ -135,6 +137,7 @@ Table~\ref{tab:larger_results} and Figure~\ref{fig:success_budget} summarize the
 \caption{Repair Success Across Execution Budgets on Larger Circuits ($N=250$)}
 \label{tab:larger_results}
 \centering
+\resizebox{0.88\textwidth}{!}{%
 \begin{tabular}{lrrr}
 \toprule
 \textbf{Method} & \textbf{0.1 s} & \textbf{1.0 s} & \textbf{10.0 s} \\
@@ -150,7 +153,8 @@ Exhaustive Search (\texttt{exhaustive}) & 94 (37.6\%) & 148 (59.2\%) & 193 (77.2
 Random Order (\texttt{random}) & 56 (22.4\%) & 129 (51.6\%) & 176 (70.4\%) \\
 Legacy SMT (\texttt{cegis\_z3}) & 10 (4.0\%) & 142 (56.8\%) & 200 (80.0\%) \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 Of the 250 larger instances, exactly 204 are repairable within the single-edit space, while 46 instances were proved UNSAT by the CNF solver ($204 + 46 = 250$). Across all 300 benchmark circuits (including the 50 small circuits), exactly 249 instances were repaired and 51 were proved UNSAT ($249 + 51 = 300$).
