@@ -1,0 +1,71 @@
+JETTA ONLINE SUBMISSION METADATA FORM (READY TO COPY-PASTE)
+==============================================================
+
+1. ARTICLE TITLE:
+Guidance Overhead Across Circuit Scale in Learned Combinational Circuit Repair
+
+2. RUNNING HEAD / SHORT TITLE:
+Guidance Overhead in Circuit Repair
+
+3. ABSTRACT (PLAIN TEXT FOR WEB PORTAL):
+Machine learning guidance is frequently proposed to accelerate combinatorial search by prioritizing candidate modifications. We present a controlled empirical evaluation examining whether lightweight decision forests trained on compact combinational circuits (n in {4, 5} primary inputs, G in {10, 14} logic gates) can effectively guide single-edit repair on larger circuits (n <= 16, G <= 200) under strict wall-clock deadlines (0.1 s, 1.0 s, and 10.0 s). Evaluating a frozen protocol of 9,000 trials across 300 synthetic 2-LUT circuits, our results show that a direct Boolean CNF encoding solved via Glucose 4.2.1 in a CEGIS loop outperforms learned guidance under tight deadlines (<= 1.0 s). At 0.1 s on 250 larger circuits, direct CNF achieves an 81.6% repair rate compared to 20.8% for the learned ranker, as upfront guidance overhead (107.7–428.6 ms for G >= 100, scaling at 6.7–8.8 microseconds per candidate) exceeds the available budget. At 1.0 s, CNF maintains an advantage (81.6% vs. 74.4%, difference -7.2 pp, 95% CI [-10.4, -4.4]), with the 18-instance deficit confined to n=16 circuits. Extending the deadline to 10.0 s resolves 15 of these 18 instances, achieving cross-scale convergence (81.6% vs. 80.4%, repairing 201/204 solvable instances). Furthermore, learned ranking outperforms non-factored search heuristics (+8.4 pp) and unspecialized SMT (+17.6 pp) at 1.0 s. These findings emphasize the necessity of benchmarking learned guidance against factored symbolic baselines and accounting for operational proposal latencies across problem scales.
+
+4. KEYWORDS:
+combinational circuit repair, Boolean satisfiability, guidance overhead, CEGIS, formal verification, empirical evaluation
+
+5. AUTHOR DETAILS:
+- Full Name: Ziad Emad Allam
+- Primary Institution: Higher Institute for Computers, Information and Management Technology
+- Department: Department of Business Information Systems
+- City / Country: Tanta, Egypt
+- Email: z.e.ziad@xed.aucegypt.edu
+- ORCID: 0009-0008-4323-791X
+
+6. DECLARATIONS (SPRINGER NATURE STANDARD):
+- Funding:
+  The author declares that no funds, grants, or other financial support were received during the preparation of this manuscript.
+- Competing Interests:
+  The author has no competing interests to declare that are relevant to the content of this article.
+- Ethics Approval:
+  Not applicable. This study does not involve human participants, animal subjects, or sensitive personal data.
+- Consent to Participate:
+  Not applicable.
+- Consent for Publication:
+  Not applicable.
+- Data and Code Availability:
+  All raw trial logs, frozen experimental protocols, trained model artifacts, and automated verification scripts supporting the findings of this study are openly available in the companion research repository: https://github.com/ziademad02153/circuit-repair-research-archive
+- Author Contributions:
+  Ziad Emad Allam is the sole author of this work and is solely responsible for study conceptualization, experimental design, software implementation, benchmark generation, empirical evaluation, data analysis, and manuscript preparation.
+
+7. SUGGESTED REVIEWERS:
+Reviewer 1:
+- Name: Prof. Andreas Veneris
+- Department: ECE Department
+- Institution: University of Toronto
+- Country: Canada
+- Email: veneris@eecg.utoronto.ca
+- Reason: Pioneer of Boolean Satisfiability (SAT) based fault diagnosis, automated logic debugging, and digital circuit verification.
+
+Reviewer 2:
+- Name: Prof. Dr. Bernd Finkbeiner
+- Department: Faculty of Computer Science
+- Institution: CISPA Helmholtz Center for Information Security / Saarland University
+- Country: Germany
+- Email: finkbeiner@cispa.de
+- Reason: World-leading expert in formal methods, program synthesis, and neural circuit repair against formal specifications (ICLR 2023).
+
+Reviewer 3:
+- Name: Prof. Dr. Rolf Drechsler
+- Department: Computer Architecture Group
+- Institution: University of Bremen & DFKI
+- Country: Germany
+- Email: drechsler@uni-bremen.de
+- Reason: Renowned authority on formal hardware verification, SAT-based logic debugging, and VLSI circuit testing.
+
+Reviewer 4:
+- Name: Assoc. Prof. Alexey Ignatiev
+- Department: Faculty of Information Technology
+- Institution: Monash University
+- Country: Australia
+- Email: Alexey.Ignatiev@monash.edu
+- Reason: Primary author of PySAT toolkit and international expert in practical SAT solving and automated reasoning for hardware CAD.
