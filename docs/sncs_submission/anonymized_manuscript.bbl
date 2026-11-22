@@ -1,0 +1,74 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Audemard and Simon(2018)]{audemard2018glucose}
+Gilles Audemard and Laurent Simon.
+\newblock On the {Glucose} {SAT} solver.
+\newblock \emph{International Journal on Artificial Intelligence Tools},
+  27\penalty0 (01):\penalty0 1840001, 2018.
+
+\bibitem[Breiman(2001)]{breiman2001random}
+Leo Breiman.
+\newblock Random forests.
+\newblock \emph{Machine Learning}, 45\penalty0 (1):\penalty0 5--32, 2001.
+
+\bibitem[Cosler et~al.(2023)Cosler, Schmitt, Hahn, and
+  Finkbeiner]{cosler2023iterative}
+Matthias Cosler, Frederik Schmitt, Christopher Hahn, and Bernd Finkbeiner.
+\newblock Iterative circuit repair against formal specifications.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2023.
+
+\bibitem[De~Moura and Bj{\o}rner(2008)]{demoura2008z3}
+Leonardo De~Moura and Nikolaj Bj{\o}rner.
+\newblock {Z3}: An efficient {SMT} solver.
+\newblock In \emph{International Conference on Tools and Algorithms for the
+  Construction and Analysis of Systems (TACAS)}, pages 337--340. Springer,
+  2008.
+
+\bibitem[Ignatiev et~al.(2018)Ignatiev, Morgado, and
+  Marques-Silva]{ignatiev2018pysat}
+Alexey Ignatiev, Antonio Morgado, and Joao Marques-Silva.
+\newblock {PySAT}: A {Python} toolkit for prototyping with {SAT} oracles.
+\newblock In \emph{International Conference on Theory and Applications of
+  Satisfiability Testing (SAT)}, pages 428--437. Springer, 2018.
+
+\bibitem[Jha et~al.(2010)Jha, Gulwani, Seshia, and Tiwari]{jha2010oracle}
+Susmit Jha, Sumit Gulwani, Sanjit~A Seshia, and Ashish Tiwari.
+\newblock Oracle-guided component-based program synthesis.
+\newblock In \emph{International Conference on Software Engineering (ICSE)},
+  pages 215--224, 2010.
+
+\bibitem[Selsam et~al.(2019)Selsam, Lamm, B{\"u}nz, Liang, de~Moura, and
+  Dill]{selsam2019learning}
+Daniel Selsam, Matthew Lamm, Benedikt B{\"u}nz, Percy Liang, Leonardo de~Moura,
+  and David~L Dill.
+\newblock Learning a {SAT} solver from single-bit supervision.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2019.
+
+\bibitem[Smith et~al.(2005)Smith, Veneris, Ali, and Viglas]{smith2005fault}
+Alexander Smith, Andreas Veneris, Moayad~Fahim Ali, and Anastasios Viglas.
+\newblock Fault diagnosis and logic debugging using {Boolean} satisfiability.
+\newblock \emph{IEEE Transactions on Computer-Aided Design of Integrated
+  Circuits and Systems}, 24\penalty0 (10):\penalty0 1606--1621, 2005.
+
+\bibitem[Solar-Lezama et~al.(2006)Solar-Lezama, Tancau, Bodik, Seshia, and
+  Saraswat]{solar2006combinatorial}
+Armando Solar-Lezama, Liviu Tancau, Rastislav Bodik, Sanjit Seshia, and Vijay
+  Saraswat.
+\newblock Combinatorial sketching for finite programs.
+\newblock In \emph{International Conference on Architectural Support for
+  Programming Languages and Operating Systems (ASPLOS)}, pages 404--415, 2006.
+
+\bibitem[Xu et~al.(2008)Xu, Hutter, Hoos, and Leyton-Brown]{xu2008satzilla}
+Lin Xu, Frank Hutter, Holger~H Hoos, and Kevin Leyton-Brown.
+\newblock {SATzilla}: portfolio-based algorithm selection for {SAT}.
+\newblock \emph{Journal of Artificial Intelligence Research}, 32:\penalty0
+  565--606, 2008.
+
+\end{thebibliography}
