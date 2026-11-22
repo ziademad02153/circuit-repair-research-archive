@@ -3,46 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: plainnat.bst
+The style file: unsrtnat.bst
 Database file #1: references.bib
 You've used 10 entries,
-            2773 wiz_defined-function locations,
-            654 strings with 6822 characters,
-and the built_in function-call counts, 5667 in all, are:
-= -- 504
-> -- 343
+            2481 wiz_defined-function locations,
+            612 strings with 6412 characters,
+and the built_in function-call counts, 4626 in all, are:
+= -- 389
+> -- 238
 < -- 7
-+ -- 115
-- -- 105
-* -- 458
-:= -- 833
++ -- 90
+- -- 70
+* -- 347
+:= -- 699
 add.period$ -- 32
 call.type$ -- 10
-change.case$ -- 65
+change.case$ -- 20
 chr.to.int$ -- 10
-cite$ -- 20
-duplicate$ -- 261
-empty$ -- 458
-format.name$ -- 119
-if$ -- 1217
+cite$ -- 10
+duplicate$ -- 244
+empty$ -- 431
+format.name$ -- 84
+if$ -- 1015
 int.to.chr$ -- 1
-int.to.str$ -- 1
+int.to.str$ -- 11
 missing$ -- 10
 newline$ -- 58
-num.names$ -- 40
-pop$ -- 143
+num.names$ -- 30
+pop$ -- 102
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 10
 quote$ -- 0
-skip$ -- 208
+skip$ -- 154
 stack$ -- 0
 substring$ -- 241
-swap$ -- 52
+swap$ -- 62
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
+type$ -- 70
 warning$ -- 0
-while$ -- 49
+while$ -- 39
 width$ -- 0
 write$ -- 137
