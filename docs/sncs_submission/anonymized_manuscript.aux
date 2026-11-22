@@ -3,6 +3,7 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{demoura2008z3}
+\def\@LN@column{1}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \citation{ignatiev2018pysat}
 \citation{audemard2018glucose}
@@ -13,11 +14,13 @@
 \citation{cosler2023iterative}
 \citation{xu2008satzilla}
 \citation{selsam2019learning}
+\def\@LN@column{1}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Symbolic Program and Circuit Synthesis}{2}{subsection.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Learned and Neural Circuit Repair}{2}{subsection.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Learned Guidance in Automated Reasoning}{2}{subsection.2.3}\protected@file@percent }
 \citation{breiman2001random}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Learned Guidance in Automated Reasoning}{3}{subsection.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3}Problem Formulation}{3}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Circuit and Fault Model}{3}{subsection.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Single-Edit Repair Space}{3}{subsection.3.2}\protected@file@percent }
@@ -25,55 +28,61 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Learned Guidance via Need Propagation}{3}{subsection.4.1}\protected@file@percent }
 \citation{solar2006combinatorial,ignatiev2018pysat}
 \citation{ignatiev2018pysat}
+\def\@LN@column{1}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Training Protocol, Class Imbalance, and Validation Selection}{4}{subsection.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Low-Overhead Heuristic Baselines}{4}{subsection.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Direct-CNF CEGIS Baseline}{4}{subsection.4.4}\protected@file@percent }
+\def\@LN@column{1}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Repair success rate across wall-clock deadlines on 250 larger synthetic circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$). Direct CNF reaches maximum performance within 0.1~s, while learned rankers require longer deadlines to overcome upfront guidance overhead.}}{5}{figure.1}\protected@file@percent }
 \newlabel{fig:success_budget}{{1}{5}{Repair success rate across wall-clock deadlines on 250 larger synthetic circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$). Direct CNF reaches maximum performance within 0.1~s, while learned rankers require longer deadlines to overcome upfront guidance overhead}{figure.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Empirical Evaluation on the 300-Circuit Benchmark}{5}{section.5}\protected@file@percent }
 \newlabel{sec:results}{{5}{5}{Empirical Evaluation on the 300-Circuit Benchmark}{section.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Benchmark Protocol}{5}{subsection.5.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Success Rate Comparison on Larger Circuits}{5}{subsection.5.2}\protected@file@percent }
+\def\@LN@column{1}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Repair Success Across Execution Budgets on Larger Circuits ($N=250$)}}{6}{table.1}\protected@file@percent }
 \newlabel{tab:larger_results}{{1}{6}{Repair Success Across Execution Budgets on Larger Circuits ($N=250$)}{table.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Comparison with Heuristic and SMT Baselines}{6}{subsection.5.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Exploratory Scale-Stratified Analysis}{6}{subsection.5.4}\protected@file@percent }
+\def\@LN@column{1}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Scale-Stratified Performance Profile ($N=50$ per group, \texttt  {forest\_full\_selected} vs. \texttt  {cegis\_cnf}). Top-16 rate is evaluated across solvable instances within each stratum.}}{7}{table.2}\protected@file@percent }
 \newlabel{tab:size_strata}{{2}{7}{Scale-Stratified Performance Profile ($N=50$ per group, \texttt {forest\_full\_selected} vs. \texttt {cegis\_cnf}). Top-16 rate is evaluated across solvable instances within each stratum}{table.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Analysis of the 18-Instance Tail Deficit at 1.0~s}{7}{subsection.5.5}\protected@file@percent }
+\def\@LN@column{1}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Fine-grained execution latency breakdown across the 186 mutually solved larger instances at 1.0~s. Upfront guidance overhead (144.8~ms) exceeds complete CNF solving and verification time (16.7~ms).}}{8}{figure.2}\protected@file@percent }
 \newlabel{fig:latency_breakdown}{{2}{8}{Fine-grained execution latency breakdown across the 186 mutually solved larger instances at 1.0~s. Upfront guidance overhead (144.8~ms) exceeds complete CNF solving and verification time (16.7~ms)}{figure.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Analysis: Latency Profiling and Guidance Overhead}{8}{section.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Latency Profiling on Mutually Solved Instances}{8}{subsection.6.1}\protected@file@percent }
+\def\@LN@column{1}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Search Granularity and Verification Costs}{9}{subsection.6.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Ablation and Information Parity}{9}{subsection.6.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {7}Illustrative Case Study: A 2-Bit Arithmetic Adder}{9}{section.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {8}Limitations and Threats to Validity}{9}{section.8}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Training Scale and Transfer Scope}{9}{subsection.8.1}\protected@file@percent }
+\def\@LN@column{1}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Parameter Grid Coverage}{10}{subsection.8.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Implementation Language, Hardware Environment, and Execution Disparity}{10}{subsection.8.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Benchmark Holdout Status, Published Baselines, and Topologies}{10}{subsection.8.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {9}Conclusion}{10}{section.9}\protected@file@percent }
 \bibdata{references}
-\@writefile{toc}{\contentsline {paragraph}{Funding}{11}{section*.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Competing Interests}{11}{section*.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Data and Code Availability}{11}{section*.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Author Contributions}{11}{section*.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Ethics Approval}{11}{section*.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Funding}{11}{section*.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Competing Interests}{11}{section*.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Data and Code Availability}{11}{section*.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Author Contributions}{11}{section*.11}\protected@file@percent }
 \bibcite{audemard2018glucose}{{1}{2018}{{Audemard and Simon}}{{}}}
 \bibcite{breiman2001random}{{2}{2001}{{Breiman}}{{}}}
 \bibcite{cosler2023iterative}{{3}{2023}{{Cosler et~al.}}{{Cosler, Schmitt, Hahn, and Finkbeiner}}}
 \bibcite{demoura2008z3}{{4}{2008}{{De~Moura and Bj{\o }rner}}{{}}}
 \bibcite{ignatiev2018pysat}{{5}{2018}{{Ignatiev et~al.}}{{Ignatiev, Morgado, and Marques-Silva}}}
 \bibcite{jha2010oracle}{{6}{2010}{{Jha et~al.}}{{Jha, Gulwani, Seshia, and Tiwari}}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {paragraph}{Funding}{11}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Competing Interests}{11}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Ethics Approval}{11}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Consent to Participate}{11}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Consent for Publication}{11}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Data and Code Availability}{11}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Author Contributions}{11}{section*.8}\protected@file@percent }
 \bibcite{selsam2019learning}{{7}{2019}{{Selsam et~al.}}{{Selsam, Lamm, B{\"u}nz, Liang, de~Moura, and Dill}}}
 \bibcite{smith2005fault}{{8}{2005}{{Smith et~al.}}{{Smith, Veneris, Ali, and Viglas}}}
 \bibcite{solar2006combinatorial}{{9}{2006}{{Solar-Lezama et~al.}}{{Solar-Lezama, Tancau, Bodik, Seshia, and Saraswat}}}
 \bibcite{xu2008satzilla}{{10}{2008}{{Xu et~al.}}{{Xu, Hutter, Hoos, and Leyton-Brown}}}
 \bibstyle{plainnat}
-\@writefile{toc}{\contentsline {paragraph}{Ethics Approval}{12}{section*.12}\protected@file@percent }
+\def\@LN@column{1}
 \gdef \@abspage@last{12}

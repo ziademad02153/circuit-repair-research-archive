@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.13)  22 NOV 2026 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.13)  22 NOV 2026 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -385,32 +385,49 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip60
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count319
+) (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2026/03/08 line numbers on paragraphs v5.9
+\linenopenalty=\count320
+\output=\toks29
+\linenoprevgraf=\count321
+\linenumbersep=\dimen194
+\linenumberwidth=\dimen195
+\c@linenumber=\count322
+\c@pagewiselinenumber=\count323
+\c@LN@truepage=\count324
+\c@internallinenumber=\count325
+\c@internallinenumbers=\count326
+\quotelinenumbersep=\dimen196
+\bframerule=\dimen197
+\bframesep=\dimen198
+\bframebox=\box59
+\@LN@amsmath@ams@eqpen=\count327
 )
 (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
 pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count320
+\l__color_backend_stack_int=\count328
 ) (anonymized_manuscript.aux)
 \openout1 = `anonymized_manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -450,17 +467,17 @@ LaTeX Font Info:    ... okay on input line 25.
 (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
 .mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
-\scratchdimen=\dimen194
-\scratchbox=\box59
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count324
-\MPscratchDim=\dimen195
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count329
+\scratchdimen=\dimen199
+\scratchbox=\box60
+\nofMPsegments=\count330
+\nofMParguments=\count331
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen256
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
+\everyMPtoPDFconversion=\toks31
 )
 (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
 f-base.sty
@@ -472,13 +489,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 s.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 25.
-Package microtype Info: Applying patch `item' on input line 25.
-Package microtype Info: Applying patch `toc' on input line 25.
-Package microtype Info: Applying patch `eqnum' on input line 25.
-Package microtype Info: Applying patch `footnote' on input line 25.
-Package microtype Info: Applying patch `verbatim' on input line 25.
-LaTeX Info: Redefining \microtypesetup on input line 25.
+LaTeX Info: Redefining \microtypecontext on input line 26.
+Package microtype Info: Applying patch `item' on input line 26.
+Package microtype Info: Applying patch `toc' on input line 26.
+Package microtype Info: Applying patch `eqnum' on input line 26.
+Package microtype Info: Applying patch `footnote' on input line 26.
+Package microtype Info: Applying patch `verbatim' on input line 26.
+LaTeX Info: Redefining \microtypesetup on input line 26.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -504,12 +521,12 @@ Package color Info: Driver file: pdftex.def on input line 149.
 
 (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.l
 tx))
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 26.
  (anonymized_manuscript.out) (anonymized_manuscript.out)
 \@outlinefile=\write3
 \openout3 = `anonymized_manuscript.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 
 
 (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -518,31 +535,36 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
 
  (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1
 
 {C:/Users/zelsay03/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 [2] [3]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 102.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 110.
  [4]
-<figures/success_vs_budget.pdf, id=202, 592.61403pt x 361.35pt>
+<figures/success_vs_budget.pdf, id=206, 592.61403pt x 361.35pt>
 File: figures/success_vs_budget.pdf Graphic file (type pdf)
 <use figures/success_vs_budget.pdf>
-Package pdftex.def Info: figures/success_vs_budget.pdf  used on input line 117.
+Package pdftex.def Info: figures/success_vs_budget.pdf  used on input line 125.
 
 (pdftex.def)             Requested size: 308.01485pt x 187.81487pt.
  [5 <./figures/success_vs_budget.pdf>] [6] [7]
-<figures/latency_breakdown.pdf, id=329, 635.97598pt x 274.626pt>
+<figures/latency_breakdown.pdf, id=333, 635.97598pt x 274.626pt>
 File: figures/latency_breakdown.pdf Graphic file (type pdf)
 <use figures/latency_breakdown.pdf>
-Package pdftex.def Info: figures/latency_breakdown.pdf  used on input line 216.
+Package pdftex.def Info: figures/latency_breakdown.pdf  used on input line 224.
 
 (pdftex.def)             Requested size: 335.19873pt x 144.74232pt.
  [8 <./figures/latency_breakdown.pdf>] [9] [10] (anonymized_manuscript.bbl [11]
@@ -552,21 +574,17 @@ Package pdftex.def Info: figures/latency_breakdown.pdf  used on input line 216.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `anonymized_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 84148720204F5333C5929DF6637C7B47;7339.
  ) 
 Here is how much of TeX's memory you used:
- 13402 strings out of 467871
- 209651 string characters out of 5416923
- 672880 words of memory out of 5000000
- 41858 multiletter control sequences out of 15000+600000
- 644315 words of font info for 177 fonts, out of 8000000 for 9000
+ 13661 strings out of 467871
+ 214203 string characters out of 5416923
+ 682617 words of memory out of 5000000
+ 42124 multiletter control sequences out of 15000+600000
+ 644429 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,2204b,733s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,1672b,753s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\zelsay03\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
 crm1095.pk><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/t
@@ -578,17 +596,17 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
 b><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmr12.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmr6.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zelsay03/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zelsay03/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zel
-say03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><
-C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmti12.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmtt10.pfb>
-Output written on anonymized_manuscript.pdf (12 pages, 354769 bytes).
+ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/zelsay03/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zelsay03/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ze
+lsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+<C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmti12.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb>
+Output written on anonymized_manuscript.pdf (12 pages, 357683 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 35579 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 37627 words of extra memory for PDF output out of 42996 (max. 10000000)
 

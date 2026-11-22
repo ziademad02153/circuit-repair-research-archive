@@ -8,6 +8,7 @@
 \usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage{natbib}
+\usepackage{lineno}
 \setlist{itemsep=2.5pt, topsep=3pt, parsep=0pt}
 
 \setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
@@ -25,10 +26,17 @@
 \begin{document}
 
 \maketitle
+\linenumbers
 
 \begin{abstract}
-Machine learning guidance is frequently proposed to accelerate combinatorial search by prioritizing candidate modifications. In this work, we present a controlled empirical evaluation examining whether lightweight decision forests trained on compact combinational circuits ($n \in \{4, 5\}$ primary inputs, $G \in \{10, 14\}$ logic gates) can effectively guide single-edit repair on larger combinational circuits ($n \le 16$, $G \le 200$) under strict wall-clock deadlines (0.1~s, 1.0~s, and 10.0~s). Evaluating a frozen protocol of 9,000 trials across 300 synthetic 2-LUT circuits and ten repair methods, our results demonstrate that a direct, factored Boolean CNF encoding solved via Glucose 4.2.1 in a CEGIS loop outperforms the learned approach under tight deadlines ($\le 1.0$~s). At 0.1~s on 250 larger circuits, direct CNF achieves an 81.6\% repair rate (204/250) compared to 20.8\% for the primary validated learned ranker, consistent with upfront guidance overhead (mean 107.7--428.6~ms for $G \ge 100$, scaling near-linearly at 6.7--8.8~$\mu$s per candidate) exceeding on average the 100~ms budget before search can begin. At 1.0~s, direct CNF maintains an advantage overall (81.6\% vs. 74.4\%, delta = $-7.2$ percentage points, 95\% CI [$-10.4, -4.4$]), although the learned ranker matches CNF on configurations with $n \le 12$. The 18-instance deficit at 1.0~s is confined to $n=16$ circuits, where tail ranking interacts with $2^{16}$-input verification throughput; extending the deadline to 10.0~s resolves 15 of these 18 instances. At 10.0~s, performance converges across five of six scale strata (81.6\% vs. 80.4\%, leaving a 3-instance gap on $n=16, G=200$). In total at 10.0~s, the learned ranker repairs 201 of the 204 solvable larger instances (98.5\%). Furthermore, learned ranking outperforms non-factored search heuristics (+8.4~pp) and unspecialized SMT (+17.6~pp) at 1.0~s, while reaching parity with SMT at 10.0~s (201 vs. 200). These results highlight the necessity of comparing learned guidance against factored symbolic baselines and accounting for complete proposal latencies across problem scales.
+Machine learning guidance is frequently proposed to accelerate combinatorial search by prioritizing candidate modifications. We present a controlled empirical evaluation examining whether lightweight decision forests trained on compact combinational circuits ($n \in \{4, 5\}$ primary inputs, $G \in \{10, 14\}$ logic gates) can effectively guide single-edit repair on larger circuits ($n \le 16$, $G \le 200$) under strict wall-clock deadlines (0.1~s, 1.0~s, and 10.0~s). Evaluating a frozen protocol of 9,000 trials across 300 synthetic 2-LUT circuits, our results show that a direct Boolean CNF encoding solved via Glucose 4.2.1 in a CEGIS loop outperforms learned guidance under tight deadlines ($\le 1.0$~s). At 0.1~s on 250 larger circuits, direct CNF achieves an 81.6\% repair rate compared to 20.8\% for the learned ranker, as upfront guidance overhead (107.7--428.6~ms for $G \ge 100$, scaling at 6.7--8.8~$\mu$s per candidate) exceeds the available budget. At 1.0~s, CNF maintains an advantage (81.6\% vs. 74.4\%, difference $-7.2$~pp, 95\% CI [$-10.4, -4.4$]), with the 18-instance deficit confined to $n=16$ circuits. Extending the deadline to 10.0~s resolves 15 of these 18 instances, achieving cross-scale convergence (81.6\% vs. 80.4\%, repairing 201/204 solvable instances). Furthermore, learned ranking outperforms non-factored search heuristics (+8.4~pp) and unspecialized SMT (+17.6~pp) at 1.0~s. These findings emphasize the necessity of benchmarking learned guidance against factored symbolic baselines and accounting for operational proposal latencies across problem scales.
 \end{abstract}
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} Combinational circuit repair, learned guidance, Boolean satisfiability, CEGIS, guidance overhead, empirical evaluation.
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} Combinational circuit repair, learned guidance, Boolean satisfiability, CEGIS, guidance overhead, empirical evaluation.
 
 \section{Introduction}
 Automated logic circuit repair aims to restore the functional correctness of a digital design relative to an input-output specification. Because the combinatorial space of candidate modifications grows rapidly with gate count and fanout, exhaustive enumeration becomes computationally impractical as circuits scale. Consequently, machine learning (ML) guidance has been widely explored: by prioritizing candidate edits using structural graph features and execution error profiles, learned rankers are hypothesized to guide search algorithms toward valid repairs with substantially reduced search times.
@@ -274,34 +282,22 @@ These results underscore the importance of comparing learned guidance against de
 The author declares that no funds, grants, or other financial support were received during the preparation of this manuscript.
 
 \paragraph{Competing Interests}
-The author is employed by ELARABY Group. This research was conducted independently, without financial support, hardware donations, cloud-computing credits, or involvement from the employer. The author has no relevant financial or non-financial interests to disclose.
-
-\paragraph{Data and Code Availability}
-All raw trial logs, frozen experimental protocols, trained model artifacts, and automated verification scripts supporting the findings of this study are openly available in the companion research repository: \url{https://github.com/ziademad02153/circuit-repair-research-archive} (with an archival mirror at \url{https://anonymous.4open.science/r/circuit-repair-research-archive-67A7}).
-
-\paragraph{Author Contributions}
-Ziad Emad Allam is the sole author of this work and is solely responsible for study conceptualization, experimental design, software implementation, benchmark generation, empirical evaluation, data analysis, and manuscript preparation.
+The author declares that they have no competing interests. (Complete employer and conflict of interest disclosures are documented in the separate Title Page file for editorial review).
 
 \paragraph{Ethics Approval}
 Not applicable. This study does not involve human participants, animal subjects, or sensitive personal data.
 
+\paragraph{Consent to Participate}
+Not applicable.
 
-\section*{Declarations}
-
-\paragraph{Funding}
-The author declares that no funds, grants, or other financial support were received during the preparation of this manuscript.
-
-\paragraph{Competing Interests}
-The author is employed by ELARABY Group. This research was conducted independently, without financial support, hardware donations, cloud-computing credits, or involvement from the employer. The author has no relevant financial or non-financial interests to disclose.
+\paragraph{Consent for Publication}
+Not applicable.
 
 \paragraph{Data and Code Availability}
-All raw trial logs, frozen experimental protocols, trained model artifacts, and automated verification scripts supporting the findings of this study are openly available in the companion research repository: \url{https://github.com/ziademad02153/circuit-repair-research-archive} (with an archival mirror at \url{https://anonymous.4open.science/r/circuit-repair-research-archive-67A7}).
+All raw trial logs, frozen experimental protocols, trained model artifacts, and automated verification scripts supporting the findings of this study are openly available in the anonymous repository: \url{https://anonymous.4open.science/r/circuit-repair-research-archive-67A7}. (The companion GitHub repository will be unblinded and made publicly available upon final publication).
 
 \paragraph{Author Contributions}
-Ziad Emad Allam is the sole author of this work and is solely responsible for study conceptualization, experimental design, software implementation, benchmark generation, empirical evaluation, data analysis, and manuscript preparation.
-
-\paragraph{Ethics Approval}
-Not applicable. This study does not involve human participants, animal subjects, or sensitive personal data.
+Author details and individual contributions have been omitted to preserve anonymity during double-blind peer review and are fully documented in the separate Title Page file.
 
 \bibliography{references}
 \bibliographystyle{plainnat}

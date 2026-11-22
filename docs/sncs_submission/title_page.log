@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.13)  22 NOV 2026 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.13)  22 NOV 2026 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -277,8 +277,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 5.
 pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
-)
-No file title_page.aux.
+) (title_page.aux)
 \openout1 = `title_page.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -299,6 +298,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -364,6 +364,7 @@ File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 (C:\Users\zelsay03\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.l
 tx))
 Package hyperref Info: Link coloring ON on input line 7.
+ (title_page.out) (title_page.out)
 \@outlinefile=\write3
 \openout3 = `title_page.out'.
 
@@ -387,24 +388,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-Package rerunfilecheck Warning: File `title_page.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `title_page.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `title_page.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9846 strings out of 467871
- 149916 string characters out of 5416923
- 568117 words of memory out of 5000000
- 38623 multiletter control sequences out of 15000+600000
+ 9856 strings out of 467871
+ 150392 string characters out of 5416923
+ 569174 words of memory out of 5000000
+ 38625 multiletter control sequences out of 15000+600000
  636851 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,343b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,449b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/font
@@ -413,9 +407,10 @@ MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zelsay03/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zelsay03/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ze
 lsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on title_page.pdf (1 page, 99994 bytes).
+
+Output written on title_page.pdf (1 page, 102291 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 63 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
