@@ -1,0 +1,42 @@
+SUGGESTED REVIEWERS FOR JOURNAL OF ELECTRONIC TESTING (JETTA)
+==============================================================
+
+Reviewer 1:
+-----------
+Full Name: Prof. Andreas Veneris
+Title: Professor
+Department: The Edward S. Rogers Sr. Department of Electrical & Computer Engineering
+Institution: University of Toronto
+City/Country: Toronto, Canada
+Email: veneris@eecg.utoronto.ca
+Reason for Suggestion: Prof. Veneris is a pioneer of Boolean Satisfiability (SAT) based fault diagnosis, automated logic debugging, and formal verification in digital circuits (author of seminal IEEE TCAD and ICCAD publications). He is an internationally recognized authority on logic error repair and SAT-based EDA algorithms.
+
+Reviewer 2:
+-----------
+Full Name: Prof. Dr. Bernd Finkbeiner
+Title: Professor / Faculty Member
+Department: Faculty of Computer Science
+Institution: CISPA Helmholtz Center for Information Security / Saarland University
+City/Country: Saarbrücken, Germany
+Email: finkbeiner@cispa.de
+Reason for Suggestion: Prof. Finkbeiner is a leading researcher in formal methods, program synthesis, and neural circuit repair against formal specifications (author of ICLR 2023 works on iterative circuit repair). His expertise spans formal verification, automated reasoning, and neural guidance for hardware logic.
+
+Reviewer 3:
+-----------
+Full Name: Prof. Dr. Rolf Drechsler
+Title: Professor / Head of Computer Architecture Group
+Department: Faculty of Mathematics and Computer Science
+Institution: University of Bremen & German Research Center for Artificial Intelligence (DFKI)
+City/Country: Bremen, Germany
+Email: drechsler@uni-bremen.de
+Reason for Suggestion: Prof. Drechsler is a world-renowned expert in formal hardware verification, circuit design automation, SAT-based logic debugging, and VLSI testing. He has published extensively on digital circuit verification, logic synthesis, and solver applications in CAD.
+
+Reviewer 4:
+-----------
+Full Name: Assoc. Prof. Alexey Ignatiev
+Title: Associate Professor
+Department: Faculty of Information Technology
+Institution: Monash University
+City/Country: Melbourne, Australia
+Email: Alexey.Ignatiev@monash.edu
+Reason for Suggestion: Dr. Ignatiev is the primary author of PySAT and an international leader in practical Boolean Satisfiability, MaxSAT, and automated reasoning tools applied to formal verification and combinatorial optimization.

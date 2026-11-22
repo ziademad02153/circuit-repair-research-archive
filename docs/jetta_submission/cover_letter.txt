@@ -1,0 +1,50 @@
+To: Prof. Vishwani D. Agrawal
+Editor-in-Chief
+Journal of Electronic Testing: Theory and Applications (JETTA)
+Springer Nature
+
+Date: November 22, 2026
+
+Subject: Submission of Original Research Article: "Guidance Overhead Across Circuit Scale in Learned Combinational Circuit Repair"
+
+Dear Prof. Agrawal,
+
+I am pleased to submit our original research manuscript entitled "Guidance Overhead Across Circuit Scale in Learned Combinational Circuit Repair" for consideration for publication as a regular research article in the Journal of Electronic Testing: Theory and Applications (JETTA).
+
+Background and Significance:
+Automated logic debugging, fault diagnosis, and circuit repair are central challenges in Electronic Design Automation (EDA) and digital system reliability. A growing hypothesis in modern computer-aided design is that machine learning heuristics can accelerate combinatorial synthesis and repair loops by prioritizing candidate gate modifications. However, whether lightweight learned models maintain low enough inference latency to outpace modern, factored Boolean Satisfiability (SAT) solvers as circuit scale grows remains a critical, unresolved empirical question.
+
+In this work, we present a controlled, large-scale empirical evaluation comparing lightweight histogram decision forests against non-factored search heuristics and modern Propositional Conjunctive Normal Form (CNF) SAT solving (Glucose 4.2.1 within a CEGIS loop) across a frozen protocol of 9,000 trials on 300 synthetic combinational circuits (scaling up to 16 primary inputs and 200 logic gates) under strict wall-clock deadlines (0.1 s, 1.0 s, and 10.0 s).
+
+Key Contributions and Findings:
+1. Empirical Guidance Overhead Analysis: Our results demonstrate that under tight sub-second deadlines (0.1 s), direct CNF substantially outperforms learned guidance (81.6% vs. 20.8% repair rate on 250 larger instances), consistent with upfront guidance overhead (107.7–428.6 ms, scaling near-linearly at 6.7–8.8 microseconds per candidate) consuming the entire operational budget before search begins.
+2. Cross-Scale Convergence & Thresholds: Under extended deadlines (1.0 s and 10.0 s), learned guidance reaches complete parity with CNF across five of six scale strata (81.6% vs. 80.4% at 10.0 s, resolving 98.5% of solvable cases) while outperforming non-factored heuristics and legacy SMT.
+3. Open Science and Reproducibility: To support full transparency, all 9,000 raw trial logs, frozen experimental protocols, trained model checkpoints, and automated standard-library audit scripts are preserved in a public research archive: https://github.com/ziademad02153/circuit-repair-research-archive.
+
+Fit with JETTA:
+Our work directly addresses core topics within the scope of JETTA, specifically:
+- Design Debugging and Logic Debugging
+- Formal Hardware Verification and Equivalence Checking
+- Computer-Aided Design (CAD) Tool Evaluation and Scalability
+By providing rigorous empirical benchmarks on the runtime trade-offs between exact SAT solvers and learned guidance across circuit scales, our findings offer actionable insights for CAD practitioners, verification engineers, and researchers designing automated logic repair systems.
+
+Declarations:
+- This manuscript represents original work that has not been published previously and is not currently under consideration for publication elsewhere.
+- The author has no relevant financial or non-financial conflicts of interest to disclose.
+- The author approves this submission and confirms adherence to Springer Nature's publishing ethics guidelines.
+
+Suggested Reviewer Fields:
+- Logic Debugging and Fault Diagnosis
+- Boolean Satisfiability (SAT) Solvers in CAD
+- Formal Hardware Verification and Equivalence Checking
+- Electronic Design Automation (EDA) Algorithms
+
+Thank you very much for your time and consideration of our manuscript.
+
+Sincerely,
+
+Ziad Emad Allam
+Department of Business Information Systems
+Higher Institute for Computers, Information and Management Technology, Tanta, Egypt
+Email: z.e.ziad@xed.aucegypt.edu
+ORCID: 0009-0008-4323-791X
