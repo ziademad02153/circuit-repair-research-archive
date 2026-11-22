@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.13)  22 NOV 2026 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.13)  22 NOV 2026 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,11 +586,11 @@ Package rerunfilecheck Info: File `anonymized_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 84148720204F5333C5929DF6637C7B47;7339.
  ) 
 Here is how much of TeX's memory you used:
- 13702 strings out of 467871
- 215200 string characters out of 5416923
+ 13704 strings out of 467871
+ 215218 string characters out of 5416923
  683416 words of memory out of 5000000
  42159 multiletter control sequences out of 15000+600000
- 644537 words of font info for 175 fonts, out of 8000000 for 9000
+ 644597 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,1672b,753s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\zelsay03\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
@@ -612,7 +612,7 @@ lsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 <C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmti12.pfb><C:/Users/zelsay03/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on anonymized_manuscript.pdf (12 pages, 353368 bytes).
+Output written on anonymized_manuscript.pdf (12 pages, 353274 bytes).
 PDF statistics:
  532 PDF objects out of 1000 (max. 8388607)
  74 named destinations out of 1000 (max. 500000)
