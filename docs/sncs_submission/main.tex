@@ -1,0 +1,311 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{natbib}
+\setlist{itemsep=2.5pt, topsep=3pt, parsep=0pt}
+
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+
+\title{\LARGE\textbf{Guidance Overhead Across Circuit Scale\\in Learned Combinational Circuit Repair}}
+
+\author{
+  \textbf{Ziad Emad Allam}\thanks{Corresponding author. ORCID: \href{https://orcid.org/0009-0008-4323-791X}{0009-0008-4323-791X}} \\
+  Department of Business Information Systems \\
+  Higher Institute for Computers, Information and Management Technology, Tanta, Egypt \\
+  \texttt{z.e.ziad@xed.aucegypt.edu}
+}
+
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Machine learning guidance is frequently proposed to accelerate combinatorial search by prioritizing candidate modifications. In this work, we present a controlled empirical evaluation examining whether lightweight decision forests trained on compact combinational circuits ($n \in \{4, 5\}$ primary inputs, $G \in \{10, 14\}$ logic gates) can effectively guide single-edit repair on larger combinational circuits ($n \le 16$, $G \le 200$) under strict wall-clock deadlines (0.1~s, 1.0~s, and 10.0~s). Evaluating a frozen protocol of 9,000 trials across 300 synthetic 2-LUT circuits and ten repair methods, our results demonstrate that a direct, factored Boolean CNF encoding solved via Glucose 4.2.1 in a CEGIS loop outperforms the learned approach under tight deadlines ($\le 1.0$~s). At 0.1~s on 250 larger circuits, direct CNF achieves an 81.6\% repair rate (204/250) compared to 20.8\% for the primary validated learned ranker, consistent with upfront guidance overhead (mean 107.7--428.6~ms for $G \ge 100$, scaling near-linearly at 6.7--8.8~$\mu$s per candidate) exceeding on average the 100~ms budget before search can begin. At 1.0~s, direct CNF maintains an advantage overall (81.6\% vs. 74.4\%, delta = $-7.2$ percentage points, 95\% CI [$-10.4, -4.4$]), although the learned ranker matches CNF on configurations with $n \le 12$. The 18-instance deficit at 1.0~s is confined to $n=16$ circuits, where tail ranking interacts with $2^{16}$-input verification throughput; extending the deadline to 10.0~s resolves 15 of these 18 instances. At 10.0~s, performance converges across five of six scale strata (81.6\% vs. 80.4\%, leaving a 3-instance gap on $n=16, G=200$). In total at 10.0~s, the learned ranker repairs 201 of the 204 solvable larger instances (98.5\%). Furthermore, learned ranking outperforms non-factored search heuristics (+8.4~pp) and unspecialized SMT (+17.6~pp) at 1.0~s, while reaching parity with SMT at 10.0~s (201 vs. 200). These results highlight the necessity of comparing learned guidance against factored symbolic baselines and accounting for complete proposal latencies across problem scales.
+\end{abstract}
+
+\section{Introduction}
+Automated logic circuit repair aims to restore the functional correctness of a digital design relative to an input-output specification. Because the combinatorial space of candidate modifications grows rapidly with gate count and fanout, exhaustive enumeration becomes computationally impractical as circuits scale. Consequently, machine learning (ML) guidance has been widely explored: by prioritizing candidate edits using structural graph features and execution error profiles, learned rankers are hypothesized to guide search algorithms toward valid repairs with substantially reduced search times.
+
+In program and hardware synthesis, training models on compact instances is a practical choice to minimize data generation costs, relying on the hypothesis that local topological patterns and execution invariants learned from small designs can transfer to larger targets. However, whether lightweight learned models can maintain low enough inference latency to outpace modern Boolean Satisfiability (SAT) solvers as circuit size scales remains an open empirical question.
+
+In earlier exploratory pilots of this work, a learned ranker operating over Boolean need-message features appeared advantageous when benchmarked against an initial SMT baseline implemented in Z3~\citep{demoura2008z3} using unspecialized high-level integer/array abstractions. However, in formal verification and automated reasoning, symbolic baselines are sensitive to encoding design: an unspecialized symbolic baseline can create an artificial appearance of machine learning superiority that disappears when comparing against dedicated, factored encodings.
+
+To resolve this question rigorously, we executed a frozen experimental protocol (Protocol v3) comparing:
+\begin{enumerate}
+    \item \textbf{Learned Guidance}: Histogram decision forests utilizing topological features and backward Boolean need-message propagation, trained on compact circuits ($n \in \{4, 5\}, G \in \{10, 14\}$).
+    \item \textbf{Low-Overhead Heuristics}: Non-learned heuristics ranking edits by local sample error reduction or local need-agreement without model inference.
+    \item \textbf{Direct Factored CNF}: A dedicated Propositional Conjunctive Normal Form (CNF) encoding with sequential counter cardinality constraints implemented via PySAT~\citep{ignatiev2018pysat} alongside structural cone-of-influence pruning, solved incrementally via Glucose 4.2.1~\citep{audemard2018glucose}.
+\end{enumerate}
+
+The resulting evidence shows a performance advantage for the direct symbolic approach under sub-second deadlines (0.1~s) on larger circuits, while performance converges across intermediate scales at 1.0~s and matches globally across five of six scale strata at 10.0~s. This paper documents the experimental methodology, latency profiles, size-stratified breakdowns, and ablation analyses to characterize the factors governing learned guidance and symbolic solving in logic repair.
+
+\section{Related Work}
+
+\subsection{Symbolic Program and Circuit Synthesis}
+Automated synthesis and repair of digital circuits and programs have historically relied on formal logic engines. Counterexample-Guided Inductive Synthesis (CEGIS), pioneered by \citet{solar2006combinatorial} in program sketching and generalized by \citet{jha2010oracle}, operates by alternating between a synthesizer that proposes candidate solutions on a finite sample of inputs and a verification oracle that either proves correctness or returns counterexample inputs. In hardware logic repair, symbolic techniques formulate the repair problem into Boolean Satisfiability (SAT)~\citep{smith2005fault}, leveraging structural techniques such as cone-of-influence reduction and incremental solving. Our symbolic baseline builds directly on incremental CEGIS over Propositional CNF, using sequential counter cardinality networks implemented via PySAT~\citep{ignatiev2018pysat} and structural cone-of-influence pruning.
+
+\subsection{Learned and Neural Circuit Repair}
+Recent research has increasingly focused on applying deep learning to digital logic. \citet{cosler2023iterative} introduced iterative circuit repair against formal specifications, using hierarchical Transformers to synthesize repairs for sequential circuits against Linear Temporal Logic (LTL) specifications. While neural models can identify structural patterns across large design corpora, their practical utility depends on the balance between proposal accuracy and inference latency. Our work examines this trade-off within combinational Look-Up Table (LUT) architectures, focusing on whether lightweight decision tree models can achieve efficient cross-scale guidance without the computational overhead of large deep neural networks.
+
+\subsection{Learned Guidance in Automated Reasoning}
+Integrating learned predictors with combinatorial solvers has a rich history in algorithms and satisfiability testing. Portfolio-based algorithm selection, exemplified by SATzilla~\citep{xu2008satzilla}, demonstrates that predictive models can effectively select optimal solvers, while highlighting that feature computation overhead represents an essential operational trade-off that must be accounted for against baseline solver runtimes. Similarly, recent work on neuro-symbolic reasoning and neural SAT solvers, such as NeuroSAT~\citep{selsam2019learning}, explores learning satisfiability prediction from single-bit supervision. Our study directly investigates this guidance overhead threshold in the context of single-edit circuit repair across varying circuit scales.
+
+\section{Problem Formulation}
+
+\subsection{Circuit and Fault Model}
+We evaluate combinational circuits structured as Directed Acyclic Graphs (DAGs) over 2-input Look-Up Tables (2-LUTs). A circuit $\mathcal{C}$ contains $n$ primary inputs $x_0, \dots, x_{n-1}$, $m$ primary outputs $y_0, \dots, y_{m-1}$, and $G$ internal logic gates $g_j = (a_j, b_j, T_j)$ for $j \in \{0, \dots, G-1\}$, where $a_j, b_j < n + j$ index preceding input or gate signals, and $T_j \in \{0, \dots, 15\}$ defines the 4-bit Boolean truth table of the LUT.
+
+Three classes of harmful synthetic faults are injected:
+\begin{itemize}
+    \item \textbf{LUT Mutation}: The truth table $T_j$ is mutated to $T'_j \ne T_j$.
+    \item \textbf{Wire Reconnection}: An input connection $a_j$ or $b_j$ is redirected to a different topologically legal signal $s < n + j$.
+    \item \textbf{Permanent Stuck-at Fault}: A gate's output is clamped to constant 0 or 1. The fault location is treated as known.
+\end{itemize}
+
+\subsection{Single-Edit Repair Space}
+A legal repair is defined as exactly \textit{one} non-noop modification to a non-stuck gate:
+\begin{equation}
+    e \in \{(j, \text{LUT}, T') \mid T' \ne T_j\} \cup \{(j, \text{wire}, \text{slot}, s) \mid s < n + j\}
+\end{equation}
+No gates may be added, primary output connections are fixed, and stuck gates cannot be edited. A candidate repair is accepted if and only if the modified circuit $\mathcal{C}'$ satisfies the complete truth table specification across all $2^n$ primary input vectors.
+
+\section{System Architectures and Training Protocol}
+
+\subsection{Learned Guidance via Need Propagation}
+The learned approach generates all legal single edits, extracts a 21-dimensional feature vector per candidate, scores candidates using a vectorized decision forest, and evaluates them sequentially against an exact verifier:
+\begin{itemize}
+    \item \textbf{Backward Need Messages}: For 8 sampled specification rows where the circuit output mismatches the target, binary requirements (\texttt{need\_0}, \texttt{need\_1}) are initialized at the outputs and propagated backwards along wires in reverse DAG order.
+    \item \textbf{Feature Bundle (21 Dimensions)}: 13 structural features (fanout, output proximity, edit distance, signal switching activity) combined with 8 target-conditioned features measuring candidate alignment with propagated need masks.
+    \item \textbf{Model Architecture}: A histogram-based random forest (\texttt{TinyForest}, depth 9, minimum leaf size 12, 24 trees)~\citep{breiman2001random} implemented in NumPy with vectorized branch evaluation to minimize Python interpreter overhead.
+\end{itemize}
+
+\subsection{Training Protocol, Class Imbalance, and Validation Selection}
+To ensure methodological consistency and limit selection bias, learned models were trained and selected according to a frozen protocol:
+\begin{itemize}
+    \item \textbf{Training Corpus}: The training set comprised 189,500 candidate edits extracted from 480 compact synthetic circuits alternating between $(n=4, G=10)$ and $(n=5, G=14)$ (case seeds 50000--50479). Compact circuits were chosen to keep training data generation rapid and to specifically evaluate transfer from compact designs. Across these candidates, exactly 1,527 were positive (functionally valid) repairs ($\approx 0.8\%$ prevalence).
+    \item \textbf{Class Imbalance Mitigation}: Because of this severe class imbalance, tree building employed weighted Gini impurity splitting with inverse-frequency sample weights: $w_i = \frac{N}{2 \cdot N_{\text{pos}}} \approx 62.05$ for positive edits and $w_i = \frac{N}{2 \cdot N_{\text{neg}}} \approx 0.504$ for negative edits, equalizing the effective weight contribution of positive and negative classes during impurity evaluation.
+    \item \textbf{Validation and Hyperparameter Selection}: A disjoint validation set of 120 compact synthetic circuits alternating between $(n=4, G=10)$ and $(n=5, G=14)$ (case seeds 60000--60119) was used strictly for hyperparameter tuning and model selection. Models were trained across three independent random seeds (20261026, 20261027, 20261028). Selection was governed by two pre-specified validation metrics: top-16 repair success rate and mean rank clipped at 65.
+    \item \textbf{Validation Performance}: Full-feature models (\texttt{full21}) achieved 77/120, 77/120, and 78/120 top-16 validation successes (mean clipped rank $\approx 22.6$), while ablated models lacking need features (\texttt{no\_need13}) achieved 30/120, 30/120, and 31/120 (mean clipped rank $\approx 44.6$).
+    \item \textbf{Frozen Evaluated Models}: The primary validated model (\texttt{forest\_full\_selected}, seed 20261028) was selected strictly on the disjoint 120-circuit validation suite (achieving 78/120 top-16 validation repairs). To evaluate sensitivity across training initializations, we also retained an independently trained replicate (\texttt{learned\_frozen}, seed 20261026, achieving 77/120 validation repairs) which had been previously evaluated in earlier exploratory phases (v2) on these same 300 test circuits. As reported in Section~\ref{sec:results}, both models exhibit virtually identical test performance (186/250 at 1.0~s; 201 vs. 202 at 10.0~s), suggesting stability across training initializations. Crucially, because the 300 test circuits were reused from earlier exploratory phases, they do not constitute an untouched blind holdout; all ten methods were evaluated under a frozen protocol across one timing pass per case, method, and budget without post-hoc hyperparameter tuning.
+\end{itemize}
+
+\subsection{Low-Overhead Heuristic Baselines}
+To isolate the contribution of learned model inference from heuristic ranking:
+\begin{itemize}
+    \item \textbf{Local Improvement (\texttt{local\_improvement})}: Evaluates candidate edits by calculating the reduction in local Boolean need disagreement at the edited gate via direct bitwise operations ($O(1)$ per candidate), without invoking a decision forest.
+    \item \textbf{Sample Error (\texttt{sample\_error})}: Ranks candidate edits by re-evaluating circuit output error across the 8 sample rows, restricting simulation strictly to the transitive fanout cone of the edited gate.
+    \item \textbf{Local After Error (\texttt{local\_after\_error})}: Ranks candidates by the remaining need disagreement at the edited gate.
+\end{itemize}
+
+\subsection{Direct-CNF CEGIS Baseline}
+The symbolic solver formulates single-edit synthesis into Propositional CNF~\citep{solar2006combinatorial,ignatiev2018pysat}:
+\begin{itemize}
+    \item \textbf{Exact-One Cardinality}: Gate selection and modification modes are constrained using sequential counter networks via PySAT~\citep{ignatiev2018pysat}.
+    \item \textbf{Cone-of-Influence Pruning}: Gates outside the transitive fan-in of failing outputs are eliminated from eligibility upfront.
+    \item \textbf{Incremental CEGIS}: Glucose 4.2.1 is supplied with constraints on failing rows. If a candidate assignment is produced, the full verifier checks it. Failing counterexamples are added incrementally as new clauses.
+\end{itemize}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.68\columnwidth]{figures/success_vs_budget.pdf}
+    \caption{Repair success rate across wall-clock deadlines on 250 larger synthetic circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$). Direct CNF reaches maximum performance within 0.1~s, while learned rankers require longer deadlines to overcome upfront guidance overhead.}
+    \label{fig:success_budget}
+\end{figure}
+
+\section{Empirical Evaluation on the 300-Circuit Benchmark}
+\label{sec:results}
+
+\subsection{Benchmark Protocol}
+The evaluation suite encompasses 300 circuits: 250 larger circuits ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$) and 50 small reference circuits ($n=6, G=18$). All ten methods were evaluated across three separately executed wall-clock budgets: 0.1~s, 1.0~s, and 10.0~s, generating 9,000 recorded trials (one frozen timing pass per case, method, and budget). Candidate generation, feature extraction, model inference, and verification all execute strictly inside the wall-clock deadline without post-hoc tuning.
+
+\subsection{Success Rate Comparison on Larger Circuits}
+Table~\ref{tab:larger_results} and Figure~\ref{fig:success_budget} summarize the results on the 250 larger circuits across all ten evaluated methods.
+
+\begin{table}[t]
+\caption{Repair Success Across Execution Budgets on Larger Circuits ($N=250$)}
+\label{tab:larger_results}
+\centering
+\resizebox{0.88\textwidth}{!}{%
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Method} & \textbf{0.1 s} & \textbf{1.0 s} & \textbf{10.0 s} \\
+\midrule
+\textbf{Direct CNF (\texttt{cegis\_cnf})} & \textbf{204 (81.6\%)} & \textbf{204 (81.6\%)} & \textbf{204 (81.6\%)} \\
+Learned Ranker (Validated, \texttt{forest\_full\_selected}) & 52 (20.8\%) & 186 (74.4\%) & 201 (80.4\%) \\
+Learned Ranker (Pilot, \texttt{learned\_frozen}) & 54 (21.6\%) & 186 (74.4\%) & 202 (80.8\%) \\
+Ablated Forest (\texttt{forest\_no\_need\_selected}) & 53 (21.2\%) & 147 (58.8\%) & 190 (76.0\%) \\
+Local Improvement Heuristic (\texttt{local\_improvement}) & 123 (49.2\%) & 165 (66.0\%) & 188 (75.2\%) \\
+Sample Error Heuristic (\texttt{sample\_error}) & 108 (43.2\%) & 163 (65.2\%) & 188 (75.2\%) \\
+Local After Error Heuristic (\texttt{local\_after\_error}) & 49 (19.6\%) & 111 (44.4\%) & 171 (68.4\%) \\
+Exhaustive Search (\texttt{exhaustive}) & 94 (37.6\%) & 148 (59.2\%) & 193 (77.2\%) \\
+Random Order (\texttt{random}) & 56 (22.4\%) & 129 (51.6\%) & 176 (70.4\%) \\
+Legacy SMT (\texttt{cegis\_z3}) & 10 (4.0\%) & 142 (56.8\%) & 200 (80.0\%) \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+Of the 250 larger instances, exactly 204 are repairable within the single-edit space, while 46 instances were proved UNSAT by the CNF solver ($204 + 46 = 250$). Across all 300 benchmark circuits (including the 50 small circuits), exactly 249 instances were repaired and 51 were proved UNSAT ($249 + 51 = 300$).
+
+At the primary 1.0-second endpoint, the validated learned ranker lagged direct CNF by \textbf{$-7.2$ percentage points} (paired 95\% bootstrap CI: $[-10.4, -4.4]$; Bonferroni-adjusted 97.5\% CI: $[-11.2, -4.0]$ across the two primary operational deadlines [1.0~s and 10.0~s]). At the 10.0-second deadline, performance converges closely: the validated ranker repaired 201 circuits (delta = $-1.2$~pp, paired 95\% bootstrap CI: $[-2.8, 0.0]$; Bonferroni-adjusted 97.5\% CI: $[-2.8, 0.0]$ across the same two planned deadlines), and the pilot model repaired 202 circuits (delta = $-0.8$~pp, paired 95\% CI: $[-2.0, 0.0]$), amounting to 98.5\% and 99.0\% of the 204 solvable instances, respectively. Because direct CNF is complete within the single-edit space and already repairs all 204 solvable instances within 0.1~s, any advantage for learned guidance is necessarily bounded by latency rather than instance coverage; the learned ranker cannot discover valid repairs beyond CNF's complete reachable set.
+
+\subsection{Comparison with Heuristic and SMT Baselines}
+While direct CNF outperforms learned ranking under tight budgets, learned guidance establishes a clear advantage over alternative search heuristics and high-level SMT at 1.0~s, while reaching parity with SMT at 10.0~s:
+\begin{itemize}
+    \item \textbf{At 0.1~s}: The low-overhead heuristic \texttt{local\_improvement} repairs 123 circuits (49.2\%), outperforming the learned ranker (52 circuits, 20.8\%). Because the heuristic evaluates candidate local need disagreement directly via bitwise operations in $O(1)$ without model inference, it avoids the upfront guidance overhead that throttles the decision forest under ultra-tight deadlines.
+    \item \textbf{At 1.0~s}: The learned ranker outperforms all heuristics, repairing 186 circuits (74.4\%) compared to 165 (66.0\%) for \texttt{local\_improvement} (+8.4~pp, paired 95\% bootstrap CI [+4.8, +12.0], Bonferroni-adjusted 98.3\% CI [+4.4, +12.8]) and 163 (65.2\%) for \texttt{sample\_error} (+9.2~pp, paired 95\% CI [+5.6, +13.2], Bonferroni-adjusted 98.3\% CI [+4.8, +14.0]). It also outperforms unspecialized SMT (\texttt{cegis\_z3}, 142 circuits, 56.8\%, +17.6~pp, paired 95\% CI [+12.4, +22.8], Bonferroni-adjusted 98.3\% CI [+11.6, +24.0]), evaluated as exploratory post-hoc contrasts with a family-wise Bonferroni correction over the $m=3$ non-factored comparisons computed via 10,000 paired percentile bootstrap resamples.
+    \item \textbf{At 10.0~s}: The learned ranker achieves 201 repairs (80.4\%), essentially matching SMT (\texttt{cegis\_z3}, 200 circuits, 80.0\%) and outperforming exhaustive search (193 circuits, 77.2\%) and all heuristics (188 circuits, 75.2\%).
+\end{itemize}
+Thus, learned ranking represents the most effective search strategy among non-factored methods when given operational deadlines of 1.0~s, while reaching parity with SMT when extended to 10.0~s.
+
+\subsection{Exploratory Scale-Stratified Analysis}
+To explore the scale-dependence of guidance overhead and search behavior, Table~\ref{tab:size_strata} reports a post-hoc stratification across the six evaluated parameter configurations.
+
+\begin{table}[t]
+\caption{Scale-Stratified Performance Profile ($N=50$ per group, \texttt{forest\_full\_selected} vs. \texttt{cegis\_cnf}). Top-16 rate is evaluated across solvable instances within each stratum.}
+\label{tab:size_strata}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrr}
+\toprule
+\textbf{Group} & \textbf{Parameters} & \textbf{Cands} & \textbf{Overhead} & \textbf{Top-16} & \textbf{0.1 s (L/C)} & \textbf{1.0 s (L/C)} & \textbf{10.0 s (L/C)} & \textbf{CNF Time} \\
+\midrule
+Small & $n=6, G=18$ & 750.2 & 5.6~ms & 82.2\% & 45 / 45 & 45 / 45 & 45 / 45 & 3.6~ms \\
+Larger & $n=10, G=50$ & 4,076.3 & 27.1~ms & 61.5\% & 39 / 39 & 39 / 39 & 39 / 39 & 7.0~ms \\
+Larger & $n=10, G=100$ & 13,176.5 & 113.3~ms & 40.5\% & 7 / 42 & 42 / 42 & 42 / 42 & 14.0~ms \\
+Larger & $n=12, G=100$ & 13,564.5 & 107.7~ms & 35.9\% & 6 / 39 & 39 / 39 & 39 / 39 & 13.5~ms \\
+Larger & $n=16, G=100$ & 14,376.7 & 117.4~ms & 46.3\% & 0 / 41 & 36 / 41 & 41 / 41 & 16.7~ms \\
+Larger & $n=16, G=200$ & 48,761.1 & 428.6~ms & 18.6\% & 0 / 43 & 30 / 43 & 40 / 43 & 31.5~ms \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+This stratification reveals key empirical dynamics:
+\begin{itemize}
+    \item \textbf{Near-Linear Guidance Overhead}: In this Python/NumPy implementation, guidance overhead per candidate remains remarkably stable across all circuit sizes: 7.47~$\mu$s ($n=6, G=18$), 6.65~$\mu$s ($n=10, G=50$), 8.60~$\mu$s ($n=10, G=100$), 7.94~$\mu$s ($n=12, G=100$), 8.17~$\mu$s ($n=16, G=100$), and 8.79~$\mu$s ($n=16, G=200$). Because candidate edit count scales quadratically with gate count ($|edits| \approx G^2 + G(2n + 12)$, combining $15G$ truth-table mutations and $\sum_{j=0}^{G-1} 2(n + j - 1) = G^2 + (2n-3)G$ rewiring options, less one stuck-at gate where applicable), total upfront overhead grows from 5.6~ms to 428.6~ms.
+    \item \textbf{The 0.1-Second Overhead Cliff}: At $G \ge 100$, the mean upfront overhead (107.7--428.6~ms) exceeds on average the entire 100~ms budget before search can begin, causing repair rates at 0.1~s to collapse to 0.0\%--16.7\% of solvable instances (0/41 to 7/42, corresponding to 0.0\%--14.0\% of all 50 circuits per stratum), while direct CNF solves instances in 13.5--31.5~ms.
+    \item \textbf{Convergence Across $n \le 12$ at 1.0~s}: Once given a 1.0-second deadline, the learned ranker matches CNF completely on all larger configurations with $n \le 12$ ($n=10, G=50$: 39/39; $n=10, G=100$: 42/42; $n=12, G=100$: 39/39; all $\Delta = 0.0$).
+    \item \textbf{Convergence Across Five Strata at 10.0~s}: By 10.0~s, performance matches CNF completely across five of the six strata, leaving only a minor 3-instance gap on the largest configuration ($n=16, G=200$: 40 vs. 43).
+\end{itemize}
+
+\subsection{Analysis of the 18-Instance Tail Deficit at 1.0~s}
+The overall deficit of $-7.2$~pp at 1.0~s (186 vs. 204) corresponds to exactly 18 instances where CNF succeeds within 1.0~s but the learned ranker times out. Per-instance inspection shows that these 18 instances are observed exclusively in the two $n=16$ test groups: 5 instances in $n=16, G=100$ and 13 instances in $n=16, G=200$.
+
+Tracking these exact 18 cases across budgets demonstrates that this deficit is driven by an interaction between tail ranking degradation and verification throughput:
+\begin{enumerate}
+    \item \textbf{Tail Ranking Degradation}: While median checks on solved cases remain low (22.0 in $n=16, G=100$), top-16 rank success remains relatively stable across $G=100$ configurations (35.9\%--46.3\%) and declines sharply only on the densest configuration ($n=16, G=200$: 18.6\%). In the 18 deficit instances, the first valid repair is assigned a rank ranging from 364 to 6,668 (and $>10,000$ in 4 instances).
+    \item \textbf{Verification Latency on Large Inputs}: Evaluating candidate circuits on $n=16$ inputs requires simulating $2^{16} = 65,536$ input rows per candidate check, increasing mean verification time to 0.497~ms ($G=100$) and 0.914~ms ($G=200$) per check (compared to 0.035~ms for $n=10$).
+    \item \textbf{Throughput Ceiling and Execution Variability}: In typical deficit instances, after deducting upfront guidance overhead (100--430~ms), the sequential verifier executes between 550 and 2,100 candidate checks before the 1.0-second deadline expires. For instances whose valid repair rank exceeds this capacity, search times out just short of locating the repair. In two outlier cases, anomalous execution dynamics further depressed throughput:
+    \begin{itemize}
+        \item In \texttt{test:n16\_g200:39}, upfront overhead was unusually severe (792.1~ms: 221.1~ms feature extraction + 571.0~ms inference), leaving only 207.9~ms of search time. Furthermore, candidate verification time on this specific circuit averaged 2.29~ms per check at 1.0~s (192.4~ms / 84 checks, approximately 2.5$\times$ the stratum mean of 0.914~ms). At the 10.0~s deadline, this circuit exhibited an almost identical verification rate of 2.28~ms per check (828.2~ms / 364 checks) with 897.8~ms overhead, successfully locating its valid repair at rank 364 in 1.75~s. This suggests that the elevated evaluation latency reflects topological properties of this specific circuit (which also exhibited nearly double the stratum mean upfront overhead in both runs) rather than purely transient timing noise.
+        \item In \texttt{test:n16\_g100:22}, upfront overhead was elevated at 1.0~s (221.8~ms, versus the 117.4~ms stratum mean) and verification averaged 1.24~ms per check (773.0~ms / 622 checks). In contrast, during the independently executed 10.0~s run, verification on the same circuit ran at 0.50~ms per check (2535.6~ms / 5,089 checks, matching the stratum mean), locating the repair at rank 5,089 in 2.66~s. This difference is consistent with run-to-run timing variability across separately executed budget passes. Importantly, this variance had zero impact on the outcome: even at the faster 0.50~ms rate, evaluating 5,089 candidates requires $\approx 2.54$~s, so the instance would have timed out at 1.0~s regardless.
+    \end{itemize}
+    \item \textbf{Resolution at 10.0~s and Boundary Sensitivity}: When the deadline is extended to 10.0~s, \textbf{15 of these 18 deficit instances (83.3\%)} are successfully repaired. Of these 15 resolved instances, 14 terminate between 1.10~s and 2.66~s total runtime, and one extreme tail instance (\texttt{test:n16\_g200:49}, requiring 10,180 checks) terminates at 8.76~s. Crucially, 5 of the 15 resolved instances terminate between 1.10~s and 1.29~s, highlighting that a subset of instances failed at 1.0~s solely due to being within 0.3~s of the hard cutoff. Only 3 instances in $n=16, G=200$ (with candidate checks reaching 10,189, 10,898, and 10,911 without finding a valid repair) remain unsolved at 10.0~s.
+\end{enumerate}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.74\columnwidth]{figures/latency_breakdown.pdf}
+    \caption{Fine-grained execution latency breakdown across the 186 mutually solved larger instances at 1.0~s. Upfront guidance overhead (144.8~ms) exceeds complete CNF solving and verification time (16.7~ms).}
+    \label{fig:latency_breakdown}
+\end{figure}
+
+\section{Analysis: Latency Profiling and Guidance Overhead}
+
+\subsection{Latency Profiling on Mutually Solved Instances}
+To understand performance dynamics under sub-second deadlines, Figure~\ref{fig:latency_breakdown} breaks down runtime components across the 186 larger circuits solved by both \texttt{forest\_full\_selected} and \texttt{cegis\_cnf} at 1.0~second:
+\begin{itemize}
+    \item \textbf{Candidate Generation and Feature Extraction}: Mean 49.7~ms (median 33.6~ms).
+    \item \textbf{Decision Forest Inference}: Mean 92.7~ms (median 67.8~ms).
+    \item \textbf{Candidate Sorting}: Mean 2.4~ms (median 1.7~ms).
+    \item \textbf{Total Upfront Guidance Overhead}: Mean \textbf{144.8~ms} (median 103.4~ms).
+    \item \textbf{Subsequent Verification Loop (to repair)}: Mean 55.1~ms (median 3.5~ms).
+    \item \textbf{Complete Direct CNF Execution (Solve + Verify)}: Mean \textbf{16.7~ms} (median 13.4~ms).
+\end{itemize}
+
+In \textbf{all 186 shared successes (100.0\%)}, the upfront guidance overhead alone exceeded the complete CNF solving and verification time. Across these mutual successes, the pilot model \texttt{learned\_frozen} exhibits nearly identical execution dynamics (mean upfront overhead 141.6~ms, mean verification loop 55.0~ms, median 7.1~ms).
+
+\subsection{Search Granularity and Verification Costs}
+On the 186 mutually solved instances, the learned ranker evaluated a mean of 361.2 candidate modifications (median 37.5) before locating a valid edit, whereas CEGIS required a mean of 4.0 solver-verifier iterations (median 3.5). 
+
+We note an important distinction in computational cost per step: evaluating a candidate repair against a bit-parallel truth-table simulation is a sub-millisecond evaluation, but varies significantly across input sizes: 0.022~ms for $n=6$, 0.035~ms for $n=10$, 0.113~ms for $n=12$, and 0.497--0.914~ms for $n=16$. In the typical solved instance, verification is rapid (median 3.5~ms), which is actually faster than complete CNF solving (median 13.4~ms). However, upfront guidance overhead (median 103.4~ms) dominates the budget in typical cases, while in the tail deficit instances, executing hundreds to thousands of sequential truth-table simulations exhausts the remaining budget.
+
+\subsection{Ablation and Information Parity}
+Comparing the full forest against the ablated model lacking need features showed a $+15.6$~pp difference at 1.0~s ($186/250$ vs. $147/250$, difference = $+15.6$~pp, paired 95\% bootstrap CI: $[+10.8, +20.8]$). 
+
+However, code inspection of the feature generation pipeline reveals a methodological confound: removing the need feature bundle simultaneously stripped all features conditioned on the target specification values. The ablated baseline was effectively blind to the output specification. Thus, this ablation establishes that target conditioning helps relative to unconditioned topological ranking, but does not isolate a unique structural advantage of backward need-message propagation over forward error simulation.
+
+\section{Illustrative Case Study: A 2-Bit Arithmetic Adder}
+As an illustrative test of structured logic, we evaluated a hand-built 2-bit unsigned ripple-carry adder ($n=4$ inputs, $G=8$ gates, $m=3$ outputs) with a permanent stuck-at-0 fault at Gate 0. 
+
+Because the defect cannot be repaired by any single non-noop edit (0 single-edit repairs exist), we applied a bounded beam search (beam width $W=16$, maximum depth 2) using the learned ranker. The beam search located a valid 2-wire reconnection within 17 candidate checks and 8.7~milliseconds, which was verified correct across all 16 addition inputs. While this demonstration shows that learned beam search can locate multi-step rewires on small structured logic, it remains a single illustrative example without comparison to multi-edit symbolic synthesis.
+
+\section{Limitations and Threats to Validity}
+
+\subsection{Training Scale and Transfer Scope}
+Learned models were trained exclusively on compact circuits ($n \in \{4, 5\}, G \in \{10, 14\}$). While our findings characterize how models trained on compact instances perform across increasing circuit scales, they do not evaluate whether training directly on larger circuits would alter the ranking precision or inference trade-off.
+
+\subsection{Parameter Grid Coverage}
+The larger circuit benchmark spans five specific parameter configurations ($n \in \{10, 12, 16\}$, $G \in \{50, 100, 200\}$) rather than a complete factorial grid. In particular, the largest gate count $G=200$ was evaluated only at $n=16$. Consequently, observed deficits cannot be strictly decoupled between input count $n$ and gate count $G$.
+
+\subsection{Implementation Language, Hardware Environment, and Execution Disparity}
+The feature extraction pipeline, decision forest inference, and sequential candidate verifier were implemented in Python using vectorized NumPy operations, whereas Glucose 4.2.1 is implemented in native C++. A native C++ or batched implementation of feature extraction and candidate simulation would reduce both the upfront overhead and sequential verification time. Furthermore, all evaluations were run on a standard mobile laptop powered by an Intel Core i5-1235U processor (10 cores: 2 Performance cores and 8 Efficient cores, 12 threads), 16GB RAM, running Microsoft Windows 11 Enterprise (64-bit), Python 3.13.3, and NumPy 2.3.2. Because this processor employs a hybrid architecture, operating system thread scheduling across asymmetric cores (Performance vs. Efficient) as well as thermal or power throttling on mobile hardware provide a plausible mechanism for the inter-run timing variability observed across separately executed budget passes. Importantly, all reported benchmark numbers reflect the single frozen pass specified by Protocol v3; because 5 of the 18 tail-deficit instances fall within 0.3~s of the 1.0-second deadline, the exact $-7.2$~pp margin is sensitive to wall-clock variance near this boundary. Therefore, our timing measurements characterize this specific Python/NumPy architecture under standalone mobile hardware conditions rather than establishing a theoretical lower bound on candidate verification.
+
+\subsection{Benchmark Holdout Status, Published Baselines, and Topologies}
+The benchmark consists of synthetically generated 2-LUT DAGs and does not evaluate standard industrial benchmark suites (e.g., ISCAS-85 or EPFL) or include direct empirical comparisons against published external learned repair architectures (e.g., Transformer-based neural repair models). Crucially, as documented in our registered protocol, the 300 test circuits were reused from earlier exploratory v2 comparisons rather than constituting a fresh, untouched final holdout, and each method was evaluated across a single frozen timing pass per case, method, and budget. While no post-hoc hyperparameter tuning was performed on test outcomes, comparative performance is established specifically on this fixed, frozen benchmark and this lightweight tree architecture rather than establishing an absolute limit on all learned synthesis paradigms. In addition, stuck-at fault locations were provided to both systems, and repairs were restricted to single non-noop edits.
+
+\section{Conclusion}
+This study provides an empirical evaluation of guidance overhead across circuit scales in learned combinational circuit repair. The findings indicate that while lightweight learned rankers match symbolic solvers on small circuits ($n=6, G=18$), scaling circuit size introduces an operational latency penalty: upfront feature extraction and inference overhead (107.7--428.6~ms on $G \ge 100$, scaling near-linearly at 6.7--8.8~$\mu$s per candidate) causes learned ranking to lag direct Boolean SAT solving under tight deadlines ($\le 1.0$~s). On intermediate scales ($n \le 12$), performance matches CNF completely at 1.0~s, and converges across five of six scale strata at 10.0~s. Furthermore, learned ranking outperforms non-factored search heuristics and SMT baselines at 1.0~s (+8.4~pp over local heuristics, +17.6~pp over Z3), while reaching parity with Z3 at 10.0~s (201 vs. 200 repairs).
+
+These results underscore the importance of comparing learned guidance against dedicated, well-factored symbolic baselines and accounting for complete proposal latencies across design scales.
+
+
+\section*{Declarations}
+
+\paragraph{Funding}
+The author declares that no funds, grants, or other financial support were received during the preparation of this manuscript.
+
+\paragraph{Competing Interests}
+The author is employed by ELARABY Group. This research was conducted independently, without financial support, hardware donations, cloud-computing credits, or involvement from the employer. The author has no relevant financial or non-financial interests to disclose.
+
+\paragraph{Data and Code Availability}
+All raw trial logs, frozen experimental protocols, trained model artifacts, and automated verification scripts supporting the findings of this study are openly available in the companion research repository: \url{https://github.com/ziademad02153/circuit-repair-research-archive} (with an archival mirror at \url{https://anonymous.4open.science/r/circuit-repair-research-archive-67A7}).
+
+\paragraph{Author Contributions}
+Ziad Emad Allam is the sole author of this work and is solely responsible for study conceptualization, experimental design, software implementation, benchmark generation, empirical evaluation, data analysis, and manuscript preparation.
+
+\paragraph{Ethics Approval}
+Not applicable. This study does not involve human participants, animal subjects, or sensitive personal data.
+
+
+\section*{Declarations}
+
+\paragraph{Funding}
+The author declares that no funds, grants, or other financial support were received during the preparation of this manuscript.
+
+\paragraph{Competing Interests}
+The author is employed by ELARABY Group. This research was conducted independently, without financial support, hardware donations, cloud-computing credits, or involvement from the employer. The author has no relevant financial or non-financial interests to disclose.
+
+\paragraph{Data and Code Availability}
+All raw trial logs, frozen experimental protocols, trained model artifacts, and automated verification scripts supporting the findings of this study are openly available in the companion research repository: \url{https://github.com/ziademad02153/circuit-repair-research-archive} (with an archival mirror at \url{https://anonymous.4open.science/r/circuit-repair-research-archive-67A7}).
+
+\paragraph{Author Contributions}
+Ziad Emad Allam is the sole author of this work and is solely responsible for study conceptualization, experimental design, software implementation, benchmark generation, empirical evaluation, data analysis, and manuscript preparation.
+
+\paragraph{Ethics Approval}
+Not applicable. This study does not involve human participants, animal subjects, or sensitive personal data.
+
+\bibliography{references}
+\bibliographystyle{plainnat}
+
+\end{document}

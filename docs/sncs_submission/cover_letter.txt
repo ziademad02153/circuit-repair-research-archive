@@ -1,0 +1,45 @@
+To: Editors-in-Chief
+SN Computer Science
+Springer Nature
+
+Date: November 22, 2026
+
+Subject: Submission of Original Research Article: "Guidance Overhead Across Circuit Scale in Learned Combinational Circuit Repair"
+
+Dear Editors-in-Chief,
+
+I am pleased to submit our original research manuscript entitled "Guidance Overhead Across Circuit Scale in Learned Combinational Circuit Repair" for consideration for publication as a regular research article in SN Computer Science.
+
+Background and Significance:
+A central hypothesis in contemporary automated reasoning and neuro-symbolic computing is that machine learning models can accelerate combinatorial search by prioritizing candidate repair modifications. However, evaluating whether lightweight learned models can maintain low enough inference latency to outpace modern, factored Boolean Satisfiability (SAT) solvers as circuit scale grows remains an open empirical challenge. 
+
+In this work, we present a controlled, large-scale empirical evaluation comparing lightweight histogram decision forests against non-factored search heuristics and modern Propositional Conjunctive Normal Form (CNF) SAT solving (Glucose 4.2.1 within a CEGIS loop) across a frozen protocol of 9,000 trials on 300 synthetic combinational circuits (scaling up to 16 primary inputs and 200 logic gates) under strict wall-clock deadlines (0.1 s, 1.0 s, and 10.0 s).
+
+Key Contributions and Findings:
+1. Empirical Trade-off Analysis: Our results demonstrate that under tight sub-second deadlines (0.1 s), direct CNF substantially outperforms the learned approach (81.6% vs. 20.8% repair rate on 250 larger instances), consistent with upfront guidance overhead (107.7–428.6 ms, scaling near-linearly at 6.7–8.8 microseconds per candidate) consuming the entire operational budget before search begins.
+2. Cross-Scale Convergence: Under extended deadlines (1.0 s and 10.0 s), learned guidance reaches complete parity with CNF across five of six scale strata (81.6% vs. 80.4% at 10.0 s, resolving 98.5% of solvable cases) while outperforming non-factored heuristics and legacy SMT.
+3. Open Science and Reproducibility: To support full transparency, all 9,000 raw trial logs, frozen experimental protocols, trained model checkpoints, and automated standard-library audit scripts are preserved in a public research archive: https://github.com/ziademad02153/circuit-repair-research-archive.
+
+Fit with SN Computer Science:
+Given SN Computer Science's commitment to rigorous methodology, algorithmic analysis, empirical software and hardware evaluations, and transparent reporting of foundational computational trade-offs, we believe our findings will be of direct interest to researchers in theoretical computer science, automated reasoning, logic synthesis, and neuro-symbolic algorithms.
+
+Declarations:
+- This manuscript represents original work that has not been published previously and is not currently under consideration for publication elsewhere.
+- The author has no relevant financial or non-financial conflicts of interest to disclose.
+- The author approves this submission and confirms adherence to Springer Nature's publishing ethics guidelines.
+
+Suggested Reviewer Fields:
+- Automated Reasoning / SAT and SMT Solving
+- Logic Synthesis and Digital Circuit Verification
+- Empirical Evaluation of Algorithms
+- Neuro-Symbolic Computing / Machine Learning for Combinatorial Optimization
+
+Thank you very much for your time and consideration of our work.
+
+Sincerely,
+
+Ziad Emad Allam
+Department of Business Information Systems
+Higher Institute for Computers, Information and Management Technology, Tanta, Egypt
+Email: z.e.ziad@xed.aucegypt.edu
+ORCID: 0009-0008-4323-791X
